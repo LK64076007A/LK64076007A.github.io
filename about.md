@@ -12,5 +12,7 @@ I wish I was a developer. Instead, I have a day job and have to wait to put on m
 
 I don't have comments because _comments_, but you will find me on [Twitter][1].
 
+The title of this blog is directly stolen from [xkcd][2]. He'll have a right to all the monies when the cash starts piling up. 
 
 [1]: https://twitter.com/nuclearzenfire
+[2]: http://xkcd.com/1022/
