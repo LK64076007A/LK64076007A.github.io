@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Maestro macro screenshots
 date: 2014-07-29 17:25  
-tags: Keyboard Maestro
+tags: KeyboardMaestro
 ---
 I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums[^140729172855]. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.
 

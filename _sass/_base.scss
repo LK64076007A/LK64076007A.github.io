@@ -23,8 +23,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -83,12 +81,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1, h2 {
+  color: #0080CE;
+  -webkit-font-smoothing: antialiased;
+    font-family: "AvenirNext-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, sans-serif; 
+  font-weight: 100;
+}
 
 
 /**
  * Links
  */
-a {
+/*a {
     color: $brand-color;
     text-decoration: none;
 
@@ -100,9 +104,19 @@ a {
         color: $text-color;
         text-decoration: underline;
     }
+}*/
+
+a { text-decoration: none; }
+a:link, a:active { color: $brand-color; }
+a:visited { color: $brand-color; }
+a:link:hover, a:active:hover, a:visited:hover { text-decoration: none; }
+a:link:hover, a:active:hover { color: $brand-color; }
+a:visited:hover { color: $brand-color; }
+a > img { margin-bottom: -1px; }
+a.img {
+  border: none;
+  background: transparent !important;
 }
-
-
 
 /**
  * Blockquotes
@@ -170,7 +184,9 @@ pre {
     }
 }
 
-
+.site-header {
+    padding-top: 50px;
+}
 
 /**
  * Clearfix
