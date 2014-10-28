@@ -2,7 +2,7 @@
 layout: post
 title: Create a Markdown link with automatic affiliate codes
 date: 2014-08-01 0:49  
-categories: Keyboard Maestro
+tags: Keyboard Maestro
 ---
 I do a podcast with a couple other guys. As we're recording the show, I like to create the show notes live so that they're most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I've navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from [Dr. Drang][1] and [Brett Kelly][2].
 
