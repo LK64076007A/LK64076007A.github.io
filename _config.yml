@@ -2,7 +2,7 @@
 title: so, it's come to this...
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'll hear a technique or technology mentioned, it stirs around in my brain and then I fall down that rabbit hole. If I make it back with my sanity intact, I'll usually write about it here.
+  I'll hear a technique or technology mentioned, it stirs around in my brain, and then I fall down that rabbit hole. If I make it back with my sanity intact, I'll usually write about it here.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: nuclearzenfire
