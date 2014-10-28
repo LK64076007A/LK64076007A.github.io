@@ -49,8 +49,6 @@ With format JPEG).
 
 [![](/images/Create_KM_screenshot_image.jpg)](/images/Create_KM_screenshot_image.jpg) 
 
-<!--[![Macro Image](https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20KM%20screenshot%20image.jpg)](https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20KM%20screenshot%20image.jpg) -->
-
 [Download the macro](https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20screenshot%20of%20KM%20macro.kmmacros).
 
 ## Room for improvement
