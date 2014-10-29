@@ -6,8 +6,8 @@ layout: default
 
   <h1 class="page-heading"></h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+<ul class="post-list">
+<!--      {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -17,19 +17,35 @@ layout: default
         <div class="content">{{ post.content }}</div>
       </li>
     {% endfor %}
-  </ul>
+  </ul>-->
+  
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <div class="content">{{ post.content }}</div>
+      </li>
+{% endfor %}
 </div>
+
+
+
+
 <!-- Pagination links -->
 <nav id="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
       <a href="/" title="Previous Page">&laquo; Previous</a>
       {% else %}
-      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer</a>
       {% endif %}
     {% endif %}
     
     {% if paginator.next_page %} 
-    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+    <a href="/page{{ paginator.next_page }}/" title="Next Page">Older &raquo;</a>
     {% endif %} 
   </nav>
