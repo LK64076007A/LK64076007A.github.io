@@ -103,7 +103,7 @@ Insert Text by Pasting
 
 # Macro Image
 
-[![Macro Image](https://dl.dropboxusercontent.com/u/3950369/blog_images/Markdown%20link%20with%20affiliate%20codes.jpg)](https://dl.dropboxusercontent.com/u/3950369/blog_images/Markdown%20link%20with%20affiliate%20codes.jpg) 
+[![Macro Image](/images/Markdown_link_with_affiliate_codes.jpg)](/images/Markdown_link_with_affiliate_codes.jpg) 
 
 [Download the macro](https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros). 
 
