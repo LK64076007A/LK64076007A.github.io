@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Expert for iPhone: attention to detail
+title: PDF Expert for iPhone - attention to detail
 date: 2012-11-23 13:45  
 tags: technology, app, article
 ---
