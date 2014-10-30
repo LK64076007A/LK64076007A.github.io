@@ -1,6 +1,13 @@
-Title: Procedure note with TextExpander
-Date: 2012-08-29 21:25  
-Tags: textexpander, medicine, technology, programming
+---
+layout: post
+title: Procedure note with TextExpander
+date: 2012-08-29 21:25  
+tags: 
+- TextExpander 
+- medicine
+- technology
+- programming
+---
 
 I do a lot of joint injections so I created a [TextExpander][smilesoftware] macro to quickly write a short procedure note within my visit note. I used TE 4.0 with the new options for fill ins. I have several optional sections that can expand the note depending on the type of injection I do, but at the same time, for the large majority of injections in which I'm not removing fluid or sending the results for testing[^120822085343], the note is quickly and easily generated without template cruft.
 

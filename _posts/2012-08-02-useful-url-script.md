@@ -3,7 +3,8 @@ layout: post
 date: 2012-08-02 19:56  
 title: Crazy useful url script from Dr. Drang
 link: http://www.leancrew.com/all-this/2012/08/the-safari-6-url-crisis/
-tags: TextExpander
+tags:
+- TextExpander
 ---
 
 Paste the url from the top tab in Safari into current location of the cursor with one line of Applescript in TextExpander. 

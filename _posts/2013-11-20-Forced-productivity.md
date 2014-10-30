@@ -2,7 +2,9 @@
 layout: post
 title: Forced productivity with Keyboard Maestro
 date: 2013-11-20 17:04  
-tags: technology, medicine
+tags:
+- technology
+- medicine
 ---
 
 I get easily distracted. I can be working on task A, which reminds be to do task B, then get into task C, and end up working 3 hours on task C, then back to 2 hours on task B, and finally get back to task A many hours later. Most of the time this isn't a problem, and makes me very productive. Not so much at work. Writing an epic blog post or researching the perfect way to make ginger chicken at work--not such a good idea.

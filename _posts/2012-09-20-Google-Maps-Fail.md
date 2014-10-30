@@ -2,7 +2,9 @@
 layout: post
 title: Google Maps Fail
 date: 2012-09-20 15:36  
-tags: technology, Google
+tags:
+- technology
+- Google
 ---
 
 Bashing Apple's maps is the thing to do these days, but I just want to share my own Google Maps story. 

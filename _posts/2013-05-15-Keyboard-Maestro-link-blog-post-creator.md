@@ -2,7 +2,11 @@
 layout: post
 title: Keyboard Maestro link-blog post creator for Scriptogram
 date: 2013-05-15 19:22  
-tags: Keyboard Maestro, technology, Scriptogram, blogging
+tags:
+- Keyboard Maestro
+- technology
+- Scriptogram
+- blogging
 ---
 
 I created a Keyboard Maestro macro to quickly create a link-blog post to Scriptogram without even needing to open a text editor.

@@ -2,7 +2,9 @@
 layout: post
 date: 2012-01-30 18:13
 title: TextExpander for physicians, Part 1
-tags: TextExpander, medicine
+tags:
+- TextExpander 
+- medicine
 ---
 
 As a physician I write a lot.[^1201301814] Most of my writing is the same or similar to things I've written before and will write again. Repeatedly typing the same things character by character is a waste of time, energy and cartilage. In order to turn my 70 word per minute[^1201302145] into hundreds of words per minute without ended up as a patient myself, I engage a force multiplier, TextExpander.

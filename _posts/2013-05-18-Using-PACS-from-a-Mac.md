@@ -2,7 +2,10 @@
 layout: post
 title: Using PACS from a Mac
 date: 2013-05-18 18:42  
-tags: EMR, medicine, technology
+tags:
+- EMR
+- medicine
+- technology
 ---
 
 The title is a bit misleading, but I figured that's what people would be searching for if they had the problem I'm intending to solve.

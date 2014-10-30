@@ -2,7 +2,8 @@
 layout: post
 title: Batch converting Pages documents to PDF with Keyboard Maestro
 date: 2013-02-18 16:38  
-tags: Keyboard Maestro
+tags: 
+- Keyboard Maestro
 ---
 
 I had 3000 Pages documents that I wanted to convert PDF. I had previously searched the internet for a way to do this easily but was unsuccessful. I suppose I should have tried searching again, because I would have found [Pages2PDF][yourmacteacher], which works much better than what I did. 

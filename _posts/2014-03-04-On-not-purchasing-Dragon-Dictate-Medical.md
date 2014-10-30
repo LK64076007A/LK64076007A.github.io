@@ -2,7 +2,9 @@
 layout: post
 title: On not purchasing Dragon Dictate Medical
 date: 2014-03-04 9:27  
-tags: medicine, technology
+tags:
+- medicine
+- technology
 ---
 I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.
 

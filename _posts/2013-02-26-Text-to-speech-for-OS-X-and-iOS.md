@@ -2,7 +2,11 @@
 layout: post
 title: Text-to-speech for OS X and iOS
 date: 2013-02-26 9:45  
-tags: technology, article, text-to-speech, iOS, OS X
+tags:
+- technology
+- text-to-speech
+- iOS
+- OS X
 ---
 
 ## Introduction ##

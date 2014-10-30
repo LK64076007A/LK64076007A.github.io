@@ -2,7 +2,10 @@
 layout: post
 title: Create side-by-side screen shots on iOS with Pythonista
 date: 2013-03-05 8:38  
-tags: technology, programming, Viticci
+tags: 
+- technology
+- programming
+- Viticci
 ---
 
 First, I have to thank [Federico Viticci][twitter], whose [detailed][macstories] [blog][macstories 2] [posts][macstories 3] on his use of Pythonista inspired me to use it and learn Python as well. 

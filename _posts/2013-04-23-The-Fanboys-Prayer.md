@@ -2,6 +2,10 @@
 layout: post
 title: The Fanboy's Prayer
 date: 2013-04-23 17:52  
+tags: 
+- TextExpander
+- Keyboard Maestro
+- PDFpen Pro
 ---
 
 The Mac is my Shepherd; I shall not defrag.  

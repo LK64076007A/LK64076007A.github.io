@@ -2,7 +2,9 @@
 layout: post
 title: Two improvements with Keyboard Maestro 6
 date: 2013-05-21 12:57  
-tags: Keyboard Maestro, technology
+tags:
+- Keyboard Maestro
+- technology
 ---
 I'm a big fan of [Keyboard Maestro](http://www.keyboardmaestro.com/main/) and use it both daily for my workflow as well as occasionally for projects as they arise.
 

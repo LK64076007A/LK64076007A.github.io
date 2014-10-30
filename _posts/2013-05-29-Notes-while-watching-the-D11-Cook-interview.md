@@ -3,7 +3,9 @@ layout: post
 title: Notes while watching the D11 Cook interview
 date: 2013-05-29 7:46  
 link: http://allthingsd.com/20130529/apples-tim-cook-the-full-d11-interview-video/
-tags: journalism, technology
+tags:
+- journalism
+- technology
 ---
 
 1. The hosts seem old, slow, and disheveled. I'm left wondering how these can be on the forefront of evaluating bleeding edge technology in an age of speed, simplicity, and beauty.

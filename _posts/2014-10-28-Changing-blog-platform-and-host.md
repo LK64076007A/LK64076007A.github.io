@@ -2,7 +2,9 @@
 layout: post
 title: Changing blog platform and host
 date: 2014-10-28 12:36
-tags: blogging, github
+tags:
+- blogging
+- github
 --- 
 I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I've enjoyed using [Scriptogram][1], which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. 
 

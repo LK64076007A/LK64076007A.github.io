@@ -2,7 +2,9 @@
 layout: post
 date: 2006-04-30 19:50:50
 title: Samsung A900 Blade
-tags: phones, technology
+tags:
+- phones
+- technology
 ---
 
 I have a new phone, the Samsung A900, or Blade.  

@@ -2,7 +2,8 @@
 layout: post
 date: 2012-01-27 16:07
 title: Email to my friends
-tags: technology
+tags:
+- technology
 ---
 
 I want you to learn two things from this email. The first (the fish) is how to combine multiple open Safari windows into one window with multiple tabs. The second (how to fish) is about becoming self-sufficient and making your life better.

@@ -2,7 +2,9 @@
 layout: post
 date: 2012-08-05 11:50  
 title: Prednisone Taper prescriptions using Keyboard Maestro
-tags: Keyboard Maestro, KM, video
+tags:
+- Keyboard Maestro
+- video
 ---
 
 A short video demonstrating using Keyboard Maestro to write prednisone tapers in a patient friendly format, calculating out the total number of pills needed at the end.

@@ -2,7 +2,8 @@
 layout: post
 title: Copy and paste, and paste, and paste, and paste
 date: 2013-06-26 19:36  
-tags: EMR
+tags:
+- EMR
 ---
 
 From an actual clinic note I read today:

@@ -2,7 +2,9 @@
 layout: post
 title: A doctor's notes - abbreviated
 date: 2013-04-18 12:28  
-tags: EMR, medicine
+tags:
+- EMR
+- medicine
 ---
 
 We doctors spend most of our working life documenting our clinical encounters but too often suffer from poor chart systems leading to inaccurate or inaccessible notes. We also fail to maintain ownership over our work product leading to a loss of useful clinical and practice information and worse patient care.

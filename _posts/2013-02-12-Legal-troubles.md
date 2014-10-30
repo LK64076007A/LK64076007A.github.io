@@ -2,7 +2,9 @@
 layout: post
 title: Legal troubles
 date: 2013-02-12 14:40  
-tags: politics, medicine
+tags:
+- politics
+- medicine
 ---
 
 [The New York Times][nytimes]:

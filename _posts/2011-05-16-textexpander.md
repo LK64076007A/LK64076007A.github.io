@@ -2,7 +2,8 @@
 layout: post
 date: 2011-05-16 11:45
 title: TextExpander
-tags: TextExpander
+tags:
+- TextExpander
 ---
 
 I’ve been wanting TextExpander for awhile and was going to buy it when I got around to it.

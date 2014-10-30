@@ -95,13 +95,14 @@ border-top-width: 1px;
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+        padding-top: $spacing-unit / 2;
+    border-top: 1px solid $grey-color-light;
 }
 
 .contact-list,

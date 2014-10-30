@@ -3,7 +3,9 @@ layout: post
 title: Google "Me Too"
 date: 2013-5-15 19:12
 link: http://daringfireball.net/linked/2013/05/15/google-versus
-tags: Google, Gruber
+tags:
+- Google
+- Gruber
 ---
 
 [John Gruber][daringfireball]:

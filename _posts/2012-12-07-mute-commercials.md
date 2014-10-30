@@ -2,7 +2,11 @@
 layout: post
 title: Mute commercials on CBS.com with Keyboard Maestro
 date: 2012-12-07 13:06  
-tags: keyboard maestro, programming, technology, commercials
+tags:
+- Keyboard Maestro
+- programming
+- technology
+- commercials
 ---
 
 I watch TV on my Macbook Air on the weekends when I'm ironing. Sadly, commercials are becoming more popular with CBS airing 4 in a row, often the same exact commercial over and over. There's no way to skip them, but I made a quick macro with Keyboard Maestro that mutes the sound until the commercials are over and then turns the sound back on.

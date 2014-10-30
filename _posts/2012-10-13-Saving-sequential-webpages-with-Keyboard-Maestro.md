@@ -2,7 +2,10 @@
 layout: post
 title: Saving sequential webpages as PDFs with Keyboard Maestro
 date: 2012-10-13 8:06  
-tags: Keyboard Maestro, technology, programming  
+tags:
+- Keyboard Maestro
+- technology
+- programming  
 ---
 
 I needed to save as PDF a series of 80 webpages on a slow server on a password protected website. I could have sat there for an hour doing it manually, but since I wanted to get dressed and have a cup of coffee, I made a Keyboard Macro shortcut instead.

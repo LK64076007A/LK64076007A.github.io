@@ -2,7 +2,8 @@
 layout: post
 date: 2012-04-26 18:59  
 title: Challenge accepted  
-tags: Keyboard Maestro
+tags:
+- Keyboard Maestro
 ---
 
 <blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195541778135388163"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> Develop &gt; User Agent &gt; iPad.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195542025939066883" data-datetime="2012-04-26T15:57:06+00:00">April 26, 2012</a></blockquote>

@@ -2,7 +2,10 @@
 layout: post
 title: Logging time per visit with Keyboard Maestro
 date: 2014-02-21 8:14  
-tags: Keyboard Maestro, technology, medicine
+tags:
+- Keyboard Maestro
+- technology
+- medicine
 ---
 
 I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three[^140221081628] small macros to complete this task.

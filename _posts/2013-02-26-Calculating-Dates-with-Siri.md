@@ -2,7 +2,11 @@
 layout: post
 title: Calculating dates with Siri
 date: 2013-02-26 11:21  
-tags: MacSparky, technology, iOS
+tags:
+- MacSparky
+- technology
+- iOS
+- Siri
 ---
 
 [David Sparks is my kind of nerd](http://macsparky.com/blog/2013/2/calculating-dates-with-siri):

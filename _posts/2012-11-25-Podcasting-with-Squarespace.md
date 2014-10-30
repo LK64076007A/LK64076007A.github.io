@@ -2,7 +2,9 @@
 layout: post
 title: Podcasting with Squarespace
 date: 2012-11-25 23:02  
-tags: Squarespace, podcasting
+tags:
+- Squarespace
+- podcasting
 ---
 
 # Summary

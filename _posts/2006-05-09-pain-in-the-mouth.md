@@ -2,7 +2,9 @@
 layout: post
 date: 2006-05-09 12:46:52
 title: Pain in the mouth
-tags: insurance, medicine
+tags:
+- insurance
+- medicine
 ---
 
 A couple weeks ago I developed an abscess in the root of one of my top molars.  I had the whole swelling, tenderness and pain thing.  I felt like dying or ripping the thing out by the roots, either of which would have treated the problem.  Instead I wasted $50 seeing an "emergency dentist" who told me it was infected and needed to be drilled or removed.  Well, no shit sherlock.  I'm a fucking doctor--I know that.  Then he gave me heavy duty narcotic pain meds and an antibiotic, which isn't exactly recommended by the dental societies.  

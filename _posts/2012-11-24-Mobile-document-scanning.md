@@ -2,7 +2,10 @@
 layout: post
 title: Mobile document scanning
 date: 2012-11-24 21:50  
-tags: technology, apps, scanning
+tags:
+- technology
+- apps
+- scanning
 ---
 
 # Summary

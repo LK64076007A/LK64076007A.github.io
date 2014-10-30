@@ -2,7 +2,8 @@
 layout: post
 title: Google search fail
 date: 2013-08-24 8:24  
-tags: technology
+tags:
+- technology
 ---
 Dear Google,
 

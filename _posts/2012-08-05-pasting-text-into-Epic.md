@@ -2,7 +2,11 @@
 layout: post
 date: 2012-08-05 11:14  
 title: Errors when pasting text from a Mac into Epic and Allscripts
-tags: Keyboard Maestro, articles, medicine, technology, programming
+tags:
+- Keyboard Maestro
+- medicine
+- technology
+- programming
 ---
 
 **Update 2 (5.23.2013):** When my friend updated to Keyboard Maestro 6, this fix stopped working. This may be because the filter line endings had nothing to do with the fix, rather that process had an unexpected side effect of changing rich text to plain text. We are in the process of testing this theory. If you can't wait, try filtering with "remove styles".

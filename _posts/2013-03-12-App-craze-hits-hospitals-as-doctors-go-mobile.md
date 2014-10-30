@@ -2,7 +2,9 @@
 layout: post
 title: Hospitals and regulations stifle physician adoption of mobile technology
 date: 2013-03-12 9:32  
-tags: article, medicine, technology
+tags:
+- medicine
+- technology
 ---
 
 I repeatedly see articles blaming physicians for the poor adoption of technology in medicine. As a tech nerd and a physician who is frustrated with the lack of good medical software (mostly EMRs), it was nice to see an article putting the blame where it mostly belongs: regulation and hospitals.[^1363099346-fn1]

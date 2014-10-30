@@ -2,7 +2,9 @@
 layout: post
 title: Making Passbook useful  
 date: 2013-05-30 15:44  
-tags: technology, Passbook
+tags:
+- technology
+- Passbook
 ---
 
 I shop for groceries at Harris Teeter[^20130530160464]. If you use their loyalty card, the prices are much cheaper.[^20130530160545] I don't like to carry a loyalty card on me, either in my wallet or on my keychain.[^20130530160716] I used to leave the loyalty card in my car, but then I'd forget to bring it into the store with me.[^20130530160833] They have an [iPhone app](. https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&at=11l4RT)[^20130530160955] that includes a scannable loyalty card, but it's slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.

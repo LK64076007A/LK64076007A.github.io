@@ -2,7 +2,9 @@
 layout: post
 title: Using Keyboard Maestro to control windows on dual monitors
 date: 2014-02-07 16:21  
-tags: technology, Keyboard Maestro
+tags:
+- technology
+- Keyboard Maestro
 ---
 
 I just started using a second monitor at work[^140207162201]. The problem was that every time I would plug my Macbook Air into the monitor via the Thunderbolt connection, the previously arranged window position was lost. I have a very simple arrangement: my text editor maximized on my laptop, and the EMR maximized on the external screen. 

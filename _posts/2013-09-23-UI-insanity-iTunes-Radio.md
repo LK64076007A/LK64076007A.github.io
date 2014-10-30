@@ -2,7 +2,9 @@
 layout: post
 title: UI insanity; iTunes Radio
 date: 2013-09-23 20:17  
-tags: UI, technology
+tags:
+- UI
+- technology
 ---
 
 

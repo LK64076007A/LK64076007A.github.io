@@ -2,7 +2,11 @@
 layout: post
 title: They don't care
 date: 2012-05-20 10:45
-Link: http://bettermess.com/us-and-them/
+link: http://bettermess.com/us-and-them/
+tags: 
+- TextExpander 
+- Markdown
+- Keyboard Maestro
 ---
 
 Michael Schechter:

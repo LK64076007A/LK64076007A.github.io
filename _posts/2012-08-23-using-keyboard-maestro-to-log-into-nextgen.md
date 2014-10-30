@@ -2,9 +2,13 @@
 layout: post
 title: Using Keyboard Maestro to log into Nextgen
 date: 2012-08-23 16:08  
-tags: Keyboard Maestro, EMR, technology, programming, medicine
+tags:
+- Keyboard Maestro
+- EMR
+- technology
+- programming
+- medicine
 ---
-
 It takes me about 45-60 seconds to log into my EMR due to human frailty, distractions and a shit EMR. To speed up the process, allow me to do other things with that time, and keep my anger in check, I set up Keyboard Maestro to login for me:
 
 <video width="640" height="480" controls="controls">

@@ -2,7 +2,10 @@
 layout: post
 title: Editorial workflow - switching list types
 date: 2013-08-18 18:53 
-tags: apps, workflow, technology 
+tags:
+- apps
+- workflow
+- technology 
 ---
 
 I've had Editorial for less than an hour and I've made my first workflow. 

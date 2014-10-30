@@ -2,7 +2,11 @@
 layout: post
 title: A modified Keyboard Maestro macro for MultiMarkdown Footnotes  
 date: 2013-05-30 18:53  
-tags: Keyboard Maestro, Markdown, technology, blogging, article
+tags:
+- Keyboard Maestro
+- Markdown
+- technology
+- blogging
 ---
 
 **Update: This post is long out of date. Zettt and I worked together to come up with a better, faster way to do the same thing with Keyboard Maestro. Find his latest version of his Keyboard Maestro Markdown Library to see it in action.**

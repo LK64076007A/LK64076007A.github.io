@@ -2,7 +2,8 @@
 layout: post
 title: Knowledge
 date: 2013-12-30 20:36  
-tags: technology
+tags:
+- technology
 ---
 
 *I should add your iPhone to the wifi.*

@@ -2,7 +2,8 @@
 layout: post
 title: The best indie developer
 date: 2013-03-18 13:16  
-tags: Keyboard Maestro
+tags:
+- Keyboard Maestro
 ---
 
 Yesterday, a customer on the Keyboard Maestro forums wrote a thank you to Peter, the owner/developer of KM:

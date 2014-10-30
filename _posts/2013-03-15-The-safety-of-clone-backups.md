@@ -2,7 +2,9 @@
 layout: post
 title: Clone Backups - Why and How
 date: 2013-03-15 7:51  
-tags: medicine, technology
+tags:
+- medicine
+- technology
 ---
 
 ### Introduction ###

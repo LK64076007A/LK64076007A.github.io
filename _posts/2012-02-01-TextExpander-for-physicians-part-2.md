@@ -2,7 +2,9 @@
 layout: post
 date: 2012-02-01 20:37
 title: TextExpander for physicians, Part 2
-tags: TextExpander, medicine
+tags:
+- TextExpander 
+- medicine
 ---
 
 In part 1, I tried to explain what TextExpander was and why a physician might want to use it as a force multiplier by showing a few examples of macros that I use daily.

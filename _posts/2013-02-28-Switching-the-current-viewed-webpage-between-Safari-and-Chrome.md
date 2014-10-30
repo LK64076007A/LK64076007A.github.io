@@ -2,7 +2,9 @@
 layout: post
 title: Switching the current viewed webpage between Safari and Chrome
 date: 2013-02-28 14:27  
-tags: article, Keyboard Maestro, technology
+tags: 
+- Keyboard Maestro
+- technology
 ---
 
 **Update:** This macro was made for Keyboard Maestro 5. Although it will work with KM 6, a newer version of the macro is available as is much simpler and faster with less risk of bugs.

@@ -2,7 +2,11 @@
 layout: post
 title: Stupid EMR UI Example 2
 date: 2013-01-18 20:43  
-tags: medicine, programming, EMR  
+tags:
+- medicine
+- programming
+- EMR
+- UI
 ---
 
 I love tech and I especially love software, but like most things that we deeply love, when they fall short, it's very hard to not get angry.

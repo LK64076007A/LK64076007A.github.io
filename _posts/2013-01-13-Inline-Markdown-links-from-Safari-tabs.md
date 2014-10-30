@@ -2,7 +2,11 @@
 layout: post
 title: Inline Markdown links from Safari tabs
 date: 2013-01-13 23:06  
-tags: programming, technology
+tags: 
+- programming
+- technology
+- TextExpander
+- Keyboard Maestro
 ---
 
 This post is mostly for me, so I can remember how I did this in the future.

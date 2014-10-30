@@ -2,7 +2,9 @@
 layout: post
 title: Argument by counter example
 date: 2013-12-31 17:57  
-tags: technology, sociology
+tags:
+- technology
+- sociology
 ---
 
 Boy (age 8): Why do you and I play a lot of video games but mommy doesn't?

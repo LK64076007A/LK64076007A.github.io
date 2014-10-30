@@ -2,7 +2,9 @@
 layout: post
 title: Affiliate link Tweeting with Pythonista
 date: 2013-11-26 21:13  
-tags: technology, Pythonista
+tags:
+- technology
+- Pythonista
 ---
 
 <video width="640" height="480" controls="controls">

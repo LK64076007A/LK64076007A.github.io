@@ -2,7 +2,12 @@
 layout: post
 title: NIH Stroke Scale with Keyboard Maestro and TextExpander  
 date: 2013-01-30 20:10  
-tags: Keyboard Maestro, TextExpander, medicine, programming, technology   
+tags: 
+- Keyboard Maestro
+- TextExpander
+- medicine
+- programming
+- technology   
 ---
 
 A colleague of mine wanted a way to easily document the NIH stroke scale score with the added benefits of not having to type the whole thing each time, prompts to remember what to evaluate and what the scores mean, and also have the final score calculated for him. Requirements included that the input had to be in TextExpander due to a preference for that applications input style, and the output would have to be in the middle of a Pages document that was using a single font and no bold or italics.

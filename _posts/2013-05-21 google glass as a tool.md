@@ -2,7 +2,9 @@
 layout: post
 title: Google Glass as a tool
 date: 2013-05-21 8:00  
-tags: Google Glass, technology
+tags:
+- Google Glass
+- technology
 ---
 
 [![](/images/google_glass_person.jpg)](/images/google_glass_person.jpg) 

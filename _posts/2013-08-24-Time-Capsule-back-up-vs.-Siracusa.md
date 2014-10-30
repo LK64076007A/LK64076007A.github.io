@@ -2,7 +2,8 @@
 layout: post
 title: Time Capsule back up vs. Siracusa
 date: 2013-08-24 9:03  
-tags: technology
+tags:
+- technology
 ---
 
 On the last[^130824090332] episode of ATP[^130824090353], Siracusa said that the Time Capsule had "a terrible reputation for reliability, and I still think Time Machine over the network is not great".

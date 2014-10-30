@@ -2,7 +2,9 @@
 layout: post
 title: Bribing doctors
 date: 2014-04-16 8:50  
-tags: medicine, pharma
+tags:
+- medicine
+- pharma
 ---
 
 [Steven Novella][sciencebasedmedicine]:

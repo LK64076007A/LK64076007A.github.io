@@ -3,6 +3,9 @@ layout: post
 title: FTC sues AT&T over throttling "Unlimited" data plans
 date: 2014-10-28 15:09
 tags: 
+- carriers
+- AT&T
+- class action
 link: http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/
 ---
 I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I'm wrong because I'm pretty happy about this:

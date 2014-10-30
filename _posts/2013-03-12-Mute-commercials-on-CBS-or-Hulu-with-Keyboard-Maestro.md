@@ -2,7 +2,9 @@
 layout: post
 title: Mute commercials on CBS or Hulu with Keyboard Maestro
 date: 2013-03-12 10:42 
-tags: article, technology, Keyboard Maestro 
+tags:
+- technology
+- Keyboard Maestro 
 ---
 
 In a game of one-upmanship, I've improved on my prior macros for muting commercials on CBS and Hulu. What used to be 1-3 non-annoying commercials[^1363103721-fn1] has turned into five, highly-annoying, commercials in a row. The volume is often much louder than the volume of the show and not infrequently, the same commercial is played all 5 times.

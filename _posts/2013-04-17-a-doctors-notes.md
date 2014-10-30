@@ -2,7 +2,10 @@
 layout: post
 title: A doctor's notes
 date: 2013-04-17 8:28  
-tags: EMR, medicine
+tags: 
+- EMR
+- medicine
+- TextExpander
 ---
 
 Physicians spend a large part of their day documenting what they do, primarily in the form of the clinic note, but also telephone notes, record reviews, and the legions of forms the government and insurance companies create.

@@ -2,7 +2,10 @@
 layout: post
 title: Creating a plain text wiki with nvALT
 date: 2013-04-10 11:04  
-tags: apps, notes, technology
+tags:
+- apps
+- notes
+- technology
 ---
 
 ## Introduction
