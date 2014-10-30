@@ -180,6 +180,12 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+.page-link .icon {
+  float: right;
+  padding-left: 20px; }
+  .page-link .icon > svg path {
+    fill: #0080CE; }
+
 /**
  * Site header
  */
