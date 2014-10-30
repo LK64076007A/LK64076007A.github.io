@@ -229,7 +229,8 @@ pre {
       background-color: #ffffff;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right; }
+      text-align: right;
+      /*        Added to fix float right in nav bar with in mobile version*/ }
       .site-nav .menu-icon {
         display: block;
         float: right;
@@ -243,6 +244,8 @@ pre {
           height: 15px; }
           .site-nav .menu-icon > svg path {
             fill: #424242; }
+      .site-nav .page-link .icon {
+        float: none; }
       .site-nav .trigger {
         clear: both;
         display: none; }
