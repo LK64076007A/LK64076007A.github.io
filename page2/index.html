@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://soitscometothis.net/">
+    <link rel="canonical" href="http://soitscometothis.net/page2/">
 </head>
 
 
@@ -3586,49 +3586,44 @@ Time Out: Yes.</p>
 <!-- This loops through the paginated posts -->
 
       <li>
-        <span class="post-meta">Oct 28, 2014</span>
+        <span class="post-meta">Feb 7, 2014</span>
 
         <h2>
-          <a class="post-link" href="/2014/10/28/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans.html">FTC sues AT&T over throttling "Unlimited" data plans</a>
+          <a class="post-link" href="/2014/02/07/Using-Keyboard-Maestro-to-control-windows-on-dual-monitors.html">Using Keyboard Maestro to control windows on dual monitors</a>
         </h2>
-        <div class="content"><p>I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:</p>
+        <div class="content"><p>I just started using a second monitor at work<sup id="fnref:140207162201"><a href="#fn:140207162201" class="footnote">1</a></sup>. The problem was that every time I would plug my Macbook Air into the monitor via the Thunderbolt connection, the previously arranged window position was lost. I have a very simple arrangement: my text editor maximized on my laptop, and the EMR maximized on the external screen. </p>
 
-<blockquote>
-  <p>The Federal Trade Commission (FTC) of the United States today filed a federal court complaint against AT&amp;T, accusing the carrier of misleading its smartphone customers by charging them for unlimited data while reducing their data speeds by up to 90 percent. - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
-</blockquote>
+<p><strong>Keyboard Maestro to the rescue.</strong></p>
 
-<p>I had one of those “unlimited” plans and AT&amp;T sent rude text messages threatening to throttle me and then eventually did. I was using just over 2 gigabytes a month. I switched to Sprint. </p>
+<p><a href="/images/Keyboard_Maestro_Dual_Screens.png"><img src="/images/Keyboard_Maestro_Dual_Screens.png" alt="" /></a> </p>
 
-<blockquote>
-  <p>The FTC alleges that AT&amp;T throttled customers who had used as little as 2GB of data beginning in 2011, and that the throttling is severe, “resulting in speed reductions of 80 to 90 percent for affected users.” AT&amp;T is said to have throttled 3.5 million customers more than 25 million times, violating the FTC Act in the process.  - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
-</blockquote>
-</div>
-      </li>
+<p>The main actions just move the desired application window to the top left of the respective screens, <code>SCREEN(1,</code> for the laptop screen and <code>SCREEN(2,</code> for the external monitor. The <code>+22</code> for the downward direction moves the window down below the menu bar, which is 22 pixels tall. The <code>-22</code> for the window height subtracts the menu height from the total window height so you don’t lose the last 22 pixels below the screen. </p>
 
-      <li>
-        <span class="post-meta">Oct 28, 2014</span>
+<p>The hardest part of this macro is figuring out that you can type these commands into the action. Normally the action looks like this:</p>
 
-        <h2>
-          <a class="post-link" href="/2014/10/28/Changing-blog-platform-and-host.html">Changing blog platform and host</a>
-        </h2>
-        <div class="content"><p>I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I’ve enjoyed using <a href="http://scriptogr.am">Scriptogram</a>, which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. </p>
+<p><a href="/images/Move_and_resize_1.png"><img src="/images/Move_and_resize_1.png" alt="" /></a> </p>
 
-<p>Unfortunately, it does not seem to be in active development anymore. I probably could have left it alone and waited until the service died, but I got an itching in my brain after listening to the <a href="http://www.coreint.org/2014/10/episode-160-the-guarantee-of-free-speech/">last episode of Core Intuition</a> and decide to take a second crack<sup id="fnref:141028124001"><a href="#fn:141028124001" class="footnote">1</a></sup> at doing my own file generation and hosting<sup id="fnref:141028124050"><a href="#fn:141028124050" class="footnote">2</a></sup>. </p>
+<p>It looks like you can only input numbers<sup id="fnref:140207163434"><a href="#fn:140207163434" class="footnote">2</a></sup>, but if you start typing, it will transform to this:</p>
 
-<p>I’m currently getting my blog ported over to a Github hosted Jekyll site. Of course, I didn’t do the smart thing and wait until everything was finished before switching over the DNS, because <em>stupid</em> and I didn’t actually think anyone read this site<sup id="fnref:141028124228"><a href="#fn:141028124228" class="footnote">3</a></sup>. Unfortunately, at least one person does and I wasted their time today when they tried to report a broken link in their feed reader. </p>
+<p><a href="/images/Move_and_resize_2.png"><img src="/images/Move_and_resize_2.png" alt="" /></a></p>
 
-<p>My apologies. Hopefully the DNS and RSS is finished. No I just need to import my old articles and futz with the CSS. The latter shouldn’t cause any problems, and I hope the former doesn’t flood anyone’s RSS reader with old posts. </p>
+<p><strong>Update:</strong> From the Yahoo Keyboard Maestro user group, I found more information on picking which screen you’re giving instructions to. </p>
+
+<ul>
+  <li>Numbers: designates the screens from left to right. 1, 2, 3…</li>
+  <li>Main and Secondary: main refers to whatever screen is currently being used by the active window/application</li>
+  <li>Internal and External: the iMac/laptop display versus the external display</li>
+</ul>
+
+<p>You can use these various designations depending on your use case. For example, I was originally using numbers, but that meant I had to have two separate macros for making a window maximized, one for the main monitor and one for the external, but by changing the <code>1</code> and <code>2</code> to <code>main</code>, it will maximize the window that has the focus on that screen. They have slightly different meanings, but this allows different functionality. </p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:141028124001">
-      <p>+10 nerd points if you get the reference <a href="#fnref:141028124001" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:140207162201">
+      <p>The EMR we use is so poorly arranged that a larger screen is needed to make up for the poor design. <a href="#fnref:140207162201" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:141028124050">
-      <p>I failed spectacularly at my last attempt with Octopress. <a href="#fnref:141028124050" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:141028124228">
-      <p>What analytics? <a href="#fnref:141028124228" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:140207163434">
+      <p>This has screwed me up several times when trying to create an action. It is not always obvious that another type of input is possible. <a href="#fnref:140207163434" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -3636,184 +3631,102 @@ Time Out: Yes.</p>
       </li>
 
       <li>
-        <span class="post-meta">Aug 1, 2014</span>
+        <span class="post-meta">Dec 31, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/08/01/Create-a-Markdown-link-with-automatic-affiliate-codes.html">Create a Markdown link with automatic affiliate codes</a>
+          <a class="post-link" href="/2013/12/31/Argument-by-counter-example.html">Argument by counter example</a>
         </h2>
-        <div class="content"><p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
+        <div class="content"><p>Boy (age 8): Why do you and I play a lot of video games but mommy doesn’t?</p>
 
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
+<p><em>She doesn’t like to play video games.</em></p>
 
-<p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
+<p>Boy: Why doesn’t she like video games. </p>
 
-<h2 id="macro-text">Macro Text</h2>
+<p><em>I don’t know. Maybe because she’s a girl?</em></p>
 
-<p>My Macros<br />
-mdlink<br />
-Triggered by any of the following:<br />
-The exact case string ‘mdlink’ is typed (then deleted)<br />
-The Hot Key ⌃⌥⇧⌘P is pressed<br />
-Will execute the following actions:<br />
-Activate nvALT<br />
-Set Clipboard to Text<br />
-%SafariURL%<br />
-If All Conditions Met<br />
-The clipboard text contains ‘itunes.apple.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+<p>Boy: I know like a hundred girls that play Minecraft!!!</p>
+</div>
+      </li>
 
-<pre><code>#!/usr/bin/python
+      <li>
+        <span class="post-meta">Dec 30, 2013</span>
 
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+        <h2>
+          <a class="post-link" href="/2013/12/30/Knowledge.html">Knowledge</a>
+        </h2>
+        <div class="content"><p><em>I should add your iPhone to the wifi.</em></p>
 
-from subprocess import check_output
-from sys import stdout
+<p>Manager: We don’t have wifi.</p>
 
-# My affiliate ID.
-myID = '11l4RT'
+<p><em>Yes, we do.</em></p>
 
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
+<p>Manager: No, we don’t pay for that.</p>
 
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
+<p><em>The first thing I did when I started working here was install wifi.</em></p>
 
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
-</code></pre>
+<p>Manager: But that costs a lot of money.</p>
 
-<p>If All Conditions Met<br />
-The clipboard text contains ‘amazon.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+<p><em>No. It was free.</em></p>
 
-<pre><code>#!/usr/bin/env python
+<p>Manager: They told me it costs $50 a month!</p>
 
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
+<p><em>Who told you that?</em></p>
 
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
+<p>Manager: The internet company. We were going to have wifi for the customers, but that seemed like too much money.</p>
 
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'violeneces-20'
+<p><em>Well, you can pay me $50 a month if you want, but it’s not costing me anything.</em></p>
 
-rawurl = check_output('pbpaste')
+<p>Manager: So, you can install wifi for the customers?</p>
 
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
+<p><em>Sure. First thing in the morning. I have an extra Airport Express laying around the house somewhere.</em></p>
+</div>
+      </li>
 
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
+      <li>
+        <span class="post-meta">Nov 26, 2013</span>
 
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
+        <h2>
+          <a class="post-link" href="/2013/11/26/Affiliate-link-Tweeting-with-Pythonista.html">Affiliate link Tweeting with Pythonista</a>
+        </h2>
+        <div class="content"><video width="640" height="480" controls="controls">
+  <source src="/images/iTunesPythonisaAffiliateLink.m4v" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
-
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
-
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
-</code></pre>
-
-<p>Save trimmed to Clipboard.<br />
-Insert Text by Pasting<br />
-[%SafariTitle%](%CurrentClipboard%)  </p>
-
-<h1 id="macro-image">Macro Image</h1>
-
-<p><a href="/images/Markdown_link_with_affiliate_codes.jpg"><img src="/images/Markdown_link_with_affiliate_codes.jpg" alt="Macro Image" /></a> </p>
-
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros">Download the macro</a>. </p>
+<p>This is a quick screen capture I made showing how quick and easy it is to tweet out a link to an iOS app with your attached affiliate code, and campaign flag if desired. </p>
 
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Jul 29, 2014</span>
+        <span class="post-meta">Nov 20, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/07/29/Keyboard-Maestro-macro-screenshots.html">Keyboard Maestro macro screenshots</a>
+          <a class="post-link" href="/2013/11/20/Forced-productivity.html">Forced productivity with Keyboard Maestro</a>
         </h2>
-        <div class="content"><p>I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums<sup id="fnref:140729172855"><a href="#fn:140729172855" class="footnote">1</a></sup>. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.</p>
+        <div class="content"><p>I get easily distracted. I can be working on task A, which reminds be to do task B, then get into task C, and end up working 3 hours on task C, then back to 2 hours on task B, and finally get back to task A many hours later. Most of the time this isn’t a problem, and makes me very productive. Not so much at work. Writing an epic blog post or researching the perfect way to make ginger chicken at work–not such a good idea.</p>
 
-<p>I believe it was in <a href="http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html">6.0</a> that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.</p>
+<p>So, I made a quick Keyboard Maestro macro to force productivity:</p>
 
-<p>The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in<sup id="fnref:140729173600"><a href="#fn:140729173600" class="footnote">2</a></sup>. </p>
+<blockquote>
+  <p>While logged in, repeating every 1 minute during the hours of 8am-5:30pm Monday through Friday:</p>
+</blockquote>
 
-<p>So I created a macro.</p>
+<blockquote>
+  <p>If my medical record app or my text editing app are not at the front, then:</p>
 
-<h2 id="macro-description">Macro description</h2>
+  <ol>
+    <li>Quit the front application</li>
+    <li>Open my medical record app </li>
+  </ol>
+</blockquote>
 
-<p>You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.</p>
-
-<p>Using a hotkey, trigger the <em>Create Screenshot Macro</em>.</p>
-
-<ol>
-  <li>Select the <code>copy as image</code> from the menu</li>
-  <li>Prompt the user for the file name</li>
-  <li>Save the file to the desktop</li>
-</ol>
-
-<p>There’s also a <code>copy as text</code> if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.</p>
-
-<h2 id="macro-text">Macro text</h2>
-
-<p>Create screenshot of KM macro<br />
-Triggered by any of the following:<br />
-The Hot Key ⌃⌥⇧⌘M is pressed<br />
-Will execute the following actions:<br />
-Select Menu Item in Keyboard Maestro<br />
-Select: Edit ⇢ Copy as ⇢ Copy as Image<br />
-Stop macro if menu cannot be selected.<br />
-Prompt for User Input ‘File Name’<br />
-What do you want to call the file?<br />
-Input the following variables:<br />
-File Name<br />
-Finish with the following buttons:<br />
-OK<br />
-Cancel (cancel macro)<br />
-Store button pressed in variable ‘Result Button’.<br />
-Write Clipboard<br />
-To file: ~/Desktop/%Variable%File Name%.jpg<br />
-With format JPEG).  </p>
-
-<h2 id="macro-image">Macro image</h2>
-
-<p><a href="/images/Create_KM_screenshot_image.jpg"><img src="/images/Create_KM_screenshot_image.jpg" alt="" /></a> </p>
-
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20screenshot%20of%20KM%20macro.kmmacros">Download the macro</a>.</p>
-
-<h2 id="room-for-improvement">Room for improvement</h2>
-
-<p>I would like the ability to automatically name the jpg with the name of the macro. </p>
+<p>Brutal, but efficient.<sup id="fnref:131120203050"><a href="#fn:131120203050" class="footnote">1</a></sup></p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140729172855">
-      <p>If you use KM and aren’t in the forums, you are really missing out. <a href="#fnref:140729172855" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140729173600">
-      <p>Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? <a href="#fnref:140729173600" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:131120203050">
+      <p>I could make it even more cruel but quitting any app that isn’t my medical record app or text editor app anytime I switched to the a new app, but that’s a little extreme. At least now I have up to 60 seconds to look something up. <a href="#fnref:131120203050" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -3821,172 +3734,144 @@ With format JPEG).  </p>
       </li>
 
       <li>
-        <span class="post-meta">May 8, 2014</span>
+        <span class="post-meta">Oct 14, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/05/08/Conversations-With-My-Boy.html">Conversations with my boy</a>
+          <a class="post-link" href="/2013/10/14/An-intellectual-beating.html">An intellectual beating</a>
         </h2>
-        <div class="content"><p>Me: Do you need a haircut?</p>
-
-<p>Boy: No! You need a haircut!</p>
-
-<p>Me: You’re right. I have one scheduled for this Saturday. What should I do?</p>
-
-<p>Boy: You have emo hair. You look like Justin Bieber.</p>
-
-<p>Me: Should I go bald? Should I cut it short?</p>
-
-<p>Boy: No!</p>
-
-<p>Me: How about some lines or maybe lightning bolts?</p>
-
-<p>Boy: No. Don’t do anything weird. Just be normal.</p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">May 2, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/05/02/Conversations-with-my-employees.html">Conversations with my employees</a>
-        </h2>
-        <div class="content"><p>Conversations I probably shouldn’t have with my employees:</p>
-
-<p>Them: May I see you in your office with the door closed for two minutes?<br />
-Me: I take a lot longer than that!<br />
-Them: That’s not what your wife says.</p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Apr 16, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/04/16/Bribing-doctors.html">Bribing doctors</a>
-        </h2>
-        <div class="content"><p><a href="http://www.sciencebasedmedicine.org/gsk-investigated-for-bribing-doctors/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gsk-investigated-for-bribing-doctors">Steven Novella</a>:</p>
+        <div class="content"><p><a href="http://www.newrepublic.com/article/115164/malcolm-gladwells-pseudo-profundity">Steven Poole for The Atlantic</a>:</p>
 
 <blockquote>
-  <p>While drug reps are certainly in sales, I have only personally seen a drug rep step over the line on one occasion. A new rep, who was clearly green, actually said to me and my colleague, “what would it take to get you to prescribe more of this drug?” I don’t think he was suggesting anything like bribery, but the statement was clearly inappropriate.</p>
+  <p>In doing so, you might, like him, become incapable of understanding the stories in any other way than through the lens of your prefabricated idea. And so, because your idea is never allowed to be challenged by opposing evidence, it will languish forlornly, like Malcolm Gladwell’s, at the level of vapid homily.</p>
 </blockquote>
 
-<p>I’ve been asked that question before. Based on context, I didn’t assume I was being bribed. I took it as “what medical and financial factors are keeping you from using my medication over another?”</p>
-
-<p>My answers have been along the lines of “make it cheaper and/or show evidence of superiority in head-to-head trials”.</p>
-
-<p>Interestingly, the £100 that was offered to the physicians in the referenced article is a lot less than the financial incentive when a patient demands oxycodone while holding a patient satisfaction survey. </p>
+<p>Ouch. </p>
 
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Mar 18, 2014</span>
+        <span class="post-meta">Sep 23, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/03/18/Parenting-Steve-Jobs-style.html">Parenting, Steve Jobs style</a>
+          <a class="post-link" href="/2013/09/23/Choices;-diet-addition.html">Choices; diet addition</a>
         </h2>
-        <div class="content"><p><em>Is your room clean?</em></p>
+        <div class="content"><p>How do you stay so skinny?</p>
 
-<p>No. </p>
+<p><em>I don’t eat.</em></p>
 
-<p><em>Do I want it clean?</em></p>
+<p>Seriously?</p>
 
-<p>Yes. </p>
+<p><em>No breakfast. No lunch. A small dinner.</em></p>
 
-<p>…</p>
+<p>You don’t get hungry?</p>
 
-<p><em>Why are you still here?</em></p>
+<p><em>Of course I’m hungry.</em></p>
+
+<p>Oh. I can’t do that. </p>
+
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Mar 4, 2014</span>
+        <span class="post-meta">Sep 23, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/03/04/On-not-purchasing-Dragon-Dictate-Medical.html">On not purchasing Dragon Dictate Medical</a>
+          <a class="post-link" href="/2013/09/23/UI-insanity-iTunes-Radio.html">UI insanity; iTunes Radio</a>
         </h2>
-        <div class="content"><p>I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.</p>
+        <div class="content"><p>I don’t mind, and actually appreciate some, hidden UI features, but I also think basic features should be clearly labeled with intuitive labels that don’t suggest the opposite of what I want. </p>
 
-<p><a href="/images/Dragon-01.png"><img src="/images/Dragon-01.png" alt="" /></a> </p>
+<p>On the left is the main play screen of iTunes Radio. If you click the star it brings up the menu on the right. </p>
 
-<p>Wow. $1000. That’s a lot for something I don’t use that much.</p>
+<p><img src="http://dl.dropbox.com/u/3950369/Write-Image-Attachments/9-23%2008.26.1pm.jpg" />&lt;/img&gt;</p>
 
-<p>But look, I can upgrade for only $500. I’ll check that out.</p>
-
-<p><a href="/images/Dragon-02.png"><img src="/images/Dragon-02.png" alt="" /></a> </p>
-
-<p>Just need to log into my account.</p>
-
-<p><a href="/images/Dragon-03.png"><img src="/images/Dragon-03.png" alt="" /></a> </p>
-
-<p>Look, it’s only $300. I’ll totally buy that.</p>
-
-<p><a href="/images/Dragon-04.png"><img src="/images/Dragon-04.png" alt="" /></a> </p>
-
-<p>WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.</p>
-
-<p>To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?</p>
-
-<p>I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase. </p>
+<p>Why on earth would I hit the <code>star</code>, a universal symbol for favoriting or liking, when I want to “Never Play This Song”?</p>
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Feb 21, 2014</span>
+        <span class="post-meta">Aug 24, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html">Logging time per visit with Keyboard Maestro</a>
+          <a class="post-link" href="/2013/08/24/Time-Capsule-back-up-vs.-Siracusa.html">Time Capsule back up vs. Siracusa</a>
         </h2>
-        <div class="content"><p>I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three<sup id="fnref:140221081628"><a href="#fn:140221081628" class="footnote">1</a></sup> small macros to complete this task.</p>
+        <div class="content"><p>On the last<sup id="fnref:130824090332"><a href="#fn:130824090332" class="footnote">1</a></sup> episode of ATP<sup id="fnref:130824090353"><a href="#fn:130824090353" class="footnote">2</a></sup>, Siracusa said that the Time Capsule had “a terrible reputation for reliability, and I still think Time Machine over the network is not great”.</p>
 
-<p>All three macros use the same trigger, ⌘⌥⌃⇧b.<sup id="fnref:140221081908"><a href="#fn:140221081908" class="footnote">2</a></sup> This brings up a menu for me to choose what part of the macro-system I want.</p>
+<p>I love my Time Capsule and see myself continuing to buy them.</p>
 
-<p><a href="/images/BBT_1.png"><img src="/images/BBT_1.png" alt="" /></a> </p>
+<p>The Time Capsule I have is a 1st generation that I bought when they first came out. Living in an area without an Apple store at the time<sup id="fnref:130824090739"><a href="#fn:130824090739" class="footnote">3</a></sup>, I ended up driving 3 hours to get one. It’s been with me ever since through many years and 3 interstate moves. </p>
 
-<p>All three macros also write data to the same log file on my desktop.</p>
+<p>I, like Siracusa, have many redundant backups of my data. I have multiple local clone copies<sup id="fnref:130824091132"><a href="#fn:130824091132" class="footnote">4</a></sup> and I also offload the raw data by itself on to external drives. </p>
 
-<h2 id="macro-1---start-of-the-visit">Macro 1 - Start of the visit</h2>
+<p>Several weeks/months ago my internal SSD suddenly died completely. I hadn’t made a clone back up or manually offloaded the data since the morning. I’d been working all day and had many, irretrievable projects that were lost, except for the Time Capsule back up from 30 minutes before.</p>
 
-<p>I trigger the first macro when I’m walking into the room. It does three simple tasks.</p>
+<p>I sent in the SSD on warranty, and when I got it back a week later, I booted up the new drive with it connected to the Time Capsule. It asked if I wanted to restore from the Time Capsule. I said yes and went to bed. </p>
 
-<ol>
-  <li>Stores the current time of the day in milliseconds to a variable.</li>
-  <li>Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen</li>
-  <li>Writes the current time preceded by the phrase “Visit started at “ in the log file</li>
-</ol>
+<p>When I woke up in the morning, my baby was back.<sup id="fnref:130824091835"><a href="#fn:130824091835" class="footnote">5</a></sup></p>
 
-<p><a href="/images/BBT_2.png"><img src="/images/BBT_2.png" alt="" /></a> </p>
+<p>The beauty of the Time Capsule is it’s <em>fire and forget</em> usability.</p>
 
-<h2 id="macro-2---end-of-the-visit">Macro 2 - End of the visit</h2>
+<p>That earns some loyalty.<sup id="fnref:wifebackup"><a href="#fn:wifebackup" class="footnote">6</a></sup></p>
 
-<p>I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.</p>
-
-<ol>
-  <li>Stores the current time of the day in milliseconds to a variable.<sup id="fnref:140221082823"><a href="#fn:140221082823" class="footnote">3</a></sup></li>
-  <li>Calculates the length of the visit, rounded to the nearest minute.</li>
-  <li>Appends text to the log file with the end time of the visit and the total visit length.</li>
-  <li>Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.</li>
-  <li>Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.</li>
-</ol>
-
-<p><a href="/images/BBT_3.png"><img src="/images/BBT_3.png" alt="" /></a> </p>
-
-<h2 id="macro-3---set-a-new-date">Macro 3 - Set a new date</h2>
-
-<p>This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. </p>
-
-<p><a href="/images/BBT_4.png"><img src="/images/BBT_4.png" alt="" /></a> </p>
+<p>And Casey was right.</p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140221081628">
-      <p>I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  <a href="#fnref:140221081628" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:130824090332">
+      <p><a href="http://atp.fm/episodes/27-overflow-gallery-in-the-bathroom">27</a> <a href="#fnref:130824090332" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:140221081908">
-      <p>⌘⌥⌃⇧ is mapped to the <code>caps lock</code> key on all my computer, so it is just one key. <a href="#fnref:140221081908" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:130824090353">
+      <p>The Accidental Tech Podcast. <a href="#fnref:130824090353" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:140221082823">
-      <p>Now I have the start time and the end time, in milliseconds, stored to separate variables. <a href="#fnref:140221082823" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:130824090739">
+      <p>And mistaking Cedar Falls for Cedar Rapids. <a href="#fnref:130824090739" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091132">
+      <p>SuperDuper! FTW!!! <a href="#fnref:130824091132" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091835">
+      <p>I’ve also used it to save large amounts of data that I’ve accidentally deleted, such as when I deleted my entire music library before the days of iTunes Match. <a href="#fnref:130824091835" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:wifebackup">
+      <p>And it’s also priceless for easily backing up other family member’s computers, who may not be as diligent as you are. <a href="#fnref:wifebackup" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Aug 24, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/08/24/Google-search-fail.html">Google search fail</a>
+        </h2>
+        <div class="content"><p>Dear Google,</p>
+
+<p>The following sites will show up on the first page when a patient is trying to search for information on a doctor by the syntax Dr. firstname lastname:</p>
+
+<ol>
+  <li>Google +<sup id="fnref:130824082034"><a href="#fn:130824082034" class="footnote">1</a></sup></li>
+  <li>Healthgrades.com</li>
+  <li>Vitals.com</li>
+  <li>Wellness.com</li>
+  <li>Betterdoctor.com</li>
+  <li>Ratemds.com</li>
+  <li>Manta.com</li>
+  <li>Doctor.webmd.com</li>
+  <li>Lifescript.com</li>
+</ol>
+
+<p>They are all link-bait, content-farm junk sites. Yes, including your own. </p>
+
+<p>This is not helpful for users. This is not helpful for the internet. </p>
+
+<p>Fix it.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:130824082034">
+      <p>An auto-generated page, not an actual user made account. <a href="#fnref:130824082034" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -4002,9 +3887,13 @@ Them: That’s not what your wife says.</p>
 <!-- Pagination links -->
 <nav id="pagination">
     
+      
+      <a href="/" title="Previous Page">&laquo; Previous</a>
+      
+    
     
      
-    <a href="/page2/" title="Next Page">Older &raquo;</a>
+    <a href="/page3/" title="Next Page">Older &raquo;</a>
      
   </nav>
       </div>

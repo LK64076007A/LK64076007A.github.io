@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://soitscometothis.net/">
+    <link rel="canonical" href="http://soitscometothis.net/page5/">
 </head>
 
 
@@ -3586,49 +3586,62 @@ Time Out: Yes.</p>
 <!-- This loops through the paginated posts -->
 
       <li>
-        <span class="post-meta">Oct 28, 2014</span>
+        <span class="post-meta">Feb 28, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/10/28/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans.html">FTC sues AT&T over throttling "Unlimited" data plans</a>
+          <a class="post-link" href="/2013/02/28/Switching-the-current-viewed-webpage-between-Safari-and-Chrome.html">Switching the current viewed webpage between Safari and Chrome</a>
         </h2>
-        <div class="content"><p>I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:</p>
+        <div class="content"><p><strong>Update:</strong> This macro was made for Keyboard Maestro 5. Although it will work with KM 6, a newer version of the macro is available as is much simpler and faster with less risk of bugs.</p>
 
-<blockquote>
-  <p>The Federal Trade Commission (FTC) of the United States today filed a federal court complaint against AT&amp;T, accusing the carrier of misleading its smartphone customers by charging them for unlimited data while reducing their data speeds by up to 90 percent. - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
-</blockquote>
+<h3 id="problem">Problem</h3>
 
-<p>I had one of those “unlimited” plans and AT&amp;T sent rude text messages threatening to throttle me and then eventually did. I was using just over 2 gigabytes a month. I switched to Sprint. </p>
+<p>Safari is my typical browser of choice, but sometimes I want to open a webpage I’m already looking at in Safari in Chrome instead<sup id="fnref:20130228142554"><a href="#fn:20130228142554" class="footnote">1</a></sup>. Sometimes I’m looking at a webpage in Chrome and want to open it in Safari. </p>
 
-<blockquote>
-  <p>The FTC alleges that AT&amp;T throttled customers who had used as little as 2GB of data beginning in 2011, and that the throttling is severe, “resulting in speed reductions of 80 to 90 percent for affected users.” AT&amp;T is said to have throttled 3.5 million customers more than 25 million times, violating the FTC Act in the process.  - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
-</blockquote>
-</div>
+<h3 id="solution">Solution</h3>
+
+<p>It’s not super elegant, but I made a Keyboard Maestro macro to switch back and forth. </p>
+
+<p>It consists of two nested if/then statements that check for which browser I’m using, grabs the URL of the front window, opens the other browser, pauses until the browser is running and the front window is open, pastes the URL into the navigation bar, and finally hits enter.</p>
+
+<ul>
+  <li>If Safari is at the front
+    <ul>
+      <li>Execute the Applescript <code>tell application "Safari" to get the URL of the front document</code> and save results to variable <code>currentURL</code></li>
+      <li>Activate Google Chrome</li>
+      <li>Pause until Google Chrome is at the front and the front window exists</li>
+      <li>Type the keystroke ⌘T</li>
+      <li>Type the keystroke ⌘L</li>
+      <li>Insert the text by pasting: <code>current URL</code></li>
+      <li>Type the keystroke <code>return</code></li>
+    </ul>
+  </li>
+  <li>otherwise execute the following
+    <ul>
+      <li>If Google Chrome is at the front
+        <ul>
+          <li>Execute Applescript <code>tell application "Google Chrome" to get the URL of active tab of first window</code> and save results to variable <code>currentURL</code></li>
+          <li>Activate Safari</li>
+          <li>Pause until Safari is at the front and the front window exists</li>
+          <li>Type the keystroke ⌘T</li>
+          <li>Type the keystroke ⌘L</li>
+          <li>Insert the text by pasting: <code>current URL</code></li>
+          <li>Type the keystroke <code>return</code></li>
+        </ul>
       </li>
+    </ul>
+  </li>
+</ul>
 
-      <li>
-        <span class="post-meta">Oct 28, 2014</span>
+<p>I assigned the shortcut Caps lock (which on my computer simultaneously pressed shift-command-control-option) - u. </p>
 
-        <h2>
-          <a class="post-link" href="/2014/10/28/Changing-blog-platform-and-host.html">Changing blog platform and host</a>
-        </h2>
-        <div class="content"><p>I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I’ve enjoyed using <a href="http://scriptogr.am">Scriptogram</a>, which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. </p>
+<p><a href="/images/open_current_webpage_in_other_browser.png"><img src="/images/open_current_webpage_in_other_browser.png" alt="" /></a> </p>
 
-<p>Unfortunately, it does not seem to be in active development anymore. I probably could have left it alone and waited until the service died, but I got an itching in my brain after listening to the <a href="http://www.coreint.org/2014/10/episode-160-the-guarantee-of-free-speech/">last episode of Core Intuition</a> and decide to take a second crack<sup id="fnref:141028124001"><a href="#fn:141028124001" class="footnote">1</a></sup> at doing my own file generation and hosting<sup id="fnref:141028124050"><a href="#fn:141028124050" class="footnote">2</a></sup>. </p>
-
-<p>I’m currently getting my blog ported over to a Github hosted Jekyll site. Of course, I didn’t do the smart thing and wait until everything was finished before switching over the DNS, because <em>stupid</em> and I didn’t actually think anyone read this site<sup id="fnref:141028124228"><a href="#fn:141028124228" class="footnote">3</a></sup>. Unfortunately, at least one person does and I wasted their time today when they tried to report a broken link in their feed reader. </p>
-
-<p>My apologies. Hopefully the DNS and RSS is finished. No I just need to import my old articles and futz with the CSS. The latter shouldn’t cause any problems, and I hope the former doesn’t flood anyone’s RSS reader with old posts. </p>
+<p><a href="/images/Open_current_webpage_in_the_other_browser.kmmacros">Download the macro</a>.</p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:141028124001">
-      <p>+10 nerd points if you get the reference <a href="#fnref:141028124001" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:141028124050">
-      <p>I failed spectacularly at my last attempt with Octopress. <a href="#fnref:141028124050" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:141028124228">
-      <p>What analytics? <a href="#fnref:141028124228" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:20130228142554">
+      <p>For example, if you’re limiting Flash to Chrome only via <a href="http://daringfireball.net/2010/11/flash_free_and_cheating_with_google_chrome">the Gruber method</a>. <a href="#fnref:20130228142554" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -3636,184 +3649,349 @@ Time Out: Yes.</p>
       </li>
 
       <li>
-        <span class="post-meta">Aug 1, 2014</span>
+        <span class="post-meta">Feb 26, 2013</span>
 
         <h2>
-          <a class="post-link" href="/2014/08/01/Create-a-Markdown-link-with-automatic-affiliate-codes.html">Create a Markdown link with automatic affiliate codes</a>
+          <a class="post-link" href="/2013/02/26/Calculating-Dates-with-Siri.html">Calculating dates with Siri</a>
         </h2>
-        <div class="content"><p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
+        <div class="content"><p><a href="http://macsparky.com/blog/2013/2/calculating-dates-with-siri">David Sparks is my kind of nerd</a>:</p>
 
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
+<blockquote>
+  <p>Maybe it’s a lawyer thing but I quite frequently need to calculate dates. For instance, I need to figure out what day is 30 days after I serve documents on somebody or how many days elapsed between date X and date Y. </p>
+</blockquote>
 
-<p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
+<blockquote>
+  <p>I was thinking this would be really convenient if I could do it with Siri but the Siri documentation doesn’t say anything about calculating dates. After a little experimentation, however, I stumbled upon the necessary syntax:</p>
+</blockquote>
 
-<h2 id="macro-text">Macro Text</h2>
+<p>Why are you still here? <a href="http://macsparky.com/blog/2013/2/calculating-dates-with-siri">Go</a>.</p>
+</div>
+      </li>
 
-<p>My Macros<br />
-mdlink<br />
-Triggered by any of the following:<br />
-The exact case string ‘mdlink’ is typed (then deleted)<br />
-The Hot Key ⌃⌥⇧⌘P is pressed<br />
-Will execute the following actions:<br />
-Activate nvALT<br />
-Set Clipboard to Text<br />
-%SafariURL%<br />
-If All Conditions Met<br />
-The clipboard text contains ‘itunes.apple.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+      <li>
+        <span class="post-meta">Feb 26, 2013</span>
 
-<pre><code>#!/usr/bin/python
+        <h2>
+          <a class="post-link" href="/2013/02/26/Text-to-speech-for-OS-X-and-iOS.html">Text-to-speech for OS X and iOS</a>
+        </h2>
+        <div class="content"><h2 id="introduction">Introduction</h2>
 
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+<p>I love to read and have to read a lot for my work and hobbies, but sometimes, for various reasons, reading is not ideal. Maybe my eyes are tired. Maybe I need to do something physical that precludes the physical act of reading but not the mental aspect.<sup id="fnref:201302261054"><a href="#fn:201302261054" class="footnote">1</a></sup> In those situations, I let my software read to me with text-to-speech. </p>
 
-from subprocess import check_output
-from sys import stdout
+<h2 id="text-to-speech-on-ios">Text-to-speech on iOS</h2>
 
-# My affiliate ID.
-myID = '11l4RT'
+<p>Text-to-speech on iOS is already built into the OS. To turn it on go to <code>Settings &gt; General &gt; Accessibility &gt; Speak Selection</code> and turn it on. You can also switch the dialect if you want.<sup id="fnref:1302260948"><a href="#fn:1302260948" class="footnote">2</a></sup> From now on, when you highlight any text, one of the options on the pop up menu will be “speak”. Hit this and the text will be read to you. There is a major limitation with this: <strong>if you lock the device or switch to a different application, the reading stops.</strong></p>
 
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
+<p>Another option is a dedicated app. <a href="https://twitter.com/SiMBa37">A colleague</a> recommends <a href="https://itunes.apple.com/us/app/voice-dream-reader-text-to/id496177674?mt=8&amp;partnerId=30&amp;siteID=l8AT4zEd6Ao">Voice Dream Reader</a> for 10 USD in the App Store. I have not used it so I can’t comment on it.</p>
 
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
+<h2 id="text-to-speech-on-os-x">Text-to-speech on OS X</h2>
 
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
+<p>OS X also has built-in text-to-speech software. As far as I can tell, it is always on, but that may be a left over preference on my machine from years back so to check, go to  <code>System Preferences &gt; Dictation &amp; Speech</code>. I also turn on the keyboard shortcut for this. Otherwise, all you need to do is highlight some text, right click, and select <code>Speech &gt; Start Speaking</code>. </p>
+
+<p>I use this frequently when reading an article and I get tired, or I need to be doing something else like cooking at the same time. I’ve also found that just turning this on when reading something important like a medical journal article lets others know I’m doing something work related rather than just surfing the internet for memes, i.e. don’t interrupt. It is also a great way to proof read your writing. What your eyes often miss, your ears will clearly hear.</p>
+
+<h2 id="text-to-speech-os-x-to-ios">Text-to-speech OS X to iOS</h2>
+
+<p>Sometimes there is a very large article I want to read but don’t want to sit at my machine for an extended period to time. Thankfully, OS X has some built in functions that allow you to turn the text into an audio file using the text-to-speech functions. OS X comes with this ability pre-programmed in the services section. To turn it on, go to <code>System Preferences &gt; Keyboard &gt; Keyboard Shortcuts &gt; Services &gt; Text</code> and make sure <code>Add to iTunes as a Spoken…</code> is checked. From then on, when you have text highlighted, you can right click, go to Services, and click on <code>Add to iTunes as a Spoken…</code>. This will convert the text-to-speech, first as a lossless AIFF (a very large file). It will then re-encode using AAC (to make it a smaller file) and then import into iTunes under a special playlist. </p>
+
+<p>This works fine in general, but I don’t usually sync my iPhone with iTunes as I keep most things in the cloud. Thankfully, Automator<sup id="fnref:1302261013"><a href="#fn:1302261013" class="footnote">3</a></sup> makes it very easy to create your own.<sup id="fnref:201302261023"><a href="#fn:201302261023" class="footnote">4</a></sup></p>
+
+<p><a href="/images/AutomatorTTS.png"><img src="/images/AutomatorTTS.png" alt="" /></a> </p>
+
+<p>This creates a service for when text is selected. You run it the same as the prior service: right click, go to Services, and click on <code>The Name of the Service</code>. It changes the text to audio format, saving to the location of your choice, and using the voice of your choice. It then re-encodes the file to a format most compatible with spoken word, thus greatly decreasing the file size, and deletes the original file. I have it save to a folder inside Dropbox so that I can play it later (or sooner) on any device I have.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:201302261054">
+      <p>Cooking, doing dishes, folding laundry. <a href="#fnref:201302261054" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1302260948">
+      <p>I prefer Australian English. <a href="#fnref:1302260948" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1302261013">
+      <p>A built-in part of OS X. <a href="#fnref:1302261013" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:201302261023">
+      <p>Or just take mine. <a href="#fnref:201302261023" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Feb 18, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/02/18/Batch-converting-Pages-documents-to-PDF.html">Batch converting Pages documents to PDF with Keyboard Maestro</a>
+        </h2>
+        <div class="content"><p>I had 3000 Pages documents that I wanted to convert PDF. I had previously searched the internet for a way to do this easily but was unsuccessful. I suppose I should have tried searching again, because I would have found <a href="http://www.yourmacteacher.com/batch-convert-pages-documents-to-pdf/">Pages2PDF</a>, which works much better than what I did. </p>
+
+<p>Still, relying on someone to create the exact program you need is not as fun or as useful as being able to fix the problem yourself. So I created a Keyboard Maestro macro.</p>
+
+<p>Basically, this automates the steps I would have had to do manually:</p>
+
+<ol>
+  <li>Open the file in Pages.</li>
+  <li>Select Export to PDF from the menu.</li>
+  <li>Fix the file name.<sup id="fnref:130218165655"><a href="#fn:130218165655" class="footnote">1</a></sup></li>
+  <li>Move the original file to a new location.</li>
+</ol>
+
+<p>In Keyboard Maestro parlance the steps were:</p>
+
+<ul>
+  <li>For Each Item in a the Finder’s selection
+    <ol>
+      <li>Set the file name to a variable fileName</li>
+      <li>Set the file path to a variable filePath</li>
+      <li>Open the file at filePath/fileName<sup id="fnref:130218170000"><a href="#fn:130218170000" class="footnote">2</a></sup> in Pages.</li>
+      <li>Pause for 1.5 seconds.<sup id="fnref:130218170107"><a href="#fn:130218170107" class="footnote">3</a></sup></li>
+      <li>Select the menu item PDF… in the submenu Export in the Menu Title File.</li>
+      <li>Press the Button labeled “Next…”</li>
+      <li>Insert the text from variable %WindowName%1% by pasting. (Basically, this names the file being exported the same as the original file name, except for the extension.)</li>
+      <li>Press the button labeled “Export”.</li>
+      <li>Type the keystroke ?-W (to close the open file)</li>
+      <li>Move the file %Variable%filePath%/%Variable%fileName% to whateverLocationYouWant/%Variable%fileName%</li>
+    </ol>
+  </li>
+</ul>
+
+<p>It worked perfectly if somewhat slow. It took several hours to process all the files. </p>
+
+<p><a href="/images/PagestoPDF.png"><img src="/images/PagestoPDF.png" alt="" /></a> </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:130218165655">
+      <p>For some reason, Pages kept truncating my filenames. <a href="#fnref:130218165655" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130218170000">
+      <p>I don’t know why I had to specifically use the path and name. Sometimes KM works fine without that and sometimes it doesn’t. I haven’t figured out why and when. <a href="#fnref:130218170000" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130218170107">
+      <p>I didn’t test this step any. I just assumed KM would need time for the document to fully open in Pages. <a href="#fnref:130218170107" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Feb 12, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/02/12/Legal-troubles.html">Legal troubles</a>
+        </h2>
+        <div class="content"><p><a href="http://www.nytimes.com/2013/02/11/us/lawyers-call-for-drastic-change-in-educating-new-lawyers.html?src=me&amp;ref=general">The New York Times</a>:</p>
+
+<blockquote>
+  <p>The proposals are a result of numerous factors, including a sharp drop in law school applications, the outsourcing of research over the Internet, a glut of underemployed and indebted law school graduates and a high percentage of the legal needs of Americans going unmet.</p>
+</blockquote>
+
+<blockquote>
+  <p>“There is almost universal agreement that the current system is broken,” said Thomas W. Lyons III, a Rhode Island lawyer and a member of the American Bar Association’s Task Force on the Future of Legal Education, which gathered here over the weekend for a public hearing at the association’s midyear meeting.</p>
+</blockquote>
+
+<p>This sounds eerily similar to the situation in the medical world (minus the part about underemployment).</p>
+
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Jan 30, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/01/30/NIH-Stroke-Scale.html">NIH Stroke Scale with Keyboard Maestro and TextExpander</a>
+        </h2>
+        <div class="content"><p>A colleague of mine wanted a way to easily document the NIH stroke scale score with the added benefits of not having to type the whole thing each time, prompts to remember what to evaluate and what the scores mean, and also have the final score calculated for him. Requirements included that the input had to be in TextExpander due to a preference for that applications input style, and the output would have to be in the middle of a Pages document that was using a single font and no bold or italics.</p>
+
+<p>He had already created the TextExpander snippet and basically needed me to figure out a way to use KM to calculate the score and put it into the note. Oh, one more thing: He wanted to do this with only one command. </p>
+
+<h2 id="challenge-accepted">Challenge accepted!</h2>
+
+<p>The KM macro first types out the shortcut for the TE macro, which calls the TE snippet pop up window, and then pauses until the TE snippet window disappears. </p>
+
+<p>The TE window has all the steps of the NIH Stroke Scale including prompts to remind the user how to do it correctly.</p>
+
+<p><a href="/images/NIH_stroke_TE_menu.png"><img src="/images/NIH_stroke_TE_menu.png" alt="NIH Stroke Scale TE Menu" /></a> </p>
+
+<p>Once the TE part is complete, the KM macro continues. All it really does it use regular expressions to find the individual numbers in the scale and add them together for the final score. Since the final score is really just simple addition of 15 single digit numbers, the whole exercise is a bit of a Rube Goldberg, but it was fun anyway and any less brain power and time needed at 2 in the morning during a stroke is probably a good thing.</p>
+
+<p>And the final result:</p>
+
+<video width="640" height="480" controls="controls">
+  <source src="/images/NIH_stroke_scale.m4v" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<p><a href="/images/NIH_stroke_scale.jpg"><img src="/images/NIH_stroke_scale.jpg" alt="" /></a> </p>
+
+<p>The resulting KM macro file <a href="/images/Calc_NIH_stroke_score_from_TE_macro_combo.kmmacros">is here</a>.</p>
+
+<p>The original TE snippet:</p>
+
+<pre><code>NIH STROKE SCALE %1m/%e/%Y %H:%M
+1a. Level of Consciousness:	%fillpopup:name=1a.:default=0 (Keenly responsive.):1 (Arousable with minor stimulation):2 (Requires strong stimulation):3 (Comatose)%
+1b. LOC Questions (month/age):	%fillpopup:name=1b:default=0  (Answers both questions correctly):1  (Answers one question correctly):2  (Answers neither question correctly)%
+1c. LOC Commands (eyes/grip):	%fillpopup:name=1c:default=0  (Performs both tasks correctly):1  (Performs one task correctly):2  (Performs neither task correctly)%
+2.   Best Gaze:			%fillpopup:name=2:default=0  (Normal):1  (Partial gaze palsy):2  (Forced deviation)%
+3.   Visual:			%fillpopup:name=3:default=0  (No visual loss.):1  (Partial hemianopia):2  (Complete hemianopia):3  (Bilateral hemianopia)%
+4.   Facial Palsy:			%fillpopup:name=4:default=0 (Normal):1 (Minor paralysis):2 (Partial/Central paralysis):3 (Complete paralysis)%
+5a. Motor Left Arm:		%fillpopup:name=5a:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+5b. Motor Right Arm:		%fillpopup:name=5b:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+6a. Motor Left Leg:		%fillpopup:name=6a:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+6b. Motor Right Leg:		%fillpopup:name=6b:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+7.   Limb Ataxia:			%fillpopup:name=7:default=0 (Absent):1 (Present in one limb):2 (Present in two limbs):0 (Amputation or fusion)%
+8.   Sensory:			%fillpopup:name=8:default=0 (Normal):1 (Mild to moderate loss):2 (Severe loss)%
+9.   Best Language:		%fillpopup:name=9:default=0 (No Aphasia):1 (Mild to moderate):2 (Severe aphasia):3 (Mute or global aphasia)%
+10. Dysarthria:			%fillpopup:name=10:default=0 (Normal):1 (Mild to moderate):2 (Severe dysarthria):0 (Intubated or other)%
+11. Extinction and Inattention:	%fillpopup:name=11:default=0 (Normal):1 (To one modality):2 (Profound loss)%
+TOTAL:				
+</code></pre>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Jan 18, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/01/18/Stupid-EMR-UI-Example-2.html">Stupid EMR UI Example 2</a>
+        </h2>
+        <div class="content"><p>I love tech and I especially love software, but like most things that we deeply love, when they fall short, it’s very hard to not get angry.</p>
+
+<p>This is one reason I have such a hatred for the current state of Electronic Medical Records. They’re abysmal. <a href="http://vimeo.com/31926572">John Gruber even makes fun of them</a>. (Minute 24:28, but the whole talk is worth listening too.)</p>
+
+<p>Today I share <a href="http://soitscometothis.net/post/stupid-emr-ui">another example</a> of poor design.</p>
+
+<p>In the EMR I use now, NextGen, I’ve been complaining about the joint injection procedure template for 1.5 years. They still haven’t fixed it.</p>
+
+<p>I use a standard medication called Synvisc One. Synvisc regular is a 2ml (16mg) injection you give once a week for 3 weeks. Synvisc One is all 6ml (48mg) given at once.</p>
+
+<p>Just to lay out all the numbers for you. This medication is available as:</p>
+
+<ul>
+  <li>2ml</li>
+  <li>6ml</li>
+  <li>16mg</li>
+  <li>48mg</li>
+</ul>
+
+<p>That’s it. Two strengths. Expressed either in a volume or a mass.</p>
+
+<p>You can document this in two places in the procedure template. I want to point out, that this is the first mistake, having two places to document one thing.</p>
+
+<p>And here’s how they look:</p>
+
+<p><img src="/images/Synvisc_Nextgen_order_1.png" alt="" /> </p>
+
+<p>First, there’s no units. Specifically it just says “units”. Is that milliliters? Liters? Milligrams? Grams? Number of injections? Is this for Synvisc or Synvisc One? If I pick one of these, what am I actually documenting or ordering? The closest guess is that this is in milliliters, but then you can’t pick “6”, the size of Synvisc One. There is a “2”, so you could document Synvisc regular. Even then, <strong>1 in 5 available choices will always be wrong</strong>. Why even offer a possible wrong choice?!?! I also point out that this is a pop up menu, so you’ve already been removed from the screen you’re working on.</p>
+
+<p>And here is how the second place to document it looks: </p>
+
+<p><img src="/images/Synvisc_Nextgen_order_2.png" alt="" /> </p>
+
+<p>This one at least has units, but still has all the other problems. </p>
+
+<p>I would offer the following fixes:</p>
+
+<ol>
+  <li>Have only one place to order the drug.</li>
+  <li>Instead of a pop up window, make it a radial button choice. </li>
+  <li>Have two options: Synvisc and Synvisc One</li>
+</ol>
+
+<p>This improve things as follows:</p>
+
+<ol>
+  <li>Only one place to document. </li>
+  <li>No choices that are wrong.</li>
+  <li>No extra pop up menu.</li>
+  <li>No need for the user to know the milligrams, milliliters, or any other unit. They just need to be able to read what is on the box.</li>
+</ol>
+
+<p>I hope that before I die<sup id="fnref:1301182110"><a href="#fn:1301182110" class="footnote">1</a></sup>, a decent EMR exists. </p>
+
+<p>We have a long way to go.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1301182110">
+      <p>It wouldn’t hurt if it wasn’t horribly ugly either. <a href="#fnref:1301182110" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Jan 13, 2013</span>
+
+        <h2>
+          <a class="post-link" href="/2013/01/13/Inline-Markdown-links-from-Safari-tabs.html">Inline Markdown links from Safari tabs</a>
+        </h2>
+        <div class="content"><p>This post is mostly for me, so I can remember how I did this in the future.</p>
+
+<p>I was creating show notes for a podcast I do. I needed to make a list of links to scientific papers. Even using Markdown rather than HTML it took me an insanely long amount of time to manually copy over the titles and links. So I decided I’d spend the next hour never doing that again.</p>
+
+<p>First, I figured out a way to get the links easily. Unfortunately, <a href="http://www.mekentosj.com/papers/">Papers</a> does not have a way to easily copy out the information directly, but it does have a way to highlight all the papers you want to link and open them all in tabs in your browser.</p>
+
+<p>Now that I had all the papers open in their own tab, I needed a way to make Markdown links from them. I thought I had read something about doing this before, but I couldn’t find it again<sup id="fnref:1301132310"><a href="#fn:1301132310" class="footnote">1</a></sup>, but I did find <a href="http://www.leancrew.com/all-this/2012/07/markdown-reference-links-from-safari-tabs/">a post by Dr. Drang</a> that got me halfway there. The only problem was that his method only gave me the second half of a list of reference links when what I wanted was inline links with the title of the webpage as the text.</p>
+
+<p>His technique gave me this:</p>
+
+<pre><code>[1]: website url
+[2]: website url
+[3]: website url
+[4]: website url
 </code></pre>
 
-<p>If All Conditions Met<br />
-The clipboard text contains ‘amazon.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+<p>When what I wanted was this:</p>
 
-<pre><code>#!/usr/bin/env python
-
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
-
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
-
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'violeneces-20'
-
-rawurl = check_output('pbpaste')
-
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
-
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
-
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
-
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
-
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
-
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
+<pre><code>[Website Title](website url)
+[Website Title](website url)
+[Website Title](website url)
+[Website Title](website url)
 </code></pre>
 
-<p>Save trimmed to Clipboard.<br />
-Insert Text by Pasting<br />
-[%SafariTitle%](%CurrentClipboard%)  </p>
+<p>I like reference links too, but I needed the title of the paper for my purposes and I already have another macro that I use to turn inline links into reference links later.</p>
 
-<h1 id="macro-image">Macro Image</h1>
+<p>My Applescript knowledge is weak, but I quickly found <a href="http://lucifr.com/2012/09/01/selected-safari-tabs-to-markdown-reference-links/">this page</a>, which I can’t read because it’s in Chinese, and by looking at the code, figured out how to get what I needed.</p>
 
-<p><a href="/images/Markdown_link_with_affiliate_codes.jpg"><img src="/images/Markdown_link_with_affiliate_codes.jpg" alt="Macro Image" /></a> </p>
+<p>I changed Dr. Drang’s original code:</p>
 
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros">Download the macro</a>. </p>
+<pre><code>tell application "Safari"
+  set i to 1
+  set links to ""
+  repeat with t in every tab in front window
+    set links to links &amp; "[" &amp; i &amp; "]: " &amp; the URL of t &amp; linefeed
+    set i to i + 1
+  end repeat
+  return links
+end tell
+</code></pre>
 
-</div>
-      </li>
+<p>to this:</p>
 
-      <li>
-        <span class="post-meta">Jul 29, 2014</span>
+<pre><code>tell application "Safari"
+  set i to 1
+  set links to ""
+  repeat with t in every tab in front window
+    set links to links &amp; "[" &amp;the name of t&amp; "](" &amp; the URL of t &amp;")"&amp; linefeed
+    set i to i + 1
+  end repeat
+  return links
+end tell
+</code></pre>
 
-        <h2>
-          <a class="post-link" href="/2014/07/29/Keyboard-Maestro-macro-screenshots.html">Keyboard Maestro macro screenshots</a>
-        </h2>
-        <div class="content"><p>I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums<sup id="fnref:140729172855"><a href="#fn:140729172855" class="footnote">1</a></sup>. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.</p>
+<p>You can then throw that into a TextExpander snippet or a Keyboard Maestro Macro and you’re prestige.</p>
 
-<p>I believe it was in <a href="http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html">6.0</a> that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.</p>
-
-<p>The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in<sup id="fnref:140729173600"><a href="#fn:140729173600" class="footnote">2</a></sup>. </p>
-
-<p>So I created a macro.</p>
-
-<h2 id="macro-description">Macro description</h2>
-
-<p>You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.</p>
-
-<p>Using a hotkey, trigger the <em>Create Screenshot Macro</em>.</p>
-
-<ol>
-  <li>Select the <code>copy as image</code> from the menu</li>
-  <li>Prompt the user for the file name</li>
-  <li>Save the file to the desktop</li>
-</ol>
-
-<p>There’s also a <code>copy as text</code> if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.</p>
-
-<h2 id="macro-text">Macro text</h2>
-
-<p>Create screenshot of KM macro<br />
-Triggered by any of the following:<br />
-The Hot Key ⌃⌥⇧⌘M is pressed<br />
-Will execute the following actions:<br />
-Select Menu Item in Keyboard Maestro<br />
-Select: Edit ⇢ Copy as ⇢ Copy as Image<br />
-Stop macro if menu cannot be selected.<br />
-Prompt for User Input ‘File Name’<br />
-What do you want to call the file?<br />
-Input the following variables:<br />
-File Name<br />
-Finish with the following buttons:<br />
-OK<br />
-Cancel (cancel macro)<br />
-Store button pressed in variable ‘Result Button’.<br />
-Write Clipboard<br />
-To file: ~/Desktop/%Variable%File Name%.jpg<br />
-With format JPEG).  </p>
-
-<h2 id="macro-image">Macro image</h2>
-
-<p><a href="/images/Create_KM_screenshot_image.jpg"><img src="/images/Create_KM_screenshot_image.jpg" alt="" /></a> </p>
-
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20screenshot%20of%20KM%20macro.kmmacros">Download the macro</a>.</p>
-
-<h2 id="room-for-improvement">Room for improvement</h2>
-
-<p>I would like the ability to automatically name the jpg with the name of the macro. </p>
+<p>Frankly, Papers needs a way to do this in the app itself.</p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140729172855">
-      <p>If you use KM and aren’t in the forums, you are really missing out. <a href="#fnref:140729172855" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140729173600">
-      <p>Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? <a href="#fnref:140729173600" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1301132310">
+      <p>I need a Nerd-blog Search Engine <a href="#fnref:1301132310" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -3821,175 +3999,56 @@ With format JPEG).  </p>
       </li>
 
       <li>
-        <span class="post-meta">May 8, 2014</span>
+        <span class="post-meta">Dec 28, 2012</span>
 
         <h2>
-          <a class="post-link" href="/2014/05/08/Conversations-With-My-Boy.html">Conversations with my boy</a>
+          <a class="post-link" href="/2012/12/28/Legally-Protected-Spam.html">Legally Protected Spam</a>
         </h2>
-        <div class="content"><p>Me: Do you need a haircut?</p>
-
-<p>Boy: No! You need a haircut!</p>
-
-<p>Me: You’re right. I have one scheduled for this Saturday. What should I do?</p>
-
-<p>Boy: You have emo hair. You look like Justin Bieber.</p>
-
-<p>Me: Should I go bald? Should I cut it short?</p>
-
-<p>Boy: No!</p>
-
-<p>Me: How about some lines or maybe lightning bolts?</p>
-
-<p>Boy: No. Don’t do anything weird. Just be normal.</p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">May 2, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/05/02/Conversations-with-my-employees.html">Conversations with my employees</a>
-        </h2>
-        <div class="content"><p>Conversations I probably shouldn’t have with my employees:</p>
-
-<p>Them: May I see you in your office with the door closed for two minutes?<br />
-Me: I take a lot longer than that!<br />
-Them: That’s not what your wife says.</p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Apr 16, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/04/16/Bribing-doctors.html">Bribing doctors</a>
-        </h2>
-        <div class="content"><p><a href="http://www.sciencebasedmedicine.org/gsk-investigated-for-bribing-doctors/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gsk-investigated-for-bribing-doctors">Steven Novella</a>:</p>
+        <div class="content"><p>I’ve wanted to get rid of my post box because all I get there is junk mail.<sup id="fnref:1212282037"><a href="#fn:1212282037" class="footnote">1</a></sup> Now, apparently, the self-titled “inventor of email” wants to make my digital life just as bad:</p>
 
 <blockquote>
-  <p>While drug reps are certainly in sales, I have only personally seen a drug rep step over the line on one occasion. A new rep, who was clearly green, actually said to me and my colleague, “what would it take to get you to prescribe more of this drug?” I don’t think he was suggesting anything like bribery, but the statement was clearly inappropriate.</p>
+  <p>He proposed that the post office create a new form of e-mail, one that was safe, private, and subject to the same federal regulations that protect the bills and junk mail that are delivered to our mailboxes.</p>
 </blockquote>
 
-<p>I’ve been asked that question before. Based on context, I didn’t assume I was being bribed. I took it as “what medical and financial factors are keeping you from using my medication over another?”</p>
-
-<p>My answers have been along the lines of “make it cheaper and/or show evidence of superiority in head-to-head trials”.</p>
-
-<p>Interestingly, the £100 that was offered to the physicians in the referenced article is a lot less than the financial incentive when a patient demands oxycodone while holding a patient satisfaction survey. </p>
-
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Mar 18, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/03/18/Parenting-Steve-Jobs-style.html">Parenting, Steve Jobs style</a>
-        </h2>
-        <div class="content"><p><em>Is your room clean?</em></p>
-
-<p>No. </p>
-
-<p><em>Do I want it clean?</em></p>
-
-<p>Yes. </p>
-
-<p>…</p>
-
-<p><em>Why are you still here?</em></p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Mar 4, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/03/04/On-not-purchasing-Dragon-Dictate-Medical.html">On not purchasing Dragon Dictate Medical</a>
-        </h2>
-        <div class="content"><p>I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.</p>
-
-<p><a href="/images/Dragon-01.png"><img src="/images/Dragon-01.png" alt="" /></a> </p>
-
-<p>Wow. $1000. That’s a lot for something I don’t use that much.</p>
-
-<p>But look, I can upgrade for only $500. I’ll check that out.</p>
-
-<p><a href="/images/Dragon-02.png"><img src="/images/Dragon-02.png" alt="" /></a> </p>
-
-<p>Just need to log into my account.</p>
-
-<p><a href="/images/Dragon-03.png"><img src="/images/Dragon-03.png" alt="" /></a> </p>
-
-<p>Look, it’s only $300. I’ll totally buy that.</p>
-
-<p><a href="/images/Dragon-04.png"><img src="/images/Dragon-04.png" alt="" /></a> </p>
-
-<p>WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.</p>
-
-<p>To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?</p>
-
-<p>I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase. </p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Feb 21, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html">Logging time per visit with Keyboard Maestro</a>
-        </h2>
-        <div class="content"><p>I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three<sup id="fnref:140221081628"><a href="#fn:140221081628" class="footnote">1</a></sup> small macros to complete this task.</p>
-
-<p>All three macros use the same trigger, ⌘⌥⌃⇧b.<sup id="fnref:140221081908"><a href="#fn:140221081908" class="footnote">2</a></sup> This brings up a menu for me to choose what part of the macro-system I want.</p>
-
-<p><a href="/images/BBT_1.png"><img src="/images/BBT_1.png" alt="" /></a> </p>
-
-<p>All three macros also write data to the same log file on my desktop.</p>
-
-<h2 id="macro-1---start-of-the-visit">Macro 1 - Start of the visit</h2>
-
-<p>I trigger the first macro when I’m walking into the room. It does three simple tasks.</p>
-
-<ol>
-  <li>Stores the current time of the day in milliseconds to a variable.</li>
-  <li>Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen</li>
-  <li>Writes the current time preceded by the phrase “Visit started at “ in the log file</li>
-</ol>
-
-<p><a href="/images/BBT_2.png"><img src="/images/BBT_2.png" alt="" /></a> </p>
-
-<h2 id="macro-2---end-of-the-visit">Macro 2 - End of the visit</h2>
-
-<p>I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.</p>
-
-<ol>
-  <li>Stores the current time of the day in milliseconds to a variable.<sup id="fnref:140221082823"><a href="#fn:140221082823" class="footnote">3</a></sup></li>
-  <li>Calculates the length of the visit, rounded to the nearest minute.</li>
-  <li>Appends text to the log file with the end time of the visit and the total visit length.</li>
-  <li>Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.</li>
-  <li>Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.</li>
-</ol>
-
-<p><a href="/images/BBT_3.png"><img src="/images/BBT_3.png" alt="" /></a> </p>
-
-<h2 id="macro-3---set-a-new-date">Macro 3 - Set a new date</h2>
-
-<p>This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. </p>
-
-<p><a href="/images/BBT_4.png"><img src="/images/BBT_4.png" alt="" /></a> </p>
+<p>via <a href="http://www.bostonmagazine.com/articles/2012/05/shiva-ayyaduri-email-us-postal-service/?page=all">Boston Magazine</a></p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140221081628">
-      <p>I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  <a href="#fnref:140221081628" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140221081908">
-      <p>⌘⌥⌃⇧ is mapped to the <code>caps lock</code> key on all my computer, so it is just one key. <a href="#fnref:140221081908" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140221082823">
-      <p>Now I have the start time and the end time, in milliseconds, stored to separate variables. <a href="#fnref:140221082823" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1212282037">
+      <p>Amazon packages are delivered to my door and will soon be delivered inside. The post box is in a separate location.  <a href="#fnref:1212282037" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Dec 7, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/2012/12/07/mute-commercials.html">Mute commercials on CBS.com with Keyboard Maestro</a>
+        </h2>
+        <div class="content"><p>I watch TV on my Macbook Air on the weekends when I’m ironing. Sadly, commercials are becoming more popular with CBS airing 4 in a row, often the same exact commercial over and over. There’s no way to skip them, but I made a quick macro with Keyboard Maestro that mutes the sound until the commercials are over and then turns the sound back on.</p>
+
+<p>You have to toggle the macro manually when the commercial starts, but otherwise, it works great.</p>
+
+<p><a href="/images/Muting_CBS_macro.png"><img src="/images/Muting_CBS_macro.png" alt="" /></a> </p>
+
+<p>The macro is a very simple three steps.</p>
+
+<ol>
+  <li>Toggle System Sound Mute, turning off the sound.</li>
+  <li>Watch for an image to disappear from the screen. The image is a screen capture of the word advertisement that overlays advertisements when they’re playing.</li>
+  <li>Toggle System Sound Mute, turning on the sound.</li>
+</ol>
+
+<p>The picture I used to monitor:</p>
+
+<p><a href="/images/Advertisement_image.png"><img src="/images/Advertisement_image.png" alt="" /></a> </p>
+
+<p>Now I don’t have to listen to annoying commercials.</p>
+
+<p><strong>Update:</strong> Same macro with a slightly different picture works for Hulu. Also, now I’m occasionally seeing 5 commercials in a row.</p>
 </div>
       </li>
 
@@ -4002,9 +4061,13 @@ Them: That’s not what your wife says.</p>
 <!-- Pagination links -->
 <nav id="pagination">
     
+      
+      <a href="/page4/" title="Previous Page">&laquo; Newer</a>
+      
+    
     
      
-    <a href="/page2/" title="Next Page">Older &raquo;</a>
+    <a href="/page6/" title="Next Page">Older &raquo;</a>
      
   </nav>
       </div>

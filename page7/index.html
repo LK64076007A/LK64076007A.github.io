@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://soitscometothis.net/">
+    <link rel="canonical" href="http://soitscometothis.net/page7/">
 </head>
 
 
@@ -3586,234 +3586,163 @@ Time Out: Yes.</p>
 <!-- This loops through the paginated posts -->
 
       <li>
-        <span class="post-meta">Oct 28, 2014</span>
+        <span class="post-meta">Aug 2, 2012</span>
 
         <h2>
-          <a class="post-link" href="/2014/10/28/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans.html">FTC sues AT&T over throttling "Unlimited" data plans</a>
+          <a class="post-link" href="/2012/08/02/useful-url-script.html">Crazy useful url script from Dr. Drang</a>
         </h2>
-        <div class="content"><p>I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:</p>
+        <div class="content"><p>Paste the url from the top tab in Safari into current location of the cursor with one line of Applescript in TextExpander. </p>
+
+<p><a href="http://www.leancrew.com/all-this/2012/08/the-safari-6-url-crisis/" title="Dr. Drang">Dr. Drang</a>:</p>
 
 <blockquote>
-  <p>The Federal Trade Commission (FTC) of the United States today filed a federal court complaint against AT&amp;T, accusing the carrier of misleading its smartphone customers by charging them for unlimited data while reducing their data speeds by up to 90 percent. - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
+  <p>Boom. Give that a nice abbreviation, like ;furl for “front URL,” and it’ll insert the URL directly where you’re typing. There’s no need to run the script and then paste the URL—that’s an inefficiency that comes from thinking the script has to act like you would.</p>
 </blockquote>
 
-<p>I had one of those “unlimited” plans and AT&amp;T sent rude text messages threatening to throttle me and then eventually did. I was using just over 2 gigabytes a month. I switched to Sprint. </p>
+<p><strong>Update:</strong> I’ve found this works better in Keyboard Maestro because I’m typically tying in urls right after another character, like a “(“. TextExpander won’t expand a macro in such a situation whereas Keyboard Maestro will. Just have the macro run an Applescript and paste the results.</p>
 
-<blockquote>
-  <p>The FTC alleges that AT&amp;T throttled customers who had used as little as 2GB of data beginning in 2011, and that the throttling is severe, “resulting in speed reductions of 80 to 90 percent for affected users.” AT&amp;T is said to have throttled 3.5 million customers more than 25 million times, violating the FTC Act in the process.  - <a href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">MacRumors</a></p>
-</blockquote>
+<p>For Safari: <code>tell application "Safari" to get the URL of the front document</code></p>
+
+<p>For Chrome: <code>tell application "Google Chrome" to get the URL of active tab of first window</code></p>
+
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Oct 28, 2014</span>
+        <span class="post-meta">May 20, 2012</span>
 
         <h2>
-          <a class="post-link" href="/2014/10/28/Changing-blog-platform-and-host.html">Changing blog platform and host</a>
+          <a class="post-link" href="/2012/05/20/Geek-minority.html">They don't care</a>
         </h2>
-        <div class="content"><p>I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I’ve enjoyed using <a href="http://scriptogr.am">Scriptogram</a>, which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. </p>
+        <div class="content"><p>Michael Schechter:</p>
 
-<p>Unfortunately, it does not seem to be in active development anymore. I probably could have left it alone and waited until the service died, but I got an itching in my brain after listening to the <a href="http://www.coreint.org/2014/10/episode-160-the-guarantee-of-free-speech/">last episode of Core Intuition</a> and decide to take a second crack<sup id="fnref:141028124001"><a href="#fn:141028124001" class="footnote">1</a></sup> at doing my own file generation and hosting<sup id="fnref:141028124050"><a href="#fn:141028124050" class="footnote">2</a></sup>. </p>
+<blockquote>
+  <p>The problem with us <a href="http://bettermess.com/lazymarkdown/">Markdown</a>-loving, <a href="http://bettermess.com/markdown-and-the-language-of-the-web/">Plain Text</a> using, <a href="http://bettermess.com/say-more-and-type-less-with-textexpander/">TextExpanding</a>, <a href="http://bettermess.com/keyboard-maestro-the-key-to-unlocking-your-computer/">Keyboard Maestroing</a>, <a href="http://bettermess.com/lazyomnifocus/">OmniFocusers</a>: we’ve found so many of ourselves that we forget we’re a minority. We care (and care deeply) about things that only a small percentage of overall users care about.</p>
+</blockquote>
 
-<p>I’m currently getting my blog ported over to a Github hosted Jekyll site. Of course, I didn’t do the smart thing and wait until everything was finished before switching over the DNS, because <em>stupid</em> and I didn’t actually think anyone read this site<sup id="fnref:141028124228"><a href="#fn:141028124228" class="footnote">3</a></sup>. Unfortunately, at least one person does and I wasted their time today when they tried to report a broken link in their feed reader. </p>
-
-<p>My apologies. Hopefully the DNS and RSS is finished. No I just need to import my old articles and futz with the CSS. The latter shouldn’t cause any problems, and I hope the former doesn’t flood anyone’s RSS reader with old posts. </p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:141028124001">
-      <p>+10 nerd points if you get the reference <a href="#fnref:141028124001" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:141028124050">
-      <p>I failed spectacularly at my last attempt with Octopress. <a href="#fnref:141028124050" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:141028124228">
-      <p>What analytics? <a href="#fnref:141028124228" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
       </li>
 
       <li>
-        <span class="post-meta">Aug 1, 2014</span>
+        <span class="post-meta">Apr 26, 2012</span>
 
         <h2>
-          <a class="post-link" href="/2014/08/01/Create-a-Markdown-link-with-automatic-affiliate-codes.html">Create a Markdown link with automatic affiliate codes</a>
+          <a class="post-link" href="/2012/04/26/Challenge-accepted.html">Challenge accepted</a>
         </h2>
-        <div class="content"><p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
+        <div class="content"><blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195541778135388163"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> Develop &gt; User Agent &gt; iPad.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195542025939066883" data-datetime="2012-04-26T15:57:06+00:00">April 26, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
+<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195542410015678465"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> Now if you turn that into a shortcut with Keyboard Maestro.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195542520334254081" data-datetime="2012-04-26T15:59:04+00:00">April 26, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
+<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195543128659333120"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> You're the Keyboard Maestro maestro. I'm not sure.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195543374328111104" data-datetime="2012-04-26T16:02:28+00:00">April 26, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<h2 id="macro-text">Macro Text</h2>
+<h2 id="make-it-so">Make it so…</h2>
 
-<p>My Macros<br />
-mdlink<br />
-Triggered by any of the following:<br />
-The exact case string ‘mdlink’ is typed (then deleted)<br />
-The Hot Key ⌃⌥⇧⌘P is pressed<br />
-Will execute the following actions:<br />
-Activate nvALT<br />
-Set Clipboard to Text<br />
-%SafariURL%<br />
-If All Conditions Met<br />
-The clipboard text contains ‘itunes.apple.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+<p><a href="/images/Ben_Brooks_Mode.png"><img src="/images/Ben_Brooks_Mode.png" alt="Ben Brooks Mode" /></a> </p>
+</div>
+      </li>
 
-<pre><code>#!/usr/bin/python
+      <li>
+        <span class="post-meta">Feb 1, 2012</span>
 
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+        <h2>
+          <a class="post-link" href="/2012/02/01/TextExpander-for-physicians-part-2.html">TextExpander for physicians, Part 2</a>
+        </h2>
+        <div class="content"><p>In part 1, I tried to explain what TextExpander was and why a physician might want to use it as a force multiplier by showing a few examples of macros that I use daily.</p>
 
-from subprocess import check_output
-from sys import stdout
+<p><a href="/2012/01/30/TextExpander-for-physicians-part-1.html">TextExpander for physicians, Part 1</a></p>
 
-# My affiliate ID.
-myID = '11l4RT'
+<p>In part 2, I will cover special codes, syncing between computers, and iOS apps.
+## Special codes</p>
 
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
+<h3 id="time-and-date">Time and Date</h3>
 
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
+<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code>ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
 
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
+<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code>time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
+
+<p>I’ve also used this lately to keep track of how long it takes to make phone calls to patients. I’ve been surprised how long the typical call lasts and by having this data, I can more accurately plan my schedule, bill and allocate resources.</p>
+
+<p>TextExpander also comes with some codes for date and time math. Most of my follow ups and planning takes place at regular intervals: every 4 weeks, 6 weeks, 8 weeks and 12 weeks, 12 months or 24 months. This may apply to the next follow up appointment, lab check, infusion time, TB test or DXA scan. While it is easy to say “follow up for labs in 8 weeks”, this abstractness appears to be poorly mentally processed. Being more concrete fixes this problem.</p>
+
+<pre><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
 </code></pre>
 
-<p>If All Conditions Met<br />
-The clipboard text contains ‘amazon.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
+<p>More complicated structures wouldn’t be that difficult to create.</p>
 
-<pre><code>#!/usr/bin/env python
-
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
-
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
-
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'violeneces-20'
-
-rawurl = check_output('pbpaste')
-
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
-
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
-
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
-
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
-
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
-
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
+<pre><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
 </code></pre>
 
-<p>Save trimmed to Clipboard.<br />
-Insert Text by Pasting<br />
-[%SafariTitle%](%CurrentClipboard%)  </p>
+<p>All the dates and the day of the week in that last macro are automatically calculated.</p>
 
-<h1 id="macro-image">Macro Image</h1>
+<p>Are you a hospitalist with a patient needs neurochecks every 4 hours?</p>
 
-<p><a href="/images/Markdown_link_with_affiliate_codes.jpg"><img src="/images/Markdown_link_with_affiliate_codes.jpg" alt="Macro Image" /></a> </p>
+<pre><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
+</code></pre>
 
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros">Download the macro</a>. </p>
+<h3 id="fill-ins">Fill ins</h3>
 
-</div>
-      </li>
+<p>Another special code is the fill in. <code>%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
 
-      <li>
-        <span class="post-meta">Jul 29, 2014</span>
+<pre><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
+</code></pre>
 
-        <h2>
-          <a class="post-link" href="/2014/07/29/Keyboard-Maestro-macro-screenshots.html">Keyboard Maestro macro screenshots</a>
-        </h2>
-        <div class="content"><p>I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums<sup id="fnref:140729172855"><a href="#fn:140729172855" class="footnote">1</a></sup>. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.</p>
+<p>This creates the following prompt:</p>
 
-<p>I believe it was in <a href="http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html">6.0</a> that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.</p>
+<p><a href="/images/textexpander_fut.png"><img src="/images/textexpander_fut.png" alt="fill in prompt" /></a> </p>
 
-<p>The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in<sup id="fnref:140729173600"><a href="#fn:140729173600" class="footnote">2</a></sup>. </p>
+<p>Enter the desired time:</p>
 
-<p>So I created a macro.</p>
+<p><a href="/images/textexpander_fut_2.png"><img src="/images/textexpander_fut_2.png" alt="macro filled in" /></a> </p>
 
-<h2 id="macro-description">Macro description</h2>
+<p>Hit “enter” and your text appears:</p>
 
-<p>You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.</p>
+<p><a href="/images/textexpander_fut_3.png"><img src="/images/textexpander_fut_3.png" alt="Macro completes" /></a>  </p>
 
-<p>Using a hotkey, trigger the <em>Create Screenshot Macro</em>.</p>
+<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code>%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
 
-<ol>
-  <li>Select the <code>copy as image</code> from the menu</li>
-  <li>Prompt the user for the file name</li>
-  <li>Save the file to the desktop</li>
-</ol>
+<p><a href="/images/consultnote_macro.png"><img src="/images/consultnote_macro.png" alt="consult note macro" /></a> </p>
 
-<p>There’s also a <code>copy as text</code> if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.</p>
+<h3 id="copy-clipboard">Copy clipboard</h3>
 
-<h2 id="macro-text">Macro text</h2>
+<p>Another special code is the “clipboard”, <code>%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code>%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
 
-<p>Create screenshot of KM macro<br />
-Triggered by any of the following:<br />
-The Hot Key ⌃⌥⇧⌘M is pressed<br />
-Will execute the following actions:<br />
-Select Menu Item in Keyboard Maestro<br />
-Select: Edit ⇢ Copy as ⇢ Copy as Image<br />
-Stop macro if menu cannot be selected.<br />
-Prompt for User Input ‘File Name’<br />
-What do you want to call the file?<br />
-Input the following variables:<br />
-File Name<br />
-Finish with the following buttons:<br />
-OK<br />
-Cancel (cancel macro)<br />
-Store button pressed in variable ‘Result Button’.<br />
-Write Clipboard<br />
-To file: ~/Desktop/%Variable%File Name%.jpg<br />
-With format JPEG).  </p>
+<pre><code>.nd = James Bond 2.1.2012.pages
+</code></pre>
 
-<h2 id="macro-image">Macro image</h2>
+<h3 id="cursor-placement">Cursor placement</h3>
 
-<p><a href="/images/Create_KM_screenshot_image.jpg"><img src="/images/Create_KM_screenshot_image.jpg" alt="" /></a> </p>
+<p>The final special code I’ll mention is the cursor placement. <code>%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
 
-<p><a href="https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20screenshot%20of%20KM%20macro.kmmacros">Download the macro</a>.</p>
+<p><a href="/images/James_Bond_note.png"><img src="/images/James_Bond_note.png" alt="James Bonds note" /></a> </p>
 
-<h2 id="room-for-improvement">Room for improvement</h2>
+<p>It’s a little thing, but you add up all the little things and the time and convenience are incredible.</p>
 
-<p>I would like the ability to automatically name the jpg with the name of the macro. </p>
+<h2 id="syncing-between-computers">Syncing between computers</h2>
+
+<p>Once you have created a lot of macros, your library is going to become a valuable commodity. You will become dependent on these macros and feel lost without them. You will want to make sure you back up your library as well as have it available on any computer you may use. Thankfully, the developers of TextExpander have enabled backing up and syncing of your library through <a href="http://www.dropbox.com">Dropbox</a>. If you don’t know what Dropbox is<sup id="fnref:1202012211"><a href="#fn:1202012211" class="footnote">1</a></sup>, stop reading immediately and go get it. </p>
+
+<p>Now that you have Dropbox and have enabled syncing in the preferences of the TextExpander app, your library of macros will auto-magically appear on any computer<sup id="fnref:1202012213"><a href="#fn:1202012213" class="footnote">2</a></sup> that you’ve also synced using Dropbox. This also works with the iPhone and iPad versions of the applications.</p>
+
+<p>In fact, I have a friend who writes all his clinic notes in TextExpander Touch on his iPad using a bluetooth keyboard.</p>
+
+<h2 id="ios-apps">iOS apps</h2>
+
+<p>TextExpander Touch, the version of the app available for the iPhone, iPod Touch and iPad, is quite good as well, but a bit limited due to restrictions of the operating system. The main restriction is that you cannot use the app to expand text just anywhere in iOS. TextExpander Touch will only work in apps that are specifically enabled to use it. Thankfully, there are a lot of <a href="http://www.smilesoftware.com/TextExpander/touch/apps/">those apps</a>. The apps also have a built in text editor, so you can write notes there and then copy and paste them or email them elsewhere. It is slightly limiting but nice to have. I tend to use this more for taking notes in meetings and at dinner meetings, when taking out a laptop—even one as small as a Macbook Air—would be overly distracting to others.</p>
+
+<hr />
+
+<p>Well, that’s enough for tonight. In the next, and hopefully final, part, I will finish up by laying out ideas for macros to use in your practice, keys to creating shortcuts you can remember, non-medical uses of macros and advantages of a stand alone applications versus the built-in functionality that some EMRs have.</p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140729172855">
-      <p>If you use KM and aren’t in the forums, you are really missing out. <a href="#fnref:140729172855" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1202012211">
+      <p>Shame on you. <a href="#fnref:1202012211" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:140729173600">
-      <p>Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? <a href="#fnref:140729173600" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1202012213">
+      <p>If you are unfortunate enough to have to use a Windows computer at work but are a Mac guy at home, the Windows program <a href="http://www.16software.com/breevy/">Breevy</a> has bi-directional sync with TextExpander through Dropbox. You may also want to check out <a href="http://www.monster.com/">this site</a>. <a href="#fnref:1202012213" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -3821,175 +3750,298 @@ With format JPEG).  </p>
       </li>
 
       <li>
-        <span class="post-meta">May 8, 2014</span>
+        <span class="post-meta">Jan 30, 2012</span>
 
         <h2>
-          <a class="post-link" href="/2014/05/08/Conversations-With-My-Boy.html">Conversations with my boy</a>
+          <a class="post-link" href="/2012/01/30/TextExpander-for-physicians-part-1.html">TextExpander for physicians, Part 1</a>
         </h2>
-        <div class="content"><p>Me: Do you need a haircut?</p>
+        <div class="content"><p>As a physician I write a lot.<sup id="fnref:1201301814"><a href="#fn:1201301814" class="footnote">1</a></sup> Most of my writing is the same or similar to things I’ve written before and will write again. Repeatedly typing the same things character by character is a waste of time, energy and cartilage. In order to turn my 70 word per minute<sup id="fnref:1201302145"><a href="#fn:1201302145" class="footnote">2</a></sup> into hundreds of words per minute without ended up as a patient myself, I engage a force multiplier, TextExpander.</p>
 
-<p>Boy: No! You need a haircut!</p>
+<p>TextExpander is a text macro program. Simply put, you type a few characters and the program outputs quite a bit more characters. In the last 6 months of use, it’s saved me from typing over 1/2 a million characters, saving an estimated 24 hours of time based on 70 words per minute or at a more typical physician rate of 40 words per minutes, it’s saved me almost 2 solid days of typing.</p>
 
-<p>Me: You’re right. I have one scheduled for this Saturday. What should I do?</p>
+<p>But like all beautiful things there’s so much more than that.</p>
 
-<p>Boy: You have emo hair. You look like Justin Bieber.</p>
+<h3 id="personal-history">Personal history</h3>
 
-<p>Me: Should I go bald? Should I cut it short?</p>
+<p>I’ve been using text macros since junior high school. When writing a history day paper, instead of typing “Commodore Matthew Calbraith Perry”, I typed CMCP and the whole name would spring forth. I was able to do with with the built-in functionality of the version of MS Word I was using at the time, but I don’t think it was truly a marco function rather than a hack that I created using the automatic spell corrector. </p>
 
-<p>Boy: No!</p>
+<p>In college, it became even more handy. Instead of typing out long chemical names like Co<sub>1-x</sub>Ni<sub>x</sub>Cl<sub>2</sub>·2H<sub>2</sub>O or Fe[S<sub>2</sub>CN(C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>]<sub>2</sub>Cl, I’d type CN2H or FSCCl. Not only did that save a lot of characters but it also saved me all the clicks in getting the subscript on the right characters.</p>
 
-<p>Me: How about some lines or maybe lightning bolts?</p>
+<p>In medicine, the problem is even more obvious. The combination of redundancy, complexity and speed make a text macro program a powerful ally.</p>
 
-<p>Boy: No. Don’t do anything weird. Just be normal.</p>
-</div>
-      </li>
+<h3 id="medical-application">Medical application</h3>
 
-      <li>
-        <span class="post-meta">May 2, 2014</span>
+<p>The first macros I created were for the drugs and diseases I see all the time.</p>
 
-        <h2>
-          <a class="post-link" href="/2014/05/02/Conversations-with-my-employees.html">Conversations with my employees</a>
-        </h2>
-        <div class="content"><p>Conversations I probably shouldn’t have with my employees:</p>
+<pre><code>.ra = rheumatoid arthritis
+.psa = psoriatic arthritis
+.sle = systemic lupus erythematosus 
+.ssc systemic sclerosis
+.oa = osteoarthrosis 
 
-<p>Them: May I see you in your office with the door closed for two minutes?<br />
-Me: I take a lot longer than that!<br />
-Them: That’s not what your wife says.</p>
-</div>
-      </li>
+.pred = prednisone
+.mtx = methotrexate 
+.lef = leflunomide (Arava) 
+.hcq = hydroxychloroquine (Plaquenil)
+.hum = adalimumab (Humira)
+.enb = etanercept (Enbrel)
+.rit = rituximab (Rituxan) 
+</code></pre>
 
-      <li>
-        <span class="post-meta">Apr 16, 2014</span>
+<p>Notice how for some of the drugs I’ve included the brand name. This aides in clarity for the patient or non-rheumatologists who may not be as familiar with the generic names of the drugs. e.g. Rheumatologists typically use hydroxychloroquine but most patients know it as Plaquenil. When a patient leaves the office with my note, I don’t want them calling later to leave a message that they aren’t on that medication with the long name like my note says.</p>
 
-        <h2>
-          <a class="post-link" href="/2014/04/16/Bribing-doctors.html">Bribing doctors</a>
-        </h2>
-        <div class="content"><p><a href="http://www.sciencebasedmedicine.org/gsk-investigated-for-bribing-doctors/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gsk-investigated-for-bribing-doctors">Steven Novella</a>:</p>
+<p>I can also use it to help me remember how to spell the drugs names or even remember some of the generics myself.</p>
+
+<pre><code>.ken = triamcinolone acetonide (Kenalog)
+</code></pre>
+
+<p>Even some non-drug words are just impossible to remember to spell correctly.</p>
+
+<pre><code>.eyemd = ophthalmology
+</code></pre>
+
+<p>Occasionally, there are some weird labs whose abbreviations are non-standard but whose names are too weird to spell out every time.</p>
+
+<pre><code>.la = lupus anticoagulant 
+.acl = anticardiolipin antibody
+.b2g = beta 2 glycoprotein antibody
+</code></pre>
+
+<p>I also don’t like typing out my physical exam findings, but this can be important for other doctors and audits.</p>
+
+<pre><code>.rom = range of motion
+.nrom = normal range of motion
+.prom = passive range of motion
+.arom = active range of motion
+.rhsj = red, hot and/or swollen joints 
+</code></pre>
+
+<p>Now we start to pick up the pace a bit. I am frequently recommending that patients exercise, but they are far more likely to follow my instructions if I give concrete examples instead of vague platitudes.</p>
+
+<pre><code>.exercise = Exercise by walking 30 minutes every day after dinner. 
+    			http://youtu.be/aUaInS6HIGo
+</code></pre>
+
+<p>Coders love when I include the diagnostic codes with my assessment, especially for the weird (redundant?) rheumatology stuff.</p>
+
+<pre><code>.dxra = Rheumatoid arthritis (714.00)
+.dxia = Inflammatory polyarthropathy, unspecified (714.9)
+.dxhrd = High Risk Drug (v58.69)
+.dxea = Enteropathic arthritis (713.1)
+</code></pre>
+
+<p>Not infrequently, I want to impart a bit of knowledge to both the patient and the referring doctor. For example, in the case of a patient referred for a positive ANA or positive rheumatoid factor, it’s one thing to say they don’t have lupus or rheumatoid arthritis but it’s even better to explain what that damn tests means.</p>
+
+<pre><code>.posana
+</code></pre>
 
 <blockquote>
-  <p>While drug reps are certainly in sales, I have only personally seen a drug rep step over the line on one occasion. A new rep, who was clearly green, actually said to me and my colleague, “what would it take to get you to prescribe more of this drug?” I don’t think he was suggesting anything like bribery, but the statement was clearly inappropriate.</p>
+  <p>A positive ANA does not diagnose an autoimmune disease nor does a negative result exclude it; however, ANA is positive in 99% of patients with Systemic Lupus Erythematosus therefore a negative result strongly argues against such a diagnosis.  ANA can be positive by definition in 5% of the healthy population, typically in titers less than 1:320.  Up to 20% of healthy relatives of patients with rheumatic disease and up to 75% of healthy individuals older than 70 will have a positive ANA (typically less than 1:80 with a speckled or homogenous pattern).  Other conditions associated with a positive ANA are thyroid disease, chronic infections including TB/viral hepatitis, subacute bacterial endocarditis, malignancies, any of the auto-immune or connective tissue disease, multiple sclerosis and patients with silicone breast implants.  In the absence of physical or biochemical evidence of pathology, a positive ANA is not clinically useful. </p>
 </blockquote>
 
-<p>I’ve been asked that question before. Based on context, I didn’t assume I was being bribed. I took it as “what medical and financial factors are keeping you from using my medication over another?”</p>
+<pre><code>.posrf
+</code></pre>
 
-<p>My answers have been along the lines of “make it cheaper and/or show evidence of superiority in head-to-head trials”.</p>
+<blockquote>
+  <p>Many conditions can lead to a positive Rheumatoid Factor including chronic hepatic and pulmonary diseases, rheumatoid arthritis, Systemic Lupus Erythematosus, systemic sclerosis, mixed connective tissue disease, Sjögren’s, polymyositis, sarcoid, malignancies (especially after therapy), AIDS, mononucleosis, parasitic infections, chronic viral infections, tuberculosis, subacute bacterial endocarditis, cryoglobulinemia, etc.  Frequency of positivity of rheumatoid factor in normal individuals also occurs and varies by age from 5% in those younger than 70 to 10-25% in those older than 70.  Changes in RF level do not reflect disease activity; however, a high titer does predict increased severity of disease including extra-articular manifestations. </p>
+</blockquote>
 
-<p>Interestingly, the £100 that was offered to the physicians in the referenced article is a lot less than the financial incentive when a patient demands oxycodone while holding a patient satisfaction survey. </p>
+<p>I can even use this to remind me of recommendations on certain items. For example, I can never remember the exact recommendations from the BMJ on the duration of steroids for PMR.</p>
 
-</div>
-      </li>
+<pre><code>.bmjpmrsteroids
 
-      <li>
-        <span class="post-meta">Mar 18, 2014</span>
+Daily prednisone 15 mg for 3 weeks
+Then 12.5mg for 3 weeks
+Then 10mg for 4–6 weeks
+Then reduction by 1 mg every 4–8 weeks
+</code></pre>
 
-        <h2>
-          <a class="post-link" href="/2014/03/18/Parenting-Steve-Jobs-style.html">Parenting, Steve Jobs style</a>
-        </h2>
-        <div class="content"><p><em>Is your room clean?</em></p>
+<p>Can’t remember the criteria for the diagnosis of Takayasu’s arteritis?</p>
 
-<p>No. </p>
+<pre><code>.dxcTA
+</code></pre>
 
-<p><em>Do I want it clean?</em></p>
+<blockquote>
+  <ol>
+    <li>Age at disease onset ≤40 years (Development of symptoms or findings related to Takayasu arteritis at age ≤ 40 years)    </li>
+    <li>Claudication of extremities (Development and worsening of fatigue and discomfort in muscles of one or more extremity while in use, especially the upper extremities)</li>
+    <li>Decreased brachial artery pulse (Decreased pulsation of one or both brachial arteries)</li>
+    <li>BP difference &gt;10mmHg (Difference of &gt;10mmHg in systolic blood pressure between arms) </li>
+    <li>Bruit over subclavian arteries or aorta (Bruit audible on auscultation over one or both subclavian arteries or abdominal aorta)</li>
+    <li>Arteriogram abnormality (Arteriographic narrowing or occlusion of the entire aorta, its primary branches, or large arteries in the proximal upper or lower extremities, not due to arteriosclerosis, fibromuscular dysplasia, or similar causes; changes usually focal or segmental)</li>
+  </ol>
+</blockquote>
 
-<p>Yes. </p>
+<blockquote>
+  <p>3 of 6 required for diagnosis with a yield to 91% sensitivity and 98% specificity.</p>
+</blockquote>
 
-<p>…</p>
+<blockquote>
+  <p>Arend WP, Michel BA, Bloch DA, et al. The American College of Rheumatology 1990 criteria for the classification of Takayasu arteritis. Arthritis Rheum 1990;33:1129–1132</p>
+</blockquote>
 
-<p><em>Why are you still here?</em></p>
-</div>
-      </li>
+<p>You look like a gunner on your note while making sure you remember the diagnostic criteria.</p>
 
-      <li>
-        <span class="post-meta">Mar 4, 2014</span>
+<p>Of course, you can’t forget your note templates.</p>
 
-        <h2>
-          <a class="post-link" href="/2014/03/04/On-not-purchasing-Dragon-Dictate-Medical.html">On not purchasing Dragon Dictate Medical</a>
-        </h2>
-        <div class="content"><p>I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.</p>
+<pre><code>.arthronote
+</code></pre>
 
-<p><a href="/images/Dragon-01.png"><img src="/images/Dragon-01.png" alt="" /></a> </p>
+<blockquote>
+  <p>Rheumatology Procedure Note</p>
+</blockquote>
 
-<p>Wow. $1000. That’s a lot for something I don’t use that much.</p>
+<blockquote>
+  <p>Procedure: Arthrocentesis
+Date of Service: %B %e, %Y<br /></p>
+</blockquote>
 
-<p>But look, I can upgrade for only $500. I’ll check that out.</p>
+<blockquote>
+  <p>Consent: Verbal consent obtained from patient.<br />
+Time Out: Yes.</p>
+</blockquote>
 
-<p><a href="/images/Dragon-02.png"><img src="/images/Dragon-02.png" alt="" /></a> </p>
+<blockquote>
+  <p>Procedural Medications:  1% lidocaine, *** cc; *** 40mg/1ml, *** mg; *** Gebauer’s Spray</p>
+</blockquote>
 
-<p>Just need to log into my account.</p>
+<blockquote>
+  <p>Description of Procedure: After consent was obtained, the *** was prepped with betadine and alcohol.  Gebauer’s spray and plain 1% lidocaine was used as local anesthetic. The joint was entered and *** ml’s of *** colored fluid was withdrawn and sent for ***.  Steroid and Lidocaine were then injected and the needle withdrawn.  The procedure was well tolerated and hemostasis was obtained.  The attending physician was present for the entire procedure.</p>
+</blockquote>
 
-<p><a href="/images/Dragon-03.png"><img src="/images/Dragon-03.png" alt="" /></a> </p>
+<blockquote>
+  <p>The patient was asked to continue to rest the joint for a few more days before resuming regular activities and warned that it may be more painful for the first 1-2 days.  He/she was instructed to watch for fever, or increased swelling or persistent pain in the joint. Call or return to clinic prn if such symptoms occur or there is failure to improve as anticipated.</p>
+</blockquote>
 
-<p>Look, it’s only $300. I’ll totally buy that.</p>
+<p>See those strange characters after “Date of Service”? This is special code in TextExpander that automatically inserts that day’s date when the note is created. TextExpander has a lot more codes like this and others than can really power your macros. More on that in part 2.</p>
 
-<p><a href="/images/Dragon-04.png"><img src="/images/Dragon-04.png" alt="" /></a> </p>
+<hr />
 
-<p>WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.</p>
-
-<p>To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?</p>
-
-<p>I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase. </p>
-</div>
-      </li>
-
-      <li>
-        <span class="post-meta">Feb 21, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html">Logging time per visit with Keyboard Maestro</a>
-        </h2>
-        <div class="content"><p>I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three<sup id="fnref:140221081628"><a href="#fn:140221081628" class="footnote">1</a></sup> small macros to complete this task.</p>
-
-<p>All three macros use the same trigger, ⌘⌥⌃⇧b.<sup id="fnref:140221081908"><a href="#fn:140221081908" class="footnote">2</a></sup> This brings up a menu for me to choose what part of the macro-system I want.</p>
-
-<p><a href="/images/BBT_1.png"><img src="/images/BBT_1.png" alt="" /></a> </p>
-
-<p>All three macros also write data to the same log file on my desktop.</p>
-
-<h2 id="macro-1---start-of-the-visit">Macro 1 - Start of the visit</h2>
-
-<p>I trigger the first macro when I’m walking into the room. It does three simple tasks.</p>
-
-<ol>
-  <li>Stores the current time of the day in milliseconds to a variable.</li>
-  <li>Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen</li>
-  <li>Writes the current time preceded by the phrase “Visit started at “ in the log file</li>
-</ol>
-
-<p><a href="/images/BBT_2.png"><img src="/images/BBT_2.png" alt="" /></a> </p>
-
-<h2 id="macro-2---end-of-the-visit">Macro 2 - End of the visit</h2>
-
-<p>I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.</p>
+<p>Hopefully, by now, I’ve convinced you that you can save a lot of time and stress by turning your frequently used words, phrases and templates into easy to type macros. In future posts, I will delve into some more advanced, yet easy to pick up, topics including:</p>
 
 <ol>
-  <li>Stores the current time of the day in milliseconds to a variable.<sup id="fnref:140221082823"><a href="#fn:140221082823" class="footnote">3</a></sup></li>
-  <li>Calculates the length of the visit, rounded to the nearest minute.</li>
-  <li>Appends text to the log file with the end time of the visit and the total visit length.</li>
-  <li>Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.</li>
-  <li>Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.</li>
+  <li>Special codes in TextExpander</li>
+  <li>Syncing your macros across computers</li>
+  <li>Keys to building and remembering your macros</li>
+  <li>TextExpander on your iPhone and iPad.</li>
+  <li>Ideas for macros </li>
+  <li>Non-medical uses for TextExpander</li>
 </ol>
 
-<p><a href="/images/BBT_3.png"><img src="/images/BBT_3.png" alt="" /></a> </p>
+<p>I will also answer some potential objections to my method, such as why you might want a text macro program if your EMR comes with templates (CPRS) or has a macro functionality (Epic).</p>
 
-<h2 id="macro-3---set-a-new-date">Macro 3 - Set a new date</h2>
+<p>If you have any specific questions or concerns you’d like addressed in the future posts, let me know.</p>
 
-<p>This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. </p>
-
-<p><a href="/images/BBT_4.png"><img src="/images/BBT_4.png" alt="" /></a> </p>
+<p><strong>Updated</strong>: <a href="/2012/02/01/TextExpander-for-physicians-part-2.html">Part 2</a></p>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:140221081628">
-      <p>I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  <a href="#fnref:140221081628" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1201301814">
+      <p>Consult notes, progress notes, telephone notes, lab monitoring notes, drug orders, infusion orders, lab orders, school excuses, work excuses, disability letters, consult letters, etc. <a href="#fnref:1201301814" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:140221081908">
-      <p>⌘⌥⌃⇧ is mapped to the <code>caps lock</code> key on all my computer, so it is just one key. <a href="#fnref:140221081908" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140221082823">
-      <p>Now I have the start time and the end time, in milliseconds, stored to separate variables. <a href="#fnref:140221082823" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1201302145">
+      <p>On a good day. <a href="#fnref:1201302145" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Jan 27, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/2012/01/27/email-to-my-friends.html">Email to my friends</a>
+        </h2>
+        <div class="content"><p>I want you to learn two things from this email. The first (the fish) is how to combine multiple open Safari windows into one window with multiple tabs. The second (how to fish) is about becoming self-sufficient and making your life better.</p>
+
+<h3 id="the-fish">The Fish</h3>
+
+<p>Safari has an option to “Merge All Windows”. On the menu bar go to Window &gt; Merge All Windows. Simple.</p>
+
+<p>Even better, you can create a shortcut for this.</p>
+
+<p>Open System Preferences (command-spacebar, type “System”), click on Keyboard, choose Keyboard Shortcuts, choose Application Shortcuts, click the “+” button. Under Application: choose Safari. Under Menu title: Type “Merge All Windows”. Under Keyboard Shortcut: press shift + option + command + m. Click add.</p>
+
+<p>Now, whenever you have a bunch of Safari windows open, just hit shift + option + command + m. (It’s a lot easier than it sounds.)</p>
+
+<h3 id="how-to-fish">How to fish</h3>
+
+<p>I always end up with a million browser windows open, each with several open tabs in them. Frequently, they have the same mail, calendar, Google reader and log in to my EMR websites pulled up on them. Typically this happens when I click on a link in the first window and it opens the link in a new browser window, then later, with that window on top, I want my email and open a new tab to go to it, even though the same site is open in a different window that’s hidden. </p>
+
+<p>I thought two things: windows should always open in a new tab and there should be a way to easily merge all these windows together. <em>I wish I could say that I immediately Google’d it and figured it out.</em> Unfortunately, I’ve been thinking about this for months and never bothered to do anything about it. This has happened to me more times than is healthy. I need to just learn that when I have a problem, there’s probable a solution already created.</p>
+
+<p>For the first step, go to the menu bar: Safari &gt; Preferences &gt; Tabs. Under “Open pages in tabs instead of windows:” choose automatically. For the second step, I explained the second part above.</p>
+
+<p><strong>Moral</strong>: There is almost always an easy way to do something on a Mac. If you want to do something, Google for how to do it.</p>
+
+<p>Speaking of which, if you’re not using <a href="http://www.smilesoftware.com/TextExpander/index.html">TextExpander</a> for text macros, you deserve to check it out.</p>
+
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">May 16, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/2011/05/16/textexpander.html">TextExpander</a>
+        </h2>
+        <div class="content"><p>I’ve been wanting TextExpander for awhile and was going to buy it when I got around to it.</p>
+
+<p>For the next 15 days it’s being <a href="http://www.productivemacs.com/f/75354">sold in a bundle</a> with 7 other Mac apps for five dollars less than it’s normal price ($30). You also get a bunch of other great productivity and social apps like Keyboard Maestro. </p>
+
+<p>If you want to be a power user, or you have to because you use computers for a living, i.e. physician, than you need good macro programs.</p>
+
+<p>Don’t know why? Make all your disease information, frequent prescriptions and operative notes/instructions into macros. It’s a lot easier to type OA and have all my osteoarthritis information pop up than to type it fresh each time or even copy and paste it.</p>
+
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">Aug 11, 2006</span>
+
+        <h2>
+          <a class="post-link" href="/2006/08/11/why-windows-sucks.html">Why I Hate Windows</a>
+        </h2>
+        <div class="content"><p>I love macs.  Sadly, I use Windows the most.  This is because 1) my mac died, 2) I won an HP laptop in a contest, 3) I’m too poor to buy a computer (or even pay the $500 I’m told it will cost to fix my ibook) and 4) all the hospitals I work at use win boxes.  The following is a story of my hell and something that would NEVER happen on a mac.</p>
+
+<p>About a week ago my laptop became infected with a virus or two hundred when I visited a website.  I know this because google warned me it might contain malware and I went there anyway and as soon as I did my practically worthless virus program (Sophos) started screaming about infected files, but was unable to DO anything about it.  Meanwhile all sorts of pop ups, adware, and internet explorer toolbars started ravaging my system.</p>
+
+<p>I installed a few other programs that were able to find and delete most of them, but the pop ups continued, more files continued to be infected, crashes became status quo and I wanted to smash the laptop with a hammer.  I had done everything I could to halt the damage, even trying system restore, which kept failing to restore, without success.  Finally today, on my day off, I reformatted the HD and reloaded everything.  Actually, I’m still reloading everything.</p>
+
+<p>Thankfully, all my music was on my iPod, so I can port that back over (illegally?) and all of my pictures, documents etc. are also saved on usb drives.  I did lose some videos and am wasting hours redownloaded, installing and configuring my software.</p>
+
+<p>Viruses suck.  Virus makers should die.  Windows sucks for being so vulnerable or popular.  You pick.</p>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">May 30, 2006</span>
+
+        <h2>
+          <a class="post-link" href="/2006/05/30/iBook-RIP.html">iBook - RIP</a>
+        </h2>
+        <div class="content"><p>My iBook first died a few months ago.  The screen stopped working and I figured it was DOA.  I finally decided to take it into a repair shop today.  They can fix it but it will cost $500USD.  Thus it is going to remain dead.  I could buy a new Gateway laptop with much better specs for $150 more.  As much as I love my macs this poor doc can’t afford that kind of expense.</p>
+
+<p>Excuse me.  I need a moment to mourn.</p>
+</div>
+      </li>
+
+      <li>
+        <span class="post-meta">May 9, 2006</span>
+
+        <h2>
+          <a class="post-link" href="/2006/05/09/pain-in-the-mouth.html">Pain in the mouth</a>
+        </h2>
+        <div class="content"><p>A couple weeks ago I developed an abscess in the root of one of my top molars.  I had the whole swelling, tenderness and pain thing.  I felt like dying or ripping the thing out by the roots, either of which would have treated the problem.  Instead I wasted $50 seeing an “emergency dentist” who told me it was infected and needed to be drilled or removed.  Well, no shit sherlock.  I’m a fucking doctor–I know that.  Then he gave me heavy duty narcotic pain meds and an antibiotic, which isn’t exactly recommended by the dental societies.  </p>
+
+<p>The key point is that it is very unlikely for the infection to go away without physically removing it via root canal or tooth removal and I have no money for either.  So, I’m trying to hold the bacteria at bay with antibiotics and asprin until my insurance at @ new job kicks in.  </p>
+
+<p>Things had actually gotten better for awhile.  The swelling, pain, sensitivity and looseness subsided.  </p>
+
+<p>And came back yesterday.  I think I’ll end up losing the tooth if I wait on this, but I have no money.  So while I see patients who never pay, I myself can’t get the medical care I need for lack of money.  Isn’t it ironic, don’t you think?</p>
+
+<p>At least if I ever get accused of not understanding what it is like to be poor or to go without medical case, I can laugh like the devil by the pale moon light.</p>
 </div>
       </li>
 
@@ -4002,9 +4054,13 @@ Them: That’s not what your wife says.</p>
 <!-- Pagination links -->
 <nav id="pagination">
     
+      
+      <a href="/page6/" title="Previous Page">&laquo; Newer</a>
+      
+    
     
      
-    <a href="/page2/" title="Next Page">Older &raquo;</a>
+    <a href="/page8/" title="Next Page">Older &raquo;</a>
      
   </nav>
       </div>

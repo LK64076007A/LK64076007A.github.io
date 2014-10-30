@@ -1,30 +1,464 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>so, it&#39;s come to this...</title>
+    <description>I&#39;ll hear a technique or technology mentioned, it stirs around in my brain, and then I fall down that rabbit hole. If I make it back with my sanity intact, I&#39;ll usually write about it here.
+</description>
+    <link>http://soitscometothis.net/</link>
+    <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 29 Oct 2014 20:24:24 -0400</pubDate>
+    <lastBuildDate>Wed, 29 Oct 2014 20:24:24 -0400</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>FTC sues AT&amp;T over throttling &quot;Unlimited&quot; data plans</title>
+        <description>&lt;p&gt;I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Federal Trade Commission (FTC) of the United States today filed a federal court complaint against AT&amp;amp;T, accusing the carrier of misleading its smartphone customers by charging them for unlimited data while reducing their data speeds by up to 90 percent. - &lt;a href=&quot;http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I had one of those “unlimited” plans and AT&amp;amp;T sent rude text messages threatening to throttle me and then eventually did. I was using just over 2 gigabytes a month. I switched to Sprint. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The FTC alleges that AT&amp;amp;T throttled customers who had used as little as 2GB of data beginning in 2011, and that the throttling is severe, “resulting in speed reductions of 80 to 90 percent for affected users.” AT&amp;amp;T is said to have throttled 3.5 million customers more than 25 million times, violating the FTC Act in the process.  - &lt;a href=&quot;http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 28 Oct 2014 15:09:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/10/28/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/10/28/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans.html</guid>
+        
+        <category>carriers</category>
+        
+        <category>AT&amp;T</category>
+        
+        <category>class action</category>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Changing blog platform and host</title>
+        <description>&lt;p&gt;I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I’ve enjoyed using &lt;a href=&quot;http://scriptogr.am&quot;&gt;Scriptogram&lt;/a&gt;, which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. &lt;/p&gt;
+
+&lt;p&gt;Unfortunately, it does not seem to be in active development anymore. I probably could have left it alone and waited until the service died, but I got an itching in my brain after listening to the &lt;a href=&quot;http://www.coreint.org/2014/10/episode-160-the-guarantee-of-free-speech/&quot;&gt;last episode of Core Intuition&lt;/a&gt; and decide to take a second crack&lt;sup id=&quot;fnref:141028124001&quot;&gt;&lt;a href=&quot;#fn:141028124001&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; at doing my own file generation and hosting&lt;sup id=&quot;fnref:141028124050&quot;&gt;&lt;a href=&quot;#fn:141028124050&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+
+&lt;p&gt;I’m currently getting my blog ported over to a Github hosted Jekyll site. Of course, I didn’t do the smart thing and wait until everything was finished before switching over the DNS, because &lt;em&gt;stupid&lt;/em&gt; and I didn’t actually think anyone read this site&lt;sup id=&quot;fnref:141028124228&quot;&gt;&lt;a href=&quot;#fn:141028124228&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Unfortunately, at least one person does and I wasted their time today when they tried to report a broken link in their feed reader. &lt;/p&gt;
+
+&lt;p&gt;My apologies. Hopefully the DNS and RSS is finished. No I just need to import my old articles and futz with the CSS. The latter shouldn’t cause any problems, and I hope the former doesn’t flood anyone’s RSS reader with old posts. &lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:141028124001&quot;&gt;
+      &lt;p&gt;+10 nerd points if you get the reference &lt;a href=&quot;#fnref:141028124001&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:141028124050&quot;&gt;
+      &lt;p&gt;I failed spectacularly at my last attempt with Octopress. &lt;a href=&quot;#fnref:141028124050&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:141028124228&quot;&gt;
+      &lt;p&gt;What analytics? &lt;a href=&quot;#fnref:141028124228&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 28 Oct 2014 12:36:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/10/28/Changing-blog-platform-and-host.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/10/28/Changing-blog-platform-and-host.html</guid>
+        
+        <category>blogging</category>
+        
+        <category>github</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Create a Markdown link with automatic affiliate codes</title>
+        <description>&lt;p&gt;I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from &lt;a href=&quot;http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/&quot;&gt;Dr. Drang&lt;/a&gt; and &lt;a href=&quot;http://nerdgap.com/amazon-affiliate-links-with-textexpander/&quot;&gt;Brett Kelly&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The macro can be triggered by the string &lt;code&gt;mdlink&lt;/code&gt; of the hotkey ⇧⌃⌥⌘p.&lt;/p&gt;
+
+&lt;p&gt;Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.&lt;/p&gt;
+
+&lt;h2 id=&quot;macro-text&quot;&gt;Macro Text&lt;/h2&gt;
+
+&lt;p&gt;My Macros&lt;br /&gt;
+mdlink&lt;br /&gt;
+Triggered by any of the following:&lt;br /&gt;
+The exact case string ‘mdlink’ is typed (then deleted)&lt;br /&gt;
+The Hot Key ⌃⌥⇧⌘P is pressed&lt;br /&gt;
+Will execute the following actions:&lt;br /&gt;
+Activate nvALT&lt;br /&gt;
+Set Clipboard to Text&lt;br /&gt;
+%SafariURL%&lt;br /&gt;
+If All Conditions Met&lt;br /&gt;
+The clipboard text contains ‘itunes.apple.com’&lt;br /&gt;
+Execute the Following Actions:&lt;br /&gt;
+Execute Shell Script  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/python
+
+# Via Dr. Drang
+# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+
+from subprocess import check_output
+from sys import stdout
+
+# My affiliate ID.
+myID = &#39;11l4RT&#39;
+
+# Get the URL from the clipboard.
+clipURL = check_output(&#39;pbpaste&#39;)
+
+# Add my ID and the partnerId parameter to the URL. If there are already
+# queries, add them as additional ones; if not, add them as the only ones.
+if &#39;?&#39; in clipURL:
+itemURL = &#39;%s&amp;amp;at=%s&#39; % (clipURL, myID)
+else:
+itemURL = &#39;%s?at=%s&#39; % (clipURL, myID)
+
+# Write it out
+stdout.write(itemURL) Save trimmed to Clipboard.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If All Conditions Met&lt;br /&gt;
+The clipboard text contains ‘amazon.com’&lt;br /&gt;
+Execute the Following Actions:&lt;br /&gt;
+Execute Shell Script  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
+
+# (c) 2012 Brett Kelly.
+# Licensed under the MIT license
+# http://www.opensource.org/licenses/mit-license.php
+# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
+# Some edits from the original to get to to work in KM - ML
+
+import re
+import sys
+from urlparse import urlparse
+from subprocess import check_output
+
+## PUT YOUR AFFILIATE CODE HERE
+affcode = &#39;violeneces-20&#39;
+
+rawurl = check_output(&#39;pbpaste&#39;)
+
+## Get the base url without all of the query string malarky
+baseurl = rawurl.split(&#39;?&#39;)[0] 
+
+try:
+parts = urlparse(baseurl)
+except Exception:
+sys.stdout.write(rawurl)
+raise SystemExit
+
+## Make sure it&#39;s actually an Amazon URL
+amazonre = re.compile(&#39;[www\.]{0,1}amazon\.&#39;)
+
+if not amazonre.search(parts.netloc):
+# Not an amazon URL, return whatever was passed initially
+sys.stdout.write(rawurl)
+raise SystemExit
+
+# Format the simpler URL and append the affiliate code
+goodurl = &quot;%s://%s%s?tag=%s&quot; % (parts.scheme,parts.netloc,parts.path,affcode)
+
+# Write formatted URL to STDOUT
+sys.stdout.write(goodurl)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save trimmed to Clipboard.&lt;br /&gt;
+Insert Text by Pasting&lt;br /&gt;
+[%SafariTitle%](%CurrentClipboard%)  &lt;/p&gt;
+
+&lt;h1 id=&quot;macro-image&quot;&gt;Macro Image&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Markdown_link_with_affiliate_codes.jpg&quot;&gt;&lt;img src=&quot;/images/Markdown_link_with_affiliate_codes.jpg&quot; alt=&quot;Macro Image&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros&quot;&gt;Download the macro&lt;/a&gt;. &lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 01 Aug 2014 00:49:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/08/01/Create-a-Markdown-link-with-automatic-affiliate-codes.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/08/01/Create-a-Markdown-link-with-automatic-affiliate-codes.html</guid>
+        
+        <category>Keyboard Maestro</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Keyboard Maestro macro screenshots</title>
+        <description>&lt;p&gt;I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums&lt;sup id=&quot;fnref:140729172855&quot;&gt;&lt;a href=&quot;#fn:140729172855&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.&lt;/p&gt;
+
+&lt;p&gt;I believe it was in &lt;a href=&quot;http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html&quot;&gt;6.0&lt;/a&gt; that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.&lt;/p&gt;
+
+&lt;p&gt;The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in&lt;sup id=&quot;fnref:140729173600&quot;&gt;&lt;a href=&quot;#fn:140729173600&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+
+&lt;p&gt;So I created a macro.&lt;/p&gt;
+
+&lt;h2 id=&quot;macro-description&quot;&gt;Macro description&lt;/h2&gt;
+
+&lt;p&gt;You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.&lt;/p&gt;
+
+&lt;p&gt;Using a hotkey, trigger the &lt;em&gt;Create Screenshot Macro&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select the &lt;code&gt;copy as image&lt;/code&gt; from the menu&lt;/li&gt;
+  &lt;li&gt;Prompt the user for the file name&lt;/li&gt;
+  &lt;li&gt;Save the file to the desktop&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There’s also a &lt;code&gt;copy as text&lt;/code&gt; if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.&lt;/p&gt;
+
+&lt;h2 id=&quot;macro-text&quot;&gt;Macro text&lt;/h2&gt;
+
+&lt;p&gt;Create screenshot of KM macro&lt;br /&gt;
+Triggered by any of the following:&lt;br /&gt;
+The Hot Key ⌃⌥⇧⌘M is pressed&lt;br /&gt;
+Will execute the following actions:&lt;br /&gt;
+Select Menu Item in Keyboard Maestro&lt;br /&gt;
+Select: Edit ⇢ Copy as ⇢ Copy as Image&lt;br /&gt;
+Stop macro if menu cannot be selected.&lt;br /&gt;
+Prompt for User Input ‘File Name’&lt;br /&gt;
+What do you want to call the file?&lt;br /&gt;
+Input the following variables:&lt;br /&gt;
+File Name&lt;br /&gt;
+Finish with the following buttons:&lt;br /&gt;
+OK&lt;br /&gt;
+Cancel (cancel macro)&lt;br /&gt;
+Store button pressed in variable ‘Result Button’.&lt;br /&gt;
+Write Clipboard&lt;br /&gt;
+To file: ~/Desktop/%Variable%File Name%.jpg&lt;br /&gt;
+With format JPEG).  &lt;/p&gt;
+
+&lt;h2 id=&quot;macro-image&quot;&gt;Macro image&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Create_KM_screenshot_image.jpg&quot;&gt;&lt;img src=&quot;/images/Create_KM_screenshot_image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/3950369/blog_images/Create%20screenshot%20of%20KM%20macro.kmmacros&quot;&gt;Download the macro&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;room-for-improvement&quot;&gt;Room for improvement&lt;/h2&gt;
+
+&lt;p&gt;I would like the ability to automatically name the jpg with the name of the macro. &lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:140729172855&quot;&gt;
+      &lt;p&gt;If you use KM and aren’t in the forums, you are really missing out. &lt;a href=&quot;#fnref:140729172855&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:140729173600&quot;&gt;
+      &lt;p&gt;Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? &lt;a href=&quot;#fnref:140729173600&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 29 Jul 2014 17:25:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/07/29/Keyboard-Maestro-macro-screenshots.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/07/29/Keyboard-Maestro-macro-screenshots.html</guid>
+        
+        <category>Keyboard Maestro</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Conversations with my boy</title>
+        <description>&lt;p&gt;Me: Do you need a haircut?&lt;/p&gt;
+
+&lt;p&gt;Boy: No! You need a haircut!&lt;/p&gt;
+
+&lt;p&gt;Me: You’re right. I have one scheduled for this Saturday. What should I do?&lt;/p&gt;
+
+&lt;p&gt;Boy: You have emo hair. You look like Justin Bieber.&lt;/p&gt;
+
+&lt;p&gt;Me: Should I go bald? Should I cut it short?&lt;/p&gt;
+
+&lt;p&gt;Boy: No!&lt;/p&gt;
+
+&lt;p&gt;Me: How about some lines or maybe lightning bolts?&lt;/p&gt;
+
+&lt;p&gt;Boy: No. Don’t do anything weird. Just be normal.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 May 2014 07:41:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/05/08/Conversations-With-My-Boy.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/05/08/Conversations-With-My-Boy.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Conversations with my employees</title>
+        <description>&lt;p&gt;Conversations I probably shouldn’t have with my employees:&lt;/p&gt;
+
+&lt;p&gt;Them: May I see you in your office with the door closed for two minutes?&lt;br /&gt;
+Me: I take a lot longer than that!&lt;br /&gt;
+Them: That’s not what your wife says.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 May 2014 18:55:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/05/02/Conversations-with-my-employees.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/05/02/Conversations-with-my-employees.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Bribing doctors</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.sciencebasedmedicine.org/gsk-investigated-for-bribing-doctors/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=gsk-investigated-for-bribing-doctors&quot;&gt;Steven Novella&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;While drug reps are certainly in sales, I have only personally seen a drug rep step over the line on one occasion. A new rep, who was clearly green, actually said to me and my colleague, “what would it take to get you to prescribe more of this drug?” I don’t think he was suggesting anything like bribery, but the statement was clearly inappropriate.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ve been asked that question before. Based on context, I didn’t assume I was being bribed. I took it as “what medical and financial factors are keeping you from using my medication over another?”&lt;/p&gt;
+
+&lt;p&gt;My answers have been along the lines of “make it cheaper and/or show evidence of superiority in head-to-head trials”.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, the £100 that was offered to the physicians in the referenced article is a lot less than the financial incentive when a patient demands oxycodone while holding a patient satisfaction survey. &lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 16 Apr 2014 08:50:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/04/16/Bribing-doctors.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/04/16/Bribing-doctors.html</guid>
+        
+        <category>medicine</category>
+        
+        <category>pharma</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Parenting, Steve Jobs style</title>
+        <description>&lt;p&gt;&lt;em&gt;Is your room clean?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;No. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Do I want it clean?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes. &lt;/p&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Why are you still here?&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Mar 2014 19:52:00 -0400</pubDate>
+        <link>http://soitscometothis.net/2014/03/18/Parenting-Steve-Jobs-style.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/03/18/Parenting-Steve-Jobs-style.html</guid>
+        
+        <category>Steve Jobs</category>
+        
+        <category>parenting</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>On not purchasing Dragon Dictate Medical</title>
+        <description>&lt;p&gt;I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Dragon-01.png&quot;&gt;&lt;img src=&quot;/images/Dragon-01.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Wow. $1000. That’s a lot for something I don’t use that much.&lt;/p&gt;
+
+&lt;p&gt;But look, I can upgrade for only $500. I’ll check that out.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Dragon-02.png&quot;&gt;&lt;img src=&quot;/images/Dragon-02.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Just need to log into my account.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Dragon-03.png&quot;&gt;&lt;img src=&quot;/images/Dragon-03.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Look, it’s only $300. I’ll totally buy that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Dragon-04.png&quot;&gt;&lt;img src=&quot;/images/Dragon-04.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.&lt;/p&gt;
+
+&lt;p&gt;To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?&lt;/p&gt;
+
+&lt;p&gt;I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase. &lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Mar 2014 09:27:00 -0500</pubDate>
+        <link>http://soitscometothis.net/2014/03/04/On-not-purchasing-Dragon-Dictate-Medical.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/03/04/On-not-purchasing-Dragon-Dictate-Medical.html</guid>
+        
+        <category>medicine</category>
+        
+        <category>technology</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Logging time per visit with Keyboard Maestro</title>
+        <description>&lt;p&gt;I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three&lt;sup id=&quot;fnref:140221081628&quot;&gt;&lt;a href=&quot;#fn:140221081628&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; small macros to complete this task.&lt;/p&gt;
+
+&lt;p&gt;All three macros use the same trigger, ⌘⌥⌃⇧b.&lt;sup id=&quot;fnref:140221081908&quot;&gt;&lt;a href=&quot;#fn:140221081908&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; This brings up a menu for me to choose what part of the macro-system I want.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/BBT_1.png&quot;&gt;&lt;img src=&quot;/images/BBT_1.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;All three macros also write data to the same log file on my desktop.&lt;/p&gt;
+
+&lt;h2 id=&quot;macro-1---start-of-the-visit&quot;&gt;Macro 1 - Start of the visit&lt;/h2&gt;
+
+&lt;p&gt;I trigger the first macro when I’m walking into the room. It does three simple tasks.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Stores the current time of the day in milliseconds to a variable.&lt;/li&gt;
+  &lt;li&gt;Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen&lt;/li&gt;
+  &lt;li&gt;Writes the current time preceded by the phrase “Visit started at “ in the log file&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/BBT_2.png&quot;&gt;&lt;img src=&quot;/images/BBT_2.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;macro-2---end-of-the-visit&quot;&gt;Macro 2 - End of the visit&lt;/h2&gt;
+
+&lt;p&gt;I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Stores the current time of the day in milliseconds to a variable.&lt;sup id=&quot;fnref:140221082823&quot;&gt;&lt;a href=&quot;#fn:140221082823&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Calculates the length of the visit, rounded to the nearest minute.&lt;/li&gt;
+  &lt;li&gt;Appends text to the log file with the end time of the visit and the total visit length.&lt;/li&gt;
+  &lt;li&gt;Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.&lt;/li&gt;
+  &lt;li&gt;Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/BBT_3.png&quot;&gt;&lt;img src=&quot;/images/BBT_3.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;macro-3---set-a-new-date&quot;&gt;Macro 3 - Set a new date&lt;/h2&gt;
+
+&lt;p&gt;This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/BBT_4.png&quot;&gt;&lt;img src=&quot;/images/BBT_4.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:140221081628&quot;&gt;
+      &lt;p&gt;I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  &lt;a href=&quot;#fnref:140221081628&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:140221081908&quot;&gt;
+      &lt;p&gt;⌘⌥⌃⇧ is mapped to the &lt;code&gt;caps lock&lt;/code&gt; key on all my computer, so it is just one key. &lt;a href=&quot;#fnref:140221081908&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:140221082823&quot;&gt;
+      &lt;p&gt;Now I have the start time and the end time, in milliseconds, stored to separate variables. &lt;a href=&quot;#fnref:140221082823&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 21 Feb 2014 08:14:00 -0500</pubDate>
+        <link>http://soitscometothis.net/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html</guid>
+        
+        <category>Keyboard Maestro</category>
+        
+        <category>technology</category>
+        
+        <category>medicine</category>
+        
+        
+      </item>
+    
   </channel>
 </rss>
