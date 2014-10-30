@@ -317,10 +317,11 @@ pre {
 
 .post-meta {
   font-size: 12.25px;
-  color: #828282; }
+  color: #828282;
+  font-style: italic; }
 
 .post-link {
-  display: block;
+  display: inline;
   font-size: 24px; }
 
 /**
@@ -330,7 +331,7 @@ pre {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 42px;
+  font-size: 24px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
