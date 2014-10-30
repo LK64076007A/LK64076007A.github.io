@@ -218,7 +218,8 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.5;
+    /* Gaps between nav items, but not on the first one */ }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
@@ -250,6 +251,9 @@ pre {
         clear: both;
         display: none; }
       .site-nav:hover .trigger {
+        display: block;
+        padding-bottom: 5px; }
+      .site-nav:active .trigger {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
