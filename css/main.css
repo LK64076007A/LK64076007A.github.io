@@ -253,9 +253,6 @@ pre {
       .site-nav:hover .trigger {
         display: block;
         padding-bottom: 5px; }
-      .site-nav:active .trigger {
-        display: block;
-        padding-bottom: 5px; }
       .site-nav .page-link {
         display: block;
         padding: 5px 10px; } }
