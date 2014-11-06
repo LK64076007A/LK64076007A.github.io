@@ -186,6 +186,19 @@ pre {
   .page-link .icon > svg path {
     fill: #0080CE; }
 
+ins {
+  -webkit-transform: translate(-20px, -5px) rotate(15deg);
+  display: inline-block;
+  background: transparent;
+  color: #0080CE;
+  text-decoration: none; }
+
+del:after {
+  -webkit-transform: translate(0px, 1em) rotate(0deg);
+  content: "^";
+  display: inline-block;
+  color: #0080CE; }
+
 /**
  * Site header
  */
