@@ -6,9 +6,31 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 09 Nov 2014 08:37:15 -0500</pubDate>
-    <lastBuildDate>Sun, 09 Nov 2014 08:37:15 -0500</lastBuildDate>
+    <pubDate>Thu, 13 Nov 2014 06:15:49 -0500</pubDate>
+    <lastBuildDate>Thu, 13 Nov 2014 06:15:49 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>The Tile  Dead On Arrival</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: The Tile: Dead on Arrival
+date: 2014-11-13 6:13:07 -0500
+tags: 
+- technology
+- startups
+—I ordered the &lt;a href=&quot;https://www.thetileapp.com/&quot;&gt;Tile&lt;/a&gt;, a BTLE internet-enabled device designed to help you find lost items, to attach to my keys so I can avoid the occasional panic on Monday morning when I can’t find them. &lt;/p&gt;
+
+&lt;p&gt;After waiting a ridiculously long time to arrive, it was unresponsive out of the box. I followed all the trouble shooting ideas on their website without success. I emailed support and have gotten no reply. &lt;/p&gt;
+
+&lt;p&gt;Tile: ★☆☆☆☆&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://soitscometothis.net/2014/11/13/The-Tile--Dead-on-Arrival.html</link>
+        <guid isPermaLink="true">http://soitscometothis.net/2014/11/13/The-Tile--Dead-on-Arrival.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>FTC sues AT&amp;T over throttling &quot;Unlimited&quot; data plans</title>
@@ -387,75 +409,6 @@ Them: That’s not what your wife says.&lt;/p&gt;
         <category>medicine</category>
         
         <category>technology</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Logging time per visit with Keyboard Maestro</title>
-        <description>&lt;p&gt;I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three&lt;sup id=&quot;fnref:140221081628&quot;&gt;&lt;a href=&quot;#fn:140221081628&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; small macros to complete this task.&lt;/p&gt;
-
-&lt;p&gt;All three macros use the same trigger, ⌘⌥⌃⇧b.&lt;sup id=&quot;fnref:140221081908&quot;&gt;&lt;a href=&quot;#fn:140221081908&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; This brings up a menu for me to choose what part of the macro-system I want.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/BBT_1.png&quot;&gt;&lt;img src=&quot;/images/BBT_1.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;All three macros also write data to the same log file on my desktop.&lt;/p&gt;
-
-&lt;h2 id=&quot;macro-1---start-of-the-visit&quot;&gt;Macro 1 - Start of the visit&lt;/h2&gt;
-
-&lt;p&gt;I trigger the first macro when I’m walking into the room. It does three simple tasks.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Stores the current time of the day in milliseconds to a variable.&lt;/li&gt;
-  &lt;li&gt;Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen&lt;/li&gt;
-  &lt;li&gt;Writes the current time preceded by the phrase “Visit started at “ in the log file&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/BBT_2.png&quot;&gt;&lt;img src=&quot;/images/BBT_2.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;macro-2---end-of-the-visit&quot;&gt;Macro 2 - End of the visit&lt;/h2&gt;
-
-&lt;p&gt;I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Stores the current time of the day in milliseconds to a variable.&lt;sup id=&quot;fnref:140221082823&quot;&gt;&lt;a href=&quot;#fn:140221082823&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;Calculates the length of the visit, rounded to the nearest minute.&lt;/li&gt;
-  &lt;li&gt;Appends text to the log file with the end time of the visit and the total visit length.&lt;/li&gt;
-  &lt;li&gt;Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.&lt;/li&gt;
-  &lt;li&gt;Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/BBT_3.png&quot;&gt;&lt;img src=&quot;/images/BBT_3.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;macro-3---set-a-new-date&quot;&gt;Macro 3 - Set a new date&lt;/h2&gt;
-
-&lt;p&gt;This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/BBT_4.png&quot;&gt;&lt;img src=&quot;/images/BBT_4.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:140221081628&quot;&gt;
-      &lt;p&gt;I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  &lt;a href=&quot;#fnref:140221081628&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:140221081908&quot;&gt;
-      &lt;p&gt;⌘⌥⌃⇧ is mapped to the &lt;code&gt;caps lock&lt;/code&gt; key on all my computer, so it is just one key. &lt;a href=&quot;#fnref:140221081908&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:140221082823&quot;&gt;
-      &lt;p&gt;Now I have the start time and the end time, in milliseconds, stored to separate variables. &lt;a href=&quot;#fnref:140221082823&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 21 Feb 2014 08:14:00 -0500</pubDate>
-        <link>http://soitscometothis.net/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html</link>
-        <guid isPermaLink="true">http://soitscometothis.net/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html</guid>
-        
-        <category>Keyboard Maestro</category>
-        
-        <category>technology</category>
-        
-        <category>medicine</category>
         
         
       </item>

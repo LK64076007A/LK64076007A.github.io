@@ -96,6 +96,67 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Feb 21, 2014</span>
+      
+      <h2><a class="post-link" href="/2014/02/21/Logging-time-per-visit-with-Keyboard-Maestro.html">Logging time per visit with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three<sup id="fnref:140221081628"><a href="#fn:140221081628" class="footnote">1</a></sup> small macros to complete this task.</p>
+
+<p>All three macros use the same trigger, ⌘⌥⌃⇧b.<sup id="fnref:140221081908"><a href="#fn:140221081908" class="footnote">2</a></sup> This brings up a menu for me to choose what part of the macro-system I want.</p>
+
+<p><a href="/images/BBT_1.png"><img src="/images/BBT_1.png" alt="" /></a> </p>
+
+<p>All three macros also write data to the same log file on my desktop.</p>
+
+<h2 id="macro-1---start-of-the-visit">Macro 1 - Start of the visit</h2>
+
+<p>I trigger the first macro when I’m walking into the room. It does three simple tasks.</p>
+
+<ol>
+  <li>Stores the current time of the day in milliseconds to a variable.</li>
+  <li>Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen</li>
+  <li>Writes the current time preceded by the phrase “Visit started at “ in the log file</li>
+</ol>
+
+<p><a href="/images/BBT_2.png"><img src="/images/BBT_2.png" alt="" /></a> </p>
+
+<h2 id="macro-2---end-of-the-visit">Macro 2 - End of the visit</h2>
+
+<p>I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.</p>
+
+<ol>
+  <li>Stores the current time of the day in milliseconds to a variable.<sup id="fnref:140221082823"><a href="#fn:140221082823" class="footnote">3</a></sup></li>
+  <li>Calculates the length of the visit, rounded to the nearest minute.</li>
+  <li>Appends text to the log file with the end time of the visit and the total visit length.</li>
+  <li>Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.</li>
+  <li>Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.</li>
+</ol>
+
+<p><a href="/images/BBT_3.png"><img src="/images/BBT_3.png" alt="" /></a> </p>
+
+<h2 id="macro-3---set-a-new-date">Macro 3 - Set a new date</h2>
+
+<p>This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. </p>
+
+<p><a href="/images/BBT_4.png"><img src="/images/BBT_4.png" alt="" /></a> </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:140221081628">
+      <p>I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  <a href="#fnref:140221081628" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:140221081908">
+      <p>⌘⌥⌃⇧ is mapped to the <code>caps lock</code> key on all my computer, so it is just one key. <a href="#fnref:140221081908" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:140221082823">
+      <p>Now I have the start time and the end time, in milliseconds, stored to separate variables. <a href="#fnref:140221082823" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Feb 7, 2014</span>
       
       <h2><a class="post-link" href="/2014/02/07/Using-Keyboard-Maestro-to-control-windows-on-dual-monitors.html">Using Keyboard Maestro to control windows on dual monitors</a></h2>
@@ -335,43 +396,6 @@
     </li>
     <li id="fn:wifebackup">
       <p>And it’s also priceless for easily backing up other family member’s computers, who may not be as diligent as you are. <a href="#fnref:wifebackup" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 24, 2013</span>
-      
-      <h2><a class="post-link" href="/2013/08/24/Google-search-fail.html">Google search fail</a></h2>
-      
-      <div class="content"><p>Dear Google,</p>
-
-<p>The following sites will show up on the first page when a patient is trying to search for information on a doctor by the syntax Dr. firstname lastname:</p>
-
-<ol>
-  <li>Google +<sup id="fnref:130824082034"><a href="#fn:130824082034" class="footnote">1</a></sup></li>
-  <li>Healthgrades.com</li>
-  <li>Vitals.com</li>
-  <li>Wellness.com</li>
-  <li>Betterdoctor.com</li>
-  <li>Ratemds.com</li>
-  <li>Manta.com</li>
-  <li>Doctor.webmd.com</li>
-  <li>Lifescript.com</li>
-</ol>
-
-<p>They are all link-bait, content-farm junk sites. Yes, including your own. </p>
-
-<p>This is not helpful for users. This is not helpful for the internet. </p>
-
-<p>Fix it.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:130824082034">
-      <p>An auto-generated page, not an actual user made account. <a href="#fnref:130824082034" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
