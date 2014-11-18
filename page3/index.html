@@ -98,6 +98,56 @@
     <li>
       <span class="post-meta">Aug 24, 2013</span>
       
+      <h2><a class="post-link" href="/2013/08/24/Time-Capsule-back-up-vs.-Siracusa.html">Time Capsule back up vs. Siracusa</a></h2>
+      
+      <div class="content"><p>On the last<sup id="fnref:130824090332"><a href="#fn:130824090332" class="footnote">1</a></sup> episode of ATP<sup id="fnref:130824090353"><a href="#fn:130824090353" class="footnote">2</a></sup>, Siracusa said that the Time Capsule had “a terrible reputation for reliability, and I still think Time Machine over the network is not great”.</p>
+
+<p>I love my Time Capsule and see myself continuing to buy them.</p>
+
+<p>The Time Capsule I have is a 1st generation that I bought when they first came out. Living in an area without an Apple store at the time<sup id="fnref:130824090739"><a href="#fn:130824090739" class="footnote">3</a></sup>, I ended up driving 3 hours to get one. It’s been with me ever since through many years and 3 interstate moves. </p>
+
+<p>I, like Siracusa, have many redundant backups of my data. I have multiple local clone copies<sup id="fnref:130824091132"><a href="#fn:130824091132" class="footnote">4</a></sup> and I also offload the raw data by itself on to external drives. </p>
+
+<p>Several weeks/months ago my internal SSD suddenly died completely. I hadn’t made a clone back up or manually offloaded the data since the morning. I’d been working all day and had many, irretrievable projects that were lost, except for the Time Capsule back up from 30 minutes before.</p>
+
+<p>I sent in the SSD on warranty, and when I got it back a week later, I booted up the new drive with it connected to the Time Capsule. It asked if I wanted to restore from the Time Capsule. I said yes and went to bed. </p>
+
+<p>When I woke up in the morning, my baby was back.<sup id="fnref:130824091835"><a href="#fn:130824091835" class="footnote">5</a></sup></p>
+
+<p>The beauty of the Time Capsule is it’s <em>fire and forget</em> usability.</p>
+
+<p>That earns some loyalty.<sup id="fnref:wifebackup"><a href="#fn:wifebackup" class="footnote">6</a></sup></p>
+
+<p>And Casey was right.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:130824090332">
+      <p><a href="http://atp.fm/episodes/27-overflow-gallery-in-the-bathroom">27</a> <a href="#fnref:130824090332" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824090353">
+      <p>The Accidental Tech Podcast. <a href="#fnref:130824090353" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824090739">
+      <p>And mistaking Cedar Falls for Cedar Rapids. <a href="#fnref:130824090739" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091132">
+      <p>SuperDuper! FTW!!! <a href="#fnref:130824091132" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091835">
+      <p>I’ve also used it to save large amounts of data that I’ve accidentally deleted, such as when I deleted my entire music library before the days of iTunes Match. <a href="#fnref:130824091835" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:wifebackup">
+      <p>And it’s also priceless for easily backing up other family member’s computers, who may not be as diligent as you are. <a href="#fnref:wifebackup" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 24, 2013</span>
+      
       <h2><a class="post-link" href="/2013/08/24/Google-search-fail.html">Google search fail</a></h2>
       
       <div class="content"><p>Dear Google,</p>
@@ -440,48 +490,6 @@ Boy: Because he’s married to a woman who has no heart.  </p>
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 15, 2013</span>
-      
-      <h2><a class="post-link" href="/2013/05/15/Keyboard-Maestro-link-blog-post-creator.html">Keyboard Maestro link-blog post creator for Scriptogram</a></h2>
-      
-      <div class="content"><p>I created a Keyboard Maestro macro to quickly create a link-blog post to Scriptogram without even needing to open a text editor.</p>
-
-<p>The workflow is straight forward and assumes that you are <em>reading a website in Safari and have already copied the quote you want to the clipboard</em>:</p>
-
-<ol>
-  <li>You are prompted for an attribution (either the author or the website you’re quoting), the title of your post which will also be used as the url of your post and part of the file name, tags (optional), and comments (optional).</li>
-  <li>The url of the frontmost tab in Safari is saved as a variable.</li>
-  <li>Text is written to a file.</li>
-</ol>
-
-<p><a href="/images/Quick_link-blog_macro_image.png"><img src="/images/Quick_link-blog_macro_image.png" alt="" /></a></p>
-
-<p>Only three steps. The real power is in what text is written to a file and the name of the file.</p>
-
-<p>The text is just the boilerplate of a Scriptogram blog post with variables to fill in the data.</p>
-
-<pre><code>Title: %Variable%Post Title%
-Date: %ICUDateTime%yyyy-M-d HH:mm%
-Link: %Variable%currentURL%
-Tags: %Variable%Tags%
-
-[%Variable%Attribution%](%Variable%currentURL%):
-
-&gt; %CurrentClipboard%
-
-%Variable%Comments%
-</code></pre>
-
-<p>The text is written to a new file each time as long as the date and post title are unique. I like my file name to consist of the date and the post title as follows:</p>
-
-<pre><code>/Users/michael/Dropbox/Apps/scriptogram/posts/%ICUDateTime%yyyy-M-d% %Variable%Post Title%.md
-</code></pre>
-
-<p>Took me all of 5-10 minutes. I surprised myself getting the whole thing correct on the first try. Typically it takes me half an hour to get the format of the macro set up and another 2 hours debugging it.</p>
 </div>
     </li>
   

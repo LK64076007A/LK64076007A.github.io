@@ -98,6 +98,48 @@
     <li>
       <span class="post-meta">May 15, 2013</span>
       
+      <h2><a class="post-link" href="/2013/05/15/Keyboard-Maestro-link-blog-post-creator.html">Keyboard Maestro link-blog post creator for Scriptogram</a></h2>
+      
+      <div class="content"><p>I created a Keyboard Maestro macro to quickly create a link-blog post to Scriptogram without even needing to open a text editor.</p>
+
+<p>The workflow is straight forward and assumes that you are <em>reading a website in Safari and have already copied the quote you want to the clipboard</em>:</p>
+
+<ol>
+  <li>You are prompted for an attribution (either the author or the website you’re quoting), the title of your post which will also be used as the url of your post and part of the file name, tags (optional), and comments (optional).</li>
+  <li>The url of the frontmost tab in Safari is saved as a variable.</li>
+  <li>Text is written to a file.</li>
+</ol>
+
+<p><a href="/images/Quick_link-blog_macro_image.png"><img src="/images/Quick_link-blog_macro_image.png" alt="" /></a></p>
+
+<p>Only three steps. The real power is in what text is written to a file and the name of the file.</p>
+
+<p>The text is just the boilerplate of a Scriptogram blog post with variables to fill in the data.</p>
+
+<pre><code>Title: %Variable%Post Title%
+Date: %ICUDateTime%yyyy-M-d HH:mm%
+Link: %Variable%currentURL%
+Tags: %Variable%Tags%
+
+[%Variable%Attribution%](%Variable%currentURL%):
+
+&gt; %CurrentClipboard%
+
+%Variable%Comments%
+</code></pre>
+
+<p>The text is written to a new file each time as long as the date and post title are unique. I like my file name to consist of the date and the post title as follows:</p>
+
+<pre><code>/Users/michael/Dropbox/Apps/scriptogram/posts/%ICUDateTime%yyyy-M-d% %Variable%Post Title%.md
+</code></pre>
+
+<p>Took me all of 5-10 minutes. I surprised myself getting the whole thing correct on the first try. Typically it takes me half an hour to get the format of the macro set up and another 2 hours debugging it.</p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">May 15, 2013</span>
+      
       <h2><a class="post-link" href="http://daringfireball.net/linked/2013/05/15/google-versus">Google "Me Too"</a> <a class="permalink" title="Permanent link to ‘Google "Me Too"’" href="/2013/05/15/Google-%22Me-Too%22.html">Ω</a></h2>
       
       <div class="content"><p><a href="http://daringfireball.net/linked/2013/05/15/google-versus">John Gruber</a>:</p>
@@ -885,53 +927,6 @@ Peter.</p>
 <p>The first time you run the cloning software, it will take awhile. Depending on your connection it could be an hour to all night. After that it will much faster as it will only incrementally update changes. My updates typically take around 6 minutes. </p>
 
 <p>Enjoy your new power and piece of mind. You just earned +10 nerd CME. </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 12, 2013</span>
-      
-      <h2><a class="post-link" href="/2013/03/12/Mute-commercials-on-CBS-or-Hulu-with-Keyboard-Maestro.html">Mute commercials on CBS or Hulu with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>In a game of one-upmanship, I’ve improved on my prior macros for muting commercials on CBS and Hulu. What used to be 1-3 non-annoying commercials<sup id="fnref:1363103721-fn1"><a href="#fn:1363103721-fn1" class="footnote">1</a></sup> has turned into five, highly-annoying, commercials in a row. The volume is often much louder than the volume of the show and not infrequently, the same commercial is played all 5 times.</p>
-
-<p>To combat this I made two small changes. First, I combined the two macros into one so I don’t have to remember two hot keys or which site I’m watching. A simple Applescript snippet captures the URL from Chrome and an if/then statement looks for the network name in the url. The second change involves turning the screen off and on in addition to toggling the mute key.</p>
-
-<p>The macro flows thus:</p>
-
-<pre>
-- Execute Applescript `tell application "Google Chrome" to get the URL of active tab of first window` and save results to variable `currentURL`
-- If `currentURL` contains CBS then
-    - Toggle system sound mute
-    - Repeat action 16 times: decrease screen brightness
-    - Execute following action until none of the conditions are met
-        - none (this is basically just a pause until)
-        - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-    - Toggle system sound mute
-    - Repeat action 16 times: increase screen brightness
-- otherwise execute the following
-    - If `currentURL` contains hulu then
-        - Toggle system sound mute
-        - Repeat action 16 times: decrease screen brightness
-        - Execute following action until none of the conditions are met
-            - none (this is basically just a pause until)
-            - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-        - Toggle system sound mute
-        - Repeat action 16 times: increase screen brightness
-    - otherwise do nothing
-</pre>
-
-<p>I haven’t figured out a way to automatically call this macro when the commercials start. I could watch for the “advertisement” graphic but I think that would be way too CPU intensive. I’ll keep thinking about it.</p>
-
-<p>I encourage you to make your own macro to learn the system, and you might have to in order to get the correct “advertisement” graphic, but you can get mine <a href="/images/mute_Commercials.kmmacros">here</a>. (right click to download)</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1363103721-fn1">
-      <p>I assume this had to do with the newness of the medium was not attractive the old school advertisers and in addition the commercials were aimed at a younger, techophilic demographic. Now I just see lots of car commercials. <a href="#fnref:1363103721-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
