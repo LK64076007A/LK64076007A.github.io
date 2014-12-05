@@ -96,6 +96,43 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">May 21, 2013</span>
+      
+      <h2><a class="post-link" href="/Two-improvements-with-Keyboard-Maestro-6">Two improvements with Keyboard Maestro 6</a></h2>
+      
+      <div class="content"><p>I’m a big fan of <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> and use it both daily for my workflow as well as occasionally for projects as they arise.</p>
+
+<p><a href="http://www.keyboardmaestro.com/main/">Version 6.0</a> was released today and is a major upgrade over version 5. There are many improvements both major, minor, and cosmetic. It was well worth the $25 upgrade price.</p>
+
+<p><a href="http://www.macdrifter.com/">Macdrifter</a> has a nice write up and I’m sure that <a href="http://www.macstories.net/news/keyboard-maestro-6-0-adds-syncing-browser-actions-device-triggers-and-more/">Macstories</a> will have a very detailed review within a few weeks.</p>
+
+<p>Today I’m just going to share two small items made possible with the new version.</p>
+
+<h2 id="shorter-macros-with-browser-text-tokens">Shorter macros with browser text tokens</h2>
+
+<p>First, some types of macros are more easy to create and are smaller due to the <a href="http://www.keyboardmaestro.com/documentation/6/tokens.html">new web browser text tokens</a>. I had <a href="http://soitscometothis.net/post/Switching-the-current-viewed-webpage-between-Safari-and-Chrome">previously created a macro</a> that would take an URL that was currently open in Safari and open it in Chrome instead, and vice versa. </p>
+
+<p>The macro in version 5 is fairly long:</p>
+
+<p><a href="/images/switching_browsers_KM5.jpg"><img src="/images/switching_browsers_KM5.jpg" alt="Switching browsers in KM5 macro" /></a></p>
+
+<p>The same macro in version 6 is much smaller:</p>
+
+<p><a href="/images/switching_browsers_KM6.jpg"><img src="/images/switching_browsers_KM6.jpg" alt="Switching browsers in KM6 macro" /></a></p>
+
+<p>This is all directly or indirectly because there is a text token for the current URL in both web browsers. This gets rid of the AppleScript for getting the URL. It also indirectly allows me to get rid of commands to open the opposite web browser as well as to wait for that browser to be open. In the version 5 macro, I had a command to switch to the new browser since that was necessary in order to enter the URL into the address bar. Since in my situation, I may not want to immediately switch over to the other browser, I was able to leave that off too.</p>
+
+<h2 id="easy-creation-of-markdown-links-from-current-webpage">Easy creation of Markdown links from current webpage</h2>
+
+<p>Seeing how easy it was to change the above macro, I decided to make a quick macro to make a Markdown link using the current Safari URL as the link URL and the current Safari window title as the link text. I also used the new text token <code>%|%</code> to place the cursor in position to quickly change the link text in case the window title isn’t appropriate.</p>
+
+<p><a href="/images/MD_link_from_Safari_title_url.jpg"><img src="/images/MD_link_from_Safari_title_url.jpg" alt="" /></a></p>
+
+<p>I’m looking forward to upgrading my old macros and kicking the tires a bit more. I can’t wait for my next project so I have a chance to create something new.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">May 18, 2013</span>
       
       <h2><a class="post-link" href="/Using-PACS-from-a-Mac">Using PACS from a Mac</a></h2>
@@ -880,36 +917,6 @@ Consider ordering: CCP, RF, TB (quantiferon), ACE level, fungal cultures and sme
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 18, 2013</span>
-      
-      <h2><a class="post-link" href="/The-best-indie-developer">The best indie developer</a></h2>
-      
-      <div class="content"><p>Yesterday, a customer on the Keyboard Maestro forums wrote a thank you to Peter, the owner/developer of KM:</p>
-
-<blockquote>
-  <p>Peter, I don’t know how you do it–all the work you do on KM, and still answering many questions in the forum. Just a note from one very appreciative customer.</p>
-</blockquote>
-
-<p>This was quickly followed by “+1”s. </p>
-
-<p>I have to agree that this echoes my sentiments too. I love KM as excellent software, but the extra work on answering (sometimes silly or rude questions) is really wonderful. </p>
-
-<p>Even better was Peter’s deferential reply:</p>
-
-<blockquote>
-  <p>Thanks Mike (and others!), your thoughts are greatly appreciated!</p>
-
-  <p>It’s easy to say how I do it - I’m supported by all of you. I get to do what I love, work from home so I can walk my kids to school, make something that is useful to lots of people, and all because you folks all support me, both financially and by helping expand Keyboard Maestro to others.</p>
-
-  <p>So by far it is me who needs to thank you all, not the other way around!</p>
-
-  <p>Thanks,
-Peter.</p>
-</blockquote>
 </div>
     </li>
   
