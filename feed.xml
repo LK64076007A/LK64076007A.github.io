@@ -6,9 +6,53 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Dec 2014 08:16:35 -0500</pubDate>
-    <lastBuildDate>Fri, 05 Dec 2014 08:16:35 -0500</lastBuildDate>
+    <pubDate>Sat, 13 Dec 2014 10:34:25 -0500</pubDate>
+    <lastBuildDate>Sat, 13 Dec 2014 10:34:25 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Tile support fail</title>
+        <description>&lt;p&gt;I was looking forward to &lt;a href=&quot;https://www.thetileapp.com/&quot;&gt;the Tile&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Sadly, it was &lt;a href=&quot;/The-Tile--Dead-on-Arrival&quot;&gt;dead on arrival&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I went to their website and did all the trouble shooting activities they recommended, and being the “tech guy” in my social circle I tried several other things, all to no avail. &lt;/p&gt;
+
+&lt;p&gt;I sent several requests for help to them on their website. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They finally replied to me… &lt;strong&gt;16 days later&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;with the exact same information on the website that I’d already done. &lt;/p&gt;
+
+&lt;p&gt;I informed them that this didn’t work.&lt;/p&gt;
+
+&lt;p&gt;Their response was report the same issue, again, in the app?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This seemed very strange but I thought perhaps there is some extra data that is sent with the in-app report.&lt;/p&gt;
+
+&lt;p&gt;They replied 12 days later with a completely different ticket number and “activation tips”. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is ridiculous. I get better service at the DMV. &lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 13 Dec 2014 09:44:16 -0500</pubDate>
+        <link>http://soitscometothis.net/tile-support-fail</link>
+        <guid isPermaLink="true">http://soitscometothis.net/tile-support-fail</guid>
+        
+        <category>tile</category>
+        
+        <category>support</category>
+        
+        
+      </item>
     
       <item>
         <title>Only 6 months to go</title>
@@ -366,21 +410,6 @@ With format JPEG).  &lt;/p&gt;
         <pubDate>Thu, 08 May 2014 07:41:00 -0400</pubDate>
         <link>http://soitscometothis.net/Conversations-With-My-Boy</link>
         <guid isPermaLink="true">http://soitscometothis.net/Conversations-With-My-Boy</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Conversations with my employees</title>
-        <description>&lt;p&gt;Conversations I probably shouldn’t have with my employees:&lt;/p&gt;
-
-&lt;p&gt;Them: May I see you in your office with the door closed for two minutes?&lt;br /&gt;
-Me: I take a lot longer than that!&lt;br /&gt;
-Them: That’s not what your wife says.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 02 May 2014 18:55:00 -0400</pubDate>
-        <link>http://soitscometothis.net/Conversations-with-my-employees</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Conversations-with-my-employees</guid>
         
         
       </item>
