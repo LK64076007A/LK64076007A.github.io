@@ -96,6 +96,39 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Aug 5, 2012</span>
+      
+      <h2><a class="post-link" href="/pasting-text-into-Epic">Errors when pasting text from a Mac into Epic and Allscripts</a></h2>
+      
+      <div class="content"><p><strong>Update 2 (5.23.2013):</strong> When my friend updated to Keyboard Maestro 6, this fix stopped working. This may be because the filter line endings had nothing to do with the fix, rather that process had an unexpected side effect of changing rich text to plain text. We are in the process of testing this theory. If you can’t wait, try filtering with “remove styles”.</p>
+
+<p><strong>Update:</strong> <a href="http://twitter.com/psufka">@psufka</a> reports that he has seen this with Windows machines, so apparently is not an isolated Mac compatibility issue.</p>
+
+<p>A colleague  and friend was having trouble with the Epic electronic medical record. He writes his notes in Pages on the Mac and when he would try to paste the text into Epic, it would mess up. What he was seeing was his note was losing words and the paragraph formatting was screwed up. It was making his life painful, slow, and frustrating…basically like all EMRs make life.</p>
+
+<p><strong>Thankfully, there’s a really simple solution</strong></p>
+
+<p>What was happening (I think) was that he was pasting text from a Mac environment into a Unix environment, <a href="http://www.editpadpro.com/tricklinebreak.html">which have different (invisible) characters to end a line</a>.<sup id="fnref:1208051113"><a href="#fn:1208051113" class="footnote">1</a></sup></p>
+
+<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> has a function to change the line endings of whatever text is in the clipboard. So now, he copies the text to the clipboard using ⌘-C, switches to the EMR, and ⌃⌘-V pastes the correctly formatted text into the EMR without any screw ups.</p>
+
+<p><img src="/images/pastingIntoEpic.png" alt="Epic pasting KM macro" /> </p>
+
+<p>The same thing was also happening with another EMR he uses, Allscripts. The same solution worked there too.</p>
+
+<p>Keyboard Maestro is a very powerful application for the Mac. I can’t begin to say how great it is. It is also not for beginners. If you’re looking to get started with taking more control over your machine, this is not the place I’d recommend starting unless you have a strong familiarity with computers and have someone to help you along the way. Otherwise, it’s very much worth it’s price of $36.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1208051113">
+      <p>There is probably a little more to it than that since the first string of each new paragraph was disappearing, but I’m not an expert and my fix works. <a href="#fnref:1208051113" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 2, 2012</span>
       
       <h2><a class="post-link" href="http://www.leancrew.com/all-this/2012/08/the-safari-6-url-crisis/">Crazy useful url script from Dr. Drang</a> <a class="permalink" title="Permanent link to ‘Crazy useful url script from Dr. Drang’" href="/useful-url-script">Ω</a></h2>
@@ -285,31 +318,6 @@
 <p>Drang rips this guy apart with knowledge and leaves his entrails laying on the ground.</p>
 
 <p>RSS: subscribed.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 6, 2012</span>
-      
-      <h2><a class="post-link" href="http://kottke.org/12/02/how-to-parent-like-the-french">Raising Cain</a> <a class="permalink" title="Permanent link to ‘Raising Cain’" href="/raising-cain">Ω</a></h2>
-      
-      <div class="content"><p>Is there a name for the psychological phenomena in which people in one culture seem to think that ideas attributed to another culture are magically special, even if those same ideas already exist and are not recognized in the first culture?</p>
-
-<p>For example, how exactly is this a “French” way of raising kids?</p>
-
-<p><a href="http://kottke.org/12/02/how-to-parent-like-the-french">Jason Kottke</a>: </p>
-
-<blockquote>
-  <blockquote>
-    <p>One of the keys to this education is the simple act of learning how to wait. It is why the French babies I meet mostly sleep through the night from two or three months old. Their parents don’t pick them up the second they start crying, allowing the babies to learn how to fall back asleep. It is also why French toddlers will sit happily at a restaurant. Rather than snacking all day like American children, they mostly have to wait until mealtime to eat. (French kids consistently have three meals a day and one snack around 4 p.m.)</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <p>We have a French pediatrician who advised us to do almost exactly what is in this article and we’ve had pretty good success with it. It’s not all roses (kids are kids after all) and a lot of work, especially for the first couple of years, because you have to be consistent and steady and firm (but also flexible) and I know I haven’t always done a great job, but the dividends have been totally worth it so far.</p>
-</blockquote>
-
-<p>That’s exactly how I raise my kid. And I never read any stupid book or talked to a pediatrician about it. Seems like a pretty standard old-fashioned way of doing things. </p>
 </div>
     </li>
   

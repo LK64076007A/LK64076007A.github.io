@@ -6,9 +6,39 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 13 Dec 2014 10:42:05 -0500</pubDate>
-    <lastBuildDate>Sat, 13 Dec 2014 10:42:05 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2014 06:22:07 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2014 06:22:07 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>It&#39;s about ethics in web browsing</title>
+        <description>&lt;p&gt;I do not have a problem with advertising. I have a problem with loud, grotesque, ugly, distracting, and insulting advertising. A &lt;a href=&quot;http://atp.fm/episodes/95&quot;&gt;testimonial ad for Backblaze on a tech podcast by a fussy developer who uses Backblaze&lt;/a&gt; is great. A &lt;a href=&quot;https://itunes.apple.com/us/podcast/alex-jones-show-infowars.com/id175803816?mt=2#episodeGuid=http%3A%2F%2Frss.infowars.com%2F20141212_Fri_Alex.mp3&quot;&gt;loud, obnoxious, misleading, and outright dishonest advertisement for colloidal silver&lt;/a&gt; is disgusting. &lt;/p&gt;
+
+&lt;p&gt;I choose to avoid all such advertising. In the cesspool of the internet, one tool I use for this is an &lt;a href=&quot;https://getadblock.com/share/&quot;&gt;ad blocker&lt;/a&gt;. I should not have to go to a webpage and see the ugly ads before choosing to close the webpage as the damage is already done. I also don’t wait for someone to steal from me before putting a password on my computer. Pre-emptive is an acceptable policy position. &lt;sup id=&quot;fnref:141215061731&quot;&gt;&lt;a href=&quot;#fn:141215061731&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;I completely understand if a content generator says&lt;a href=&quot;https://twitter.com/monkbent/status/544301553004199936&quot;&gt;he would rather I don’t view his website&lt;/a&gt; if I am using an ad blocker. In such a case, I will either choose to turn off the ad blocker, or not view his website. I know of at least two websites that do test for ad blockers and will no display their content if one is detected&lt;sup id=&quot;fnref:141215061456&quot;&gt;&lt;a href=&quot;#fn:141215061456&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. I respect that. One of those sites, I have white listed. The other I have not. &lt;/p&gt;
+
+&lt;p&gt;Preferring to pay for content and only be exposed to tasteful advertisements is a logical, consistent, and respectful way to live. &lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:141215061731&quot;&gt;
+      &lt;p&gt;One Twitter user tested my consistency by querying if I watch TV and subscribe to magazines. I do not subscribe and do not have cable, but I do not understand the connection. Who doesn’t use the commercials to grab a drink or snack, or go to the bathroom. I do not think starting to watch a TV show is a contract to sit chained to the couch and watch each ad intently. &lt;a href=&quot;#fnref:141215061731&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:141215061456&quot;&gt;
+      &lt;p&gt;Unfortunately, I’ve had Hulu repeatedly tell me I’m using an ad blocker when I’m not. I browse the web with Safari, which has the ad blocker, and watch Hulu with Chrome, which doesn’t. &lt;a href=&quot;#fnref:141215061456&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 15 Dec 2014 06:19:26 -0500</pubDate>
+        <link>http://soitscometothis.net/gamergate</link>
+        <guid isPermaLink="true">http://soitscometothis.net/gamergate</guid>
+        
+        <category>advertising</category>
+        
+        
+      </item>
     
       <item>
         <title>Tile support fail</title>
@@ -385,31 +415,6 @@ With format JPEG).  &lt;/p&gt;
         <guid isPermaLink="true">http://soitscometothis.net/Keyboard-Maestro-macro-screenshots</guid>
         
         <category>Keyboard Maestro</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Conversations with my boy</title>
-        <description>&lt;p&gt;Me: Do you need a haircut?&lt;/p&gt;
-
-&lt;p&gt;Boy: No! You need a haircut!&lt;/p&gt;
-
-&lt;p&gt;Me: You’re right. I have one scheduled for this Saturday. What should I do?&lt;/p&gt;
-
-&lt;p&gt;Boy: You have emo hair. You look like Justin Bieber.&lt;/p&gt;
-
-&lt;p&gt;Me: Should I go bald? Should I cut it short?&lt;/p&gt;
-
-&lt;p&gt;Boy: No!&lt;/p&gt;
-
-&lt;p&gt;Me: How about some lines or maybe lightning bolts?&lt;/p&gt;
-
-&lt;p&gt;Boy: No. Don’t do anything weird. Just be normal.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 May 2014 07:41:00 -0400</pubDate>
-        <link>http://soitscometothis.net/Conversations-With-My-Boy</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Conversations-With-My-Boy</guid>
         
         
       </item>

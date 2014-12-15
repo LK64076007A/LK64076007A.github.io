@@ -96,6 +96,47 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Apr 10, 2013</span>
+      
+      <h2><a class="post-link" href="/Creating-a-plain-text-wiki-with-nvALT">Creating a plain text wiki with nvALT</a></h2>
+      
+      <div class="content"><h2 id="introduction">Introduction</h2>
+
+<p>When I was in medical school, they issued the student’s <a href="http://en.wikipedia.org/wiki/CLIÉ">Sony Cliés</a>[^1365609755-Model PEG-TJ27]. It was an awesome little device for the time and I took a lot of notes on it while on rounds. Sadly, a few years later, I was unable to read the files when the Clié finally died and I was unable to read the files with any of the software on my computers.</p>
+
+<p>Since then, I’ve been an advocate for plain text file. Plain text does not use any strange or proprietary formatting so the files can be read on any platform and in any app. The data is about as future-proof as you can get.</p>
+
+<p>There are <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html">many other benefits to plain text as well</a>.</p>
+
+<p>Although I use many apps on many devices to read my plain text files, my favorite by far is <a href="http://brettterpstra.com/2012/02/28/nvalt-2-2-public-beta/">nvALT</a>. It is fast, responsive, intuitive, and created by <a href="http://brettterpstra.com/about/">a programmer I highly respect</a>. Unfortunately, it is free, but you can donate money like I did to support its continued development. </p>
+
+<p>Today I found another useful way to use nvALT.</p>
+
+<h2 id="creating-a-plain-text-wiki">Creating a plain text wiki</h2>
+
+<p>As I was reading an article on auto-inflammatory syndromes, I was struck with the idea of creating a list of all the rheumatology diseases. I hit my hotkey trigger to bring up nvALT and typed “rheumatology diseases” to see if I might have started such a list before. No results appeared, so I hit enter and the document with the title “rheumatology diseases” was created.</p>
+
+<p>I copy and pasted the list of auto-inflammatory diseases into the note and went back to reading the article. As is typical, the article started with the first disease and moved down the list. <em>Now I wanted another text document about that disease in which I could write some notes</em>. While it wouldn’t be hard to do, wouldn’t it be nice if the original list of diseases could link to this other document so I could easily browse them in the future?</p>
+
+<p>It happens that nvALT has an in-app feature<sup id="fnref:1365609755-fn1"><a href="#fn:1365609755-fn1" class="footnote">1</a></sup> that allows you to create links to other documents by wrapping the words in [[double brackets]]. Whatever words are in double brackets link to a note with the same words as the title. Example: “I love to eat [[chocolate]].” would link to a document with the name chocolate.txt. In my case, “FMF - [[familial Mediterranean fever]]” linked to a new document “familial Mediterranean fever.txt”.</p>
+
+<p>As I read my way through the journal article, I created a new text document for each disease that is linked to from the disease list document. I imagine in this way, I could accidentally end up writing a book someday, or maybe just a good wiki for my website. Since I’m writing it all in Markdown anyway, the conversion would be relatively simple.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>It’s simple. It’s elegant.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1365609755-fn1">
+      <p>This means it works in the app, but won’t work elsewhere. Because the documents are plain text, this won’t break the document when read in other applications, but the link itself won’t be active. <a href="#fnref:1365609755-fn1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Mar 19, 2013</span>
       
       <h2><a class="post-link" href="/PDFpen-Pro-6">PDFpen Pro 6</a></h2>
@@ -616,63 +657,6 @@ print "Image saved to camera roll."
     </li>
     <li id="fn:201302261023">
       <p>Or just take mine. <a href="#fnref:201302261023" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 18, 2013</span>
-      
-      <h2><a class="post-link" href="/Batch-converting-Pages-documents-to-PDF">Batch converting Pages documents to PDF with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>I had 3000 Pages documents that I wanted to convert PDF. I had previously searched the internet for a way to do this easily but was unsuccessful. I suppose I should have tried searching again, because I would have found <a href="http://www.yourmacteacher.com/batch-convert-pages-documents-to-pdf/">Pages2PDF</a>, which works much better than what I did. </p>
-
-<p>Still, relying on someone to create the exact program you need is not as fun or as useful as being able to fix the problem yourself. So I created a Keyboard Maestro macro.</p>
-
-<p>Basically, this automates the steps I would have had to do manually:</p>
-
-<ol>
-  <li>Open the file in Pages.</li>
-  <li>Select Export to PDF from the menu.</li>
-  <li>Fix the file name.<sup id="fnref:130218165655"><a href="#fn:130218165655" class="footnote">1</a></sup></li>
-  <li>Move the original file to a new location.</li>
-</ol>
-
-<p>In Keyboard Maestro parlance the steps were:</p>
-
-<ul>
-  <li>For Each Item in a the Finder’s selection
-    <ol>
-      <li>Set the file name to a variable fileName</li>
-      <li>Set the file path to a variable filePath</li>
-      <li>Open the file at filePath/fileName<sup id="fnref:130218170000"><a href="#fn:130218170000" class="footnote">2</a></sup> in Pages.</li>
-      <li>Pause for 1.5 seconds.<sup id="fnref:130218170107"><a href="#fn:130218170107" class="footnote">3</a></sup></li>
-      <li>Select the menu item PDF… in the submenu Export in the Menu Title File.</li>
-      <li>Press the Button labeled “Next…”</li>
-      <li>Insert the text from variable %WindowName%1% by pasting. (Basically, this names the file being exported the same as the original file name, except for the extension.)</li>
-      <li>Press the button labeled “Export”.</li>
-      <li>Type the keystroke ?-W (to close the open file)</li>
-      <li>Move the file %Variable%filePath%/%Variable%fileName% to whateverLocationYouWant/%Variable%fileName%</li>
-    </ol>
-  </li>
-</ul>
-
-<p>It worked perfectly if somewhat slow. It took several hours to process all the files. </p>
-
-<p><a href="/images/PagestoPDF.png"><img src="/images/PagestoPDF.png" alt="" /></a> </p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:130218165655">
-      <p>For some reason, Pages kept truncating my filenames. <a href="#fnref:130218165655" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130218170000">
-      <p>I don’t know why I had to specifically use the path and name. Sometimes KM works fine without that and sometimes it doesn’t. I haven’t figured out why and when. <a href="#fnref:130218170000" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130218170107">
-      <p>I didn’t test this step any. I just assumed KM would need time for the document to fully open in Pages. <a href="#fnref:130218170107" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
