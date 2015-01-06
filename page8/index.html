@@ -96,6 +96,129 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Aug 25, 2012</span>
+      
+      <h2><a class="post-link" href="/update-fixing-shortcuts-in-Messages">Updated - Fixing shortcuts in Messages.app</a></h2>
+      
+      <div class="content"><h3 id="update">Update</h3>
+<p>Make a new Keyboard Shortcut in the preferences menu so that “Close Conversation…” is ⌘-W. That will restore ⌘-⌫ to the correct “delete whole line functionality.”</p>
+
+<h3 id="original--august-6-2012">Original  (August 6, 2012)</h3>
+<p>I like my keyboard shortcuts to be consistent across applications. Two shortcuts I use frequently ⌥-⌫ (option-delete) to erase the last word and ⌘-⌫ (command-delete) to erase the last line<sup id="fnref:1208062014"><a href="#fn:1208062014" class="footnote">1</a></sup>.</p>
+
+<p>Since upgrading to Mountain Lion, every time I hit ⌘-⌫ in the Messages app, I get a prompt asking if I want to delete the conversation. And every single time it’s mentally jarring as normal, expected behavior elicits an unexpected and incorrect response. That shortcut is being used as a built-in for the app:</p>
+
+<p><img src="/images/Built_in_messages_shortcut.png" alt="Wrong shortcut" /> </p>
+
+<p>A few minutes of searching the web led me to the universally accepted answer that “no, there is nothing you can do about it.” Even a well written (I assume–tl;dr) <a href="http://daringfireball.net/2003/12/losers_weepers">piece by Gruber</a> weren’t promising.</p>
+
+<p>So I took a chance and tried to change the shortcut by adding another shortcut on top of it in Keyboard Shortcuts in system preferences. </p>
+
+<p><img src="/images/changing_the_shortcut.png" alt="Changing the shortcut" /></p>
+
+<p>I used ⌃⌥↩ because I can’t see myself every using that shortcut. I can’t explain why it seems to get duplicated and also show a new shortcut of ⌥⌘⌫. I did notice that when I went back and re-did this a few times (to take screenshots), I kept getting different duplications. One thing that seemed to be necessary is trying to first make the shortcut ⌃⌥⌫, which would make an error sound and not accept, then doing another one would lead to the desired results. </p>
+
+<p><img src="/images/changed_shortcut.png" alt="Changed shortcut" /> </p>
+
+<p>Clear as mud, I know. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1208062014">
+      <p>This is the case for Textedit, Pages, and Safari. I’m willing to bet it’s the case for most native and third-party apps since I’ve never run across this frustration before. <a href="#fnref:1208062014" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 23, 2012</span>
+      
+      <h2><a class="post-link" href="/using-keyboard-maestro-to-log-into-nextgen">Using Keyboard Maestro to log into Nextgen</a></h2>
+      
+      <div class="content"><p>It takes me about 45-60 seconds to log into my EMR due to human frailty, distractions and a shit EMR. To speed up the process, allow me to do other things with that time, and keep my anger in check, I set up Keyboard Maestro to login for me:</p>
+
+<video width="640" height="480" controls="controls">
+  <source src="/images/KM_to_log_in_to_Nextgen.mov" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<p>The video makes it look easy. In reality, due to vagaries of the Citrix Viewer and variable speed of the network<sup id="fnref:120823161512"><a href="#fn:120823161512" class="footnote">1</a></sup>, I had to make a lot of Until loops to continue to check for the right window being ready and at the front before starting the next phase of the log in.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:120823161512">
+      <p>At 6:30 am, the network is fast, but when everyone starts to log in at 8am, the thing slows to a crawl. <a href="#fnref:120823161512" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 19, 2012</span>
+      
+      <h2><a class="post-link" href="/dream-of-EMRs">I had a dream</a></h2>
+      
+      <div class="content"><p>Last night I dreamt that Tim Cook hired me to help create an EMR that doesn’t suck.</p>
+
+<p>I need therapy. </p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 6, 2012</span>
+      
+      <h2><a class="post-link" href="/fixing-shortcuts-in-Messages">Fixing Shortcuts In Messages</a></h2>
+      
+      <div class="content"><p><strong><a href="/update-fixing-shortcuts-in-Messages">Click here for an updated version</a></strong></p>
+
+<p>I like my keyboard shortcuts to be consistent across applications. Two shortcuts I use frequently ⌥-⌫ (option-delete) to erase the last word and ⌘-⌫ (command-delete) to erase the last line<sup id="fnref:1208062014"><a href="#fn:1208062014" class="footnote">1</a></sup>.</p>
+
+<p>Since upgrading to Mountain Lion, every time I hit ⌘-⌫ in the Messages app, I get a prompt asking if I want to delete the conversation. And every single time it’s mentally jarring as normal, expected behavior elicits an unexpected and incorrect response. That shortcut is being used as a built-in for the app:</p>
+
+<p><img src="/images/Built_in_messages_shortcut.png" alt="Wrong shortcut" /> </p>
+
+<p>A few minutes of searching the web led me to the universally accepted answer that “no, there is nothing you can do about it.” Even a well written (I assume–tl;dr) <a href="http://daringfireball.net/2003/12/losers_weepers" title="Gruber">piece by Gruber</a> weren’t promising.</p>
+
+<p>So I took a chance and tried to change the shortcut by adding another shortcut on top of it in Keyboard Shortcuts in system preferences. </p>
+
+<p><img src="/images/changing_the_shortcut.png" alt="Changing the shortcut" /></p>
+
+<p>I used ⌃⌥↩ because I can’t see myself every using that shortcut. I can’t explain why it seems to get duplicated and also show a new shortcut of ⌥⌘⌫. I did notice that when I went back and re-did this a few times (to take screenshots), I kept getting different duplications. One thing that seemed to be necessary is trying to first make the shortcut ⌃⌥⌫, which would make an error sound and not accept, then doing another one would lead to the desired results. </p>
+
+<p><img src="/images/changed_shortcut.png" alt="Changed shortcut" /> </p>
+
+<p>Clear as mud, I know. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1208062014">
+      <p>This is the case for Textedit, Pages, and Safari. I’m willing to bet it’s the case for most native and third-party apps since I’ve never run across this frustration before. <a href="#fnref:1208062014" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 5, 2012</span>
+      
+      <h2><a class="post-link" href="/pred-taper-KM-video">Prednisone Taper prescriptions using Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>A short video demonstrating using Keyboard Maestro to write prednisone tapers in a patient friendly format, calculating out the total number of pills needed at the end.</p>
+
+<video width="640" height="480" controls="controls">
+  <source src="/images/Pred_Taper_KM.m4v" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<p><strong>Update</strong>: The first taper doesn’t actually calculate the corrects number of pills in the video. I had made a mistake in the order of a loop. It’s been fixed since this video.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 5, 2012</span>
       
       <h2><a class="post-link" href="/pasting-text-into-Epic">Errors when pasting text from a Mac into Epic and Allscripts</a></h2>
@@ -165,6 +288,27 @@
     </li>
   
     <li>
+      <span class="post-meta">May 6, 2012</span>
+      
+      <h2><a class="post-link" href="/Randall-Stephenson">AT&T scumbag CEO</a></h2>
+      
+      <div class="content"><p><a href="http://bits.blogs.nytimes.com/2012/05/04/att-randall-stephenson/">New York Times</a>:</p>
+
+<blockquote>
+  <p>Randall Stephenson, AT&amp;T’s chief executive said that he wished the company had never offered an unlimited data plan for the device and that he loses sleep over free texting services like Apple’s iMessage.</p>
+</blockquote>
+
+<blockquote>
+  <p>“If you’re using iMessage, you’re not using one of our messaging services, right? That’s disruptive to our messaging revenue stream.”</p>
+</blockquote>
+
+<p>What a scumbag. There’s not really a carrier I like, but I think Sprint is up next for me. At least their CEO doesn’t seem to be a dick and they still have unlimited data. </p>
+
+<p>via <a href="http://www.loopinsight.com/2012/05/04/att-chief-regrets-unlimited-data-imessage-for-iphone/">Shawn King @ The Loop</a></p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Apr 26, 2012</span>
       
       <h2><a class="post-link" href="/Challenge-accepted">Challenge accepted</a></h2>
@@ -181,143 +325,6 @@
 <h2 id="make-it-so">Make it so…</h2>
 
 <p><a href="/images/Ben_Brooks_Mode.png"><img src="/images/Ben_Brooks_Mode.png" alt="Ben Brooks Mode" /></a> </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 9, 2012</span>
-      
-      <h2><a class="post-link" href="http://www.manuelstuder.ch/2008/03/14/how-to-automatically-open-torrent-and-other-files-in-safari/">How to automatically open files downloaded by Safari</a> <a class="permalink" title="Permanent link to ‘How to automatically open files downloaded by Safari’" href="/automatically-open-files">Ω</a></h2>
-      
-      <div class="content"><p>Manuel Struder:</p>
-
-<blockquote>
-  <p>First, you have to modify what Safari considers as a “safe” file. Check the option Open “safe” files after downloading in Safari’s Preferences panel.</p>
-</blockquote>
-
-<p>The next steps after this are very Geeky requiring editing of a plist file. I did this awhile ago and it worked great for connecting to my EMR via Citrix, saving me the time from always having to download then click on the Citrix File.</p>
-
-<p>You could do the same thing in a less Geeky way with <a href="http://www.noodlesoft.com/hazel">Hazel</a>.</p>
-
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 4, 2012</span>
-      
-      <h2><a class="post-link" href="https://plus.google.com/111626127367496192147/posts">Vaporware</a> <a class="permalink" title="Permanent link to ‘Vaporware’" href="/vaporware-project-glass">Ω</a></h2>
-      
-      <div class="content"><p><a href="https://plus.google.com/111626127367496192147/posts">Google</a>: </p>
-
-<blockquote>
-  <p>What would you like to see from Project Glass? </p>
-</blockquote>
-
-<p>Something that ships.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 9, 2012</span>
-      
-      <h2><a class="post-link" href="/Tweetbot-mute">Real life needs this feature</a></h2>
-      
-      <div class="content"><p>I just figured out the Tweetbot mute feature. It’s so easy to use yet very granular and powerful. </p>
-
-<p>Someone you like getting too chatty after having a bit too much to drink? Mute them for 6 hours. </p>
-
-<p>Don’t want to see every post from the South by Southwest conference? Mute the hashtag #sxsw for the next week. </p>
-
-<p><img src="/images/Tweetbot_muting.png" alt="Tweetbot mute" /></p>
-
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 5, 2012</span>
-      
-      <h2><a class="post-link" href="http://www.splatf.com/2012/03/att-throttling/">AT&T Throttling</a> <a class="permalink" title="Permanent link to ‘AT&T Throttling’" href="/ATT-throttling">Ω</a></h2>
-      
-      <div class="content"><p><a href="http://www.splatf.com/2012/03/att-throttling/">Dan Frommer</a>:</p>
-
-<blockquote>
-  <p>Sure, you can whine about the promise that AT&amp;T made you many years ago when you signed up for unlimited data. But when has a gigantic telecom company actually failed to disappoint you? </p>
-</blockquote>
-
-<p>Sure, you can whine about being ass-raped in prison, but since when have people not been getting ass raped in prison?</p>
-
-<p>What Dan fails to appreciate is that AT&amp;T used its “unlimited data” to get customers and lock them into a contract. Then, when those same customers want the terms of their contract enforced, they balk. </p>
-
-<p>Even little kids have a strong ingrained sense of fairness, and this clearly isn’t fair. Which leads to strong negative emotions. Which leads to customers leaving.</p>
-
-<p>I guess that’s one thing Dan gets correct:</p>
-
-<blockquote>
-  <p>[Y]ou can switch to Sprint</p>
-</blockquote>
-
-<p>Coincidentally, a friend of mine got the AT&amp;T throttling warning this morning. He’s decided to leave.</p>
-
-<p><strong>Update: I’ve switched to Sprint.</strong></p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 29, 2012</span>
-      
-      <h2><a class="post-link" href="http://minimalmac.com/post/18189678921/tv-is-broken">TV Is Broken</a> <a class="permalink" title="Permanent link to ‘TV Is Broken’" href="/TV-is-broken">Ω</a></h2>
-      
-      <div class="content"><p>I opted out of cable television a long time ago, primarily for the cost, but you forget about the other benefits until you are suddenly subjected to the barage of loud commercials interupting the plot every 5-10 minutes. While those of us who grew up like this may have trouble recognizing how terrible the situation is, kids in their natural state of mine see the situation much more clearly.</p>
-
-<p><a href="http://minimalmac.com/post/18189678921/tv-is-broken">Patrick Rhone</a>:</p>
-
-<blockquote>
-  <p>This is just a commercial. I was turning the volume down because it was so loud. Shrek will come back on in a few minutes” I say.</p>
-</blockquote>
-
-<blockquote>
-  <p>“Did it break?”, she asks. It does sometimes happen at home that Flash or Silverlight implode, interrupt her show, and I have to fix it.</p>
-</blockquote>
-
-<blockquote>
-  <p>“No. It’s just a commercial.”</p>
-</blockquote>
-
-<blockquote>
-  <p>“What’s a commercial?”, she asks.</p>
-</blockquote>
-
-<blockquote>
-  <p>…</p>
-</blockquote>
-
-<blockquote>
-  <p>I then do what I should have simply done in the first place. I hook up the iPad to the free hotel wifi and hand it to her. She fires up the Netflix app, chooses a show, and she is happy.</p>
-</blockquote>
-
-<blockquote>
-  <p>This, she gets. This makes sense.</p>
-</blockquote>
-
-<p>Via <a href="http://www.marco.org">Marco</a></p>
-
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 28, 2012</span>
-      
-      <h2><a class="post-link" href="http://www.leancrew.com/all-this/2012/02/arrested-for-breaking-the-law-of-large-numbers/">How you do erudite</a> <a class="permalink" title="Permanent link to ‘How you do erudite’" href="/doing-erudite">Ω</a></h2>
-      
-      <div class="content"><p><a href="http://www.leancrew.com/all-this/2012/02/arrested-for-breaking-the-law-of-large-numbers/">Dr. Drang</a>:</p>
-
-<blockquote>
-  <p>What really bothers me about the Times article is Stewart’s pretense of scholarship with the bit about Jacob Bernoulli. He obviously knows nothing about the subject and is basically just rewriting Wikipedia in an attempt to appear erudite.</p>
-</blockquote>
-
-<p>Drang rips this guy apart with knowledge and leaves his entrails laying on the ground.</p>
-
-<p>RSS: subscribed.</p>
 </div>
     </li>
   

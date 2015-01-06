@@ -96,6 +96,44 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">May 30, 2013</span>
+      
+      <h2><a class="post-link" href="/making-Passbook-useful">Making Passbook useful</a></h2>
+      
+      <div class="content"><p>I shop for groceries at Harris Teeter<sup id="fnref:20130530160464"><a href="#fn:20130530160464" class="footnote">1</a></sup>. If you use their loyalty card, the prices are much cheaper.<sup id="fnref:20130530160545"><a href="#fn:20130530160545" class="footnote">2</a></sup> I don’t like to carry a loyalty card on me, either in my wallet or on my keychain.<sup id="fnref:20130530160716"><a href="#fn:20130530160716" class="footnote">3</a></sup> I used to leave the loyalty card in my car, but then I’d forget to bring it into the store with me.<sup id="fnref:20130530160833"><a href="#fn:20130530160833" class="footnote">4</a></sup> They have an <a href=". https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&amp;at=11l4RT">iPhone app</a><sup id="fnref:20130530160955"><a href="#fn:20130530160955" class="footnote">5</a></sup> that includes a scannable loyalty card, but it’s slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.</p>
+
+<p>So with help and prompting from <a href="https://twitter.com/waynehartman">some guy I met on the internet</a><sup id="fnref:20130530161214"><a href="#fn:20130530161214" class="footnote">6</a></sup>, I made a location-based Passbook card that pulls up the loyalty card’s barcode whenever I’m at the store.</p>
+
+<p>I used the website <a href="https://api.passdock.com/users/sign_up/">Passdock</a> to create the card using one of their templates. I wasn’t able to create the barcode programmatically because Harris Teeter doesn’t use one of the approved barcode styles for Passbook. Instead, I trimmed out the barcode from the screenshot I had taken and put that in the place of the logo. I used the built in DigitalColor Meter app in OS X to make the colors match and put in the GPS coordinates to make sure it would appear whenever I was at the store. It took a little debugging at first, but it works perfectly.</p>
+
+<p>Now, rather than being annoyed whenever I’m checking out, I get a little flush of satisfaction.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130530160464">
+      <p>Don’t be creepy™. <a href="#fnref:20130530160464" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160545">
+      <p>Or maybe they’re much more expensive to begin with and only reasonable with the loyalty card. <a href="#fnref:20130530160545" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160716">
+      <p>Minimalism is cool, right? <a href="#fnref:20130530160716" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160833">
+      <p>Remembering things is hard. <a href="#fnref:20130530160833" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160955">
+      <p>And <a href="https://play.google.com/store/apps/details?id=com.harristeeter.htmobile&amp;hl=en">Android too</a>. <a href="#fnref:20130530160955" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530161214">
+      <p>What a wonderful day it will be when I hear those words from my daughter’s mouth. <a href="#fnref:20130530161214" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">May 29, 2013</span>
       
       <h2><a class="post-link" href="http://allthingsd.com/20130529/apples-tim-cook-the-full-d11-interview-video/">Notes while watching the D11 Cook interview</a> <a class="permalink" title="Permanent link to ‘Notes while watching the D11 Cook interview’" href="/Notes-while-watching-the-D11-Cook-interview">Ω</a></h2>
@@ -207,6 +245,69 @@
 <p><a href="/images/MD_link_from_Safari_title_url.jpg"><img src="/images/MD_link_from_Safari_title_url.jpg" alt="" /></a></p>
 
 <p>I’m looking forward to upgrading my old macros and kicking the tires a bit more. I can’t wait for my next project so I have a chance to create something new.</p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">May 21, 2013</span>
+      
+      <h2><a class="post-link" href="/google-glass-as-a-tool">Google Glass as a tool</a></h2>
+      
+      <div class="content"><p><a href="/images/google_glass_person.jpg"><img src="/images/google_glass_person.jpg" alt="" /></a> </p>
+
+<p><a href="http://www.google.com/glass/start/">Google Glass</a> is a new<sup id="fnref:20130521080110"><a href="#fn:20130521080110" class="footnote">1</a></sup>, wearable technology that incorporates a screen, microphone, and camera into a glasses-like form factor. Most<sup id="fnref:20130521080295"><a href="#fn:20130521080295" class="footnote">2</a></sup> of what I’ve read about it so far as been fairly negative with comments ranging from how bad you’ll look wearing them to how much of an invasion of privacy it is when people can take your picture at any time without them noticing. In his typically outrageous manner, Ben Brooks has even <a href="http://brooksreview.net/2013/05/glassholes/">suggested outlawing them</a>.</p>
+
+<p>Unfortunately, these complaints, while at least partially valid, are also myopic.<sup id="fnref:20130521080585"><a href="#fn:20130521080585" class="footnote">3</a></sup> Fashion is fickle and their design can change; cellphones, spy cameras, and digital SLRs with telephoto lenses got rid of privacy long ago; and, Ben, taking photos of people without their permission in public is perfectly legal. Yeah, even if it’s of your kid.<sup id="fnref:20130521080869"><a href="#fn:20130521080869" class="footnote">4</a></sup> They also seem to overlook or have no image about how useful they could be. </p>
+
+<p>What interests me about Google Glass is not how it might be used in social situations<sup id="fnref:20130521081069"><a href="#fn:20130521081069" class="footnote">5</a></sup>, and the accompanying norms it may violate, but how this could be used as a tool, an extension of one’s self. </p>
+
+<ul>
+  <li>I imagine a rescue worker being able to view and tag dangerous situations in some wreckage, while leaving their hands free or perhaps easily and quickly taking images of an injured survivor that could be uploaded and reviewed at the central medical center so that preparations could be made before the patient even arrives. </li>
+  <li>I imagine a doctor doing a procedure being able to monitor an ultrasound image or telemetry while not taking his eyes off the patient. </li>
+  <li>I imagine being about to keep a menu or manual right in my field of vision while cooking or fixing the car, without awkwardly perching it somewhere not quite easy to see and not quite out of the danger zone. </li>
+  <li>I imagine that every time I looked at a document containing the words of some diagnosis, Glass would automatically search for the ICD-10 code and if I happened to need it, I could quickly glance up at the screen. </li>
+  <li>I imagine seeing a patient and when I start talking about the treatment, Glass connects to my electronic chart to look up their insurance coverage and list in my field of vision which medication is covered so I can continue explaining the treatment uninterrupted. </li>
+</ul>
+
+<p>My first thought when hearing about Glass was how useful this would be for parents of infants. One mother already wrote about how useful it is<sup id="fnref:20130521093210"><a href="#fn:20130521093210" class="footnote">6</a></sup>.</p>
+
+<p>Sure, I can’t imaging people wearing these all the time in every social situation<sup id="fnref:20130521082208"><a href="#fn:20130521082208" class="footnote">7</a></sup>, but who said you had to?<sup id="fnref:20130521082632"><a href="#fn:20130521082632" class="footnote">8</a></sup> I may never wear it while at a restaurant or a party, but who cares if I look dorky while walking around my own house? I don’t wear my pajamas outside either. While most agree that bluetooth headsets are dorky, it’s not the same when wearer is the receptionist sitting at the desk of your local law office or clinic answering phones all day. In that same situation, I can imagine the practice management software being able to identify the person checking in, pull up her chart, take a picture of the patient’s new insurance card and upload it to the billing software, while leaving the receptionist’s hands free for other things.</p>
+
+<p>Social norms may have to adapt or may have to be more strongly reiterated to put those who would abuse this, or any, technology<sup id="fnref:20130521084058"><a href="#fn:20130521084058" class="footnote">9</a></sup>, but if we can get past the idea of this being a social device and start to look at it more as a tool, suddenly, this technology seems a lot more interesting. </p>
+
+<p>I have no prediction as to the business success of Glass and the functionality will greatly depend on how good the software is. Google has already let me down enough times that I’m cautious. But I am curious. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130521080110">
+      <p>Not even publicly purchasable. <a href="#fnref:20130521080110" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521080295">
+      <p>Scoble doesn’t count. <a href="#fnref:20130521080295" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521080585">
+      <p>No pun intended. <a href="#fnref:20130521080585" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521080869">
+      <p>Not to mention, if someone really wants to get inappropriate photos of people, it’s a lot easier and cheaper to just Google it. <a href="#fnref:20130521080869" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521081069">
+      <p>From the technocrati’s reaction to GG, it seems all anyone does in Silicon Valley is go to parties and the bathroom. <a href="#fnref:20130521081069" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521093210">
+      <p>Apologies, but I can’t find the link now. <a href="#fnref:20130521093210" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521082208">
+      <p>Except for a few, strange outliers, but isn’t this always the case? <a href="#fnref:20130521082208" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521082632">
+      <p>At least for now. Who knows how social norms will change in the future. Maybe like bluetooth headsets it will always be gauche, or maybe it will come to be the norm. <a href="#fnref:20130521082632" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130521084058">
+      <p>Scoble is never invited to my house. <a href="#fnref:20130521084058" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 </div>
     </li>
   
@@ -437,419 +538,6 @@ Thou annointest my terminal with bash; My stack doesn’t overflow.  </p>
 
 <p>Surely TextExpander and Keyboard Maestro shall power all the shortcuts of my workflow,<br />
 and I will compute in the House of the Mac forever.  </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 18, 2013</span>
-      
-      <h2><a class="post-link" href="/a-doctors-notes---abbreviated">A doctor's notes - abbreviated</a></h2>
-      
-      <div class="content"><p>We doctors spend most of our working life documenting our clinical encounters but too often suffer from poor chart systems leading to inaccurate or inaccessible notes. We also fail to maintain ownership over our work product leading to a loss of useful clinical and practice information and worse patient care.</p>
-
-<p>As an open, universally used EMR data standard does not exist, created my own system that I’d like to share with you. It is based on a set of principles that I’ve adopted from other modern, technological principles.</p>
-
-<h1 id="principles">Principles</h1>
-
-<ol>
-  <li>Data must be easily entered at the point of care.</li>
-  <li>Data must remain in the possession of the physician.</li>
-  <li>Data must be protected from becoming unreadable due to expired proprietary formatting.</li>
-  <li>Data must be encrypted.</li>
-  <li>Data must be rapidly accessible both locally and remotely.</li>
-  <li>Data must be easily searchable from outside the files proper.</li>
-  <li>Data must be easily displayed in a aesthetically pleasing format that can be changed in time.<sup id="fnref:1366329887-fn1"><a href="#fn:1366329887-fn1" class="footnote">1</a></sup></li>
-</ol>
-
-<h1 id="hardware">Hardware</h1>
-
-<p>Buy an 11 inch Macbook Air and turn on <a href="http://en.wikipedia.org/wiki/FileVault">File Vault</a> (full disk encryption) in the system preferences. </p>
-
-<h1 id="solution---software">Solution - Software</h1>
-
-<p>Write your notes into a plain text editor, using a text macro application, and save them as plain text files into one folder.</p>
-
-<h1 id="the-painful-part---putting-your-note-in-their-chart">The Painful Part - Putting <em>Your</em> note in <em>Their</em> chart</h1>
-
-<p>Your note saved in your records needs to be placed in the clinic or hospital records that the patient is at. If they have an EMR, just copy and paste the note into their application. If it is a paper chart, print it out.</p>
-
-<h1 id="security">Security</h1>
-
-<p>Maintain physical security over your laptop. It must always be in your possession or locked up in a safe or office that no one else (including janitors) have access to. The easiest system it to just keep your computer on you always, or locked in a safe at home.</p>
-
-<p>Make a strong password. At least 8 characters, capital and lowercase letters, numbers, and symptoms. Make it some kind of phrase that it easy to remember and type. E.g. <code>Caesar?:ettu,Brute</code><sup id="fnref:1366329887-fn2"><a href="#fn:1366329887-fn2" class="footnote">2</a></sup></p>
-
-<h1 id="backups">Backups</h1>
-
-<p>Make <a href="http://soitscometothis.net/post/clone-backups-why-and-how">clone back ups</a> of your machine. Make multiple copies of your back ups. Encrypt them. Keep them locked up. You can even make a USB necklace with all the notes on them.<sup id="fnref:1366329887-fn3"><a href="#fn:1366329887-fn3" class="footnote">3</a></sup></p>
-
-<h1 id="search">Search</h1>
-
-<p>Use <a href="http://support.apple.com/kb/ht2531">Spotlight</a> or the powerful search feature of <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> to rapidly search through all your notes when you need to find something like “all your patients with psoriatic arthritis on azathioprine” or “all the consults sent to me by Dr. so-and-so”.</p>
-
-<h1 id="formatting">Formatting</h1>
-
-<p>Formatting is really not necessary but if you want to print out pretty notes or add letterhead to your faxed PDFs, you can use the <a href="http://bywordapp.com/markdown/guide.html">Markdown format</a> when writing your notes and the <a href="http://markedapp.com/">Marked application</a> for creating pretty PDFs with custom CSS formatting.</p>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>In the end, you have an accurate, fast, reliable, secure, and searchable record system. It’s relatively cheap with the only significant cost being the hardware. You can use it across multiple clinics and hospitals using different medical record systems while maintaining a single unified records system on all your patients. </p>
-
-<h1 id="future">Future</h1>
-
-<p>I hope we don’t have to wait long until we do have cross platform, open EMR records. Until then, I think this is the best solution for physicians who have a modicum of nerd power.</p>
-
-<p><a href="/a-doctors-notes">Read the full 6000 word original post from which this abbreviated version was created</a>.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1366329887-fn1">
-      <p>The data must be separate from the formatting. <a href="#fnref:1366329887-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366329887-fn2">
-      <p>Ceasar asked: et tu, Bruté? <a href="#fnref:1366329887-fn2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366329887-fn3">
-      <p>+10 nerd points! <a href="#fnref:1366329887-fn3" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 17, 2013</span>
-      
-      <h2><a class="post-link" href="/a-doctors-notes">A doctor's notes</a></h2>
-      
-      <div class="content"><p>Physicians spend a large part of their day documenting what they do, primarily in the form of the clinic note, but also telephone notes, record reviews, and the legions of forms the government and insurance companies create.</p>
-
-<p>Over my time as a fellow and a private practice physician, I’ve created what I consider a relatively elegant and easy system for moderately skilled tech-nerd physicians to create, store, retrieve and disseminate their documentation and I’d like to share a small part of it with you.</p>
-
-<p>I didn’t mean this post to become as long as it had. I tried to keep it short by leaving out most of the specifics, potential pitfalls, and alternatives. I failed. So I’ve created a “too long: didn’t/don’t read” (TL;DR) version that is both interspersed throughout the text below or <a href="http://soitscometothis.net/post/a-doctors-notes-abbreviated">available as a separate post</a>.</p>
-
-<h1 id="introduction">Introduction</h1>
-
-<p>Data is important. </p>
-
-<p>Data fails when it is inaccurate or inaccessible.</p>
-
-<p>Paper charts and modern EMRs excel at failing in both of these areas. </p>
-
-<p>Physicians need a better way to manage their clinical notes than is afforded by the software tools they are issued and most clinics and hospitals. </p>
-
-<h1 id="inaccurate">Inaccurate</h1>
-
-<blockquote>
-  <p>TL: DR: Boilerplate templates and copy-and-paste (CAP) have resulted in voluminous, inaccurate notes. Poorly designed software that inhibits data entry encourages the use of these templates and copy-and-pasted inaccuracies. This also inhibits entering all the pertinent data so that data is lost due to lack of documentation.</p>
-</blockquote>
-
-<p>The perils of modern EMR documentation are <a href="http://www.reuters.com/article/2013/01/04/us-electronic-medical-records-idUSBRE9030IJ20130104">well described in the literature</a>. Most of the inaccuracies are created because of a combination of pressure to document unnecessary data in conjunction with the power to easily create this unnecessary documentation by templates or copy-and-paste. </p>
-
-<p>Daily, I see patients in consultation for very specific joint symptoms in which the prior notes have a well documented, template-created, ENT exam but no joint exam.<sup id="fnref:1366312334-fn1"><a href="#fn:1366312334-fn1" class="footnote">1</a></sup></p>
-
-<p>I saw one patient whose initial visit to his PCP was for a sore throat and the exam dutifully noted pharyngeal erythema and tonsilar exudate, as did every subsequent exam for the next 2 years. Either it was the longest lasting case of strep throat in the history of medicine or the data was inaccurate. </p>
-
-<p>All physicians know that a detailed, page long list of negative symptoms is most likely to mean the ROS was never done rather than that it was done completely. </p>
-
-<p>And yet, sadly, this data stands as canon in the indelible, idealized EMR.</p>
-
-<p>When you can’t even look at your own notes from a year ago and trust in their accuracy, you’re lost. </p>
-
-<p>Another part of the reason that the data is inaccurate is because of numerous barriers to data entry. In a finite amount of time, I will have to document less if I use a feather quill than if I use a ballpoint pen. The same is true with computers. If the software is poorly designed requiring multiple screens, menus, pop ups, check boxes, and radial dialogue boxes, then the data will be incomplete or less accurate because it could not be entered frictionlessly.</p>
-
-<p>It seems clear to me that no one who has ever created the UI of an EMR has actually had to use it to document multiple encounters in a busy clinical practice. This may explain why those physicians who frequently praise their EMR are either academics whose residents are writing their notes, or have paid underlings entering most of the data.<sup id="fnref:1366312334-fn2"><a href="#fn:1366312334-fn2" class="footnote">2</a></sup></p>
-
-<h1 id="inaccessibility">Inaccessibility</h1>
-
-<blockquote>
-  <p>TL:DR: Modern EMRs, paper charts, changing jobs, network outages, server crashes, and outdated/unsupported data formats all conspire to keep you from accessing the data you created and need to take care of your patients.</p>
-</blockquote>
-
-<p>Physicians spend a large amount of their time documenting the clinical history and exam; the interpretation of the combined history, exam, labs, imaging, and pathology; and treatments (and most importantly) the response to treatments over time. This historical knowledge is priceless and yet too often is neglected.</p>
-
-<p>As physicians spend so much time creating this record and since it is so important to providing the best possible care, you would think we would guard this record religiously and yet I would assume that most physicians have no ownership over their work product. It is a common theme in the internet nerd community that one should own their data so that if you decide to stop using a company or the company shuts down, you have not lost your data. How much more important are our clinic notes than some Instagram photos or blog posts about your latests cooking experiment? </p>
-
-<p>Notes can be inaccessible to the physician who created them for many reasons but primarily due to no longer working at the facility where they created the not or just not having remote<sup id="fnref:1366312334-fn3"><a href="#fn:1366312334-fn3" class="footnote">3</a></sup> access.</p>
-
-<p>Notes are written in one practice but when the physician leaves he doesn’t take the notes with him. In the days of paper charts, this might have been an unfortunate necessity but in the digital age the entire record could fit on a thumb drive.</p>
-
-<p>Notes are written in the hospital on rounds. The notes stay in the hospital chart, completely inaccessible to the individual physicians’s clinic EMR. </p>
-
-<p>Not long ago a colleague left the state. I inherited many of his patients. I was completely unable to get records. He no longer had them as having left them with the clinic when he moved. The hospital owned clinic was shut down. The hospital medical records department had no idea where they might be and seemed insulted that I would even ask them the question as their mandate ended at the hospital doors. All that knowledge and work was lost.</p>
-
-<p>Next, records can be inaccessible because they are locally stored but you are remote, or because they are remotely stored, “in the cloud” in today’s parlance, but the internet/server/power is down. Local data is fast, while remote data is slow. Remote data can be ubiquitous, while local data isn’t.</p>
-
-<p>Finally, data can become inaccessible due to proprietary data formats. Again, it is well documented that many EMRs create lock-in with their proprietary data format. Even if you can someone get that data out, it is unlikely that the data will survive future advances in technology. Simply put, I cannot read documents I created with word processors from the early 1990s, where as I can still read hand written notes from the same time. Data needs to be in some kind of common, non-proprietary, future-proof format.</p>
-
-<h1 id="solution-preamble">Solution preamble</h1>
-
-<p>This is not a best practices solution.</p>
-
-<p>This is not an ideal solution.</p>
-
-<p>This is a practical, this-is-the-world-I’m-living-in solution. </p>
-
-<p>It is based on principles that are unchanging but is created with tools that are constantly changing and therefore it adopts to the tools.</p>
-
-<p>It is not a complete EMR. It is a note taking system that I use that is powerful, practical, and functional within the confines of the modern medical system. I certainly wish there was a feature complete, powerful, EMR that allowed me to own my data and accurately input my notes with the benefits of remote and local storage combined. There is not.</p>
-
-<p>It is not likely to be useful as-is for most physicians, but those with a modicum of technical knowledge should be able to easily adapt it or it’s principles to their own system.</p>
-
-<h1 id="principles">Principles</h1>
-
-<ol>
-  <li>Data must be easily entered at the point of care.</li>
-  <li>Data must remain in the possession of the physician.</li>
-  <li>Data must be protected from becoming unreadable due to expired proprietary formatting.</li>
-  <li>Data must be encrypted.</li>
-  <li>Data must be rapidly accessible both locally and remotely.</li>
-  <li>Data must be easily searchable from outside the files proper.</li>
-  <li>Data must be easily displayed in a aesthetically pleasing format that can be changed in time.<sup id="fnref:1366312334-fn4"><a href="#fn:1366312334-fn4" class="footnote">4</a></sup></li>
-</ol>
-
-<h1 id="solution---hardware">Solution - Hardware</h1>
-
-<blockquote>
-  <p>TL:DR: Buy an 11 inch Macbook Air and turn on File Vault in the system preferences. </p>
-</blockquote>
-
-<p>Although the software is probably the most important part of my system, everything starts with the hardware. Hospitals and large medical clinics typically buy cheap Dell computers running Windows. This inevitably leads to slow, uncustomizable, one-size-fits-no-one machines running outdated software, bogged down by bloatware and viruses.</p>
-
-<p>My weapon of choice is a Macbook Air. Apple computers are considered more expensive, but comparing equivalent models, are equal or cheaper than a similarly powered machine from another company. SSD drives are ridiculously faster than the traditional HDD. The Macbook Air<sup id="fnref:1366312334-fn6"><a href="#fn:1366312334-fn6" class="footnote">5</a></sup> is light enough to be easily carried around a clinic or hospital and small enough to type with on your lap or throw on any counter, exam table, or chair. The size also means that I can easily take it with me anywhere resulting in physical security of my files, part of the HIPAA requirement. While $1000 may be expensive compared to cheap Windows laptops, it’s cheaper than any board test I ever took and for something I use 8-12 hours a day, seems like a bargain to me.</p>
-
-<p>The operating system for a new Macbook Air is OS X 10.8 or “Mountain Lion”. This operating system has built-in full disk encryption. While benchmark tests will show that this slows down the speed of the machine (as the CPU has to decrypt and re-encrypt your data on the fly as you open and change files) in clinical practice you will never notice. Having all my files encrypted provides security to my patient’s data and has frequently shut down any complaints from CMIOs that I’m using my personal hardware in the clinic. This disk encryption is part of keeping your patient records safe and HIPAA compliant and most clinics and hospitals have yet to comply with this kind of security. When my last clinic decided to implement disk encryption on numerous Windows machines from Dell and HP running various OS’s and with standard HDDs it was a nightmare. Nurses were locked out of computers for days and a drastic decrease in speed was noted immediately. In OS X you just need to flip a switch.<sup id="fnref:1366312334-fn7"><a href="#fn:1366312334-fn7" class="footnote">6</a></sup></p>
-
-<p>If you want, you can get an external monitor, keyboard, and mouse to use when not mobile. My colleague does this. My wife and I do not.</p>
-
-<h1 id="solution---software">Solution - Software</h1>
-
-<blockquote>
-  <p>TL:DR: Write your notes into a plain text editor, using a text macro application, and save them as plain text files into one folder.</p>
-</blockquote>
-
-<p>Now that I have the hardware, the next question is what to use to create the note. </p>
-
-<p>Short answer: Anything but the EMR.</p>
-
-<p>Longer answer: EMRs seem almost deliberately designed to be impossible to create notes with easily. They also typically store the data in proprietary formats and the data is usually locked into the EMR. So don’t use it. Yes, in a sense this creates more work, but I argue you’ll save time in other ways and with the benefit of owning your data.</p>
-
-<p>I advocate you write your notes in plain text. Plain text is praised by programmers and nerds of every walk of life from <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html">lawyers</a> to physicians because it is “open”, non-proprietary, future-proof, easily encryptable, easily compressible, and results in small file sizes.</p>
-
-<p>Plain text can be written in any text editor. You can even write in word processors like Word or Pages, but I strongly recommend against it. All computers come with a text editor like TextEdit on the Mac and there are many different free and cheap text editors available. Byword, IA Writer, Multimarkdown Composer<sup id="fnref:1366312334-fn8"><a href="#fn:1366312334-fn8" class="footnote">7</a></sup>, TextWrangler, and Textmate are just a few that I own and use based on my whim and mood. The great thing about plain text is that it does not have any formatting that locks it into one application.<sup id="fnref:1366312334-fn9"><a href="#fn:1366312334-fn9" class="footnote">8</a></sup> So if you create a months worth of notes in Byword and then decide to start using IA Writer because of its cute blue cursor, you don’t have to change anything about your data.</p>
-
-<p>Your text editor will present you with one big text field that you can type or dictate into. No modal boxes. No pull down menus. No changing from screen to screen just to document different parts of the HPI.</p>
-
-<p>I save each clinic, phone, and hospital note as a separate text document in one large folder called “patient notes”<sup id="fnref:1366312334-1366312334-fn10"><a href="#fn:1366312334-1366312334-fn10" class="footnote">9</a></sup>.</p>
-
-<p>Of course, a large empty sheet can be intimidating and also somewhat slow. You don’t want to have to type out your headers and other boilerplate every time. For example, you don’t want to type out the name and date yourself each time you create a note, do you? So you need a text macro program. I’ve written about these before and there are plenty of others who have as well. Anything you are going to type over and over should be automated<sup id="fnref:1366312334-1366312334-fn11"><a href="#fn:1366312334-1366312334-fn11" class="footnote">10</a></sup>. </p>
-
-<p>I use <a href="http://smilesoftware.com/TextExpander/index.html">TextExpander</a> and you can read my <a href="http://soitscometothis.net/tag/textexpander">many posts</a> on it or search the web for other’s articles. Basically, get a text macro program and learn how to use it. Don’t create all your macros at once. Build them up slowly and organically over time as you need them. It will take awhile, but your speed and accuracy in documentation will be impressive. In time, you will go from macros that turn <code>.hum</code> into <code>adalimumab (Humira)</code> to macros that turn <code>.mtx1</code> into <code>Rx: start methotrexate 2.5mg, take 15mg (6 pills) every 7 days, #30, refill 1</code> and eventually into macros that turn <code>.ddxcie</code> into</p>
-
-<pre><code>Differential diagnosis of chronic inflammatory effusion/monoarthritis
-
-1. Mycobacterial infection  
-2. Fungal infection
-3. Lyme arthritis  
-4. Monoarticular presentation of rheumatoid arthritis  
-5. Seronegative spondyloarthropathies  
-6. Sarcoid arthritis   
-7. Foreign-body synovitis  
-
-Consider ordering: CCP, RF, TB (quantiferon), ACE level, fungal cultures and smear, mycobacterial cultures and smear, Lyme serum, Lyme PCR joint, MRI, HLA-B27, ophthalmology consult, and/or CXR if not already complete.
-</code></pre>
-
-<p>Some EMRs<sup id="fnref:1366312334-1366312334-fn12"><a href="#fn:1366312334-1366312334-fn12" class="footnote">11</a></sup> have macro functionality built in but that is limited to the program and the confines/rules of the program. By using a separate application that functions on top of the underlying applications you can use the same macros anywhere. So, if I get an curbside consult email from a family physician asking about what they should be considering in a patient with a chronic inflammatory effusion of the right knee, I can actually type 7 characters and hit send.<sup id="fnref:1366312334-1366312334-fn13"><a href="#fn:1366312334-1366312334-fn13" class="footnote">12</a></sup></p>
-
-<p>I have a friend who has created amazing macros for things like the NIH stroke scale and a complete neurological physical exam that not only allows him to quickly document those items, but also serves as a kind of checklist to remind him not to skip anything. </p>
-
-<p>I use it for everything from commonly misspelled works, to entire paragraphs of patient education, to plans of care, to templated procedure notes, to macros that calculate and type the patient’s age when I type the patients date of birth into the note.</p>
-
-<p>Other Examples: </p>
-
-<ul>
-  <li><code>.dxra</code> = Rheumatoid arthritis (714.0)  </li>
-  <li><code>HepB/C</code> = hepatitis B surface antigen, hepatitis C antibody </li>
-  <li><code>.posana</code> = A positive ANA does not diagnose an autoimmune disease nor does a negative result exclude it; however, ANA is positive in 99% of patients with Systemic Lupus Erythematosus therefore a negative result strongly argues against such a diagnosis.  ANA can be positive by definition in 5% of the healthy population, typically in titers less than 1:320.  Up to 20% of healthy relatives of patients with rheumatic disease and up to 75% of healthy individuals older than 70 will have a positive ANA (typically less than 1:80 with a speckled or homogenous pattern).  Other conditions associated with a positive ANA are thyroid disease, chronic infections including TB/viral hepatitis, subacute bacterial endocarditis, malignancies, any of the auto-immune or connective tissue disease, multiple sclerosis and patients with silicone breast implants.  In the absence of physical or biochemical evidence of pathology, a positive ANA is not clinically useful. </li>
-</ul>
-
-<p>One type of macro I use constantly is one that changes any medicine abbreviations like LEF into the full generic <em>and</em> brand name: leflunomide (Arava). This creates an extra level of education and safety for other physicians who may not be as familiar with our specialities medicines and also for the patient, who may know their drug by it’s generic name “Avara” while I type LEF or leflunomide. I frequently give my patient’s their notes or at least the assessment and plan at the end of each visit so having this clarity built in without any extra work on my part is important.</p>
-
-<h1 id="the-painful-part---putting-your-note-in-their-chart">The Painful Part - Putting <em>Your</em> note in <em>Their</em> chart</h1>
-
-<blockquote>
-  <p>TL:DR: Your note saved in your records needs to be placed in the clinic or hospital records that the patient is at. If they have an EMR, just copy and paste the note into their application. If it is a paper chart, print it out.</p>
-</blockquote>
-
-<p>So, you have <em>your</em> note. Now what? This depends on the medical record system for your hospital or clinic, but with one commonality: it will be ugly, slow, inelegant, and painful. You have to put your note into the medical records of the clinic or hospital in which you’re seeing the patient. EMRs are not open and do not use common data formats even between the same EMR at different hospitals. Paper charts are still used widely in most hospitals in the country. There’s just no getting around this no matter what you do. If you want to keep your data and want to benefit from the legibility and speed of typed text on your own machine, you just have to put up with it.</p>
-
-<p>At my last job the clinic had an EMR and the hospital used paper charts. It is likely that you have a similar situation. </p>
-
-<h2 id="emr-charts">EMR Charts</h2>
-
-<p>In my EMR and in whatever EMR you are likely to be using, you will need to copy and paste the text into the EMR. In EMR’s that have a large open text field like CPRS this is relatively easy. In complicated EMRs like NextGen, you’ll have to find a free text dialogue box and paste it in there before “generating” the note. There may be issues with poor line formatting but there are ways around this.<sup id="fnref:1366312334-1366312334-fn14"><a href="#fn:1366312334-1366312334-fn14" class="footnote">13</a></sup> </p>
-
-<p>Frankly, I have to force myself not to care about the formatting of my notes in the EMR because those who make them and those who buy them just don’t care and I would waste hours of my time trying to make them look good. I just copy-and-paste, close my eyes, and hit submit. I have to console myself that the note in my system and the note I send out to the physicians consulting me looks like I actually care.<sup id="fnref:1366312334-1366312334-fn15"><a href="#fn:1366312334-1366312334-fn15" class="footnote">14</a></sup></p>
-
-<h2 id="paper-charts">Paper Charts</h2>
-
-<p>When at a clinic or hospital with a paper chart, I carry a small, retractable universal printer cord with me that I can plug it into the back of the networked printers at the nursing stations and just printing my note to place in the chart.</p>
-
-<h1 id="solution---backup-and-security">Solution - Backup and Security</h1>
-
-<p>These are your notes. These are your patient’s notes. They are gold and they are poison. You absolutely cannot afford to lose them to theft or to data lose both because of the loss of such valuable information and also due to potentially severe financial penalties from violating patient privacy laws. Your back ups and your security must be strong and usable (read: easy).</p>
-
-<h2 id="security">Security</h2>
-
-<p>First, you must maintain physical security. This means the computer you use and any back ups you have must be physically protected. You don’t leave your computer unattended in your office. You don’t leave your back ups in your unlocked office on your desk. </p>
-
-<p>My computer is on me 90% of the time during normal life, and when it is not, it is locked up. My backups are also either on my person or locked away in a hidden location. Use both physical security and security by obscurity. </p>
-
-<p>Second, you must have a strong password to lock your machine. It should be easy to remember and easy to type but it also needs to be long <sup id="fnref:1366312334-1366312334-fn16"><a href="#fn:1366312334-1366312334-fn16" class="footnote">15</a></sup> and not simple words. iloveyou, password, 1234567, qwerty, asdfjkl; and temporary are not secure passwords. Use 3-4 words you can easily remember but aren’t easily associated with you (kids and pets names are bad), substitute a few characters here and there, and that should be good enough in most cases. A good one might be something like <code>Caesar?:ettu,Brute</code><sup id="fnref:1366312334-1366312334-fn17"><a href="#fn:1366312334-1366312334-fn17" class="footnote">16</a></sup>. </p>
-
-<p>Third, your data should be encrypted. This can be really complicated and painful to do. But you bought a Macbook Air and turned on File Vault, right? Ok, moving on.</p>
-
-<p>Finally, your remote data must also be transmitted and physically stored securely. If you’re using a public company then I would say to be safe you need to have a HIPAA (I think the fancy acronym for this is BAA.) agreement in place with them and they need to promise that they are following HIPAA compliant practices. Most services such as Dropbox, do not. ;-( </p>
-
-<p>Thankfully, there is a new product (and more on the way) that provides remote, encrypted data in a Dropbox-style fashion for a reasonable price: <a href="http://filetransporter.com">Transporter</a>. You can plug their device into your own networks (that should be physically and electronically secured) and it creates a Dropbox-style folder on your machine giving you the power of Dropbox (both remote and local data synchronization) without the messy business agreements and monthly cost. <em>I have not implemented this into my workflow yet</em>, but will in the next two months. I plan on having one at my clinic and one at home providing cloud storage and back up while maintaining a local copy as well. </p>
-
-<h2 id="backup">Backup</h2>
-
-<p>There are many articles out there on the importance of backing up your data. Google them. Read them. Do them.</p>
-
-<p>I make multiple <a href="/The-safety-of-clone-backups">clone back ups</a> of my computer which includes my patient notes. I keep one copy on me and I keep two other copies locked in fire proof safes. It’s really not that hard and it is your responsibility. </p>
-
-<p>You can also set up a remote backup/storage using something like the <a href="http://filetransporter.com">Transporter</a> mentioned above.</p>
-
-<p>Finally, text files are so small, you can even easily keep a copy of them on an encrypted USB drive you wear around your neck on a chain.<sup id="fnref:1366312334-1366312334-fn18"><a href="#fn:1366312334-1366312334-fn18" class="footnote">17</a></sup> Now that’s dedication.</p>
-
-<p>Backup up my data is just a part of my day. I’d sooner leave my door unlocked then not backing up my files.</p>
-
-<p>So that covers principles 1-5 that I [enumerated above][Principles], leaving only search and formatting. </p>
-
-<h1 id="solution---search">Solution - Search</h1>
-
-<blockquote>
-  <p>Use Spotlight or the powerful search functions in applications like TextWrangler to search quickly and easily in all your notes at once.</p>
-</blockquote>
-
-<p>Google redefined the power of search in our minds, first with ability to easily search the entire internet and then the ability to search your mail, your desktop, and all your files. Rather than having to store files/emails in complicated, sub-nested folders, you just type a few words that you expect to find in the file/email and instantly see all the matching results.</p>
-
-<p>Mac’s<sup id="fnref:1366312334-1366312334-fn20"><a href="#fn:1366312334-1366312334-fn20" class="footnote">18</a></sup> have full, in-file text search built into the operating system. It’s called Spotlight and you can bring it up easily by hitting ⌘-spacebar or clicking on the magnifying class icon in the upper right of your screen. This is the fastest way to search your files. If you need a bit more power and fine-tuning use Spotlight the Finder (option-command-spacebar).</p>
-
-<p>Just today a colleague asked me how many patients with psoriatic arthritis I have that are on azathioprine (Imuran). I didn’t think I had any, but I checked and by typing the following characters and nothing else, I brought up the 4 notes on one patient in which I did: <code>⌘-spacebar .psa .aza</code>.</p>
-
-<p>Although I’m told that this is possible in some EMRs such as ***, it was not possible on the EMRs I’ve used in the past including NextGen, Epic, CPRS, and IPR.</p>
-
-<p>Another example of this power is when another specialist approached me recently to ask about a patient he sent me. He couldn’t remember their name and actually thought I probably hadn’t seen the patient yet. By searching for consults ordered by this physician, I was able to pull up the consult note before he’d even finished speaking, and tell him my findings.</p>
-
-<p>And I use this search functionally all the time. Whenever my nurse mentions a patient to me, my reflexes kick in and I quickly have their last clinic note open, and a new note created and ready for me to document whatever we’re about to talk about. </p>
-
-<p>It is about uniquitous access to information and easy, rapid creating of new data. I’ve never read GTD, but I wouldn’t be afraid to show my system to David Allen.</p>
-
-<h1 id="formatting">Formatting</h1>
-
-<blockquote>
-  <p>TL:DR: Adding formatting takes some more work and nerdery that you may want. If so, just write in plain text—it’s fine. If you do want to be fancy then learn <a href="">Markdown</a> and <a href="">CSS</a>.</p>
-</blockquote>
-
-<p>By it’s very nature and what makes it useful for this kind of system, plain text does not have any formatting but there there are times when you may want some formatting. This is why many people when they write papers will use something like Word so they can add strange fonts, weird colors, or pictures. I was tempted to the dark side at one point because I wanted to have my letterhead in the header of the document. This is easiest with a word processor program but can still be accomplished with some nerdery.</p>
-
-<p>I write my notes in a style called Markdown. Markdown allows you to write in plain text but add some extra characters that allow the plain text to be converted to a formatted style like HTML, while still maintaining readability in the plain text.</p>
-
-<p>Confused? Me too at first, so here’s an example.</p>
-
-<p>If I want to <strong>bold</strong> something, I just put two asterisks on either side of the words  **like this**. When you read it in plain text it “looks” bold or emphasized, right? Markdown also includes formatting for <em>_italics_</em>, headers, numbered lists, bullet lists, and links.</p>
-
-<p>I then use an application called <a href="http://markedapp.com/">Marked</a> which will take my text notes and display/save/print them with the Markdown formatting as well as with any other formatting I’ve created as a template using <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>. When I’m going to print a copy of my note for the patient or the referring physician, or when I’m going to archive it as a PDF<sup id="fnref:1366312334-1366312334-fn21"><a href="#fn:1366312334-1366312334-fn21" class="footnote">19</a></sup> I run it through Marked to get the final document. </p>
-
-<p>This allows me to take a note that looks like what is on the left and print a note that looks like what you see on the right.</p>
-
-<p><a href="/images/noteandMarkedpreview.png"><img src="/images/noteandMarkedpreview.png" alt="" /></a> </p>
-
-<p>When I change clinics (new letterhead) or change moods (different font) or get older (bigger font), I can just change one CSS file rather than having to change every old note.</p>
-
-<p><a href="/images/CSSnoteexamples.png"><img src="/images/CSSnoteexamples.png" alt="" /></a> </p>
-
-<p>This last step is a bit more complicated and requires more educational investment that most will want to do. It’s ok. You can still make great looking notes just using plain text formatting either with or without Markdown. Other possibilities are to use ALL CAPS for your headers, or to just print your notes out on a printer that is loaded with your office’s letterhead. </p>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>What I have is an accurate, fast, reliable, secure, and searchable record system for every patient I’ve ever seen. The cost of the hardware is significant, but relatively not that expensive<sup id="fnref:1366312334-1366312334-fn22"><a href="#fn:1366312334-1366312334-fn22" class="footnote">20</a></sup> and something I would buy anyway even if I wasn’t a physician. The cost of the software can range from free to less than 100 USD. The skills necessary to use this system seem minimal to me, but being a tech nerd, I recognized that my opinion may be heavily biased. You will likely need to be able to type fast or have good dictation software. You will need to be comfortable around computers, which for our eminent members is likely not a given, but will certainly be standard for our new initiates. The more “advanced” features like Markdown and CSS, really aren’t that difficult compared to memorizing the <a href="http://en.wikipedia.org/wiki/Citric_acid_cycle">Kreb cycle</a> or knowing when to appropriately order an <a href="http://www.choosingwisely.org/doctor-patient-lists/american-college-of-rheumatology/">ANA</a>.</p>
-
-<h1 id="future">Future</h1>
-
-<p>I didn’t create this system because I think I’m the smartest guy out there. I created it because I needed something that worked and everything I’ve used since I started my medical education<sup id="fnref:1366312334-1366312334-fn23"><a href="#fn:1366312334-1366312334-fn23" class="footnote">21</a></sup> has been truly atrocious to the point that even <a href="http://vimeo.com/31926572">John Gruber took notice</a>.</p>
-
-<p>I truly hope that someday a system is created that works wonderfully and follows the principles I’ve listed above. At a minimum, I hope that a system is created that is so wonderful and powerful that I am willing to compromise on those principles in order to use it as it will mean a vast improvement in the care of patients and in the work burden of all physicians.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1366312334-fn1">
-      <p>FYI: Peripheral edema is not a part of a joint or MSK exam. <a href="#fnref:1366312334-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn2">
-      <p>I’m looking at you, <a href="http://more-distractible.org/2013/02/24/death-of-an-evangelist/">Rob</a>. <a href="#fnref:1366312334-fn2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn3">
-      <p>internet or “cloud” <a href="#fnref:1366312334-fn3" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn4">
-      <p>The data must be separate from the formatting. <a href="#fnref:1366312334-fn4" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn6">
-      <p>While I used the 13 inch, I now recommend the 11 inch which I bought for my wife and convinced another colleague to get. <a href="#fnref:1366312334-fn6" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn7">
-      <p>I would argue that it should ship turned on by default. <a href="#fnref:1366312334-fn7" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn8">
-      <p>Programmed by an internist <a href="#fnref:1366312334-fn8" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-fn9">
-      <p>In fact, I argue that medical records of the future should have a standard file format readable by any EMR so that every physician in a clinic or hospital could use a different EMR to access the same record. <a href="#fnref:1366312334-fn9" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn10">
-      <p>I’m really creative. /sarcasm <a href="#fnref:1366312334-1366312334-fn10" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn11">
-      <p>This does not mean your entire note! <a href="#fnref:1366312334-1366312334-fn11" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn12">
-      <p>Epic. <a href="#fnref:1366312334-1366312334-fn12" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn13">
-      <p>And with TextExpander Touch, I can even do that on my iPhone. <a href="#fnref:1366312334-1366312334-fn13" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn14">
-      <p>Different operating systems use different invisible characters to represent a line break. Typically Mac, Windows, and Unix all use a different set of characters so if the system you’re copying from is different than the system you’re pasting into, as is the case with many EMRs that are running remotely through a VPN, you will get weird line breaks, or no line breaks at all. This can be easily fixed by either changing the character for the line break when pasting using an application like Keyboard Maestro (this is what my neurology friend does), or some Text Editors like IA Writer let you choose your line break character when saving the file as in the image below. <a href="/images/linebreaksIAwriter.png"><img src="/images/linebreaksIAwriter.png" alt="" /></a>  <a href="#fnref:1366312334-1366312334-fn14" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn15">
-      <p>This is another benefit of writing your own notes in plain text and doing your own formatting: you can make sure the consult letter you send out looks professional. While it probably shouldn’t matter, when I am sent an ugly, poorly formatted, EMR note, I think the sender is less intelligent than is perhaps fair. <a href="#fnref:1366312334-1366312334-fn15" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn16">
-      <p>at least 8 characters <a href="#fnref:1366312334-1366312334-fn16" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn17">
-      <p>Ceasar asked: et tu, Bruté? <a href="#fnref:1366312334-1366312334-fn17" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn18">
-      <p>Would an implantable, subcutaneous chip be going too far? <a href="#fnref:1366312334-1366312334-fn18" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn20">
-      <p>And maybe Windows too? I have no idea as I stopped using Windows machines with XP. <a href="#fnref:1366312334-1366312334-fn20" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn21">
-      <p>I save the PDF and plain text notes together. <a href="#fnref:1366312334-1366312334-fn21" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn22">
-      <p>One hospital I was at spent $70,000,000 just for the EMR software. <a href="#fnref:1366312334-1366312334-fn22" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1366312334-1366312334-fn23">
-      <p>And even before, as I was installing shareware EMRs on my laptop when I was in college. <a href="#fnref:1366312334-1366312334-fn23" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
