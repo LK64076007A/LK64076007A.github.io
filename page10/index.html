@@ -96,6 +96,157 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Feb 7, 2012</span>
+      
+      <h2><a class="post-link" href="/not-an-EMR">Not an EMR</a></h2>
+      
+      <div class="content"><p>A drug rep stopped by today and asked about my use of her companies drug. Using my chart system, in less than 30 seconds, I was able to determine that no patient of mine is currently on their drug, one has failed it in the past and one person might be starting it soon.</p>
+
+<p>This is not possible with any EMR I have previously used to have access to now, but is one of the things always touted as a great benefit of EMRs.</p>
+
+<p>My system is electronic. My system is secure. My system is fast. My system is electronic.</p>
+
+<p>But it is not a certified, legacy system that costs tens of thousands of dollars. It costs less than $2000. And that’s mostly for the Macbook Air.</p>
+
+<p>My system makes me happy and helps me provide quality care. It is not certified for Meaningful Use, but I’ll bet you a month’s pay that I use mine much more meaningfully than any EMR out there.</p>
+
+<p>It also makes me happy.</p>
+
+<p>I hope to share my workflow with you someday.</p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Feb 6, 2012</span>
+      
+      <h2><a class="post-link" href="http://kottke.org/12/02/how-to-parent-like-the-french">Raising Cain</a> <a class="permalink" title="Permanent link to ‘Raising Cain’" href="/raising-cain">Ω</a></h2>
+      
+      <div class="content"><p>Is there a name for the psychological phenomena in which people in one culture seem to think that ideas attributed to another culture are magically special, even if those same ideas already exist and are not recognized in the first culture?</p>
+
+<p>For example, how exactly is this a “French” way of raising kids?</p>
+
+<p><a href="http://kottke.org/12/02/how-to-parent-like-the-french">Jason Kottke</a>: </p>
+
+<blockquote>
+  <blockquote>
+    <p>One of the keys to this education is the simple act of learning how to wait. It is why the French babies I meet mostly sleep through the night from two or three months old. Their parents don’t pick them up the second they start crying, allowing the babies to learn how to fall back asleep. It is also why French toddlers will sit happily at a restaurant. Rather than snacking all day like American children, they mostly have to wait until mealtime to eat. (French kids consistently have three meals a day and one snack around 4 p.m.)</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>We have a French pediatrician who advised us to do almost exactly what is in this article and we’ve had pretty good success with it. It’s not all roses (kids are kids after all) and a lot of work, especially for the first couple of years, because you have to be consistent and steady and firm (but also flexible) and I know I haven’t always done a great job, but the dividends have been totally worth it so far.</p>
+</blockquote>
+
+<p>That’s exactly how I raise my kid. And I never read any stupid book or talked to a pediatrician about it. Seems like a pretty standard old-fashioned way of doing things. </p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Feb 1, 2012</span>
+      
+      <h2><a class="post-link" href="/TextExpander-for-physicians-part-2">TextExpander for physicians, Part 2</a></h2>
+      
+      <div class="content"><p>In part 1, I tried to explain what TextExpander was and why a physician might want to use it as a force multiplier by showing a few examples of macros that I use daily.</p>
+
+<p><a href="/TextExpander-for-physicians-part-1">TextExpander for physicians, Part 1</a></p>
+
+<p>In part 2, I will cover special codes, syncing between computers, and iOS apps.</p>
+
+<h2 id="special-codes">Special codes</h2>
+
+<h3 id="time-and-date">Time and Date</h3>
+
+<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code>ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
+
+<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code>time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
+
+<p>I’ve also used this lately to keep track of how long it takes to make phone calls to patients. I’ve been surprised how long the typical call lasts and by having this data, I can more accurately plan my schedule, bill and allocate resources.</p>
+
+<p>TextExpander also comes with some codes for date and time math. Most of my follow ups and planning takes place at regular intervals: every 4 weeks, 6 weeks, 8 weeks and 12 weeks, 12 months or 24 months. This may apply to the next follow up appointment, lab check, infusion time, TB test or DXA scan. While it is easy to say “follow up for labs in 8 weeks”, this abstractness appears to be poorly mentally processed. Being more concrete fixes this problem.</p>
+
+<pre><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
+</code></pre>
+
+<p>More complicated structures wouldn’t be that difficult to create.</p>
+
+<pre><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
+</code></pre>
+
+<p>All the dates and the day of the week in that last macro are automatically calculated.</p>
+
+<p>Are you a hospitalist with a patient needs neurochecks every 4 hours?</p>
+
+<pre><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
+</code></pre>
+
+<h3 id="fill-ins">Fill ins</h3>
+
+<p>Another special code is the fill in. <code>%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
+
+<pre><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
+</code></pre>
+
+<p>This creates the following prompt:</p>
+
+<p><a href="/images/textexpander_fut.png"><img src="/images/textexpander_fut.png" alt="fill in prompt" /></a> </p>
+
+<p>Enter the desired time:</p>
+
+<p><a href="/images/textexpander_fut_2.png"><img src="/images/textexpander_fut_2.png" alt="macro filled in" /></a> </p>
+
+<p>Hit “enter” and your text appears:</p>
+
+<p><a href="/images/textexpander_fut_3.png"><img src="/images/textexpander_fut_3.png" alt="Macro completes" /></a>  </p>
+
+<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code>%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
+
+<p><a href="/images/consultnote_macro.png"><img src="/images/consultnote_macro.png" alt="consult note macro" /></a> </p>
+
+<h3 id="copy-clipboard">Copy clipboard</h3>
+
+<p>Another special code is the “clipboard”, <code>%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code>%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
+
+<pre><code>.nd = James Bond 2.1.2012.pages
+</code></pre>
+
+<h3 id="cursor-placement">Cursor placement</h3>
+
+<p>The final special code I’ll mention is the cursor placement. <code>%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
+
+<p><a href="/images/James_Bond_note.png"><img src="/images/James_Bond_note.png" alt="James Bonds note" /></a> </p>
+
+<p>It’s a little thing, but you add up all the little things and the time and convenience are incredible.</p>
+
+<h2 id="syncing-between-computers">Syncing between computers</h2>
+
+<p>Once you have created a lot of macros, your library is going to become a valuable commodity. You will become dependent on these macros and feel lost without them. You will want to make sure you back up your library as well as have it available on any computer you may use. Thankfully, the developers of TextExpander have enabled backing up and syncing of your library through <a href="http://www.dropbox.com">Dropbox</a>. If you don’t know what Dropbox is<sup id="fnref:1202012211"><a href="#fn:1202012211" class="footnote">1</a></sup>, stop reading immediately and go get it. </p>
+
+<p>Now that you have Dropbox and have enabled syncing in the preferences of the TextExpander app, your library of macros will auto-magically appear on any computer<sup id="fnref:1202012213"><a href="#fn:1202012213" class="footnote">2</a></sup> that you’ve also synced using Dropbox. This also works with the iPhone and iPad versions of the applications.</p>
+
+<p>In fact, I have a friend who writes all his clinic notes in TextExpander Touch on his iPad using a bluetooth keyboard.</p>
+
+<h2 id="ios-apps">iOS apps</h2>
+
+<p>TextExpander Touch, the version of the app available for the iPhone, iPod Touch and iPad, is quite good as well, but a bit limited due to restrictions of the operating system. The main restriction is that you cannot use the app to expand text just anywhere in iOS. TextExpander Touch will only work in apps that are specifically enabled to use it. Thankfully, there are a lot of <a href="http://www.smilesoftware.com/TextExpander/touch/apps/">those apps</a>. The apps also have a built in text editor, so you can write notes there and then copy and paste them or email them elsewhere. It is slightly limiting but nice to have. I tend to use this more for taking notes in meetings and at dinner meetings, when taking out a laptop—even one as small as a Macbook Air—would be overly distracting to others.</p>
+
+<hr />
+
+<p>Well, that’s enough for tonight. In the next, and hopefully final, part, I will finish up by laying out ideas for macros to use in your practice, keys to creating shortcuts you can remember, non-medical uses of macros and advantages of a stand alone applications versus the built-in functionality that some EMRs have.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1202012211">
+      <p>Shame on you. <a href="#fnref:1202012211" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1202012213">
+      <p>If you are unfortunate enough to have to use a Windows computer at work but are a Mac guy at home, the Windows program <a href="http://www.16software.com/breevy/">Breevy</a> has bi-directional sync with TextExpander through Dropbox. You may also want to check out <a href="http://www.monster.com/">this site</a>. <a href="#fnref:1202012213" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 30, 2012</span>
       
       <h2><a class="post-link" href="/TextExpander-for-physicians-part-1">TextExpander for physicians, Part 1</a></h2>
@@ -412,104 +563,23 @@ del:after {
     </li>
   
     <li>
-      <span class="post-meta">Jan 15, 2012</span>
+      <span class="post-meta">Jan 20, 2012</span>
       
-      <h2><a class="post-link" href="/not-a-mute-switch">Not-a-mute switch</a></h2>
+      <h2><a class="post-link" href="http://idoitonamac.blogspot.com/2011/07/os-x-lion-and-spotlight.html">Forcing Spotlight to re-index</a> <a class="permalink" title="Permanent link to ‘Forcing Spotlight to re-index’" href="/Spotlight-reindex-Lion">Ω</a></h2>
       
-      <div class="content"><p>Some guy writes an articles in the New York Times because his iPhone alarm goes off during a concert, causing him significant embarrassment.<sup id="fnref:1201150901"><a href="#fn:1201150901" class="footnote">1</a></sup> Words used to described the situation in the NYT included <em>shame, jarring, angry, vitriol and devastating</em>. The apparent “culprit” claimed he was so traumatized he hadn’t slept for 2 days.<sup id="fnref:1201150902"><a href="#fn:1201150902" class="footnote">2</a></sup></p>
+      <div class="content"><p>For some reason today,<sup id="fnref:1201202107"><a href="#fn:1201202107" class="footnote">1</a></sup> I just couldn’t find the correct instructions for forcing Spotlight to re-index using the Terminal. Therefore, I’m reposting the instructions here so this is easier to find in the future.</p>
 
-<p>As unimportant as this event was, except as a object lesson that we should be careful to value the opinion of New Yorkers on anything, it did spark off more blog posts in the community on a single issue than I think even occurred with. Even <a href="http://hivelogic.com">Hivelogic</a> came out of the mothballs.</p>
+<pre><code>// First copy and paste this at the command prompt
+sudo mdutil -E /
 
-<p>It seems that <a href="http://www.biancolo.com/articles/bad-ui-stops-symphony">everyone</a> <a href="http://daringfireball.net/2012/01/iphone_mute_switch_design">of</a> <a href="http://ihnatko.com/2012/01/14/daring-fireball-on-the-behavior-of-the-iphone-mute-switch/">note</a> <a href="http://www.marco.org/2012/01/14/mute">has</a> <a href="http://brooksreview.net/2012/01/mute/">had</a> <a href="http://hivelogic.com/articles/mute/">something</a> to say on the issue.</p>
-
-<p>Since I now find myself <em>devastated</em> by the whole situation, jarred out of my <em>complacent</em> lifestyle by all the <em>vitriolic</em> writings and overwhelmed with <em>shame</em> that my favorite device, I thought I should gather the <em>courage</em> to add a few points that seem to have been missed.</p>
-
-<p>For those not wanting to go through all the above posts<sup id="fnref:1201150909"><a href="#fn:1201150909" class="footnote">3</a></sup>, the short version is that the so-called “Mute” switch on the side of the iPhone is actually called the “Ring/Silent switch” and does not actually mute the phone completely, allowing songs, videos, games and alarms to make nose, presumably on the premise that these are items that the user has specifically stated they want to make noise.</p>
-
-<p>There have been many good points made both for and against this current behavior:</p>
-
-<blockquote>
-  <p>It’s much better to be upset with yourself for having done something stupid than to be upset with a device that made the wrong decision on its own initiative. - <a href="http://ihnatko.com/2012/01/14/daring-fireball-on-the-behavior-of-the-iphone-mute-switch/">Andy Ihnatko</a></p>
-</blockquote>
-
-<blockquote>
-  <p>The user has issued conflicting commands, and the iPhone can’t obey both. - <a href="http://www.marco.org/2012/01/14/mute">Marco Arment</a></p>
-</blockquote>
-
-<blockquote>
-  <p>[W]hen I go to bed at night, I want to know that my alarm will wake me, but that my drunk friends won’t. - <a href="http://brooksreview.net/2012/01/mute/">Ben Brooks</a></p>
-</blockquote>
-
-<p>I see two main arguments here:</p>
-
-<p><strong>Philosophical argument</strong>: Alarms are important and are explicitly set. They should go off no matter what because folks will forget they muted their phone the night before, miss their alarm and get fired for being late. This will occur much more frequently than some dilitante getting socially castrated because of his alarm going off doing the <em>sublime</em> section of Mahler.</p>
-
-<p><strong>Practical argument</strong>: When you activate the mute switch you have the expectation that the phone won’t make any noise, ever, like on every other phone on the market. If you forget to undo it, that’s your own damn fault. Grown a pair.</p>
-
-<p>I’ve suffered the negative consequences from both of the above, and really can’t say which is worse. I think both sides have made very good points and I don’t see a clear winner here. Each time I read a new post, I start to agree with that one.<sup id="fnref:1201150930"><a href="#fn:1201150930" class="footnote">4</a></sup></p>
-
-<h3 id="missing-factor">Missing Factor</h3>
-
-<p>But then Ben Brooks <a href="http://brooksreview.net/2012/01/the-picture-says-it-all/">pointed out</a> something this morning that got me thinking. He noted that the image displayed on the screen when you flip the not-a-mute switch looks different than the image when you press the volume buttons. For example, the first image below is using the not-a-mute switch while the second one is using the volume buttons:</p>
-
-<p><img src="/images/iPhone_4_mute_switch.PNG" alt="" /></p>
-
-<p><img src="/images/iPhone_4_ringer_on.PNG" alt="" /></p>
-
-<p>This prompted me to check something I vaguely remembered—you can’t turn off the volume completely using the volume buttons. Here is the same symbol with the volume turned as low as possible using the volume buttons:</p>
-
-<p><img src="/images/iPhone_4_ringer_off.PNG" alt="" /></p>
-
-<p>There is still one box of volume remaining. I also remembered that this didn’t seem to always be the case. I know that I’ve turned the volume down all the way before. Was it on a previous iPhone? Or was it on my first generation iPod Touch that I had to use before  <del>my wife let me buy</del> <ins>I bought</ins> a real iPhone?</p>
-
-<p>I ripped my son’s 4th generation iPod Touch from his death grip<sup id="fnref:1201151006"><a href="#fn:1201151006" class="footnote">5</a></sup> and put it to the test. The first thing I noticed is that the symbol is not labeled ringer, but sound effects:</p>
-
-<p><img src="/images/iPod_Touch_volume_on.PNG" alt="" /></p>
-
-<p>Also, you can turn the volume all the way off:</p>
-
-<p><img src="/images/iPod_Touch_volume_off.PNG" alt="" /></p>
-
-<p>So I set an alarm, turned off the volume and waited…</p>
-
-<p>…silence…</p>
-
-<p><em>The alarm triggered, the screen turned on, but no sound or vibration occurred.</em></p>
-
-<p>It turns out that the controversial behavior appears to be unique to the iPhone and is not the same on the iPod Touch, aka John Siracusa’s iPhone. The iPod Touch has no mute switch. The volume buttons control the “sound effects”. You can turn the volume off completely, which does silence the alarms.</p>
-
-<p>Unfortunately, I don’t think that this solves the problem. I would probably like it made so that the mute switch works like on every other phone, completely silencing everything, but that if I turn the volume all the way down using the volume keys, it could go all the way off, silencing only the ringer, but allowing alarms to play. Basically, I would have both the Philosophical and Practical options available to me</p>
-
-<p>But this seems to be a solution for a tech-savy nerd and not a solution for grandma, and therefore is a fail.</p>
-
-<p>Many have pointed out that there should be options for the different behavior in the settings and while I generally agree with this, it doesn’t answer the general user issue of what should be the default behavior.</p>
-
-<p>At least now I am aware of the situation and less likely to make a mistake in the future.</p>
-
-<p><strong>Update</strong>: My wife weighs in and, as all husbands know, is the final authority.</p>
-
-<ol>
-  <li>The mute switch should silence everything—no exceptions.</li>
-  <li>People who have to get up at a certain time should be paranoid enough to verify their alarm’s settings.</li>
-  <li>There should be many options in the settings to allow you to customize this in detail.</li>
-</ol>
+// Enter your password when prompted, and then paste this
+sudo mdutil -i on /
+</code></pre>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:1201150901">
-      <p>This and a reader question if the NYT should care about truth were the big stories this week. And they wonder why they’re fighting for their businesses life. <a href="#fnref:1201150901" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1201150902">
-      <p>Meanwhile, the slaughter of a bunch of unknown kids in an unknown country for unknown reasons received no reaction as it was not covered in the fish wrap. You’ll have to listen to the BBC if you want real news. <a href="#fnref:1201150902" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1201150909">
-      <p>Shame on you. <a href="#fnref:1201150909" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1201150930">
-      <p>Damn their Jedi mind tricks. <a href="#fnref:1201150930" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1201151006">
-      <p>“WHAT KIND OF GRIP ARE YOU USING TO HOLD THAT LIVE GRENADE, PRIVATE?” “DEATH GRIP, DRILL SERGEANT!” <a href="#fnref:1201151006" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1201202107">
+      <p>Listen, Google, <a href="duckduckgo.com">Duck Duck Go</a> is starting to look more attractive every day. <a href="#fnref:1201202107" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -517,69 +587,15 @@ del:after {
     </li>
   
     <li>
-      <span class="post-meta">Jan 14, 2012</span>
+      <span class="post-meta">Jan 20, 2012</span>
       
-      <h2><a class="post-link" href="/being-evil-2">Being Evil 2</a></h2>
+      <h2><a class="post-link" href="http://www.mcsweeneys.net/articles/in-which-i-fix-my-girlfriends-grandparents-wifi-and-am-hailed-as-a-conquering-hero">Epic tail of the Christmas tech warrior</a> <a class="permalink" title="Permanent link to ‘Epic tail of the Christmas tech warrior’" href="/Christmas-Hero">Ω</a></h2>
       
-      <div class="content"><p>Google initiates a plot to <a href="http://blog.mocality.co.ke/2012/01/13/google-what-were-you-thinking/">steal business</a> by scraping the data of a local African business, cold calling their customers and lying about the initial business.</p>
-
-<p>via <a href="http://daringfireball.net/linked/2012/01/13/google-mocality">John Gruber</a></p>
-
-<p><a href="http://parislemon.com/post/15683641643/real-life-examples-of-how-search-pushes-google-over">More</a> and <a href="http://parislemon.com/post/15604811641/why-i-hate-android">more</a>, Google is losing my trust. More and more, I’m backing my business away from their products.</p>
-
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Jan 10, 2012</span>
-      
-      <h2><a class="post-link" href="/Japanese-bees">10,000 to 1</a></h2>
-      
-      <div class="content"><p>Japanese giant hornets can massacre a European honey bee hive with 30 hornets completely destroying the 30,000 bees and the hive in a few short hours. The slaughter is brutal. The brave bees fly uselessly to their death.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/L54exo8JTUs?rel=0" frameborder="0" allowfullscreen=""></iframe>
-
-<p>Japanese honey bees have a defense. Just as brave, but more effective. Working as a team, they have a way to stop the brutal invaders.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/0EZtXNIT5QQ?rel=0" frameborder="0" allowfullscreen=""></iframe>
-
-<p>via <a href="http://kottke.org/12/01/30-giant-hornets-vs-a-whole-honey-bee-hive">Jason Kottke</a></p>
-
-<p>This is absolutely amazing. </p>
-
-<p>Moral of the story: The Japanese are deadly.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Jan 5, 2012</span>
-      
-      <h2><a class="post-link" href="http://www.tylernichols.com/web-development/i-am-done-with-the-freemium-business-model">Cost of free</a> <a class="permalink" title="Permanent link to ‘Cost of free’" href="/cost-of-free">Ω</a></h2>
-      
-      <div class="content"><p><a href="http://www.tylernichols.com/web-development/i-am-done-with-the-freemium-business-model">Tyler Nichols</a>:</p>
+      <div class="content"><p><a href="http://www.mcsweeneys.net/authors/mike-lacher">Mike Lacher</a>:</p>
 
 <blockquote>
-  <p>Free customers are higher maintenance than paying customers.</p>
+  <p>But with the dawn of the feast of Christmas did a beacon of hope manifest itself upon the inky horizon. Riding in upon a teal Ford Focus came a great warrior, a suitor of the gentlefolks’ granddaughter. Word had spread through the kingdom that this warrior worked with computers and perhaps even knew the true nature of the Router.</p>
 </blockquote>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Jan 4, 2012</span>
-      
-      <h2><a class="post-link" href="/A-New-Hope">A New Hope</a></h2>
-      
-      <div class="content"><p>Tonight, my son watched the original <strong>Star Wars</strong> movie for the first time. I made sure it was the original, unadulterated version. <sup id="fnref:1201070742"><a href="#fn:1201070742" class="footnote">1</a></sup></p>
-
-<p>I’m the best father in the world.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1201070742">
-      <p>I’m looking at you, George Lucas. <a href="#fnref:1201070742" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
