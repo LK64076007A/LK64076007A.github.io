@@ -96,6 +96,40 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Aug 29, 2012</span>
+      
+      <h2><a class="post-link" href="/procedure-note-with-textexpander">Procedure note with TextExpander</a></h2>
+      
+      <div class="content"><p>I do a lot of joint injections so I created a <a href="http://smilesoftware.com/TextExpander/" title="TextExpander">TextExpander</a> macro to quickly write a short procedure note within my visit note. I used TE 4.0 with the new options for fill ins. I have several optional sections that can expand the note depending on the type of injection I do, but at the same time, for the large majority of injections in which I’m not removing fluid or sending the results for testing<sup id="fnref:120822085343"><a href="#fn:120822085343" class="footnote">1</a></sup>, the note is quickly and easily generated without template cruft.</p>
+
+<p><a href="/images/Screen_Shot_2012-08-29_at_9.18.20_PM.png"><img src="/images/Screen_Shot_2012-08-29_at_9.18.20_PM.png" alt="" /></a>  </p>
+
+<ol>
+  <li>The pink highlighted text are optional sections that can be added by ticking the preceding checkbox. </li>
+  <li>The amount of injected medication is pre-populated with my normal dosing but can be edited.</li>
+  <li>The medication is also pre-populated but can be switched to any of the options available in my clinic.</li>
+  <li>The lab section already has the two labs I always order, and I can easily add anything else that I need.</li>
+  <li>There are a few pull-down menus in order to make sure the grammar is correct depending on if I’m injecting one or multiple joints.</li>
+</ol>
+
+<p>Arthrocentesis are simple and straight forward procedures. I’m sure this technique would be even more useful in complicated procedures and operations.</p>
+
+<h3 id="the-raw-code">The raw code</h3>
+<pre><code>Procedure note
+Informed consent and time out was completed. The %fill:area% %fillpopup:name=popup 8:was:were% prepped with betadine and alcohol in standard fashion. The skin was anesthetized with ethyl chloride. %fillpart:name=lidocaine%The subcutaneous tissues were anesthetized with less than 3ml of 2% lidocaine. %fillpartend%%fillpart:name=fluidRemoved%%fill:amount% ml of opaque yellow fluid with a positive string sign was removed. %fillpartend%%filltext:name=milligrams:default=40 mg:width=3% of %fillpopup:name=steroids:default=Depo-Medrol (methylprednisolone acetate):Kenalog (triamcinolone acetonide) :Synvisc One% and 2 ml of 2% lidocaine were injected into %fillpopup:name=grammar 10:the:each% joint. Hemostasis was obtained. Post op instructions were given. %fillpart:name=labTests%Fluid was sent for %fill:tests%cell count and crystal analysis.%fillpartend%
+</code></pre>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:120822085343">
+      <p>Shame on you if you don’t document what labs you order in the procedure note. <a href="#fnref:120822085343" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 25, 2012</span>
       
       <h2><a class="post-link" href="/update-fixing-shortcuts-in-Messages">Updated - Fixing shortcuts in Messages.app</a></h2>
@@ -164,6 +198,16 @@
       <div class="content"><p>Last night I dreamt that Tim Cook hired me to help create an EMR that doesn’t suck.</p>
 
 <p>I need therapy. </p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 15, 2012</span>
+      
+      <h2><a class="post-link" href="/legendary-crash-reports">Legendary crash reports</a></h2>
+      
+      <div class="content"><p>Garrett Murray’s crash reports are the stuff of legend. If you’ve never seen one before, <a href="http://log.maniacalrage.net/post/29504539143" title="treat yourself">treat yourself</a>.</p>
+
 </div>
     </li>
   
@@ -284,47 +328,6 @@
   <p>The problem with us <a href="http://bettermess.com/lazymarkdown/">Markdown</a>-loving, <a href="http://bettermess.com/markdown-and-the-language-of-the-web/">Plain Text</a> using, <a href="http://bettermess.com/say-more-and-type-less-with-textexpander/">TextExpanding</a>, <a href="http://bettermess.com/keyboard-maestro-the-key-to-unlocking-your-computer/">Keyboard Maestroing</a>, <a href="http://bettermess.com/lazyomnifocus/">OmniFocusers</a>: we’ve found so many of ourselves that we forget we’re a minority. We care (and care deeply) about things that only a small percentage of overall users care about.</p>
 </blockquote>
 
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 6, 2012</span>
-      
-      <h2><a class="post-link" href="/Randall-Stephenson">AT&T scumbag CEO</a></h2>
-      
-      <div class="content"><p><a href="http://bits.blogs.nytimes.com/2012/05/04/att-randall-stephenson/">New York Times</a>:</p>
-
-<blockquote>
-  <p>Randall Stephenson, AT&amp;T’s chief executive said that he wished the company had never offered an unlimited data plan for the device and that he loses sleep over free texting services like Apple’s iMessage.</p>
-</blockquote>
-
-<blockquote>
-  <p>“If you’re using iMessage, you’re not using one of our messaging services, right? That’s disruptive to our messaging revenue stream.”</p>
-</blockquote>
-
-<p>What a scumbag. There’s not really a carrier I like, but I think Sprint is up next for me. At least their CEO doesn’t seem to be a dick and they still have unlimited data. </p>
-
-<p>via <a href="http://www.loopinsight.com/2012/05/04/att-chief-regrets-unlimited-data-imessage-for-iphone/">Shawn King @ The Loop</a></p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 26, 2012</span>
-      
-      <h2><a class="post-link" href="/Challenge-accepted">Challenge accepted</a></h2>
-      
-      <div class="content"><blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195541778135388163"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> Develop &gt; User Agent &gt; iPad.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195542025939066883" data-datetime="2012-04-26T15:57:06+00:00">April 26, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195542410015678465"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> Now if you turn that into a shortcut with Keyboard Maestro.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195542520334254081" data-datetime="2012-04-26T15:59:04+00:00">April 26, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="195543128659333120"><p>@<a href="https://twitter.com/BenjaminBrooks">BenjaminBrooks</a> You're the Keyboard Maestro maestro. I'm not sure.</p>&mdash; Pat Dryburgh (@patdryburgh) <a href="https://twitter.com/patdryburgh/status/195543374328111104" data-datetime="2012-04-26T16:02:28+00:00">April 26, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<h2 id="make-it-so">Make it so…</h2>
-
-<p><a href="/images/Ben_Brooks_Mode.png"><img src="/images/Ben_Brooks_Mode.png" alt="Ben Brooks Mode" /></a> </p>
 </div>
     </li>
   

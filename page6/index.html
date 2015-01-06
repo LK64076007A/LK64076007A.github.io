@@ -96,6 +96,68 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Feb 28, 2013</span>
+      
+      <h2><a class="post-link" href="/Switching-the-current-viewed-webpage-between-Safari-and-Chrome">Switching the current viewed webpage between Safari and Chrome</a></h2>
+      
+      <div class="content"><p><strong>Update:</strong> This macro was made for Keyboard Maestro 5. Although it will work with KM 6, a newer version of the macro is available as is much simpler and faster with less risk of bugs.</p>
+
+<h3 id="problem">Problem</h3>
+
+<p>Safari is my typical browser of choice, but sometimes I want to open a webpage I’m already looking at in Safari in Chrome instead<sup id="fnref:20130228142554"><a href="#fn:20130228142554" class="footnote">1</a></sup>. Sometimes I’m looking at a webpage in Chrome and want to open it in Safari. </p>
+
+<h3 id="solution">Solution</h3>
+
+<p>It’s not super elegant, but I made a Keyboard Maestro macro to switch back and forth. </p>
+
+<p>It consists of two nested if/then statements that check for which browser I’m using, grabs the URL of the front window, opens the other browser, pauses until the browser is running and the front window is open, pastes the URL into the navigation bar, and finally hits enter.</p>
+
+<ul>
+  <li>If Safari is at the front
+    <ul>
+      <li>Execute the Applescript <code>tell application "Safari" to get the URL of the front document</code> and save results to variable <code>currentURL</code></li>
+      <li>Activate Google Chrome</li>
+      <li>Pause until Google Chrome is at the front and the front window exists</li>
+      <li>Type the keystroke ⌘T</li>
+      <li>Type the keystroke ⌘L</li>
+      <li>Insert the text by pasting: <code>current URL</code></li>
+      <li>Type the keystroke <code>return</code></li>
+    </ul>
+  </li>
+  <li>otherwise execute the following
+    <ul>
+      <li>If Google Chrome is at the front
+        <ul>
+          <li>Execute Applescript <code>tell application "Google Chrome" to get the URL of active tab of first window</code> and save results to variable <code>currentURL</code></li>
+          <li>Activate Safari</li>
+          <li>Pause until Safari is at the front and the front window exists</li>
+          <li>Type the keystroke ⌘T</li>
+          <li>Type the keystroke ⌘L</li>
+          <li>Insert the text by pasting: <code>current URL</code></li>
+          <li>Type the keystroke <code>return</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>I assigned the shortcut Caps lock (which on my computer simultaneously pressed shift-command-control-option) - u. </p>
+
+<p><a href="/images/open_current_webpage_in_other_browser.png"><img src="/images/open_current_webpage_in_other_browser.png" alt="" /></a> </p>
+
+<p><a href="/images/Open_current_webpage_in_the_other_browser.kmmacros">Download the macro</a>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130228142554">
+      <p>For example, if you’re limiting Flash to Chrome only via <a href="http://daringfireball.net/2010/11/flash_free_and_cheating_with_google_chrome">the Gruber method</a>. <a href="#fnref:20130228142554" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Feb 26, 2013</span>
       
       <h2><a class="post-link" href="/Calculating-Dates-with-Siri">Calculating dates with Siri</a></h2>
@@ -473,31 +535,6 @@ end tell
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Dec 7, 2012</span>
-      
-      <h2><a class="post-link" href="/mute-commercials">Mute commercials on CBS.com with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>I watch TV on my Macbook Air on the weekends when I’m ironing. Sadly, commercials are becoming more popular with CBS airing 4 in a row, often the same exact commercial over and over. There’s no way to skip them, but I made a quick macro with Keyboard Maestro that mutes the sound until the commercials are over and then turns the sound back on.</p>
-
-<p>You have to toggle the macro manually when the commercial starts, but otherwise, it works great.</p>
-
-<p><img src="/images/Muting_CBS_macro.png" alt="" /></p>
-
-<p>The macro is a very simple three steps.</p>
-
-<ol>
-  <li>Toggle System Sound Mute, turning off the sound.</li>
-  <li>Watch for an image to disappear from the screen. The image is a screen capture of the word advertisement that overlays advertisements when they’re playing.</li>
-  <li>Toggle System Sound Mute, turning on the sound.</li>
-</ol>
-
-<p>Now I don’t have to listen to annoying commercials.</p>
-
-<p><strong>Update:</strong> Same macro with a slightly different picture works for Hulu. Also, now I’m occasionally seeing 5 commercials in a row.</p>
 </div>
     </li>
   
