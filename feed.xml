@@ -6,9 +6,29 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Jan 2015 06:53:04 -0500</pubDate>
-    <lastBuildDate>Tue, 06 Jan 2015 06:53:04 -0500</lastBuildDate>
+    <pubDate>Tue, 06 Jan 2015 21:33:14 -0500</pubDate>
+    <lastBuildDate>Tue, 06 Jan 2015 21:33:14 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Shopping cycle</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Search internet for reviews of certain product I need.&lt;/li&gt;
+  &lt;li&gt;Based on reviews and my specific need, determine product I want.&lt;/li&gt;
+  &lt;li&gt;Check if product is on Amazon.&lt;/li&gt;
+  &lt;li&gt;If so, &lt;strong&gt;victory&lt;/strong&gt;. Fin.&lt;/li&gt;
+  &lt;li&gt;If not, go to company’s website.&lt;/li&gt;
+  &lt;li&gt;Struggle through a horribly designed check out process, declining to create an account and sign up for their newsletter.&lt;/li&gt;
+  &lt;li&gt;2 weeks later, use PaperKarma to unsubscribe to snail mail magazine.&lt;/li&gt;
+  &lt;li&gt;Hate myself for ordering something not from Amazon. &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 06 Jan 2015 21:26:54 -0500</pubDate>
+        <link>http://soitscometothis.net/shopping-cycle</link>
+        <guid isPermaLink="true">http://soitscometothis.net/shopping-cycle</guid>
+        
+        
+      </item>
     
       <item>
         <title>It&#39;s about ethics in web browsing</title>
@@ -354,81 +374,6 @@ Insert Text by Pasting&lt;br /&gt;
         <pubDate>Fri, 01 Aug 2014 00:49:00 -0400</pubDate>
         <link>http://soitscometothis.net/Create-a-Markdown-link-with-automatic-affiliate-codes</link>
         <guid isPermaLink="true">http://soitscometothis.net/Create-a-Markdown-link-with-automatic-affiliate-codes</guid>
-        
-        <category>Keyboard Maestro</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Keyboard Maestro macro screenshots</title>
-        <description>&lt;p&gt;I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums&lt;sup id=&quot;fnref:140729172855&quot;&gt;&lt;a href=&quot;#fn:140729172855&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.&lt;/p&gt;
-
-&lt;p&gt;I believe it was in &lt;a href=&quot;http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html&quot;&gt;6.0&lt;/a&gt; that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.&lt;/p&gt;
-
-&lt;p&gt;The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in&lt;sup id=&quot;fnref:140729173600&quot;&gt;&lt;a href=&quot;#fn:140729173600&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
-
-&lt;p&gt;So I created a macro.&lt;/p&gt;
-
-&lt;h2 id=&quot;macro-description&quot;&gt;Macro description&lt;/h2&gt;
-
-&lt;p&gt;You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.&lt;/p&gt;
-
-&lt;p&gt;Using a hotkey, trigger the &lt;em&gt;Create Screenshot Macro&lt;/em&gt;.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Select the &lt;code&gt;copy as image&lt;/code&gt; from the menu&lt;/li&gt;
-  &lt;li&gt;Prompt the user for the file name&lt;/li&gt;
-  &lt;li&gt;Save the file to the desktop&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;There’s also a &lt;code&gt;copy as text&lt;/code&gt; if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.&lt;/p&gt;
-
-&lt;h2 id=&quot;macro-text&quot;&gt;Macro text&lt;/h2&gt;
-
-&lt;p&gt;Create screenshot of KM macro&lt;br /&gt;
-Triggered by any of the following:&lt;br /&gt;
-The Hot Key ⌃⌥⇧⌘M is pressed&lt;br /&gt;
-Will execute the following actions:&lt;br /&gt;
-Select Menu Item in Keyboard Maestro&lt;br /&gt;
-Select: Edit ⇢ Copy as ⇢ Copy as Image&lt;br /&gt;
-Stop macro if menu cannot be selected.&lt;br /&gt;
-Prompt for User Input ‘File Name’&lt;br /&gt;
-What do you want to call the file?&lt;br /&gt;
-Input the following variables:&lt;br /&gt;
-File Name&lt;br /&gt;
-Finish with the following buttons:&lt;br /&gt;
-OK&lt;br /&gt;
-Cancel (cancel macro)&lt;br /&gt;
-Store button pressed in variable ‘Result Button’.&lt;br /&gt;
-Write Clipboard&lt;br /&gt;
-To file: ~/Desktop/%Variable%File Name%.jpg&lt;br /&gt;
-With format JPEG).  &lt;/p&gt;
-
-&lt;h2 id=&quot;macro-image&quot;&gt;Macro image&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/Create_KM_screenshot_image.jpg&quot;&gt;&lt;img src=&quot;/images/Create_KM_screenshot_image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/Create%20screenshot%20of%20KM%20macro.kmmacros&quot;&gt;Download the macro&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;room-for-improvement&quot;&gt;Room for improvement&lt;/h2&gt;
-
-&lt;p&gt;I would like the ability to automatically name the jpg with the name of the macro. &lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:140729172855&quot;&gt;
-      &lt;p&gt;If you use KM and aren’t in the forums, you are really missing out. &lt;a href=&quot;#fnref:140729172855&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:140729173600&quot;&gt;
-      &lt;p&gt;Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? &lt;a href=&quot;#fnref:140729173600&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 29 Jul 2014 17:25:00 -0400</pubDate>
-        <link>http://soitscometothis.net/Keyboard-Maestro-macro-screenshots</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Keyboard-Maestro-macro-screenshots</guid>
         
         <category>Keyboard Maestro</category>
         
