@@ -96,6 +96,29 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jan 9, 2015</span>
+      
+      <h2><a class="post-link" href="/i-do-not-miss-voice-mail">I do not miss voice mail</a></h2>
+      
+      <div class="content"><p>From the <a href="http://www.wnyc.org/story/theres-still-something-about-voicemail/">New Tech City podcast</a>:</p>
+
+<blockquote>
+  <p>Voicemail is a default archive of your life. You would miss it if it were gone</p>
+</blockquote>
+
+<p>Voice mail is terrible. It’s just another form of spam. I hate it. I also hate phone calls. I’d decline to answer a phone call from someone (everyone) I didn’t want to talk to, and then I’d immediately have another message from them that I needed to deal with. </p>
+
+<p>You said “you would miss [voice mail] if it were gone.” Wrong. Absolutely wrong. And I know.</p>
+
+<p>A few years ago I was my carrier’s store dealing with something and when they finished they asked if there was anything else they could help me with. Without really thinking, I sad “yes, get rid of my voice mail account. She looked shocked, and perhaps a bit concerned about my sanity. She didn’t know if it was possible to do but got on the phone with corporate. I myself didn’t think it was going to be possible, either because of a technical issue, or just a lack of knowledge from the low level tech support I’m use to getting, but in only a few minutes I was told I no longer had a voice mail account. </p>
+
+<p>It’s been amazing. If you call me, my phone will just ring and ring like an old land line. If I decline your call, you get cut off. It is one less inbox I have to check. One less “to do” list cluttering up my already too cluttered life. My life is so much more peaceful.</p>
+
+<p>If only I could get rid of my USPS address.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 6, 2015</span>
       
       <h2><a class="post-link" href="/shopping-cycle">Shopping cycle</a></h2>
@@ -300,118 +323,6 @@ I went to their website and did all the trouble shooting activities they recomme
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 1, 2014</span>
-      
-      <h2><a class="post-link" href="/Create-a-Markdown-link-with-automatic-affiliate-codes">Create a Markdown link with automatic affiliate codes</a></h2>
-      
-      <div class="content"><p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
-
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
-
-<p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
-
-<h2 id="macro-text">Macro Text</h2>
-
-<p>My Macros<br />
-mdlink<br />
-Triggered by any of the following:<br />
-The exact case string ‘mdlink’ is typed (then deleted)<br />
-The Hot Key ⌃⌥⇧⌘P is pressed<br />
-Will execute the following actions:<br />
-Activate nvALT<br />
-Set Clipboard to Text<br />
-%SafariURL%<br />
-If All Conditions Met<br />
-The clipboard text contains ‘itunes.apple.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
-
-<pre><code>#!/usr/bin/python
-
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
-
-from subprocess import check_output
-from sys import stdout
-
-# My affiliate ID.
-myID = '11l4RT'
-
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
-
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
-
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
-</code></pre>
-
-<p>If All Conditions Met<br />
-The clipboard text contains ‘amazon.com’<br />
-Execute the Following Actions:<br />
-Execute Shell Script  </p>
-
-<pre><code>#!/usr/bin/env python
-
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
-
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
-
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'violeneces-20'
-
-rawurl = check_output('pbpaste')
-
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
-
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
-
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
-
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
-
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
-
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
-</code></pre>
-
-<p>Save trimmed to Clipboard.<br />
-Insert Text by Pasting<br />
-[%SafariTitle%](%CurrentClipboard%)  </p>
-
-<h1 id="macro-image">Macro Image</h1>
-
-<p><a href="/images/Markdown_link_with_affiliate_codes.jpg"><img src="/images/Markdown_link_with_affiliate_codes.jpg" alt="Macro Image" /></a> </p>
-
-<p><a href="/images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros">Download the macro</a>. </p>
-
 </div>
     </li>
   

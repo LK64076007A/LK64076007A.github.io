@@ -96,6 +96,39 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Aug 5, 2012</span>
+      
+      <h2><a class="post-link" href="/pasting-text-into-Epic">Errors when pasting text from a Mac into Epic and Allscripts</a></h2>
+      
+      <div class="content"><p><strong>Update 2 (5.23.2013):</strong> When my friend updated to Keyboard Maestro 6, this fix stopped working. This may be because the filter line endings had nothing to do with the fix, rather that process had an unexpected side effect of changing rich text to plain text. We are in the process of testing this theory. If you can’t wait, try filtering with “remove styles”.</p>
+
+<p><strong>Update:</strong> <a href="http://twitter.com/psufka">@psufka</a> reports that he has seen this with Windows machines, so apparently is not an isolated Mac compatibility issue.</p>
+
+<p>A colleague  and friend was having trouble with the Epic electronic medical record. He writes his notes in Pages on the Mac and when he would try to paste the text into Epic, it would mess up. What he was seeing was his note was losing words and the paragraph formatting was screwed up. It was making his life painful, slow, and frustrating…basically like all EMRs make life.</p>
+
+<p><strong>Thankfully, there’s a really simple solution</strong></p>
+
+<p>What was happening (I think) was that he was pasting text from a Mac environment into a Unix environment, <a href="http://www.editpadpro.com/tricklinebreak.html">which have different (invisible) characters to end a line</a>.<sup id="fnref:1208051113"><a href="#fn:1208051113" class="footnote">1</a></sup></p>
+
+<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> has a function to change the line endings of whatever text is in the clipboard. So now, he copies the text to the clipboard using ⌘-C, switches to the EMR, and ⌃⌘-V pastes the correctly formatted text into the EMR without any screw ups.</p>
+
+<p><img src="/images/pastingIntoEpic.png" alt="Epic pasting KM macro" /> </p>
+
+<p>The same thing was also happening with another EMR he uses, Allscripts. The same solution worked there too.</p>
+
+<p>Keyboard Maestro is a very powerful application for the Mac. I can’t begin to say how great it is. It is also not for beginners. If you’re looking to get started with taking more control over your machine, this is not the place I’d recommend starting unless you have a strong familiarity with computers and have someone to help you along the way. Otherwise, it’s very much worth it’s price of $36.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1208051113">
+      <p>There is probably a little more to it than that since the first string of each new paragraph was disappearing, but I’m not an expert and my fix works. <a href="#fnref:1208051113" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 2, 2012</span>
       
       <h2><a class="post-link" href="http://www.leancrew.com/all-this/2012/08/the-safari-6-url-crisis/">Crazy useful url script from Dr. Drang</a> <a class="permalink" title="Permanent link to ‘Crazy useful url script from Dr. Drang’" href="/useful-url-script">Ω</a></h2>
@@ -268,28 +301,6 @@
 <p>Coincidentally, a friend of mine got the AT&amp;T throttling warning this morning. He’s decided to leave.</p>
 
 <p><strong>Update: I’ve switched to Sprint.</strong></p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 4, 2012</span>
-      
-      <h2><a class="post-link" href="/DAS28-remission">Does DAS28 remission equal healthy joints?</a></h2>
-      
-      <div class="content"><p>Sadly, no. Patient’s in DAS28 remission continue to have ongoing joint damage if they still have swollen joints.</p>
-
-<p>Other interesting side points:</p>
-
-<ul>
-  <li>15% of patients on methotrexate monotherapy achieve DAS28 remission</li>
-  <li>Joint damage is related to acute-phase response and swollen joint counts</li>
-  <li>Joint damage is not related to tender joint counts   </li>
-</ul>
-
-<hr />
-
-<p>Aletaha D, Smolen JS. <a href="http://dx.doi.org/10.1002/art.30634">Joint damage in rheumatoid arthritis progresses in remission according to the Disease Activity Score in 28 joints and is driven by residual swollen joints</a>. <em>Arthritis Rheum</em>. 2011;63(12):3702–3711.</p>
-
 </div>
     </li>
   

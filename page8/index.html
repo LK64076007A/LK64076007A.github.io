@@ -96,6 +96,41 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Oct 13, 2012</span>
+      
+      <h2><a class="post-link" href="/Saving-sequential-webpages-with-Keyboard-Maestro">Saving sequential webpages as PDFs with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I needed to save as PDF a series of 80 webpages on a slow server on a password protected website. I could have sat there for an hour doing it manually, but since I wanted to get dressed and have a cup of coffee, I made a Keyboard Macro shortcut instead.</p>
+
+<p><a href="/images/Saving_with_KM.png"><img src="/images/Saving_with_KM.png" alt="" /></a> </p>
+
+<p>In order to use this macro, you need to set up a very useful shortcut for saving files to PDF. In the stock OS, you hit ⌘-P (Command-P) to bring up the print dialogue box and then in the bottom left hand corner of the pop up menu click the down arrow by PDF and choose save as PDF. <strong>A much faster way  to do this,</strong> is to create a system shortcut that allows you to hit ⌘-P twice to initiate the save as PDF action. I learned this from MacSparky and <a href="http://macsparky.com/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html" title="still go to his page every time to remember how to set it up">still go to his page every time to remember how to set it up</a>.</p>
+
+<p>The first two steps are to set up some incrementing variables to allow the files to be named with sequential numbers. If the webpages you’re saving have unique names, this won’t be necessary, but for my case it was.<sup id="fnref:1210130817"><a href="#fn:1210130817" class="footnote">1</a></sup> </p>
+
+<p>The rest of the code is in a repeat loop. Since I knew it was going to be exactly 80 repeats, it was easier to do it this way than a while, or if loop. </p>
+
+<p>The first part of the real code is to initiate the save as command with ⌘-P twice.</p>
+
+<p>Then the file name is entered with the last digit being placed by a variable that will increment by +1 with every new name. Since the saving dialog seemed to take awhile, I added a pause into the mix. Then ⌘-down arrow moves the whole webpage to the very bottom where the “next page” button is. Keyboard Maestro has a powerful function to find images on a webpage and then use that image. In this case, when it sees the image of the next button, it left clicks the mouse in the center of the button. </p>
+
+<p>The pages are slow to load, so I have a pause in there until the screen contains the image of a circular arrow. This is the refresh button in Safari and only shows up once a page is loaded. It’s an easy hack to make sure the next page is loaded. </p>
+
+<p>And then this cycle repeats itself until all the pages were saved. It worked perfectly.</p>
+
+<p>I didn’t even have time to do my hair and finish my coffee.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1210130817">
+      <p>Setting the constant 1 to the variable i was probably unnecessary, but I was trying to get this done quickly, not elegantly.  <a href="#fnref:1210130817" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Sep 20, 2012</span>
       
       <h2><a class="post-link" href="/Google-Maps-Fail">Google Maps Fail</a></h2>
@@ -310,39 +345,6 @@ Informed consent and time out was completed. The %fill:area% %fillpopup:name=pop
 </video>
 
 <p><strong>Update</strong>: The first taper doesn’t actually calculate the corrects number of pills in the video. I had made a mistake in the order of a loop. It’s been fixed since this video.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 5, 2012</span>
-      
-      <h2><a class="post-link" href="/pasting-text-into-Epic">Errors when pasting text from a Mac into Epic and Allscripts</a></h2>
-      
-      <div class="content"><p><strong>Update 2 (5.23.2013):</strong> When my friend updated to Keyboard Maestro 6, this fix stopped working. This may be because the filter line endings had nothing to do with the fix, rather that process had an unexpected side effect of changing rich text to plain text. We are in the process of testing this theory. If you can’t wait, try filtering with “remove styles”.</p>
-
-<p><strong>Update:</strong> <a href="http://twitter.com/psufka">@psufka</a> reports that he has seen this with Windows machines, so apparently is not an isolated Mac compatibility issue.</p>
-
-<p>A colleague  and friend was having trouble with the Epic electronic medical record. He writes his notes in Pages on the Mac and when he would try to paste the text into Epic, it would mess up. What he was seeing was his note was losing words and the paragraph formatting was screwed up. It was making his life painful, slow, and frustrating…basically like all EMRs make life.</p>
-
-<p><strong>Thankfully, there’s a really simple solution</strong></p>
-
-<p>What was happening (I think) was that he was pasting text from a Mac environment into a Unix environment, <a href="http://www.editpadpro.com/tricklinebreak.html">which have different (invisible) characters to end a line</a>.<sup id="fnref:1208051113"><a href="#fn:1208051113" class="footnote">1</a></sup></p>
-
-<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> has a function to change the line endings of whatever text is in the clipboard. So now, he copies the text to the clipboard using ⌘-C, switches to the EMR, and ⌃⌘-V pastes the correctly formatted text into the EMR without any screw ups.</p>
-
-<p><img src="/images/pastingIntoEpic.png" alt="Epic pasting KM macro" /> </p>
-
-<p>The same thing was also happening with another EMR he uses, Allscripts. The same solution worked there too.</p>
-
-<p>Keyboard Maestro is a very powerful application for the Mac. I can’t begin to say how great it is. It is also not for beginners. If you’re looking to get started with taking more control over your machine, this is not the place I’d recommend starting unless you have a strong familiarity with computers and have someone to help you along the way. Otherwise, it’s very much worth it’s price of $36.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1208051113">
-      <p>There is probably a little more to it than that since the first string of each new paragraph was disappearing, but I’m not an expert and my fix works. <a href="#fnref:1208051113" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

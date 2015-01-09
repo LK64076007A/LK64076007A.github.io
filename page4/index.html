@@ -96,6 +96,18 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jun 1, 2013</span>
+      
+      <h2><a class="post-link" href="/From-the-mouths-if-babes">From the mouths of babes</a></h2>
+      
+      <div class="content"><p>Me: I don’t gamble because I only play games with women’s hearts.<br />
+Boy(age 8): That’s never going to happen.<br />
+Wife: Why not?<br />
+Boy: Because he’s married to a woman who has no heart.  </p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">May 30, 2013</span>
       
       <h2><a class="post-link" href="/modified-Keyboard-Maestro-macro-for-MultiMarkdown-Footnotes">A modified Keyboard Maestro macro for MultiMarkdown Footnotes</a></h2>
@@ -506,74 +518,6 @@ Tags: %Variable%Tags%
 
 <p>It is the “walking away” part I need to remember so I don’t end up relying too heavily on their services or sink too much time and data into their silos. </p>
 
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 14, 2013</span>
-      
-      <h2><a class="post-link" href="/Enable-Copy-and-Paste">Enable Copy and Paste</a></h2>
-      
-      <div class="content"><p>The website Uptodate, a common medical reference site for physicians, appears to disable copying text on the iPhone. This makes it very difficult to copy snippets of text into the notes I’m taking as I read. It also prevents using iOS’s text-to-speech functionality when my eyes get tired. </p>
-
-<p>Thankfully, it’s not very difficult to restore this functionality. </p>
-
-<ol>
-  <li>On your iPhone, create a bookmark of this page. </li>
-  <li>Copy the following text to your clipboard:</li>
-</ol>
-<pre>
-javascript:(function(){
-
-function allowTextSelection(){
-  var styles='*,p,div{user-select:text !important;-moz-user-select:text !important;-webkit-user-select:text !important;}';
-  jQuery('head').append(jQuery('&lt;style /&gt;').html(styles));
-  
-  window.console&amp;&amp;console.log('allowTextSelection');
-  var allowNormal = function(){
-    return true;
-  };
-  window.console&amp;&amp;console.log('Elements unbound: '+
-    jQuery('*[onselectstart], *[ondragstart], *[oncontextmenu], #songLyricsDiv'
-    ).unbind('contextmenu').unbind('selectstart').unbind('dragstart'
-    ).unbind('mousedown').unbind('mouseup').unbind('click'
-    ).attr('onselectstart',allowNormal).attr('oncontextmenu',allowNormal
-    ).attr('ondragstart',allowNormal).size());
-}
-
-function allowTextSelectionWhenPossible() {
-  window.console&amp;&amp;console.log('allowTextSelectionWhenPossible');
-  if(window.jQuery){
-    window.console&amp;&amp;console.log('jQuery has now loaded');
-    allowTextSelection();
-  } else {
-    window.console&amp;&amp;console.log('jQuery still not loaded.');
-    window.setTimeout(allowTextSelectionWhenPossible, 100);
-  }
-}
-
-if(window.jQuery) {
-    window.console&amp;&amp;console.log('jQuery exists; will use');
-  allowTextSelection();
-}else{
-  window.console&amp;&amp;console.log('jQuery not loaded; will include.');
-  var s=document.createElement('script');
-  s.setAttribute('src','http://code.jquery.com/jquery-1.9.1.min.js');
-  document.getElementsByTagName('body')[0].appendChild(s);
-  allowTextSelectionWhenPossible();
-}
-
-
-})();  
-</pre>
-<ol>
-  <li>Go to the bookmark menu in Safari, find the bookmark you just created, and hit edit. </li>
-  <li>Replace the URL with the clipboard contents. </li>
-  <li>Go to Uptodate or any website that blocks copying. </li>
-  <li>While on that page, hit the bookmark, and functionality should return. </li>
-</ol>
-
-<p>Credit: I got the JavaScript above from <a href="http://alanhogan.com/code/text-selection-bookmarklet">Alan Hogan</a>.</p>
 </div>
     </li>
   

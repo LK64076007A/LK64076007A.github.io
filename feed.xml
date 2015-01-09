@@ -6,9 +6,38 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 07 Jan 2015 10:05:11 -0500</pubDate>
-    <lastBuildDate>Wed, 07 Jan 2015 10:05:11 -0500</lastBuildDate>
+    <pubDate>Fri, 09 Jan 2015 09:02:54 -0500</pubDate>
+    <lastBuildDate>Fri, 09 Jan 2015 09:02:54 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>I do not miss voice mail</title>
+        <description>&lt;p&gt;From the &lt;a href=&quot;http://www.wnyc.org/story/theres-still-something-about-voicemail/&quot;&gt;New Tech City podcast&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Voicemail is a default archive of your life. You would miss it if it were gone&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Voice mail is terrible. It’s just another form of spam. I hate it. I also hate phone calls. I’d decline to answer a phone call from someone (everyone) I didn’t want to talk to, and then I’d immediately have another message from them that I needed to deal with. &lt;/p&gt;
+
+&lt;p&gt;You said “you would miss [voice mail] if it were gone.” Wrong. Absolutely wrong. And I know.&lt;/p&gt;
+
+&lt;p&gt;A few years ago I was my carrier’s store dealing with something and when they finished they asked if there was anything else they could help me with. Without really thinking, I sad “yes, get rid of my voice mail account. She looked shocked, and perhaps a bit concerned about my sanity. She didn’t know if it was possible to do but got on the phone with corporate. I myself didn’t think it was going to be possible, either because of a technical issue, or just a lack of knowledge from the low level tech support I’m use to getting, but in only a few minutes I was told I no longer had a voice mail account. &lt;/p&gt;
+
+&lt;p&gt;It’s been amazing. If you call me, my phone will just ring and ring like an old land line. If I decline your call, you get cut off. It is one less inbox I have to check. One less “to do” list cluttering up my already too cluttered life. My life is so much more peaceful.&lt;/p&gt;
+
+&lt;p&gt;If only I could get rid of my USPS address.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Jan 2015 09:00:47 -0500</pubDate>
+        <link>http://soitscometothis.net/i-do-not-miss-voice-mail</link>
+        <guid isPermaLink="true">http://soitscometothis.net/i-do-not-miss-voice-mail</guid>
+        
+        <category>technology</category>
+        
+        <category>voice mail</category>
+        
+        
+      </item>
     
       <item>
         <title>Shopping cycle</title>
@@ -260,122 +289,6 @@ I went to their website and did all the trouble shooting activities they recomme
         <category>blogging</category>
         
         <category>github</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Create a Markdown link with automatic affiliate codes</title>
-        <description>&lt;p&gt;I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from &lt;a href=&quot;http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/&quot;&gt;Dr. Drang&lt;/a&gt; and &lt;a href=&quot;http://nerdgap.com/amazon-affiliate-links-with-textexpander/&quot;&gt;Brett Kelly&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The macro can be triggered by the string &lt;code&gt;mdlink&lt;/code&gt; of the hotkey ⇧⌃⌥⌘p.&lt;/p&gt;
-
-&lt;p&gt;Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.&lt;/p&gt;
-
-&lt;h2 id=&quot;macro-text&quot;&gt;Macro Text&lt;/h2&gt;
-
-&lt;p&gt;My Macros&lt;br /&gt;
-mdlink&lt;br /&gt;
-Triggered by any of the following:&lt;br /&gt;
-The exact case string ‘mdlink’ is typed (then deleted)&lt;br /&gt;
-The Hot Key ⌃⌥⇧⌘P is pressed&lt;br /&gt;
-Will execute the following actions:&lt;br /&gt;
-Activate nvALT&lt;br /&gt;
-Set Clipboard to Text&lt;br /&gt;
-%SafariURL%&lt;br /&gt;
-If All Conditions Met&lt;br /&gt;
-The clipboard text contains ‘itunes.apple.com’&lt;br /&gt;
-Execute the Following Actions:&lt;br /&gt;
-Execute Shell Script  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/python
-
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
-
-from subprocess import check_output
-from sys import stdout
-
-# My affiliate ID.
-myID = &#39;11l4RT&#39;
-
-# Get the URL from the clipboard.
-clipURL = check_output(&#39;pbpaste&#39;)
-
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if &#39;?&#39; in clipURL:
-itemURL = &#39;%s&amp;amp;at=%s&#39; % (clipURL, myID)
-else:
-itemURL = &#39;%s?at=%s&#39; % (clipURL, myID)
-
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If All Conditions Met&lt;br /&gt;
-The clipboard text contains ‘amazon.com’&lt;br /&gt;
-Execute the Following Actions:&lt;br /&gt;
-Execute Shell Script  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
-
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
-
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
-
-## PUT YOUR AFFILIATE CODE HERE
-affcode = &#39;violeneces-20&#39;
-
-rawurl = check_output(&#39;pbpaste&#39;)
-
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split(&#39;?&#39;)[0] 
-
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
-
-## Make sure it&#39;s actually an Amazon URL
-amazonre = re.compile(&#39;[www\.]{0,1}amazon\.&#39;)
-
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
-
-# Format the simpler URL and append the affiliate code
-goodurl = &quot;%s://%s%s?tag=%s&quot; % (parts.scheme,parts.netloc,parts.path,affcode)
-
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Save trimmed to Clipboard.&lt;br /&gt;
-Insert Text by Pasting&lt;br /&gt;
-[%SafariTitle%](%CurrentClipboard%)  &lt;/p&gt;
-
-&lt;h1 id=&quot;macro-image&quot;&gt;Macro Image&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/Markdown_link_with_affiliate_codes.jpg&quot;&gt;&lt;img src=&quot;/images/Markdown_link_with_affiliate_codes.jpg&quot; alt=&quot;Macro Image&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros&quot;&gt;Download the macro&lt;/a&gt;. &lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 01 Aug 2014 00:49:00 -0400</pubDate>
-        <link>http://soitscometothis.net/Create-a-Markdown-link-with-automatic-affiliate-codes</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Create-a-Markdown-link-with-automatic-affiliate-codes</guid>
-        
-        <category>Keyboard Maestro</category>
         
         
       </item>
