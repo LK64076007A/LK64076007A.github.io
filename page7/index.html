@@ -96,6 +96,77 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jan 18, 2013</span>
+      
+      <h2><a class="post-link" href="/Stupid-EMR-UI-Example-2">Stupid EMR UI Example 2</a></h2>
+      
+      <div class="content"><p>I love tech and I especially love software, but like most things that we deeply love, when they fall short, it’s very hard to not get angry.</p>
+
+<p>This is one reason I have such a hatred for the current state of Electronic Medical Records. They’re abysmal. <a href="http://vimeo.com/31926572">John Gruber even makes fun of them</a>. (Minute 24:28, but the whole talk is worth listening too.)</p>
+
+<p>Today I share <a href="http://soitscometothis.net/post/stupid-emr-ui">another example</a> of poor design.</p>
+
+<p>In the EMR I use now, NextGen, I’ve been complaining about the joint injection procedure template for 1.5 years. They still haven’t fixed it.</p>
+
+<p>I use a standard medication called Synvisc One. Synvisc regular is a 2ml (16mg) injection you give once a week for 3 weeks. Synvisc One is all 6ml (48mg) given at once.</p>
+
+<p>Just to lay out all the numbers for you. This medication is available as:</p>
+
+<ul>
+  <li>2ml</li>
+  <li>6ml</li>
+  <li>16mg</li>
+  <li>48mg</li>
+</ul>
+
+<p>That’s it. Two strengths. Expressed either in a volume or a mass.</p>
+
+<p>You can document this in two places in the procedure template. I want to point out, that this is the first mistake, having two places to document one thing.</p>
+
+<p>And here’s how they look:</p>
+
+<p><img src="/images/Synvisc_Nextgen_order_1.png" alt="" /> </p>
+
+<p>First, there’s no units. Specifically it just says “units”. Is that milliliters? Liters? Milligrams? Grams? Number of injections? Is this for Synvisc or Synvisc One? If I pick one of these, what am I actually documenting or ordering? The closest guess is that this is in milliliters, but then you can’t pick “6”, the size of Synvisc One. There is a “2”, so you could document Synvisc regular. Even then, <strong>1 in 5 available choices will always be wrong</strong>. Why even offer a possible wrong choice?!?! I also point out that this is a pop up menu, so you’ve already been removed from the screen you’re working on.</p>
+
+<p>And here is how the second place to document it looks: </p>
+
+<p><img src="/images/Synvisc_Nextgen_order_2.png" alt="" /> </p>
+
+<p>This one at least has units, but still has all the other problems. </p>
+
+<p>I would offer the following fixes:</p>
+
+<ol>
+  <li>Have only one place to order the drug.</li>
+  <li>Instead of a pop up window, make it a radial button choice. </li>
+  <li>Have two options: Synvisc and Synvisc One</li>
+</ol>
+
+<p>This improve things as follows:</p>
+
+<ol>
+  <li>Only one place to document. </li>
+  <li>No choices that are wrong.</li>
+  <li>No extra pop up menu.</li>
+  <li>No need for the user to know the milligrams, milliliters, or any other unit. They just need to be able to read what is on the box.</li>
+</ol>
+
+<p>I hope that before I die<sup id="fnref:1301182110"><a href="#fn:1301182110" class="footnote">1</a></sup>, a decent EMR exists. </p>
+
+<p>We have a long way to go.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1301182110">
+      <p>It wouldn’t hurt if it wasn’t horribly ugly either. <a href="#fnref:1301182110" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 13, 2013</span>
       
       <h2><a class="post-link" href="/Inline-Markdown-links-from-Safari-tabs">Inline Markdown links from Safari tabs</a></h2>
@@ -469,24 +540,6 @@ end tell
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Nov 6, 2012</span>
-      
-      <h2><a class="post-link" href="/damning-with-faint-praise">Damning with faint praise</a></h2>
-      
-      <div class="content"><p><a href="http://thebrief.io/2012/thursday-october-18th/#huawei_probably_not_spying_just_crappy_programmers" title="The Brief">The Brief</a>:</p>
-
-<blockquote>
-  <p>Huawei Probably Not Spying, Just Crappy Programmers</p>
-
-  <p>A person familiar with the White House’s review said they found equipment that was “riddled” with vulnerabilities caused by poor programming, and other experts familiar with their equipment told Reuters that it’s “five times easier” to find a vulnerability in a Huawei router than it is in a Cisco one. </p>
-</blockquote>
-
-<p>Never attribute to malice that which is more likely due to incompetence.</p>
-
 </div>
     </li>
   
