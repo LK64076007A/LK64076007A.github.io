@@ -643,6 +643,40 @@ Consider ordering: CCP, RF, TB (quantiferon), ACE level, fungal cultures and sme
     </li>
   
     <li>
+      <span class="post-meta">Apr 9, 2013</span>
+      
+      <h2><a class="post-link" href="/morning-sickness-pill-again">The first US morning sickness pill, again</a></h2>
+      
+      <div class="content"><p>My dad told me a story as a kid about a good medicine that used to exist for morning sickness until some greedy nurse had a baby with birth defects and sued the company. They lost and the drug wasn’t profitable enough for them to continue making it in the face of potential future lawsuits and the precedence of that loss. They stopped making the drug. Sometimes, my dad would have the drug (really just a couple of over-the-counter pills) made up specially for certain patients. </p>
+
+<p>At least that’s how I remember the story. </p>
+
+<p>From this I learned several lessons:</p>
+
+<ol>
+  <li>The legal system is not about justice. </li>
+  <li>The people closest to the medical system are the ones who abuse it the most. </li>
+  <li>Sometimes you have to take great risks to do the right thing. </li>
+  <li>The good guy doesn’t always win. </li>
+</ol>
+
+<p>Looks like the drug is coming back:</p>
+
+<blockquote>
+  <p>U.S. doctors have had no officially approved treatment for morning sickness since lawsuits forced Bendectin off the market in 1983. But the drug’s main ingredients are vitamin B6 and an over-the-counter antihistamine, and obstetricians often advised pregnant women how to mix up the right dose themselves.</p>
+</blockquote>
+
+<p>From <a href="http://www.businessweek.com/ap/2013-04-08/fda-approves-return-of-drug-for-morning-sickness">Businessweek</a>.</p>
+
+<blockquote>
+  <p>U.S. health regulators have approved a drug to treat morning sickness that was withdrawn from the market 30 years ago amid claims, since debunked, that it caused birth defects.</p>
+</blockquote>
+
+<p>From <a href="http://mobile.reuters.com/article/idUSBRE93800120130409?irpc=932">Reuters</a>.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Mar 20, 2013</span>
       
       <h2><a class="post-link" href="/The-Boys-Dream">The Boy's Dream</a></h2>
@@ -906,53 +940,6 @@ Peter.</p>
 <p>The first time you run the cloning software, it will take awhile. Depending on your connection it could be an hour to all night. After that it will much faster as it will only incrementally update changes. My updates typically take around 6 minutes. </p>
 
 <p>Enjoy your new power and piece of mind. You just earned +10 nerd CME. </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 12, 2013</span>
-      
-      <h2><a class="post-link" href="/Mute-commercials-on-CBS-or-Hulu-with-Keyboard-Maestro">Mute commercials on CBS or Hulu with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>In a game of one-upmanship, I’ve improved on my prior macros for muting commercials on CBS and Hulu. What used to be 1-3 non-annoying commercials<sup id="fnref:1363103721-fn1"><a href="#fn:1363103721-fn1" class="footnote">1</a></sup> has turned into five, highly-annoying, commercials in a row. The volume is often much louder than the volume of the show and not infrequently, the same commercial is played all 5 times.</p>
-
-<p>To combat this I made two small changes. First, I combined the two macros into one so I don’t have to remember two hot keys or which site I’m watching. A simple Applescript snippet captures the URL from Chrome and an if/then statement looks for the network name in the url. The second change involves turning the screen off and on in addition to toggling the mute key.</p>
-
-<p>The macro flows thus:</p>
-
-<pre>
-- Execute Applescript `tell application "Google Chrome" to get the URL of active tab of first window` and save results to variable `currentURL`
-- If `currentURL` contains CBS then
-    - Toggle system sound mute
-    - Repeat action 16 times: decrease screen brightness
-    - Execute following action until none of the conditions are met
-        - none (this is basically just a pause until)
-        - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-    - Toggle system sound mute
-    - Repeat action 16 times: increase screen brightness
-- otherwise execute the following
-    - If `currentURL` contains hulu then
-        - Toggle system sound mute
-        - Repeat action 16 times: decrease screen brightness
-        - Execute following action until none of the conditions are met
-            - none (this is basically just a pause until)
-            - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-        - Toggle system sound mute
-        - Repeat action 16 times: increase screen brightness
-    - otherwise do nothing
-</pre>
-
-<p>I haven’t figured out a way to automatically call this macro when the commercials start. I could watch for the “advertisement” graphic but I think that would be way too CPU intensive. I’ll keep thinking about it.</p>
-
-<p>I encourage you to make your own macro to learn the system, and you might have to in order to get the correct “advertisement” graphic, but you can get mine <a href="/images/mute_Commercials.kmmacros">here</a>. (right click to download)</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1363103721-fn1">
-      <p>I assume this had to do with the newness of the medium was not attractive the old school advertisers and in addition the commercials were aimed at a younger, techophilic demographic. Now I just see lots of car commercials. <a href="#fnref:1363103721-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
