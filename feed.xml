@@ -6,9 +6,22 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 03 Mar 2015 16:57:07 -0500</pubDate>
-    <lastBuildDate>Tue, 03 Mar 2015 16:57:07 -0500</lastBuildDate>
+    <pubDate>Fri, 06 Mar 2015 08:37:38 -0500</pubDate>
+    <lastBuildDate>Fri, 06 Mar 2015 08:37:38 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>What is our purpose?</title>
+        <description>&lt;p&gt;With insurance companies determining what treatments are allowed, patients self-diagnosing on Google, and non-practicing surgeons being the most popular source of professional medical advice, I think the only reason physicians still exist is so there is someone to sue when it all falls apart. &lt;/p&gt;
+
+&lt;p&gt;…and to prescribe “medical” marijuana in states that don’t have the balls to legalized it completely. &lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Mar 2015 08:35:51 -0500</pubDate>
+        <link>http://soitscometothis.net/what-is-our-purpose</link>
+        <guid isPermaLink="true">http://soitscometothis.net/what-is-our-purpose</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dealing with the devil</title>
@@ -243,33 +256,6 @@ I went to their website and did all the trouble shooting activities they recomme
         <category>technology</category>
         
         <category>startups</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>FTC sues AT&amp;T over throttling &quot;Unlimited&quot; data plans</title>
-        <description>&lt;p&gt;I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The Federal Trade Commission (FTC) of the United States today filed a federal court complaint against AT&amp;amp;T, accusing the carrier of misleading its smartphone customers by charging them for unlimited data while reducing their data speeds by up to 90 percent. - &lt;a href=&quot;http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I had one of those “unlimited” plans and AT&amp;amp;T sent rude text messages threatening to throttle me and then eventually did. I was using just over 2 gigabytes a month. I switched to Sprint. &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The FTC alleges that AT&amp;amp;T throttled customers who had used as little as 2GB of data beginning in 2011, and that the throttling is severe, “resulting in speed reductions of 80 to 90 percent for affected users.” AT&amp;amp;T is said to have throttled 3.5 million customers more than 25 million times, violating the FTC Act in the process.  - &lt;a href=&quot;http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Tue, 28 Oct 2014 15:09:00 -0400</pubDate>
-        <link>http://soitscometothis.net/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans</link>
-        <guid isPermaLink="true">http://soitscometothis.net/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans</guid>
-        
-        <category>carriers</category>
-        
-        <category>AT&amp;T</category>
-        
-        <category>class action</category>
         
         
       </item>
