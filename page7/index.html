@@ -96,6 +96,83 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Feb 18, 2013</span>
+      
+      <h2><a class="post-link" href="/Batch-converting-Pages-documents-to-PDF">Batch converting Pages documents to PDF with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I had 3000 Pages documents that I wanted to convert PDF. I had previously searched the internet for a way to do this easily but was unsuccessful. I suppose I should have tried searching again, because I would have found <a href="http://www.yourmacteacher.com/batch-convert-pages-documents-to-pdf/">Pages2PDF</a>, which works much better than what I did. </p>
+
+<p>Still, relying on someone to create the exact program you need is not as fun or as useful as being able to fix the problem yourself. So I created a Keyboard Maestro macro.</p>
+
+<p>Basically, this automates the steps I would have had to do manually:</p>
+
+<ol>
+  <li>Open the file in Pages.</li>
+  <li>Select Export to PDF from the menu.</li>
+  <li>Fix the file name.<sup id="fnref:130218165655"><a href="#fn:130218165655" class="footnote">1</a></sup></li>
+  <li>Move the original file to a new location.</li>
+</ol>
+
+<p>In Keyboard Maestro parlance the steps were:</p>
+
+<ul>
+  <li>For Each Item in a the Finder’s selection
+    <ol>
+      <li>Set the file name to a variable fileName</li>
+      <li>Set the file path to a variable filePath</li>
+      <li>Open the file at filePath/fileName<sup id="fnref:130218170000"><a href="#fn:130218170000" class="footnote">2</a></sup> in Pages.</li>
+      <li>Pause for 1.5 seconds.<sup id="fnref:130218170107"><a href="#fn:130218170107" class="footnote">3</a></sup></li>
+      <li>Select the menu item PDF… in the submenu Export in the Menu Title File.</li>
+      <li>Press the Button labeled “Next…”</li>
+      <li>Insert the text from variable %WindowName%1% by pasting. (Basically, this names the file being exported the same as the original file name, except for the extension.)</li>
+      <li>Press the button labeled “Export”.</li>
+      <li>Type the keystroke ?-W (to close the open file)</li>
+      <li>Move the file %Variable%filePath%/%Variable%fileName% to whateverLocationYouWant/%Variable%fileName%</li>
+    </ol>
+  </li>
+</ul>
+
+<p>It worked perfectly if somewhat slow. It took several hours to process all the files. </p>
+
+<p><a href="/images/PagestoPDF.png"><img src="/images/PagestoPDF.png" alt="" /></a> </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:130218165655">
+      <p>For some reason, Pages kept truncating my filenames. <a href="#fnref:130218165655" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130218170000">
+      <p>I don’t know why I had to specifically use the path and name. Sometimes KM works fine without that and sometimes it doesn’t. I haven’t figured out why and when. <a href="#fnref:130218170000" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130218170107">
+      <p>I didn’t test this step any. I just assumed KM would need time for the document to fully open in Pages. <a href="#fnref:130218170107" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Feb 12, 2013</span>
+      
+      <h2><a class="post-link" href="/Legal-troubles">Legal troubles</a></h2>
+      
+      <div class="content"><p><a href="http://www.nytimes.com/2013/02/11/us/lawyers-call-for-drastic-change-in-educating-new-lawyers.html?src=me&amp;ref=general">The New York Times</a>:</p>
+
+<blockquote>
+  <p>The proposals are a result of numerous factors, including a sharp drop in law school applications, the outsourcing of research over the Internet, a glut of underemployed and indebted law school graduates and a high percentage of the legal needs of Americans going unmet.</p>
+</blockquote>
+
+<blockquote>
+  <p>“There is almost universal agreement that the current system is broken,” said Thomas W. Lyons III, a Rhode Island lawyer and a member of the American Bar Association’s Task Force on the Future of Legal Education, which gathered here over the weekend for a public hearing at the association’s midyear meeting.</p>
+</blockquote>
+
+<p>This sounds eerily similar to the situation in the medical world (minus the part about underemployment).</p>
+
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 30, 2013</span>
       
       <h2><a class="post-link" href="/NIH-Stroke-Scale">NIH Stroke Scale with Keyboard Maestro and TextExpander</a></h2>
@@ -473,78 +550,6 @@ end tell
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Nov 24, 2012</span>
-      
-      <h2><a class="post-link" href="/Mobile-document-scanning">Mobile document scanning</a></h2>
-      
-      <div class="content"><h1 id="summary">Summary</h1>
-
-<p>Scan documents with your smartphone, sync to your home computer with Dropbox, and have them automatically OCR’d so they’re searchable later.</p>
-
-<h1 id="tldr">tl;dr</h1>
-
-<p>Yesterday, I mentioned that one of the consistent apps on my home screen is <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a>. It is a simple and elegant app with a straight forward purpose: take pictures of documents, save them as PDFs, and upload them to cloud-based services. </p>
-
-<p>In the digital age in which many of us are trying to live a <a href="http://macsparky.com/paperless/" title="Paperless">Paperless</a> lifestyle, converting paper documents to digital ones is a necessary evil. Scanners of various types are necessary for this task. There is a continuum of power versus portability when it comes to scanners. The more powerful are less portable; the most portable are usually not that powerful. </p>
-
-<p>At work, where I don’t need to be portable, but need lots of power to scan hundreds of pages of double-sided documents and auto-rotate the occasional upside down page, I use the <a href="http://www.amazon.com/Fujitsu-ScanSnap-Instant-Sheet-Fed-Macintosh/dp/B001XWCQO2?tag=violeneces-20">Fujistu ScanSnap S1500M</a>, and I wouldn’t want to use anything else. At home, where I’m a bit more portable, and typically am only scanning a few pages at once, I go with the <a href="http://www.amazon.com/Doxie-Go-Rechargeable-Mobile-Scanner/dp/B0053TRH2M/ref=sr_1_1?tag=violeneces-20">Doxie Go</a>, which I can also take with me on trips if needed. </p>
-
-<p>But then there are all the times when I’m not at work or home but want to scan something and that’s when I turn to the power of the modern smartphone camera and <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a>. </p>
-
-<p>I have three requirements when I scan documents. </p>
-
-<p>First, all documents must be in PDF format. PDF is a universal standard that will not be going away anytime soon, and if it does every become obsolete, there are so many people that have depended on it, there will be many options created to convert PDFs to the next standard. <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a> saves all images in this format. </p>
-
-<p>Next, I need to be able to access to my documents from any of my devices. This means uploading them to <a href="http://db.tt/F6uGmiXz">Dropbox</a>. If you don’t know what Dropbox is stop everything now and <a href="http://db.tt/F6uGmiXz">go learn</a>. <a href="http://db.tt/F6uGmiXz">Seriously</a>. Stop! Don’t read another word. <a href="http://db.tt/F6uGmiXz">GO</a>. <a href="http://db.tt/F6uGmiXz">GET</a>. <a href="http://db.tt/F6uGmiXz">DROPBOX</a>. <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a> can upload to Dropbox (and a bunch of other Cloud services I don’t use) and can be set to upload automatically.</p>
-
-<p>Finally, all my documents must be <a href="http://en.wikipedia.org/wiki/Optical_character_recognition">OCR’d</a>. Basically, OCR is the process by which software is used to analyze the image of a document and figure out what the characters are. Without OCR you have an unsearchable document that you can’t even copy and paste text out of. With OCR you can search for any words inside the document and copy and paste text from it elsewhere. <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a> does not OCR, and frankly, I’m suspicious of any mobile OCR app at this time. I really want quality text conversion and so I prefer to use the more powerful software and processor on my desktop machine. </p>
-
-<p>To OCR documents uploaded to <a href="http://db.tt/F6uGmiXz">Dropbox</a>, I have my home computer watch the folder I upload PDFs to from <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a>, and when a new PDF is added, an Applescript is called that uses <a href="https://itunes.apple.com/us/app/pdfpenpro/id403758325?mt=12">PDFpen Pro</a> to OCR the document. All credit goes to David Sparks, AKA MacSparky, author of the aforementioned <a href="http://macsparky.com/paperless/" title="Paperless ebook">Paperless ebook</a>, for the technique to do this. <a href="http://macsparky.com/blog/2009/5/24/pdfpen-ocr-folder-action-script.html">He wrote about</a> using something called Folder Actions that he used to do this. In the comments of this post<sup id="fnref:121124223240"><a href="#fn:121124223240" class="footnote">1</a></sup>, there was a link to another site that did a similar thing using Hazel. <a href="http://www.documentsnap.com/hazel-rule-to-ocr-documents-using-pdfpen/">I use the Hazel method</a>, because I actually have many folders that are watched and OCR’d in a similar way, and having them all together in one application makes them easier to monitor.</p>
-
-<p>So, when I’m returning the rental car at the end of a business trip, rather than saving the receipt for scanning at home fraught with the perils of trying not to wrinkle it in the carry on bag and also remember to scan it in the first place, I take a quick picture of it with <a href="https://itunes.apple.com/us/app/scanner-pro-by-readdle/id333710667?mt=8">Scanner Pro</a> and forget about it, because it will be uploaded and OCR’d without any more input from me. The next time I need the receipt, I just search for “car rental receipt” in Spotlight and all those kinds of receipts appear.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:121124223240">
-      <p>I know there aren’t any there now, but I swear, there used to be comments there. <a href="#fnref:121124223240" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Nov 23, 2012</span>
-      
-      <h2><a class="post-link" href="/quitting-ascension">It's not me, it's you.</a></h2>
-      
-      <div class="content"><p>I received a piece of mail today that I found insulting: my employer has hired an outside agency to determine if my son is my son.</p>
-
-<p>Actually and technically, since my wife and I both work in the same company and the insurance is in her name, the letter was to my wife and was to verify that I am her husband and that our son is ours.</p>
-
-<p>Riddled with corporate speak, this letter basically says that they don’t trust that everyone listed as a dependent–myself and my son–on my wife’s insurance is actually a dependent and that they want to make sure they aren’t paying for what they don’t have to be. Apparently, this is a company-wide initiative.</p>
-
-<p>While I have no problem with companies verifying that there is no fraud occurring in their organization, I have multiple reasons to be upset with this letter.</p>
-
-<p>First, in order to verify our status, this third party organization that I am not associated with in any way is demanding a copy of my marriage license, tax return with both our names on it, and my son’s birth certificate. If I don’t provide it to them in 2 weeks, we’ll lose our health insurance.</p>
-
-<p>I’m not a low level corporate stooge. My wife and I were professionally recruited to this organization. We were interviewed by CEOs and COOs. The in-house recruiter helped find a school for my son. I have meetings regularly with my office manager, the regional manager, and the COO. The idea that this small family, 2/3’s of whom are salaried employees of the company, cannot be locally verified is ridiculous.</p>
-
-<p>Also, there’s no reason that every employee shouldn’t be granted the same respect and it would not be difficult to do as I’ll explain later. </p>
-
-<p>Second, our organization is infested with managers. It would take very little effort to have us present the same documentation to our local managers, who could feed this up the food chain. It’s the same way they verify we all get our yearly flu shots or have maintained our licenses. This way, the private information remains local and within the organization I work for and the money that the organization is paying out would be saved. At a time when the organization is performing mass lay offs and crying about how they are losing money, I cannot believe they are wasting money like this.</p>
-
-<p>Finally, given the nature of my work, I cannot just quit if I don’t like the policy. I must give 6 months notice of termination. So, if I don’t give them this information, at the best, I would give up my employee health insurance, which is a part of my compensation package. I’m not sure if this would qualify as breach of contract on their part, and I don’t want to be a trouble maker and fight to find out. </p>
-
-<p>What I do know: my resignation letter will be on my manager’s desk Monday morning. </p>
-
-<p>Sadly, that will not be because of a sudden, principled stand against this issue. Less dramatically, I’ve been contemplating leaving for some time due to other issues like this.</p>
-
-<p>I am taking this as a lesson for when I am the boss and hopefully treat my employees with more respect.</p>
 </div>
     </li>
   

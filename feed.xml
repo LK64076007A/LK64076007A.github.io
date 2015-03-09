@@ -6,9 +6,84 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 Mar 2015 08:37:38 -0500</pubDate>
-    <lastBuildDate>Fri, 06 Mar 2015 08:37:38 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 06:31:30 -0400</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 06:31:30 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>3.9.2015 event predictions</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Will be only about the Apple Watch&lt;/li&gt;
+  &lt;li&gt;Will spend a lot of time with devs showing their apps&lt;sup id=&quot;fnref:150309061627&quot;&gt;&lt;a href=&quot;#fn:150309061627&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Will not announce any other major or minor hardware products&lt;/li&gt;
+  &lt;li&gt;Will give firm launch dates in the US&lt;/li&gt;
+  &lt;li&gt;Will give firm pricing information on all models&lt;/li&gt;
+  &lt;li&gt;Will not give firm waterproof information&lt;/li&gt;
+  &lt;li&gt;Will no give firm battery data information&lt;/li&gt;
+  &lt;li&gt;Will not give firm information about band/watch combination options or if able to separately buy different level bands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:150309061627&quot;&gt;
+      &lt;p&gt;I’ll define “a lot” as three or more developers on stage. &lt;a href=&quot;#fnref:150309061627&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 09 Mar 2015 07:15:41 -0400</pubDate>
+        <link>http://soitscometothis.net/3.19.2015-event-predictions</link>
+        <guid isPermaLink="true">http://soitscometothis.net/3.19.2015-event-predictions</guid>
+        
+        <category>Apple</category>
+        
+        <category>predictions</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Using Labels for Alarms With Siri</title>
+        <description>&lt;p&gt;layout: post
+title: Using labels for alarms with Siri
+date: 2015-03-08 23:28:22 -0500
+tags:
+- iOS
+- Siri&lt;br /&gt;
+- technology
+- alarm
+—&lt;/p&gt;
+
+&lt;p&gt;When you create an alarm in iOS&lt;sup id=&quot;fnref:20150308234102&quot;&gt;&lt;a href=&quot;#fn:20150308234102&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, it is given the default label &lt;code&gt;Alarm&lt;/code&gt;. I find it useful to change this for two reasons. First, it reminds me why I set the alarm in the first place. This may not be confusing if the alarm is waking me up in the morning, but I might also set multiple alarms during the day for different tasks. These levels remind me what I need to do next:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;push wash into dryer&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;check on sump pump progress&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;verify boy cleaned his room&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is easily done with Siri: &lt;code&gt;Set an alarm for 54 minutes labeled &#39;put wash in the dryer&#39;.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;.&lt;img src=&quot;/images/Siri-alarm-labels-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The other benefit of labeling alarms is that you can edit them by their label using Siri: &lt;code&gt;Change the alarm labeled &#39;wake up call&#39; to 530am&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Siri-alarm-labels.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20150308234102&quot;&gt;
+      &lt;p&gt;iOS 8 as if this post.  &lt;a href=&quot;#fnref:20150308234102&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 08 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://soitscometothis.net/using-labels%20for-alarms-with-Siri</link>
+        <guid isPermaLink="true">http://soitscometothis.net/using-labels%20for-alarms-with-Siri</guid>
+        
+        
+      </item>
     
       <item>
         <title>What is our purpose?</title>
@@ -218,44 +293,6 @@ I went to their website and did all the trouble shooting activities they recomme
         <guid isPermaLink="true">http://soitscometothis.net/parenting</guid>
         
         <category>parenting</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Does Dr. Google take my insurance?</title>
-        <description>&lt;p&gt;A secretary walks up to my nurse and starts complaining about a minor symptom. My nurse gives her excellent advice. The secretary expresses doubt and starts to argue. I interject that the advice is excellent and should be tried. The secretary counters that she had done a Google search. &lt;/p&gt;
-
-&lt;p&gt;Having become accustomed to this response from patients and family alike, the board certified physician and license nurse both shrug and go back to work.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://thefederalist.com/2014/01/17/the-death-of-expertise/&quot;&gt;Expertise is dead&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 18 Nov 2014 10:24:56 -0500</pubDate>
-        <link>http://soitscometothis.net/Does-Dr.-Google-take-my-insurance</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Does-Dr.-Google-take-my-insurance</guid>
-        
-        <category>medicine</category>
-        
-        <category>psychology</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>The Tile - Dead on Arrival</title>
-        <description>&lt;p&gt;I ordered the &lt;a href=&quot;https://www.thetileapp.com/&quot;&gt;Tile&lt;/a&gt;, a BTLE internet-enabled device designed to help you find lost items, to attach to my keys so I can avoid the occasional panic on Monday morning when I can’t find them. &lt;/p&gt;
-
-&lt;p&gt;After waiting a ridiculously long time to arrive, it was unresponsive out of the box. I followed all the trouble shooting ideas on their website without success. I emailed support and have gotten no reply. &lt;/p&gt;
-
-&lt;p&gt;Tile: ★☆☆☆☆&lt;/p&gt;
-</description>
-        <pubDate>Thu, 13 Nov 2014 06:13:07 -0500</pubDate>
-        <link>http://soitscometothis.net/The-Tile--Dead-on-Arrival</link>
-        <guid isPermaLink="true">http://soitscometothis.net/The-Tile--Dead-on-Arrival</guid>
-        
-        <category>technology</category>
-        
-        <category>startups</category>
         
         
       </item>

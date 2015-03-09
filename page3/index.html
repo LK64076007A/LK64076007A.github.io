@@ -96,6 +96,98 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Mar 4, 2014</span>
+      
+      <h2><a class="post-link" href="/On-not-purchasing-Dragon-Dictate-Medical">On not purchasing Dragon Dictate Medical</a></h2>
+      
+      <div class="content"><p>I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.</p>
+
+<p><a href="/images/Dragon-01.png"><img src="/images/Dragon-01.png" alt="" /></a> </p>
+
+<p>Wow. $1000. That’s a lot for something I don’t use that much.</p>
+
+<p>But look, I can upgrade for only $500. I’ll check that out.</p>
+
+<p><a href="/images/Dragon-02.png"><img src="/images/Dragon-02.png" alt="" /></a> </p>
+
+<p>Just need to log into my account.</p>
+
+<p><a href="/images/Dragon-03.png"><img src="/images/Dragon-03.png" alt="" /></a> </p>
+
+<p>Look, it’s only $300. I’ll totally buy that.</p>
+
+<p><a href="/images/Dragon-04.png"><img src="/images/Dragon-04.png" alt="" /></a> </p>
+
+<p>WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.</p>
+
+<p>To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?</p>
+
+<p>I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase. </p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Feb 21, 2014</span>
+      
+      <h2><a class="post-link" href="/Logging-time-per-visit-with-Keyboard-Maestro">Logging time per visit with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I wanted a better idea of how much time I was spending per visit. This data could also be used when billing by time. I wrote three<sup id="fnref:140221081628"><a href="#fn:140221081628" class="footnote">1</a></sup> small macros to complete this task.</p>
+
+<p>All three macros use the same trigger, ⌘⌥⌃⇧b.<sup id="fnref:140221081908"><a href="#fn:140221081908" class="footnote">2</a></sup> This brings up a menu for me to choose what part of the macro-system I want.</p>
+
+<p><a href="/images/BBT_1.png"><img src="/images/BBT_1.png" alt="" /></a> </p>
+
+<p>All three macros also write data to the same log file on my desktop.</p>
+
+<h2 id="macro-1---start-of-the-visit">Macro 1 - Start of the visit</h2>
+
+<p>I trigger the first macro when I’m walking into the room. It does three simple tasks.</p>
+
+<ol>
+  <li>Stores the current time of the day in milliseconds to a variable.</li>
+  <li>Displays the current time preceded by the phrase “Visit started at “ in a small window on the screen</li>
+  <li>Writes the current time preceded by the phrase “Visit started at “ in the log file</li>
+</ol>
+
+<p><a href="/images/BBT_2.png"><img src="/images/BBT_2.png" alt="" /></a> </p>
+
+<h2 id="macro-2---end-of-the-visit">Macro 2 - End of the visit</h2>
+
+<p>I trigger the second macro when I’m walking out of the room. It does 5 simple tasks.</p>
+
+<ol>
+  <li>Stores the current time of the day in milliseconds to a variable.<sup id="fnref:140221082823"><a href="#fn:140221082823" class="footnote">3</a></sup></li>
+  <li>Calculates the length of the visit, rounded to the nearest minute.</li>
+  <li>Appends text to the log file with the end time of the visit and the total visit length.</li>
+  <li>Pastes a template phrase required by the government and insurance companies into my clinic note with the length of the visit as calculated above.</li>
+  <li>Displays the various code levels on the screen for each time interval, so I know what billing level to code the visit.</li>
+</ol>
+
+<p><a href="/images/BBT_3.png"><img src="/images/BBT_3.png" alt="" /></a> </p>
+
+<h2 id="macro-3---set-a-new-date">Macro 3 - Set a new date</h2>
+
+<p>This is just simply appends a break and a date header to the log file. I trigger this before my first visit each morning in order to keep the log file neat and organized. I could automate this, but for each way that I thought to do so, I thought of several possible fail points. </p>
+
+<p><a href="/images/BBT_4.png"><img src="/images/BBT_4.png" alt="" /></a> </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:140221081628">
+      <p>I’d previously tried to do this with one macro, but had too many complications and bugs. Seperating them out is equivalent to writing well-contained functions.  <a href="#fnref:140221081628" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:140221081908">
+      <p>⌘⌥⌃⇧ is mapped to the <code>caps lock</code> key on all my computer, so it is just one key. <a href="#fnref:140221081908" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:140221082823">
+      <p>Now I have the start time and the end time, in milliseconds, stored to separate variables. <a href="#fnref:140221082823" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Feb 7, 2014</span>
       
       <h2><a class="post-link" href="/Using-Keyboard-Maestro-to-control-windows-on-dual-monitors">Using Keyboard Maestro to control windows on dual monitors</a></h2>
@@ -288,93 +380,6 @@
 <p><img src="/images/iTunesRadioUIinsanity.jpg" /></p>
 
 <p>Why on earth would I hit the <code>star</code>, a universal symbol for favoriting or liking, when I want to “Never Play This Song”?</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 24, 2013</span>
-      
-      <h2><a class="post-link" href="/Time-Capsule-back-up-vs.-Siracusa">Time Capsule back up vs. Siracusa</a></h2>
-      
-      <div class="content"><p>On the last<sup id="fnref:130824090332"><a href="#fn:130824090332" class="footnote">1</a></sup> episode of ATP<sup id="fnref:130824090353"><a href="#fn:130824090353" class="footnote">2</a></sup>, Siracusa said that the Time Capsule had “a terrible reputation for reliability, and I still think Time Machine over the network is not great”.</p>
-
-<p>I love my Time Capsule and see myself continuing to buy them.</p>
-
-<p>The Time Capsule I have is a 1st generation that I bought when they first came out. Living in an area without an Apple store at the time<sup id="fnref:130824090739"><a href="#fn:130824090739" class="footnote">3</a></sup>, I ended up driving 3 hours to get one. It’s been with me ever since through many years and 3 interstate moves. </p>
-
-<p>I, like Siracusa, have many redundant backups of my data. I have multiple local clone copies<sup id="fnref:130824091132"><a href="#fn:130824091132" class="footnote">4</a></sup> and I also offload the raw data by itself on to external drives. </p>
-
-<p>Several weeks/months ago my internal SSD suddenly died completely. I hadn’t made a clone back up or manually offloaded the data since the morning. I’d been working all day and had many, irretrievable projects that were lost, except for the Time Capsule back up from 30 minutes before.</p>
-
-<p>I sent in the SSD on warranty, and when I got it back a week later, I booted up the new drive with it connected to the Time Capsule. It asked if I wanted to restore from the Time Capsule. I said yes and went to bed. </p>
-
-<p>When I woke up in the morning, my baby was back.<sup id="fnref:130824091835"><a href="#fn:130824091835" class="footnote">5</a></sup></p>
-
-<p>The beauty of the Time Capsule is it’s <em>fire and forget</em> usability.</p>
-
-<p>That earns some loyalty.<sup id="fnref:wifebackup"><a href="#fn:wifebackup" class="footnote">6</a></sup></p>
-
-<p>And Casey was right.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:130824090332">
-      <p><a href="http://atp.fm/episodes/27-overflow-gallery-in-the-bathroom">27</a> <a href="#fnref:130824090332" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130824090353">
-      <p>The Accidental Tech Podcast. <a href="#fnref:130824090353" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130824090739">
-      <p>And mistaking Cedar Falls for Cedar Rapids. <a href="#fnref:130824090739" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130824091132">
-      <p>SuperDuper! FTW!!! <a href="#fnref:130824091132" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130824091835">
-      <p>I’ve also used it to save large amounts of data that I’ve accidentally deleted, such as when I deleted my entire music library before the days of iTunes Match. <a href="#fnref:130824091835" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:wifebackup">
-      <p>And it’s also priceless for easily backing up other family member’s computers, who may not be as diligent as you are. <a href="#fnref:wifebackup" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 24, 2013</span>
-      
-      <h2><a class="post-link" href="/Google-search-fail">Google search fail</a></h2>
-      
-      <div class="content"><p>Dear Google,</p>
-
-<p>The following sites will show up on the first page when a patient is trying to search for information on a doctor by the syntax Dr. firstname lastname:</p>
-
-<ol>
-  <li>Google +<sup id="fnref:130824082034"><a href="#fn:130824082034" class="footnote">1</a></sup></li>
-  <li>Healthgrades.com</li>
-  <li>Vitals.com</li>
-  <li>Wellness.com</li>
-  <li>Betterdoctor.com</li>
-  <li>Ratemds.com</li>
-  <li>Manta.com</li>
-  <li>Doctor.webmd.com</li>
-  <li>Lifescript.com</li>
-</ol>
-
-<p>They are all link-bait, content-farm junk sites. Yes, including your own. </p>
-
-<p>This is not helpful for users. This is not helpful for the internet. </p>
-
-<p>Fix it.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:130824082034">
-      <p>An auto-generated page, not an actual user made account. <a href="#fnref:130824082034" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
