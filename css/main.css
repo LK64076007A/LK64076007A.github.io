@@ -345,7 +345,8 @@ del:after {
 
 .post-link {
   display: inline;
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "AvenirNext-Light", "HelveticaNeue-Light", "Helvetica Neue Light", Arial, sans-serif; }
 
 /**
  * Posts
