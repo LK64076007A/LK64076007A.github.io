@@ -6,8 +6,8 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Mar 2015 06:31:30 -0400</pubDate>
-    <lastBuildDate>Mon, 09 Mar 2015 06:31:30 -0400</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 06:36:38 -0400</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 06:36:38 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -43,18 +43,8 @@
       </item>
     
       <item>
-        <title>Using Labels for Alarms With Siri</title>
-        <description>&lt;p&gt;layout: post
-title: Using labels for alarms with Siri
-date: 2015-03-08 23:28:22 -0500
-tags:
-- iOS
-- Siri&lt;br /&gt;
-- technology
-- alarm
-—&lt;/p&gt;
-
-&lt;p&gt;When you create an alarm in iOS&lt;sup id=&quot;fnref:20150308234102&quot;&gt;&lt;a href=&quot;#fn:20150308234102&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, it is given the default label &lt;code&gt;Alarm&lt;/code&gt;. I find it useful to change this for two reasons. First, it reminds me why I set the alarm in the first place. This may not be confusing if the alarm is waking me up in the morning, but I might also set multiple alarms during the day for different tasks. These levels remind me what I need to do next:&lt;/p&gt;
+        <title>Using labels for alarms with Siri</title>
+        <description>&lt;p&gt;When you create an alarm in iOS&lt;sup id=&quot;fnref:20150308234102&quot;&gt;&lt;a href=&quot;#fn:20150308234102&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, it is given the default label &lt;code&gt;Alarm&lt;/code&gt;. I find it useful to change this for two reasons. First, it reminds me why I set the alarm in the first place. This may not be confusing if the alarm is waking me up in the morning, but I might also set multiple alarms during the day for different tasks. These levels remind me what I need to do next:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;push wash into dryer&lt;/code&gt;&lt;/li&gt;
@@ -78,9 +68,17 @@ tags:
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sun, 08 Mar 2015 00:00:00 -0500</pubDate>
-        <link>http://soitscometothis.net/using-labels%20for-alarms-with-Siri</link>
-        <guid isPermaLink="true">http://soitscometothis.net/using-labels%20for-alarms-with-Siri</guid>
+        <pubDate>Mon, 09 Mar 2015 00:28:22 -0400</pubDate>
+        <link>http://soitscometothis.net/using-labels-for-alarms-with-Siri</link>
+        <guid isPermaLink="true">http://soitscometothis.net/using-labels-for-alarms-with-Siri</guid>
+        
+        <category>iOS</category>
+        
+        <category>Siri</category>
+        
+        <category>technology</category>
+        
+        <category>alarm</category>
         
         
       </item>
