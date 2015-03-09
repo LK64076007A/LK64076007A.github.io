@@ -96,6 +96,21 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Sep 23, 2013</span>
+      
+      <h2><a class="post-link" href="/UI-insanity-iTunes-Radio">UI insanity; iTunes Radio</a></h2>
+      
+      <div class="content"><p>I don’t mind, and actually appreciate some, hidden UI features, but I also think basic features should be clearly labeled with intuitive labels that don’t suggest the opposite of what I want. </p>
+
+<p>On the left is the main play screen of iTunes Radio. If you click the star it brings up the menu on the right. </p>
+
+<p><img src="/images/iTunesRadioUIinsanity.jpg" /></p>
+
+<p>Why on earth would I hit the <code>star</code>, a universal symbol for favoriting or liking, when I want to “Never Play This Song”?</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 24, 2013</span>
       
       <h2><a class="post-link" href="/Time-Capsule-back-up-vs.-Siracusa">Time Capsule back up vs. Siracusa</a></h2>
@@ -409,43 +424,6 @@ Boy: Because he’s married to a woman who has no heart.  </p>
 </blockquote>
 
 <p>Shameful.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 21, 2013</span>
-      
-      <h2><a class="post-link" href="/Two-improvements-with-Keyboard-Maestro-6">Two improvements with Keyboard Maestro 6</a></h2>
-      
-      <div class="content"><p>I’m a big fan of <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> and use it both daily for my workflow as well as occasionally for projects as they arise.</p>
-
-<p><a href="http://www.keyboardmaestro.com/main/">Version 6.0</a> was released today and is a major upgrade over version 5. There are many improvements both major, minor, and cosmetic. It was well worth the $25 upgrade price.</p>
-
-<p><a href="http://www.macdrifter.com/">Macdrifter</a> has a nice write up and I’m sure that <a href="http://www.macstories.net/news/keyboard-maestro-6-0-adds-syncing-browser-actions-device-triggers-and-more/">Macstories</a> will have a very detailed review within a few weeks.</p>
-
-<p>Today I’m just going to share two small items made possible with the new version.</p>
-
-<h2 id="shorter-macros-with-browser-text-tokens">Shorter macros with browser text tokens</h2>
-
-<p>First, some types of macros are more easy to create and are smaller due to the <a href="http://www.keyboardmaestro.com/documentation/6/tokens.html">new web browser text tokens</a>. I had <a href="http://soitscometothis.net/post/Switching-the-current-viewed-webpage-between-Safari-and-Chrome">previously created a macro</a> that would take an URL that was currently open in Safari and open it in Chrome instead, and vice versa. </p>
-
-<p>The macro in version 5 is fairly long:</p>
-
-<p><a href="/images/switching_browsers_KM5.jpg"><img src="/images/switching_browsers_KM5.jpg" alt="Switching browsers in KM5 macro" /></a></p>
-
-<p>The same macro in version 6 is much smaller:</p>
-
-<p><a href="/images/switching_browsers_KM6.jpg"><img src="/images/switching_browsers_KM6.jpg" alt="Switching browsers in KM6 macro" /></a></p>
-
-<p>This is all directly or indirectly because there is a text token for the current URL in both web browsers. This gets rid of the AppleScript for getting the URL. It also indirectly allows me to get rid of commands to open the opposite web browser as well as to wait for that browser to be open. In the version 5 macro, I had a command to switch to the new browser since that was necessary in order to enter the URL into the address bar. Since in my situation, I may not want to immediately switch over to the other browser, I was able to leave that off too.</p>
-
-<h2 id="easy-creation-of-markdown-links-from-current-webpage">Easy creation of Markdown links from current webpage</h2>
-
-<p>Seeing how easy it was to change the above macro, I decided to make a quick macro to make a Markdown link using the current Safari URL as the link URL and the current Safari window title as the link text. I also used the new text token <code>%|%</code> to place the cursor in position to quickly change the link text in case the window title isn’t appropriate.</p>
-
-<p><a href="/images/MD_link_from_Safari_title_url.jpg"><img src="/images/MD_link_from_Safari_title_url.jpg" alt="" /></a></p>
-
-<p>I’m looking forward to upgrading my old macros and kicking the tires a bit more. I can’t wait for my next project so I have a chance to create something new.</p>
 </div>
     </li>
   

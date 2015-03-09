@@ -98,6 +98,43 @@
     <li>
       <span class="post-meta">May 21, 2013</span>
       
+      <h2><a class="post-link" href="/Two-improvements-with-Keyboard-Maestro-6">Two improvements with Keyboard Maestro 6</a></h2>
+      
+      <div class="content"><p>I’m a big fan of <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> and use it both daily for my workflow as well as occasionally for projects as they arise.</p>
+
+<p><a href="http://www.keyboardmaestro.com/main/">Version 6.0</a> was released today and is a major upgrade over version 5. There are many improvements both major, minor, and cosmetic. It was well worth the $25 upgrade price.</p>
+
+<p><a href="http://www.macdrifter.com/">Macdrifter</a> has a nice write up and I’m sure that <a href="http://www.macstories.net/news/keyboard-maestro-6-0-adds-syncing-browser-actions-device-triggers-and-more/">Macstories</a> will have a very detailed review within a few weeks.</p>
+
+<p>Today I’m just going to share two small items made possible with the new version.</p>
+
+<h2 id="shorter-macros-with-browser-text-tokens">Shorter macros with browser text tokens</h2>
+
+<p>First, some types of macros are more easy to create and are smaller due to the <a href="http://www.keyboardmaestro.com/documentation/6/tokens.html">new web browser text tokens</a>. I had <a href="http://soitscometothis.net/post/Switching-the-current-viewed-webpage-between-Safari-and-Chrome">previously created a macro</a> that would take an URL that was currently open in Safari and open it in Chrome instead, and vice versa. </p>
+
+<p>The macro in version 5 is fairly long:</p>
+
+<p><a href="/images/switching_browsers_KM5.jpg"><img src="/images/switching_browsers_KM5.jpg" alt="Switching browsers in KM5 macro" /></a></p>
+
+<p>The same macro in version 6 is much smaller:</p>
+
+<p><a href="/images/switching_browsers_KM6.jpg"><img src="/images/switching_browsers_KM6.jpg" alt="Switching browsers in KM6 macro" /></a></p>
+
+<p>This is all directly or indirectly because there is a text token for the current URL in both web browsers. This gets rid of the AppleScript for getting the URL. It also indirectly allows me to get rid of commands to open the opposite web browser as well as to wait for that browser to be open. In the version 5 macro, I had a command to switch to the new browser since that was necessary in order to enter the URL into the address bar. Since in my situation, I may not want to immediately switch over to the other browser, I was able to leave that off too.</p>
+
+<h2 id="easy-creation-of-markdown-links-from-current-webpage">Easy creation of Markdown links from current webpage</h2>
+
+<p>Seeing how easy it was to change the above macro, I decided to make a quick macro to make a Markdown link using the current Safari URL as the link URL and the current Safari window title as the link text. I also used the new text token <code>%|%</code> to place the cursor in position to quickly change the link text in case the window title isn’t appropriate.</p>
+
+<p><a href="/images/MD_link_from_Safari_title_url.jpg"><img src="/images/MD_link_from_Safari_title_url.jpg" alt="" /></a></p>
+
+<p>I’m looking forward to upgrading my old macros and kicking the tires a bit more. I can’t wait for my next project so I have a chance to create something new.</p>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">May 21, 2013</span>
+      
       <h2><a class="post-link" href="/google-glass-as-a-tool">Google Glass as a tool</a></h2>
       
       <div class="content"><p><a href="/images/google_glass_person.jpg"><img src="/images/google_glass_person.jpg" alt="" /></a> </p>
@@ -482,42 +519,6 @@ and I will compute in the House of the Mac forever.  </p>
 <p>When “satisfaction” is taken to the extreme as a marker of quality and when “making the customer happy” becomes the primary rule in a clinic, good physicians will suffer great psychological pressure and patients will be at risk. </p>
 
 <p>I think the ER is the place where we will see the worst consequences of this mandate. </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 20, 2013</span>
-      
-      <h2><a class="post-link" href="/The-Boys-Dream">The Boy's Dream</a></h2>
-      
-      <div class="content"><p>Boy:</p>
-
-<blockquote>
-  <p>I had a weird dream last night. There were zombies all over the world in the United States and Japan.<sup id="fnref:1363777982-fn1"><a href="#fn:1363777982-fn1" class="footnote">1</a></sup> The humans had barriers to protect them and keep the zombies out, but zombie scientists<sup id="fnref:1363777982-fn4"><a href="#fn:1363777982-fn4" class="footnote">2</a></sup> made a spray that could bring dead things back to life as zombies. They sprayed it on triceratops<sup id="fnref:1363777982-fn2"><a href="#fn:1363777982-fn2" class="footnote">3</a></sup> and the zombie triceratops broke through the barriers so we had to make new defenses. The spray could also turn humans to zombies.</p>
-</blockquote>
-
-<p>“Were you scared?”</p>
-
-<blockquote>
-  <p>No.<sup id="fnref:1363777982-fn3"><a href="#fn:1363777982-fn3" class="footnote">4</a></sup> </p>
-</blockquote>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1363777982-fn1">
-      <p>I love how the whole world consists of two countries.  <a href="#fnref:1363777982-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1363777982-fn4">
-      <p>Say what?! <a href="#fnref:1363777982-fn4" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1363777982-fn2">
-      <p>Zombies and dinosaurs? Excellent crossover.  <a href="#fnref:1363777982-fn2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1363777982-fn3">
-      <p>He acted insulted that I even asked. <a href="#fnref:1363777982-fn3" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
