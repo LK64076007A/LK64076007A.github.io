@@ -352,7 +352,8 @@ del:after {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-family: "AvenirNext-Light", "HelveticaNeue-Light", "Helvetica Neue Light", Arial, sans-serif; }
 
 .post-title {
   font-size: 24px;
