@@ -358,7 +358,7 @@ del:after {
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
-  font-family: "AvenirNext-Light", "HelveticaNeue-Light", "Helvetica Neue Light", Arial, sans-serif; }
+  font-family: "AvenirNext-Light", "HelveticaNeue-Light", "Helvetica Neue Light", Arial, sans-serif !important; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
