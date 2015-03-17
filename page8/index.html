@@ -96,6 +96,31 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Dec 7, 2012</span>
+      
+      <h2><a class="post-link" href="/mute-commercials">Mute commercials on CBS.com with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I watch TV on my Macbook Air on the weekends when I’m ironing. Sadly, commercials are becoming more popular with CBS airing 4 in a row, often the same exact commercial over and over. There’s no way to skip them, but I made a quick macro with Keyboard Maestro that mutes the sound until the commercials are over and then turns the sound back on.</p>
+
+<p>You have to toggle the macro manually when the commercial starts, but otherwise, it works great.</p>
+
+<p><img src="/images/Muting_CBS_macro.png" alt="" /></p>
+
+<p>The macro is a very simple three steps.</p>
+
+<ol>
+  <li>Toggle System Sound Mute, turning off the sound.</li>
+  <li>Watch for an image to disappear from the screen. The image is a screen capture of the word advertisement that overlays advertisements when they’re playing.</li>
+  <li>Toggle System Sound Mute, turning on the sound.</li>
+</ol>
+
+<p>Now I don’t have to listen to annoying commercials.</p>
+
+<p><strong>Update:</strong> Same macro with a slightly different picture works for Hulu. Also, now I’m occasionally seeing 5 commercials in a row.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Nov 25, 2012</span>
       
       <h2><a class="post-link" href="/Podcasting-with-Squarespace">Podcasting with Squarespace</a></h2>
@@ -386,40 +411,6 @@
   <ol>
     <li id="fn:120830155506">
       <p>Trial and error will show it is in minutes. <a href="#fnref:120830155506" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Aug 29, 2012</span>
-      
-      <h2><a class="post-link" href="/procedure-note-with-textexpander">Procedure note with TextExpander</a></h2>
-      
-      <div class="content"><p>I do a lot of joint injections so I created a <a href="http://smilesoftware.com/TextExpander/" title="TextExpander">TextExpander</a> macro to quickly write a short procedure note within my visit note. I used TE 4.0 with the new options for fill ins. I have several optional sections that can expand the note depending on the type of injection I do, but at the same time, for the large majority of injections in which I’m not removing fluid or sending the results for testing<sup id="fnref:120822085343"><a href="#fn:120822085343" class="footnote">1</a></sup>, the note is quickly and easily generated without template cruft.</p>
-
-<p><a href="/images/Screen_Shot_2012-08-29_at_9.18.20_PM.png"><img src="/images/Screen_Shot_2012-08-29_at_9.18.20_PM.png" alt="" /></a>  </p>
-
-<ol>
-  <li>The pink highlighted text are optional sections that can be added by ticking the preceding checkbox. </li>
-  <li>The amount of injected medication is pre-populated with my normal dosing but can be edited.</li>
-  <li>The medication is also pre-populated but can be switched to any of the options available in my clinic.</li>
-  <li>The lab section already has the two labs I always order, and I can easily add anything else that I need.</li>
-  <li>There are a few pull-down menus in order to make sure the grammar is correct depending on if I’m injecting one or multiple joints.</li>
-</ol>
-
-<p>Arthrocentesis are simple and straight forward procedures. I’m sure this technique would be even more useful in complicated procedures and operations.</p>
-
-<h3 id="the-raw-code">The raw code</h3>
-<pre><code>Procedure note
-Informed consent and time out was completed. The %fill:area% %fillpopup:name=popup 8:was:were% prepped with betadine and alcohol in standard fashion. The skin was anesthetized with ethyl chloride. %fillpart:name=lidocaine%The subcutaneous tissues were anesthetized with less than 3ml of 2% lidocaine. %fillpartend%%fillpart:name=fluidRemoved%%fill:amount% ml of opaque yellow fluid with a positive string sign was removed. %fillpartend%%filltext:name=milligrams:default=40 mg:width=3% of %fillpopup:name=steroids:default=Depo-Medrol (methylprednisolone acetate):Kenalog (triamcinolone acetonide) :Synvisc One% and 2 ml of 2% lidocaine were injected into %fillpopup:name=grammar 10:the:each% joint. Hemostasis was obtained. Post op instructions were given. %fillpart:name=labTests%Fluid was sent for %fill:tests%cell count and crystal analysis.%fillpartend%
-</code></pre>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:120822085343">
-      <p>Shame on you if you don’t document what labs you order in the procedure note. <a href="#fnref:120822085343" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

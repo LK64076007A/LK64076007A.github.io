@@ -6,9 +6,38 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Mar 2015 17:42:30 -0400</pubDate>
-    <lastBuildDate>Mon, 09 Mar 2015 17:42:30 -0400</lastBuildDate>
+    <pubDate>Tue, 17 Mar 2015 14:33:04 -0400</pubDate>
+    <lastBuildDate>Tue, 17 Mar 2015 14:33:04 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Dictating on Mac from iPhone</title>
+        <description>&lt;p&gt;I think that dictating on the iPhone is amazing. For example, this was dictated in a crowded bar at 9 PM on Friday evening. It was really loud in here with the band and all:&lt;/p&gt;
+
+&lt;audio controls=&quot;controls&quot;&gt;
+  &lt;source src=&quot;/images/dictating_in_a_loud_bar.m4a&quot; type=&quot;audio/mpeg&quot; /&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+
+&lt;p&gt;For some reason, dictating to the Mac in a quiet office room doesn’t work week at all. So if I ever have something I do want to dictate, I will do so on the iPhone and then transfer it.&lt;/p&gt;
+
+&lt;p&gt;At the request of others, here is a video of how I do so using the apps &lt;a href=&quot;https://itunes.apple.com/us/app/command-c-clipboard-sharing/id692783673?mt=8&amp;amp;at=11l4RT&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt; and  &lt;a href=&quot;https://itunes.apple.com/us/app/command-c-clipboard-sharing/id692783673?mt=8&amp;amp;at=11l4RT&quot;&gt;Command–C&lt;/a&gt;. &lt;/p&gt;
+
+&lt;video width=&quot;640&quot; height=&quot;480&quot; controls=&quot;controls&quot;&gt;
+  &lt;source src=&quot;/images/dictation_drafts_commandC.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+</description>
+        <pubDate>Fri, 13 Mar 2015 21:50:47 -0400</pubDate>
+        <link>http://soitscometothis.net/dictating-on-mac-from-iphone</link>
+        <guid isPermaLink="true">http://soitscometothis.net/dictating-on-mac-from-iphone</guid>
+        
+        <category>technology</category>
+        
+        <category>Command-C</category>
+        
+        
+      </item>
     
       <item>
         <title>My Apple Watch questions</title>
@@ -286,33 +315,6 @@ I went to their website and did all the trouble shooting activities they recomme
         <category>tile</category>
         
         <category>support</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Only 6 months to go</title>
-        <description>&lt;p&gt;&lt;em&gt;Do you have any questions about the new baby?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Boy (age 8): No!&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Are you annoyed about something?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Boy: I’m annoyed you keep asking.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I just want to make sure you’re comfortable with everything.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Boy: I’m not comfortable with &lt;strong&gt;anything&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;What aren’t you comfortable with?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Boy: It’s been three months and we don’t have a name or a room for the baby. &lt;/p&gt;
-</description>
-        <pubDate>Fri, 05 Dec 2014 08:01:38 -0500</pubDate>
-        <link>http://soitscometothis.net/only-6-months-to-go</link>
-        <guid isPermaLink="true">http://soitscometothis.net/only-6-months-to-go</guid>
-        
-        <category>parenting</category>
         
         
       </item>
