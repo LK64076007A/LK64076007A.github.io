@@ -6,9 +6,24 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 17 Mar 2015 16:35:49 -0400</pubDate>
-    <lastBuildDate>Tue, 17 Mar 2015 16:35:49 -0400</lastBuildDate>
+    <pubDate>Fri, 20 Mar 2015 21:48:32 -0400</pubDate>
+    <lastBuildDate>Fri, 20 Mar 2015 21:48:32 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Prepping for the Apple Watch</title>
+        <description>&lt;p&gt;My friend Greg is working hard to get his Untapped client, &lt;strong&gt;&lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tapped That&lt;/a&gt;&lt;/strong&gt;, ready for the Apple Watch launch. I’m looking forward to using it and seeing if I get yelled at less for logging my beers that way than when I take out my phone to do it at the bar.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Mar 2015 22:44:12 -0400</pubDate>
+        <link>http://soitscometothis.net/prepping-for-the-apple-watch</link>
+        <guid isPermaLink="true">http://soitscometothis.net/prepping-for-the-apple-watch</guid>
+        
+        <category>Apple Watch</category>
+        
+        <category>Tappd That</category>
+        
+        
+      </item>
     
       <item>
         <title>Dictating on Mac from iPhone</title>
@@ -279,50 +294,6 @@ Me: Deal.  &lt;/p&gt;
         <guid isPermaLink="true">http://soitscometothis.net/gamergate</guid>
         
         <category>advertising</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Tile support fail</title>
-        <description>&lt;p&gt;I was looking forward to &lt;a href=&quot;https://www.thetileapp.com/&quot;&gt;the Tile&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Sadly, it was &lt;a href=&quot;/The-Tile--Dead-on-Arrival&quot;&gt;dead on arrival&lt;/a&gt;.
-g
-I went to their website and did all the trouble shooting activities they recommended, and being the “tech guy” in my social circle I tried several other things, all to no avail. &lt;/p&gt;
-
-&lt;p&gt;I sent several requests for help to them on their website. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They finally replied to me… &lt;strong&gt;16 days later&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;with &lt;a href=&quot;https://support.thetileapp.com/hc/en-us/articles/202517983-One-of-my-Tiles-will-not-activate&quot;&gt;the exact same information on the website&lt;/a&gt; that I’d already done. &lt;/p&gt;
-
-&lt;p&gt;I informed them that this didn’t work.&lt;/p&gt;
-
-&lt;p&gt;Their response was report the same issue, again, in the app?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This seemed very strange but I thought perhaps there is some extra data that is sent with the in-app report.&lt;/p&gt;
-
-&lt;p&gt;They replied 12 days later with a completely different ticket number and “activation tips”. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tile_support_fail-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is ridiculous. I get better service at the DMV. &lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 13 Dec 2014 09:44:16 -0500</pubDate>
-        <link>http://soitscometothis.net/tile-support-fail</link>
-        <guid isPermaLink="true">http://soitscometothis.net/tile-support-fail</guid>
-        
-        <category>tile</category>
-        
-        <category>support</category>
         
         
       </item>

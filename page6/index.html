@@ -96,6 +96,40 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Apr 9, 2013</span>
+      
+      <h2><a class="post-link" href="/morning-sickness-pill-again">The first US morning sickness pill, again</a></h2>
+      
+      <div class="content"><p>My dad told me a story as a kid about a good medicine that used to exist for morning sickness until some greedy nurse had a baby with birth defects and sued the company. They lost and the drug wasn’t profitable enough for them to continue making it in the face of potential future lawsuits and the precedence of that loss. They stopped making the drug. Sometimes, my dad would have the drug (really just a couple of over-the-counter pills) made up specially for certain patients. </p>
+
+<p>At least that’s how I remember the story. </p>
+
+<p>From this I learned several lessons:</p>
+
+<ol>
+  <li>The legal system is not about justice. </li>
+  <li>The people closest to the medical system are the ones who abuse it the most. </li>
+  <li>Sometimes you have to take great risks to do the right thing. </li>
+  <li>The good guy doesn’t always win. </li>
+</ol>
+
+<p>Looks like the drug is coming back:</p>
+
+<blockquote>
+  <p>U.S. doctors have had no officially approved treatment for morning sickness since lawsuits forced Bendectin off the market in 1983. But the drug’s main ingredients are vitamin B6 and an over-the-counter antihistamine, and obstetricians often advised pregnant women how to mix up the right dose themselves.</p>
+</blockquote>
+
+<p>From <a href="http://www.businessweek.com/ap/2013-04-08/fda-approves-return-of-drug-for-morning-sickness">Businessweek</a>.</p>
+
+<blockquote>
+  <p>U.S. health regulators have approved a drug to treat morning sickness that was withdrawn from the market 30 years ago amid claims, since debunked, that it caused birth defects.</p>
+</blockquote>
+
+<p>From <a href="http://mobile.reuters.com/article/idUSBRE93800120130409?irpc=932">Reuters</a>.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Mar 28, 2013</span>
       
       <h2><a class="post-link" href="/patient-satisfaction-dilemma">The Patient Satisfaction Dilemma</a></h2>
@@ -565,68 +599,6 @@ print "Image saved to camera roll."
 
 <p>I can’t wait for more posts by Frederico so I can keep learning.</p>
 
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 28, 2013</span>
-      
-      <h2><a class="post-link" href="/Switching-the-current-viewed-webpage-between-Safari-and-Chrome">Switching the current viewed webpage between Safari and Chrome</a></h2>
-      
-      <div class="content"><p><strong>Update:</strong> This macro was made for Keyboard Maestro 5. Although it will work with KM 6, a newer version of the macro is available as is much simpler and faster with less risk of bugs.</p>
-
-<h3 id="problem">Problem</h3>
-
-<p>Safari is my typical browser of choice, but sometimes I want to open a webpage I’m already looking at in Safari in Chrome instead<sup id="fnref:20130228142554"><a href="#fn:20130228142554" class="footnote">1</a></sup>. Sometimes I’m looking at a webpage in Chrome and want to open it in Safari. </p>
-
-<h3 id="solution">Solution</h3>
-
-<p>It’s not super elegant, but I made a Keyboard Maestro macro to switch back and forth. </p>
-
-<p>It consists of two nested if/then statements that check for which browser I’m using, grabs the URL of the front window, opens the other browser, pauses until the browser is running and the front window is open, pastes the URL into the navigation bar, and finally hits enter.</p>
-
-<ul>
-  <li>If Safari is at the front
-    <ul>
-      <li>Execute the Applescript <code>tell application "Safari" to get the URL of the front document</code> and save results to variable <code>currentURL</code></li>
-      <li>Activate Google Chrome</li>
-      <li>Pause until Google Chrome is at the front and the front window exists</li>
-      <li>Type the keystroke ⌘T</li>
-      <li>Type the keystroke ⌘L</li>
-      <li>Insert the text by pasting: <code>current URL</code></li>
-      <li>Type the keystroke <code>return</code></li>
-    </ul>
-  </li>
-  <li>otherwise execute the following
-    <ul>
-      <li>If Google Chrome is at the front
-        <ul>
-          <li>Execute Applescript <code>tell application "Google Chrome" to get the URL of active tab of first window</code> and save results to variable <code>currentURL</code></li>
-          <li>Activate Safari</li>
-          <li>Pause until Safari is at the front and the front window exists</li>
-          <li>Type the keystroke ⌘T</li>
-          <li>Type the keystroke ⌘L</li>
-          <li>Insert the text by pasting: <code>current URL</code></li>
-          <li>Type the keystroke <code>return</code></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>I assigned the shortcut Caps lock (which on my computer simultaneously pressed shift-command-control-option) - u. </p>
-
-<p><a href="/images/open_current_webpage_in_other_browser.png"><img src="/images/open_current_webpage_in_other_browser.png" alt="" /></a> </p>
-
-<p><a href="/images/Open_current_webpage_in_the_other_browser.kmmacros">Download the macro</a>.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130228142554">
-      <p>For example, if you’re limiting Flash to Chrome only via <a href="http://daringfireball.net/2010/11/flash_free_and_cheating_with_google_chrome">the Gruber method</a>. <a href="#fnref:20130228142554" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
