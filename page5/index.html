@@ -96,6 +96,44 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">May 30, 2013</span>
+      
+      <h2><a class="post-link" href="/making-Passbook-useful">Making Passbook useful</a></h2>
+      
+      <div class="content"><p>I shop for groceries at Harris Teeter<sup id="fnref:20130530160464"><a href="#fn:20130530160464" class="footnote">1</a></sup>. If you use their loyalty card, the prices are much cheaper.<sup id="fnref:20130530160545"><a href="#fn:20130530160545" class="footnote">2</a></sup> I don’t like to carry a loyalty card on me, either in my wallet or on my keychain.<sup id="fnref:20130530160716"><a href="#fn:20130530160716" class="footnote">3</a></sup> I used to leave the loyalty card in my car, but then I’d forget to bring it into the store with me.<sup id="fnref:20130530160833"><a href="#fn:20130530160833" class="footnote">4</a></sup> They have an <a href=". https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&amp;at=11l4RT">iPhone app</a><sup id="fnref:20130530160955"><a href="#fn:20130530160955" class="footnote">5</a></sup> that includes a scannable loyalty card, but it’s slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.</p>
+
+<p>So with help and prompting from <a href="https://twitter.com/waynehartman">some guy I met on the internet</a><sup id="fnref:20130530161214"><a href="#fn:20130530161214" class="footnote">6</a></sup>, I made a location-based Passbook card that pulls up the loyalty card’s barcode whenever I’m at the store.</p>
+
+<p>I used the website <a href="https://api.passdock.com/users/sign_up/">Passdock</a> to create the card using one of their templates. I wasn’t able to create the barcode programmatically because Harris Teeter doesn’t use one of the approved barcode styles for Passbook. Instead, I trimmed out the barcode from the screenshot I had taken and put that in the place of the logo. I used the built in DigitalColor Meter app in OS X to make the colors match and put in the GPS coordinates to make sure it would appear whenever I was at the store. It took a little debugging at first, but it works perfectly.</p>
+
+<p>Now, rather than being annoyed whenever I’m checking out, I get a little flush of satisfaction.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130530160464">
+      <p>Don’t be creepy™. <a href="#fnref:20130530160464" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160545">
+      <p>Or maybe they’re much more expensive to begin with and only reasonable with the loyalty card. <a href="#fnref:20130530160545" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160716">
+      <p>Minimalism is cool, right? <a href="#fnref:20130530160716" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160833">
+      <p>Remembering things is hard. <a href="#fnref:20130530160833" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530160955">
+      <p>And <a href="https://play.google.com/store/apps/details?id=com.harristeeter.htmobile&amp;hl=en">Android too</a>. <a href="#fnref:20130530160955" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530161214">
+      <p>What a wonderful day it will be when I hear those words from my daughter’s mouth. <a href="#fnref:20130530161214" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">May 29, 2013</span>
       
       <h2><a class="post-link" href="http://allthingsd.com/20130529/apples-tim-cook-the-full-d11-interview-video/">Notes while watching the D11 Cook interview</a> <a class="permalink" title="Permanent link to ‘Notes while watching the D11 Cook interview’" href="/Notes-while-watching-the-D11-Cook-interview">Ω</a></h2>
@@ -500,50 +538,6 @@ Thou annointest my terminal with bash; My stack doesn’t overflow.  </p>
 
 <p>Surely TextExpander and Keyboard Maestro shall power all the shortcuts of my workflow,<br />
 and I will compute in the House of the Mac forever.  </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 10, 2013</span>
-      
-      <h2><a class="post-link" href="/Creating-a-plain-text-wiki-with-nvALT">Creating a plain text wiki with nvALT</a></h2>
-      
-      <div class="content"><h2 id="introduction">Introduction</h2>
-
-<p>When I was in medical school, they issued the student’s <a href="http://en.wikipedia.org/wiki/CLIÉ">Sony Cliés</a>.<sup id="fnref:1365609755-Model"><a href="#fn:1365609755-Model" class="footnote">1</a></sup> It was an awesome little device for the time and I took a lot of notes on it while on rounds. Sadly, a few years later, I was unable to read the files when the Clié finally died and I was unable to read the files with any of the software on my computers.</p>
-
-<p>Since then, I’ve been an advocate for plain text file. Plain text does not use any strange or proprietary formatting so the files can be read on any platform and in any app. The data is about as future-proof as you can get.</p>
-
-<p>There are <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html">many other benefits to plain text as well</a>.</p>
-
-<p>Although I use many apps on many devices to read my plain text files, my favorite by far is <a href="http://brettterpstra.com/2012/02/28/nvalt-2-2-public-beta/">nvALT</a>. It is fast, responsive, intuitive, and created by <a href="http://brettterpstra.com/about/">a programmer I highly respect</a>. Unfortunately, it is free, but you can donate money like I did to support its continued development. </p>
-
-<p>Today I found another useful way to use nvALT.</p>
-
-<h2 id="creating-a-plain-text-wiki">Creating a plain text wiki</h2>
-
-<p>As I was reading an article on auto-inflammatory syndromes, I was struck with the idea of creating a list of all the rheumatology diseases. I hit my hotkey trigger to bring up nvALT and typed “rheumatology diseases” to see if I might have started such a list before. No results appeared, so I hit enter and the document with the title “rheumatology diseases” was created.</p>
-
-<p>I copy and pasted the list of auto-inflammatory diseases into the note and went back to reading the article. As is typical, the article started with the first disease and moved down the list. <em>Now I wanted another text document about that disease in which I could write some notes</em>. While it wouldn’t be hard to do, wouldn’t it be nice if the original list of diseases could link to this other document so I could easily browse them in the future?</p>
-
-<p>It happens that nvALT has an in-app feature<sup id="fnref:1365609755-fn1"><a href="#fn:1365609755-fn1" class="footnote">2</a></sup> that allows you to create links to other documents by wrapping the words in [[double brackets]]. Whatever words are in double brackets link to a note with the same words as the title. Example: “I love to eat [[chocolate]].” would link to a document with the name chocolate.txt. In my case, “FMF - [[familial Mediterranean fever]]” linked to a new document “familial Mediterranean fever.txt”.</p>
-
-<p>As I read my way through the journal article, I created a new text document for each disease that is linked to from the disease list document. I imagine in this way, I could accidentally end up writing a book someday, or maybe just a good wiki for my website. Since I’m writing it all in Markdown anyway, the conversion would be relatively simple.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>It’s simple. It’s elegant.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1365609755-Model">
-      <p><a href="http://www.sonyclie.org/models.html">Model PEG-TJ27</a> <a href="#fnref:1365609755-Model" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:1365609755-fn1">
-      <p>This means it works in the app, but won’t work elsewhere. Because the documents are plain text, this won’t break the document when read in other applications, but the link itself won’t be active. <a href="#fnref:1365609755-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

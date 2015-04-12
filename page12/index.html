@@ -96,6 +96,37 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jan 25, 2012</span>
+      
+      <h2><a class="post-link" href="/CSS-testing">Testing some CSS</a></h2>
+      
+      <div class="content"><p>This is a <del>failed</del> <ins>semi-successful</ins> test of some CSS.</p>
+
+<p>Warning. I have no formal training in CSS.</p>
+
+<pre><code>// This raises the inserted text, rotates it slightly clockwise and moves it over the deleted text.
+ins {
+    -webkit-transform: translate(-20px, -5px) rotate(15deg);
+    display: inline-block;
+    background: transparent;
+    color: #0080C3;
+    text-decoration: none;
+}
+
+// This creates the caret indicating the place to insert text.
+del:after {
+    -webkit-transform: translate(0px, 1em) rotate(0deg);
+    content:"^";
+    display: inline-block;
+    color: #0080C3;
+}
+</code></pre>
+
+<p>In my experience, there is no such thing as luck. You’re all clear, kid. Let’s blow this thing and go home! The Force is strong with this one. I have you now. All right. <del>Well, take care of yourself, Han.</del><ins>Error.</ins> I guess that’s what you’re best at, ain’t it? I have traced the Rebel spies to her. Now she is my only link to finding their secret base.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 20, 2012</span>
       
       <h2><a class="post-link" href="http://idoitonamac.blogspot.com/2011/07/os-x-lion-and-spotlight.html">Forcing Spotlight to re-index</a> <a class="permalink" title="Permanent link to ‘Forcing Spotlight to re-index’" href="/Spotlight-reindex-Lion">Ω</a></h2>
@@ -326,19 +357,6 @@ sudo mdutil -i on /
       <div class="content"><p>John Gruber wrote a searingly poignant commentary on fatherhood for Christmas a week ago. <a href="http://daringfireball.net/2011/12/merry">His words</a> are only more important at New Years. </p>
 
 <p>I should re-read this monthly. </p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Dec 30, 2011</span>
-      
-      <h2><a class="post-link" href="/MMOs-are-like-puppies">MMOs are like puppies</a></h2>
-      
-      <div class="content"><blockquote>
-  <p>Like getting a puppy, an MMO can be a big responsibility. Ultimately, that responsibility consumes all the oxygen, and these games start to feel less like gleaming starships and more like space-coffins. I intend to outrun that as long as I can.</p>
-</blockquote>
-
-<p><a href="http://www.penny-arcade.com/2011/12/30/fungible-assets">Penny Arcade</a></p>
 </div>
     </li>
   

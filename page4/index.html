@@ -96,6 +96,40 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Nov 20, 2013</span>
+      
+      <h2><a class="post-link" href="/Forced-productivity">Forced productivity with Keyboard Maestro</a></h2>
+      
+      <div class="content"><p>I get easily distracted. I can be working on task A, which reminds be to do task B, then get into task C, and end up working 3 hours on task C, then back to 2 hours on task B, and finally get back to task A many hours later. Most of the time this isn’t a problem, and makes me very productive. Not so much at work. Writing an epic blog post or researching the perfect way to make ginger chicken at work–not such a good idea.</p>
+
+<p>So, I made a quick Keyboard Maestro macro to force productivity:</p>
+
+<blockquote>
+  <p>While logged in, repeating every 1 minute during the hours of 8am-5:30pm Monday through Friday:</p>
+</blockquote>
+
+<blockquote>
+  <p>If my medical record app or my text editing app are not at the front, then:</p>
+
+  <ol>
+    <li>Quit the front application</li>
+    <li>Open my medical record app </li>
+  </ol>
+</blockquote>
+
+<p>Brutal, but efficient.<sup id="fnref:131120203050"><a href="#fn:131120203050" class="footnote">1</a></sup></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:131120203050">
+      <p>I could make it even more cruel but quitting any app that isn’t my medical record app or text editor app anytime I switched to the a new app, but that’s a little extreme. At least now I have up to 60 seconds to look something up. <a href="#fnref:131120203050" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Oct 14, 2013</span>
       
       <h2><a class="post-link" href="http://www.newrepublic.com/article/115164/malcolm-gladwells-pseudo-profundity">An intellectual beating</a> <a class="permalink" title="Permanent link to ‘An intellectual beating’" href="/An-intellectual-beating">Ω</a></h2>
@@ -343,44 +377,6 @@ Boy: Because he’s married to a woman who has no heart.  </p>
     </li>
     <li id="fn:20130530201400">
       <p>Like this one, for no good reason other than I could. <a href="#fnref:20130530201400" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 30, 2013</span>
-      
-      <h2><a class="post-link" href="/making-Passbook-useful">Making Passbook useful</a></h2>
-      
-      <div class="content"><p>I shop for groceries at Harris Teeter<sup id="fnref:20130530160464"><a href="#fn:20130530160464" class="footnote">1</a></sup>. If you use their loyalty card, the prices are much cheaper.<sup id="fnref:20130530160545"><a href="#fn:20130530160545" class="footnote">2</a></sup> I don’t like to carry a loyalty card on me, either in my wallet or on my keychain.<sup id="fnref:20130530160716"><a href="#fn:20130530160716" class="footnote">3</a></sup> I used to leave the loyalty card in my car, but then I’d forget to bring it into the store with me.<sup id="fnref:20130530160833"><a href="#fn:20130530160833" class="footnote">4</a></sup> They have an <a href=". https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&amp;at=11l4RT">iPhone app</a><sup id="fnref:20130530160955"><a href="#fn:20130530160955" class="footnote">5</a></sup> that includes a scannable loyalty card, but it’s slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.</p>
-
-<p>So with help and prompting from <a href="https://twitter.com/waynehartman">some guy I met on the internet</a><sup id="fnref:20130530161214"><a href="#fn:20130530161214" class="footnote">6</a></sup>, I made a location-based Passbook card that pulls up the loyalty card’s barcode whenever I’m at the store.</p>
-
-<p>I used the website <a href="https://api.passdock.com/users/sign_up/">Passdock</a> to create the card using one of their templates. I wasn’t able to create the barcode programmatically because Harris Teeter doesn’t use one of the approved barcode styles for Passbook. Instead, I trimmed out the barcode from the screenshot I had taken and put that in the place of the logo. I used the built in DigitalColor Meter app in OS X to make the colors match and put in the GPS coordinates to make sure it would appear whenever I was at the store. It took a little debugging at first, but it works perfectly.</p>
-
-<p>Now, rather than being annoyed whenever I’m checking out, I get a little flush of satisfaction.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130530160464">
-      <p>Don’t be creepy™. <a href="#fnref:20130530160464" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530160545">
-      <p>Or maybe they’re much more expensive to begin with and only reasonable with the loyalty card. <a href="#fnref:20130530160545" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530160716">
-      <p>Minimalism is cool, right? <a href="#fnref:20130530160716" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530160833">
-      <p>Remembering things is hard. <a href="#fnref:20130530160833" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530160955">
-      <p>And <a href="https://play.google.com/store/apps/details?id=com.harristeeter.htmobile&amp;hl=en">Android too</a>. <a href="#fnref:20130530160955" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530161214">
-      <p>What a wonderful day it will be when I hear those words from my daughter’s mouth. <a href="#fnref:20130530161214" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
