@@ -98,6 +98,64 @@
     <li>
       <span class="post-meta">May 30, 2013</span>
       
+      <h2><a class="post-link" href="/modified-Keyboard-Maestro-macro-for-MultiMarkdown-Footnotes">A modified Keyboard Maestro macro for MultiMarkdown Footnotes</a></h2>
+      
+      <div class="content"><p><strong>Update: This post is long out of date. Zettt and I worked together to come up with a better, faster way to do the same thing with Keyboard Maestro. Find his latest version of his Keyboard Maestro Markdown Library to see it in action.</strong></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>If you write in (Multi)Markdown and have Keyboard Maestro, I recommend you check out Andreas’s (@<a href="https://twitter.com/Zettt">Zettt</a>) <a href="http://www.macosxscreencasts.com/general/keyboard-maestro-markdown-library/">Keyboard Maestro Markdown library</a>, which makes it easy to write in Markdown through various schemes such as easily wrapping selected text with various special characters<sup id="fnref:20130530190615"><a href="#fn:20130530190615" class="footnote">1</a></sup>; creating inline links, reference links, and image tags with fill-in templates; making ordered and unordered lists from selected lines of text; and several others. His videos clearly explain how to use them. He also chose a brilliant hotkey schema that makes it easy to remember all the options once you learn one or two.</p>
+
+<p>He’s currently working on some updates with the release of KM6, but that got me thinking about a modification I wanted to make.</p>
+
+<h1 id="problem">Problem</h1>
+
+<p>As it stands now, after placing the footnote, the cursor is left at the bottom of the document, rather than back in the text where the writing will continue.<sup id="fnref:20130530193065"><a href="#fn:20130530193065" class="footnote">2</a></sup></p>
+
+<p>This slight break in workflow is an unfortunate drawback of creating footnotes<sup id="fnref:20130530191980"><a href="#fn:20130530191980" class="footnote">3</a></sup>. Some text editors do have the ability to remember cursor position so that it can be returned it to the original position, but one of the reasons I use Keyboard Maestro for these tasks is so they will be editor agnostic since I’m constantly changing my editor.</p>
+
+<h1 id="solution">Solution</h1>
+
+<p>Keyboard Maestro 6 added a cursor position token: <code>%|%</code>. Since the original macro involved two paste actions separated by moving the cursor, I was going to need to combine them into one paste action. Instead of using ⌘-↓ to move the cursor to the bottom of the text, I use ⇧-⌘-↓ to select all the text from the cursor position to the bottom of the document. I then cut (⌘-X) this to the clipboard. Finally, I paste a concatenation of the footnote tag, the cursor position token, the clipboard, and the footnote:</p>
+
+<pre>[^%Variable%MMDFootnoteTag%]%|%%CurrentClipboard%
+
+[^%Variable%MMDFootnoteTag%]: %Variable%MMDFootnoteText%</pre>
+
+<p>The extra carriage return is because, in my experience, you need to have a blank line between footnotes, unlike reference links, to get them to display correctly. Fletcher Penney <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">recommends this format</a> with regards to bibliography support in Multimarkdown.</p>
+
+<p>The final macro looks like this:</p>
+
+<p><a href="/images/modified_KM_macro_footnote.jpg"><img src="/images/modified_KM_macro_footnote.jpg" alt="" /></a> </p>
+
+<p>If you’re paying close attention, you might notice that I also added a default value for the footnote tag, which is just the date and time in <a href="http://userguide.icu-project.org/formatparse/datetime">ICU yyyyMMddHHSS format</a>.</p>
+
+<p>I think this makes it much easier and natural to write Multimarkdown footnotes, which may turn out to be a bad thing since I’m suddenly adding them all over the place.<sup id="fnref:20130530201400"><a href="#fn:20130530201400" class="footnote">4</a></sup></p>
+
+<p>You can download the macro <a href="/images/Multimarkdown_Footnote.kmmacros">here</a>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130530190615">
+      <p>Asterisk, double asterisk, quotation marks, parentheses, brackets, and backtick quotes. <a href="#fnref:20130530190615" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530193065">
+      <p>The macro is written to insert the footnote tag at the current cursor position, ⌘-↓ to move to the bottom of the document, and then paste the footnote. <a href="#fnref:20130530193065" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530191980">
+      <p>Unless you make inline footnotes and convert them using <a href="http://brettterpstra.com/2012/01/24/a-service-for-writing-multimarkdown-footnotes-inline/">Brett Terpstra’s system service</a>. I tried it, but too often it wouldn’t work because I was trying to nest a footnote inside a link inside something else.  <a href="#fnref:20130530191980" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530201400">
+      <p>Like this one, for no good reason other than I could. <a href="#fnref:20130530201400" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">May 30, 2013</span>
+      
       <h2><a class="post-link" href="/making-Passbook-useful">Making Passbook useful</a></h2>
       
       <div class="content"><p>I shop for groceries at Harris Teeter<sup id="fnref:20130530160464"><a href="#fn:20130530160464" class="footnote">1</a></sup>. If you use their loyalty card, the prices are much cheaper.<sup id="fnref:20130530160545"><a href="#fn:20130530160545" class="footnote">2</a></sup> I don’t like to carry a loyalty card on me, either in my wallet or on my keychain.<sup id="fnref:20130530160716"><a href="#fn:20130530160716" class="footnote">3</a></sup> I used to leave the loyalty card in my car, but then I’d forget to bring it into the store with me.<sup id="fnref:20130530160833"><a href="#fn:20130530160833" class="footnote">4</a></sup> They have an <a href=". https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&amp;at=11l4RT">iPhone app</a><sup id="fnref:20130530160955"><a href="#fn:20130530160955" class="footnote">5</a></sup> that includes a scannable loyalty card, but it’s slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.</p>
@@ -516,28 +574,6 @@ if(window.jQuery) {
 </ol>
 
 <p>Credit: I got the JavaScript above from <a href="http://alanhogan.com/code/text-selection-bookmarklet">Alan Hogan</a>.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Apr 23, 2013</span>
-      
-      <h2><a class="post-link" href="/The-Fanboys-Prayer">The Fanboy's Prayer</a></h2>
-      
-      <div class="content"><p>The Mac is my Shepherd; I shall not defrag.<br />
-He maketh me not change my system fonts.<br />
-He leadeth me to easy back ups.<br />
-He installs no bloatware.<br />
-He leadeth me in the paths of a Unix core for stability’s sake.  </p>
-
-<p>Yea, though I walk through the valley of crappy medical forms,<br />
-I will fear no .docx: For PDFpen Pro art with me;<br />
-Thy “create form fields” command, it comforts me.<br />
-Thou preparest a Dropbox folder before me in the presence of all my devices;<br />
-Thou annointest my terminal with bash; My stack doesn’t overflow.  </p>
-
-<p>Surely TextExpander and Keyboard Maestro shall power all the shortcuts of my workflow,<br />
-and I will compute in the House of the Mac forever.  </p>
 </div>
     </li>
   

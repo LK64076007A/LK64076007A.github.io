@@ -6,9 +6,47 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Apr 2015 09:06:44 -0400</pubDate>
-    <lastBuildDate>Sun, 12 Apr 2015 09:06:44 -0400</lastBuildDate>
+    <pubDate>Sat, 04 Jul 2015 15:37:00 -0400</pubDate>
+    <lastBuildDate>Sat, 04 Jul 2015 15:37:00 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Amazon affiliate link for TextExpander</title>
+        <description>&lt;p&gt;My affiliate linking scripts were starting to get out of hand with different versions in &lt;a href=&quot;http://www.keyboardmaestro.com/main/&quot;&gt;Keyboard Maestro&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Pythonista&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Editorial&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Workflow&lt;/a&gt;, and &lt;a href=&quot;http://smile.7eer.net/i/157164/161942/2936&quot;&gt;TextExpander on the Mac&lt;/a&gt;. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one. &lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;one&lt;/em&gt; would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.&lt;sup id=&quot;fnref:20150704101546&quot;&gt;&lt;a href=&quot;#fn:20150704101546&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;code-explanation&quot;&gt;Code explanation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Line 3: Stores the affiliate code to a variable.  &lt;/li&gt;
+  &lt;li&gt;Line 4: Stores the clipboard to a variable.  &lt;/li&gt;
+  &lt;li&gt;Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).  &lt;/li&gt;
+  &lt;li&gt;Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.  &lt;/li&gt;
+  &lt;li&gt;Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.  &lt;/li&gt;
+  &lt;li&gt;Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/nuclearzenfire/30ed6c4c52e36978540b.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:20150704101546&quot;&gt;
+      &lt;p&gt;Dr. Drang had &lt;a href=&quot;http://leancrew.com/all-this/2015/06/clean-amazon-links-with-textexpander/&quot;&gt;written about converting his script over to JavaScript for TextExpander&lt;/a&gt;, and at first I thought I could just steal his, but this was a dead end. Since he used JavaScript for Automation in his snippet it would not work in iOS and his regex didn’t work with the URLs I was getting. &lt;a href=&quot;#fnref:20150704101546&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 04 Jul 2015 05:43:33 -0400</pubDate>
+        <link>http://soitscometothis.net/Amazon-affiliate-link-for-TextExpander</link>
+        <guid isPermaLink="true">http://soitscometothis.net/Amazon-affiliate-link-for-TextExpander</guid>
+        
+        <category>TextExpander</category>
+        
+        <category>Amazon affiliate link</category>
+        
+        
+      </item>
     
       <item>
         <title>My Apple Watch try-on experience</title>
@@ -354,26 +392,6 @@ Me: Deal.  &lt;/p&gt;
         <category>technology</category>
         
         <category>voice mail</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Shopping cycle</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Search internet for reviews of certain product I need.&lt;/li&gt;
-  &lt;li&gt;Based on reviews and my specific need, determine product I want.&lt;/li&gt;
-  &lt;li&gt;Check if product is on Amazon.&lt;/li&gt;
-  &lt;li&gt;If so, &lt;strong&gt;victory&lt;/strong&gt;. Fin.&lt;/li&gt;
-  &lt;li&gt;If not, go to company’s website.&lt;/li&gt;
-  &lt;li&gt;Struggle through a horribly designed check out process, declining to create an account and sign up for their newsletter.&lt;/li&gt;
-  &lt;li&gt;Two weeks later, use &lt;a href=&quot;https://itunes.apple.com/us/app/paperkarma/id458837823?mt=8&amp;amp;at=11l4RT&quot;&gt;PaperKarma&lt;/a&gt; to unsubscribe from their snail mail magazine.&lt;/li&gt;
-  &lt;li&gt;Hate myself for ordering something not from Amazon. &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 06 Jan 2015 21:26:54 -0500</pubDate>
-        <link>http://soitscometothis.net/shopping-cycle</link>
-        <guid isPermaLink="true">http://soitscometothis.net/shopping-cycle</guid>
         
         
       </item>
