@@ -96,6 +96,79 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jan 13, 2013</span>
+      
+      <h2><a class="post-link" href="/Inline-Markdown-links-from-Safari-tabs">Inline Markdown links from Safari tabs</a></h2>
+      
+      <div class="content"><p>This post is mostly for me, so I can remember how I did this in the future.</p>
+
+<p>I was creating show notes for a podcast I do. I needed to make a list of links to scientific papers. Even using Markdown rather than HTML it took me an insanely long amount of time to manually copy over the titles and links. So I decided I’d spend the next hour never doing that again.</p>
+
+<p>First, I figured out a way to get the links easily. Unfortunately, <a href="http://www.mekentosj.com/papers/">Papers</a> does not have a way to easily copy out the information directly, but it does have a way to highlight all the papers you want to link and open them all in tabs in your browser.</p>
+
+<p>Now that I had all the papers open in their own tab, I needed a way to make Markdown links from them. I thought I had read something about doing this before, but I couldn’t find it again<sup id="fnref:1301132310"><a href="#fn:1301132310" class="footnote">1</a></sup>, but I did find <a href="http://www.leancrew.com/all-this/2012/07/markdown-reference-links-from-safari-tabs/">a post by Dr. Drang</a> that got me halfway there. The only problem was that his method only gave me the second half of a list of reference links when what I wanted was inline links with the title of the webpage as the text.</p>
+
+<p>His technique gave me this:</p>
+
+<pre><code>[1]: website url
+[2]: website url
+[3]: website url
+[4]: website url
+</code></pre>
+
+<p>When what I wanted was this:</p>
+
+<pre><code>[Website Title](website url)
+[Website Title](website url)
+[Website Title](website url)
+[Website Title](website url)
+</code></pre>
+
+<p>I like reference links too, but I needed the title of the paper for my purposes and I already have another macro that I use to turn inline links into reference links later.</p>
+
+<p>My Applescript knowledge is weak, but I quickly found <a href="http://lucifr.com/2012/09/01/selected-safari-tabs-to-markdown-reference-links/">this page</a>, which I can’t read because it’s in Chinese, and by looking at the code, figured out how to get what I needed.</p>
+
+<p>I changed Dr. Drang’s original code:</p>
+
+<pre><code>tell application "Safari"
+  set i to 1
+  set links to ""
+  repeat with t in every tab in front window
+    set links to links &amp; "[" &amp; i &amp; "]: " &amp; the URL of t &amp; linefeed
+    set i to i + 1
+  end repeat
+  return links
+end tell
+</code></pre>
+
+<p>to this:</p>
+
+<pre><code>tell application "Safari"
+  set i to 1
+  set links to ""
+  repeat with t in every tab in front window
+    set links to links &amp; "[" &amp;the name of t&amp; "](" &amp; the URL of t &amp;")"&amp; linefeed
+    set i to i + 1
+  end repeat
+  return links
+end tell
+</code></pre>
+
+<p>You can then throw that into a TextExpander snippet or a Keyboard Maestro Macro and you’re prestige.</p>
+
+<p>Frankly, Papers needs a way to do this in the app itself.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1301132310">
+      <p>I need a Nerd-blog Search Engine <a href="#fnref:1301132310" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 8, 2013</span>
       
       <h2><a class="post-link" href="/history-of-Mr.-Stone">The history of Mr. Stone</a></h2>
@@ -414,21 +487,6 @@
 
 <p>Never attribute to malice that which is more likely due to incompetence.</p>
 
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Oct 31, 2012</span>
-      
-      <h2><a class="post-link" href="/private-vs-public">Medicine in Ireland</a></h2>
-      
-      <div class="content"><p><a href="http://www.irishtimes.com/newspaper/weekend/2012/1027/1224325773964.html">Irish Times</a></p>
-
-<blockquote>
-  <p>In the most commonly repeated complaint by patients, it is related how a person languished for months on a public waiting list for an appointment or procedure, but was seen within a week as a private patient. It is also common in the public system for scores of patients to be called for appointments at the same time, leading to long wait times, whereas in private medicine, individually timed appointments are the norm.</p>
-</blockquote>
-
-<p>Sounds familiar.  </p>
 </div>
     </li>
   

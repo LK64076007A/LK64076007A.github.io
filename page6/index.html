@@ -96,6 +96,74 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">May 14, 2013</span>
+      
+      <h2><a class="post-link" href="/Enable-Copy-and-Paste">Enable Copy and Paste</a></h2>
+      
+      <div class="content"><p>The website Uptodate, a common medical reference site for physicians, appears to disable copying text on the iPhone. This makes it very difficult to copy snippets of text into the notes I’m taking as I read. It also prevents using iOS’s text-to-speech functionality when my eyes get tired. </p>
+
+<p>Thankfully, it’s not very difficult to restore this functionality. </p>
+
+<ol>
+  <li>On your iPhone, create a bookmark of this page. </li>
+  <li>Copy the following text to your clipboard:</li>
+</ol>
+<pre>
+javascript:(function(){
+
+function allowTextSelection(){
+  var styles='*,p,div{user-select:text !important;-moz-user-select:text !important;-webkit-user-select:text !important;}';
+  jQuery('head').append(jQuery('&lt;style /&gt;').html(styles));
+  
+  window.console&amp;&amp;console.log('allowTextSelection');
+  var allowNormal = function(){
+    return true;
+  };
+  window.console&amp;&amp;console.log('Elements unbound: '+
+    jQuery('*[onselectstart], *[ondragstart], *[oncontextmenu], #songLyricsDiv'
+    ).unbind('contextmenu').unbind('selectstart').unbind('dragstart'
+    ).unbind('mousedown').unbind('mouseup').unbind('click'
+    ).attr('onselectstart',allowNormal).attr('oncontextmenu',allowNormal
+    ).attr('ondragstart',allowNormal).size());
+}
+
+function allowTextSelectionWhenPossible() {
+  window.console&amp;&amp;console.log('allowTextSelectionWhenPossible');
+  if(window.jQuery){
+    window.console&amp;&amp;console.log('jQuery has now loaded');
+    allowTextSelection();
+  } else {
+    window.console&amp;&amp;console.log('jQuery still not loaded.');
+    window.setTimeout(allowTextSelectionWhenPossible, 100);
+  }
+}
+
+if(window.jQuery) {
+    window.console&amp;&amp;console.log('jQuery exists; will use');
+  allowTextSelection();
+}else{
+  window.console&amp;&amp;console.log('jQuery not loaded; will include.');
+  var s=document.createElement('script');
+  s.setAttribute('src','http://code.jquery.com/jquery-1.9.1.min.js');
+  document.getElementsByTagName('body')[0].appendChild(s);
+  allowTextSelectionWhenPossible();
+}
+
+
+})();  
+</pre>
+<ol>
+  <li>Go to the bookmark menu in Safari, find the bookmark you just created, and hit edit. </li>
+  <li>Replace the URL with the clipboard contents. </li>
+  <li>Go to Uptodate or any website that blocks copying. </li>
+  <li>While on that page, hit the bookmark, and functionality should return. </li>
+</ol>
+
+<p>Credit: I got the JavaScript above from <a href="http://alanhogan.com/code/text-selection-bookmarklet">Alan Hogan</a>.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Apr 23, 2013</span>
       
       <h2><a class="post-link" href="/The-Fanboys-Prayer">The Fanboy's Prayer</a></h2>
@@ -500,53 +568,6 @@ Peter.</p>
 <p>After he got off the phone, she sat down and started going through the book, occasionally reading out a passage and the saying that they should get the lawyer to “add that charge.”</p>
 
 <p>Then they thumbed through the yellow pages writing down numbers for attorneys.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 12, 2013</span>
-      
-      <h2><a class="post-link" href="/Mute-commercials-on-CBS-or-Hulu-with-Keyboard-Maestro">Mute commercials on CBS or Hulu with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>In a game of one-upmanship, I’ve improved on my prior macros for muting commercials on CBS and Hulu. What used to be 1-3 non-annoying commercials<sup id="fnref:1363103721-fn1"><a href="#fn:1363103721-fn1" class="footnote">1</a></sup> has turned into five, highly-annoying, commercials in a row. The volume is often much louder than the volume of the show and not infrequently, the same commercial is played all 5 times.</p>
-
-<p>To combat this I made two small changes. First, I combined the two macros into one so I don’t have to remember two hot keys or which site I’m watching. A simple Applescript snippet captures the URL from Chrome and an if/then statement looks for the network name in the url. The second change involves turning the screen off and on in addition to toggling the mute key.</p>
-
-<p>The macro flows thus:</p>
-
-<pre>
-- Execute Applescript `tell application "Google Chrome" to get the URL of active tab of first window` and save results to variable `currentURL`
-- If `currentURL` contains CBS then
-    - Toggle system sound mute
-    - Repeat action 16 times: decrease screen brightness
-    - Execute following action until none of the conditions are met
-        - none (this is basically just a pause until)
-        - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-    - Toggle system sound mute
-    - Repeat action 16 times: increase screen brightness
-- otherwise execute the following
-    - If `currentURL` contains hulu then
-        - Toggle system sound mute
-        - Repeat action 16 times: decrease screen brightness
-        - Execute following action until none of the conditions are met
-            - none (this is basically just a pause until)
-            - Conditions: screen contains image (the image is the "advertisement" graphic that is displayed during a commercial)
-        - Toggle system sound mute
-        - Repeat action 16 times: increase screen brightness
-    - otherwise do nothing
-</pre>
-
-<p>I haven’t figured out a way to automatically call this macro when the commercials start. I could watch for the “advertisement” graphic but I think that would be way too CPU intensive. I’ll keep thinking about it.</p>
-
-<p>I encourage you to make your own macro to learn the system, and you might have to in order to get the correct “advertisement” graphic, but you can get mine <a href="/images/mute_Commercials.kmmacros">here</a>. (right click to download)</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1363103721-fn1">
-      <p>I assume this had to do with the newness of the medium was not attractive the old school advertisers and in addition the commercials were aimed at a younger, techophilic demographic. Now I just see lots of car commercials. <a href="#fnref:1363103721-fn1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
