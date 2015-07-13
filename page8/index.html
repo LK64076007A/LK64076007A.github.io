@@ -96,6 +96,59 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Jan 30, 2013</span>
+      
+      <h2><a class="post-link" href="/NIH-Stroke-Scale">NIH Stroke Scale with Keyboard Maestro and TextExpander</a></h2>
+      
+      <div class="content"><p>A colleague of mine wanted a way to easily document the NIH stroke scale score with the added benefits of not having to type the whole thing each time, prompts to remember what to evaluate and what the scores mean, and also have the final score calculated for him. Requirements included that the input had to be in TextExpander due to a preference for that applications input style, and the output would have to be in the middle of a Pages document that was using a single font and no bold or italics.</p>
+
+<p>He had already created the TextExpander snippet and basically needed me to figure out a way to use KM to calculate the score and put it into the note. Oh, one more thing: He wanted to do this with only one command. </p>
+
+<h2 id="challenge-accepted">Challenge accepted!</h2>
+
+<p>The KM macro first types out the shortcut for the TE macro, which calls the TE snippet pop up window, and then pauses until the TE snippet window disappears. </p>
+
+<p>The TE window has all the steps of the NIH Stroke Scale including prompts to remind the user how to do it correctly.</p>
+
+<p><a href="/images/NIH_stroke_TE_menu.png"><img src="/images/NIH_stroke_TE_menu.png" alt="NIH Stroke Scale TE Menu" /></a> </p>
+
+<p>Once the TE part is complete, the KM macro continues. All it really does it use regular expressions to find the individual numbers in the scale and add them together for the final score. Since the final score is really just simple addition of 15 single digit numbers, the whole exercise is a bit of a Rube Goldberg, but it was fun anyway and any less brain power and time needed at 2 in the morning during a stroke is probably a good thing.</p>
+
+<p>And the final result:</p>
+
+<video width="640" height="480" controls="controls">
+  <source src="/images/NIH_stroke_scale.m4v" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<p><a href="/images/NIH_stroke_scale.jpg"><img src="/images/NIH_stroke_scale.jpg" alt="" /></a> </p>
+
+<p>The resulting KM macro file <a href="/images/Calc_NIH_stroke_score_from_TE_macro_combo.kmmacros">is here</a>.</p>
+
+<p>The original TE snippet:</p>
+
+<pre><code>NIH STROKE SCALE %1m/%e/%Y %H:%M
+1a. Level of Consciousness:	%fillpopup:name=1a.:default=0 (Keenly responsive.):1 (Arousable with minor stimulation):2 (Requires strong stimulation):3 (Comatose)%
+1b. LOC Questions (month/age):	%fillpopup:name=1b:default=0  (Answers both questions correctly):1  (Answers one question correctly):2  (Answers neither question correctly)%
+1c. LOC Commands (eyes/grip):	%fillpopup:name=1c:default=0  (Performs both tasks correctly):1  (Performs one task correctly):2  (Performs neither task correctly)%
+2.   Best Gaze:			%fillpopup:name=2:default=0  (Normal):1  (Partial gaze palsy):2  (Forced deviation)%
+3.   Visual:			%fillpopup:name=3:default=0  (No visual loss.):1  (Partial hemianopia):2  (Complete hemianopia):3  (Bilateral hemianopia)%
+4.   Facial Palsy:			%fillpopup:name=4:default=0 (Normal):1 (Minor paralysis):2 (Partial/Central paralysis):3 (Complete paralysis)%
+5a. Motor Left Arm:		%fillpopup:name=5a:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+5b. Motor Right Arm:		%fillpopup:name=5b:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+6a. Motor Left Leg:		%fillpopup:name=6a:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+6b. Motor Right Leg:		%fillpopup:name=6b:default=0 (No drift for 10 seconds):1 (Drift without touching):2 (Some effort against gravity):3 (No effort against gravity):4 (No movement):0 (Amputation or fusion)%
+7.   Limb Ataxia:			%fillpopup:name=7:default=0 (Absent):1 (Present in one limb):2 (Present in two limbs):0 (Amputation or fusion)%
+8.   Sensory:			%fillpopup:name=8:default=0 (Normal):1 (Mild to moderate loss):2 (Severe loss)%
+9.   Best Language:		%fillpopup:name=9:default=0 (No Aphasia):1 (Mild to moderate):2 (Severe aphasia):3 (Mute or global aphasia)%
+10. Dysarthria:			%fillpopup:name=10:default=0 (Normal):1 (Mild to moderate):2 (Severe dysarthria):0 (Intubated or other)%
+11. Extinction and Inattention:	%fillpopup:name=11:default=0 (Normal):1 (To one modality):2 (Profound loss)%
+TOTAL:				
+</code></pre>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Jan 18, 2013</span>
       
       <h2><a class="post-link" href="/Stupid-EMR-UI-Example-2">Stupid EMR UI Example 2</a></h2>
@@ -492,54 +545,6 @@ end tell
 <p>Sadly, that will not be because of a sudden, principled stand against this issue. Less dramatically, I’ve been contemplating leaving for some time due to other issues like this.</p>
 
 <p>I am taking this as a lesson for when I am the boss and hopefully treat my employees with more respect.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Nov 23, 2012</span>
-      
-      <h2><a class="post-link" href="/PDF-Expert-for-iPhone">PDF Expert for iPhone - attention to detail</a></h2>
-      
-      <div class="content"><h2 id="summary">Summary</h2>
-
-<p>PDF Expert for iPhone is a great app, and for today is free. <a href="https://itunes.apple.com/app/pdf-expert-professional-pdf/id323133888?mt=8">Get it</a>.</p>
-
-<h2 id="tldr">tl;dr</h2>
-
-<p>I’m a big fan of the iOS development company <a href="http://readdle.com/products/">Readdle</a> because I use their apps constantly in my personal and work life. <a href="http://readdle.com/products/">Their apps</a> are beautiful, consistently updated, and insanely good. I’ve also bought other company’s competing apps but due to various problems, I stick with Readdle and both PDF Expert and Scanner Pro are have long-standing positions on my home screen.</p>
-
-<p><img src="/images/PDFExpertForiPhone.png" alt="" height="568" width="320" /></p>
-
-<p>I have used PDF Expert on my iPhone and iPad to study for boards, read journal articles, and complete applications for medical licensure, hospital privileges, condo rental, and private school for my son.</p>
-
-<p>Today, in honor of Black Friday, they’ve dramatically cut the prices on their apps, including making <a href="https://itunes.apple.com/app/pdf-expert-professional-pdf/id323133888?mt=8">PDF Expert for the iPhone free</a>. Personally, I just bought PDF Converter.<sup id="fnref:121123135732"><a href="#fn:121123135732" class="footnote">1</a></sup></p>
-
-<p>There is way too much to talk about with regards to how great some of their apps are, and I have several blog posts planned to discuss how I use some of their apps in my workflow, but I do want to share one small aspect of <a href="https://itunes.apple.com/app/pdf-expert-professional-pdf/id323133888?mt=8">PDF Expert</a> that demonstrates the attention to detail in these apps.</p>
-
-<p>I read a lot of science articles that are in 2 column PDF format. On the iPhone, and even the iPad sometimes, the screen is too small to read more than a single column at a time. A lot of PDF readers screw up the scrolling when going from the end of one page to the beginning of the next. Most of the time, when you are zoomed in on the bottom right corner of the page, when you scroll to the next page, you are either looking at the top right corner of the next page (if scrolling to the next page vertically), or the bottom left (if scrolling horizontally). <a href="https://itunes.apple.com/app/pdf-expert-professional-pdf/id323133888?mt=8">PDF Expert</a> gets it right by going right to the next text you’ll be wanting to read at the top left of the page in either vertical or horizontal scrolling. </p>
-
-<p>This is better understood with a picture:</p>
-
-<p><a href="/images/PDF%20expert%20screen%20scroll.gif"><img src="/images/PDF_expert_screen_scroll.gif" alt="" /></a></p>
-
-<p>Two other top apps for reading PDFs in my field are <a href="http://www.mekentosj.com/papers/">Papers</a> and <a href="http://smilesoftware.com/PDFpen/iPhone/index.html">PDFpen</a> both of which have versions for the Mac, iPad, and iPhone. </p>
-
-<p>Papers scrolls horizontally and goes to the bottom right of the next page–area 6 in the above image. While it is the top app for scientific article management, and I highly recommend using it, I don’t recommend using it for reading PDFs. </p>
-
-<p>PDFpen’s behavior changes based if you’ve ever been on the page you’re scrolling to before. If you’ve never been there, it actually zooms out to look at the whole page. If you have been to that page before, it goes back to whatever zoom at whatever location you were at before. This inconsistent behavior is annoying. I would like it if it just zoomed to the whole page view and this was a preference you could toggle, but as it is, like most of the implementations of PDFpen, I find it unusable.<sup id="fnref:121123141713"><a href="#fn:121123141713" class="footnote">2</a></sup></p>
-
-<p>So, if you need to read PDFs and even edit them, including signing documents and mailing them back, go get PDF Expert today.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:121123135732">
-      <p>I would have bought it before today, but didn’t know it existed. Only a few months ago I was looking for exactly this kind of app and couldn’t find one I liked. <a href="#fnref:121123135732" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:121123141713">
-      <p>I do actually own over $100 worth of PDFpen software and use both it and other software by Smile every day, but the PDF viewing/editing software has never meshed well for me. <a href="#fnref:121123141713" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   
