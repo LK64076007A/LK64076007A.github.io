@@ -96,6 +96,35 @@
   <!-- This loops through the paginated posts -->
   
     <li>
+      <span class="post-meta">Oct 28, 2014</span>
+      
+      <h2><a class="post-link" href="/Changing-blog-platform-and-host">Changing blog platform and host</a></h2>
+      
+      <div class="content"><p>I like using static text documents to generate my blog. As many others have already said, it gives me control over my product and is easy to maintain and change. For the last several years, I’ve enjoyed using <a href="http://scriptogr.am">Scriptogram</a>, which both generated the HTML files from the text files stored in Dropbox, and also hosted the generated files. It was even free. </p>
+
+<p>Unfortunately, it does not seem to be in active development anymore. I probably could have left it alone and waited until the service died, but I got an itching in my brain after listening to the <a href="http://www.coreint.org/2014/10/episode-160-the-guarantee-of-free-speech/">last episode of Core Intuition</a> and decide to take a second crack<sup id="fnref:141028124001"><a href="#fn:141028124001" class="footnote">1</a></sup> at doing my own file generation and hosting<sup id="fnref:141028124050"><a href="#fn:141028124050" class="footnote">2</a></sup>. </p>
+
+<p>I’m currently getting my blog ported over to a Github hosted Jekyll site. Of course, I didn’t do the smart thing and wait until everything was finished before switching over the DNS, because <em>stupid</em> and I didn’t actually think anyone read this site<sup id="fnref:141028124228"><a href="#fn:141028124228" class="footnote">3</a></sup>. Unfortunately, at least one person does and I wasted their time today when they tried to report a broken link in their feed reader. </p>
+
+<p>My apologies. Hopefully the DNS and RSS is finished. No I just need to import my old articles and futz with the CSS. The latter shouldn’t cause any problems, and I hope the former doesn’t flood anyone’s RSS reader with old posts. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:141028124001">
+      <p>+10 nerd points if you get the reference <a href="#fnref:141028124001" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:141028124050">
+      <p>I failed spectacularly at my last attempt with Octopress. <a href="#fnref:141028124050" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:141028124228">
+      <p>What analytics? <a href="#fnref:141028124228" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Aug 1, 2014</span>
       
       <h2><a class="post-link" href="/Create-a-Markdown-link-with-automatic-affiliate-codes">Create a Markdown link with automatic affiliate codes</a></h2>
@@ -166,7 +195,7 @@ from urlparse import urlparse
 from subprocess import check_output
 
 ## PUT YOUR AFFILIATE CODE HERE
-affcode = 'violeneces-20'
+affcode = 'soitscometothis-20'
 
 rawurl = check_output('pbpaste')
 
@@ -486,23 +515,6 @@ Them: That’s not what your wife says.</p>
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Dec 31, 2013</span>
-      
-      <h2><a class="post-link" href="/Argument-by-counter-example">Argument by counter example</a></h2>
-      
-      <div class="content"><p>Boy (age 8): Why do you and I play a lot of video games but mommy doesn’t?</p>
-
-<p><em>She doesn’t like to play video games.</em></p>
-
-<p>Boy: Why doesn’t she like video games. </p>
-
-<p><em>I don’t know. Maybe because she’s a girl?</em></p>
-
-<p>Boy: I know like a hundred girls that play Minecraft!!!</p>
 </div>
     </li>
   

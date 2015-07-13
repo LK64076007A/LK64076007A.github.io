@@ -58,7 +58,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 h1, h2 {
   color: #0080CE;
@@ -209,7 +209,6 @@ del:after {
 .site-title {
   font-family: "AvenirNext-UltraLight", "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", Arial, sans-serif;
   font-size: 64px;
-  font-weight: 100;
   line-height: 96px;
   margin-bottom: 0;
   color: #0080CE; }
