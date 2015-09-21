@@ -6,8 +6,8 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Sep 2015 10:30:38 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Sep 2015 10:30:38 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Sep 2015 11:21:40 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Sep 2015 11:21:40 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -49,7 +49,11 @@
 
 &lt;p&gt;I consider this to be very poor design. I even thought I must have missed something, so I deleted the app completely and restarted from scratch. My second experience was identical. The first two times I tried to use the complication failed (first on a face that didn’t support it and second on a slot that didn’t give me any instructions). That is not a great experience and I wonder if the developer is going to get a lot of email about this. I did tag him on my Twitter announcement for this post, and if he writes to me to say I’m an idiot for missing something, I’ll post an update.&lt;/p&gt;
 
-&lt;p&gt;In the last episode of &lt;a href=&quot;https://recursionpodcast.net/5&quot;&gt;Recursion&lt;/a&gt; and on &lt;a href=&quot;https://twitter.com/waynehartman/status/643417254277726208&quot;&gt;Twitter&lt;/a&gt;, Wayne expressed concerns about &lt;del&gt;force touch&lt;/del&gt;&lt;ins&gt;3D touch&lt;/ins&gt; on the iPhone 6S and 6S+. He is worried developers will use this new interaction method poorly, hiding important functionality behind undiscoverable gestures rather than as a value add to already discoverable and well designed UI. I argued against him. Silly me.&lt;/p&gt;
+&lt;p&gt;In the last episode of &lt;a href=&quot;https://recursionpodcast.net/5&quot;&gt;Recursion&lt;/a&gt; and on &lt;a href=&quot;https://twitter.com/waynehartman/status/643417254277726208&quot;&gt;Twitter&lt;/a&gt;, Wayne expressed concerns about &lt;del&gt;force touch&lt;/del&gt;&lt;ins&gt;3D touch&lt;/ins&gt; on the iPhone 6S and 6S+. He is worried developers will use this new interaction method poorly, hiding important functionality behind undiscoverable gestures rather than as a value add to already discoverable and well designed UI.&lt;/p&gt;
+
+&lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
+
+&lt;p&gt;I discussed with Justin, the developer, and he has decided to add a pop up the first time you launch the app on the watch and instructions in the release notes. I think that is about all he can do given the limitations of the platform he is dealing with. It really is a great app and if tide data is important to you, I highly suggest this app. &lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
