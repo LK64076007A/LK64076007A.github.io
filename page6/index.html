@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>so, it's come to this...</title>
@@ -94,6 +94,88 @@
 <ul class="post-list">
 
   <!-- This loops through the paginated posts -->
+  
+    <li>
+      <span class="post-meta">May 18, 2013</span>
+      
+      <h2><a class="post-link" href="/Using-PACS-from-a-Mac">Using PACS from a Mac</a></h2>
+      
+      <div class="content"><p>The title is a bit misleading, but I figured that’s what people would be searching for if they had the problem I’m intending to solve.</p>
+
+<p>Technically, this article is about installing virtual Windows machines for free on your Mac so you can use PACS rather than about how to use PACS on a Mac, because, as far as I know, you can’t.</p>
+
+<p>A colleague uses a Macbook Air at work except the hospitals imaging system uses PACS with some unfortunate software requirements:</p>
+
+<ol>
+  <li>Internet Explorer 6.0, 7.0, or 8.0</li>
+  <li>Windows XP (Service Pack 3) or Windows Vista Home Premium or Windows Vista Business 64 bit or Windows 7 32 and 64 bit </li>
+  <li>Windows 3.1 Installer</li>
+  <li>Microsoft .NET Framework 3.5 (Service Pack 1)</li>
+  <li>Windows Media Player 11.0</li>
+</ol>
+
+<p>This made him sad because he also had to carry around a crappy Windows machine.</p>
+
+<p>Thankfully, we were able to easily solve his problem today.<sup id="fnref:20130518185423"><a href="#fn:20130518185423" class="footnote">1</a></sup></p>
+
+<p>The technique we used came from a <a href="http://osxdaily.com/2011/09/04/internet-explorer-for-mac-ie7-ie8-ie-9-free/">2 year old article</a> from <a href="http://osxdaily.com">OSXDaily</a>. It uses VirtualBox from Oracle to create a virtual machine and then load a free version of Windows XP for the purposes of testing IE.</p>
+
+<p>The technique is really pretty simple, although you need to not fear the terminal.</p>
+
+<p>First, <a href="https://www.virtualbox.org/wiki/Downloads">download and install Virtual Box</a>.</p>
+
+<p>Second, go to the terminal<sup id="fnref:20130518191266"><a href="#fn:20130518191266" class="footnote">2</a></sup> and paste one of the following depending on the version of Internet Explorer you need:</p>
+
+<ul>
+  <li>Internet Explorer 7</li>
+</ul>
+
+<p><code>curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="7" bash</code></p>
+
+<ul>
+  <li>Internet Explorer 8</li>
+</ul>
+
+<p><code>curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="8" bash</code></p>
+
+<ul>
+  <li>Internet Explorer 9</li>
+</ul>
+
+<p><code>curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="9" bash</code></p>
+
+<p>In everything goes well, this will install the Windows operating system needed and the version of IE as well.</p>
+
+<p>Finally, run the application VirtualBox and you’ll be able to boot up the Windows virtual machine.</p>
+
+<p>If you have trouble doing that there are several more resources that can help:</p>
+
+<ul>
+  <li>
+    <p><a href="http://www.modern.ie/en-us/virtualization-tools">Microsoft’s virtualization website</a>. You can pick from Windows XP, Vista, 7, and 8.</p>
+  </li>
+  <li>
+    <p><a href="http://chriswharton.me/2013/02/installing-modern-ie-virtualization-on-virtualbox-for-mac/">Chris Warton’s blog</a>. Has some tips on installing one of the above Windowns virtual machines into Virtual Box. </p>
+  </li>
+  <li>
+    <p><a href="https://github.com/xdissent/ievms">Greg Thornton’s Github repository</a> for automatic installation of Window’s VMs. Has more detailed instructions.</p>
+  </li>
+</ul>
+
+<p>Let me know if this works for your and allows you to use PACS on your Mac. I’d be interested to know how much this is effecting physicians. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130518185423">
+      <p>Actually, it took forever to figure it out. While this technique worked perfectly on my Macbook Air 13 inch, for some reason it would immediately fail on his machine. For some reason, the installer couldn’t make the hidden directory <code>.revms</code> in his User folder. Once we figured that out, un-hide the hidden files, and created it manually, it worked fine. Took forever to figure that part out though. <a href="#fnref:20130518185423" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130518191266">
+      <p>Terminal.app or ⌘-space, <code>terminal</code>. <a href="#fnref:20130518191266" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
   
     <li>
       <span class="post-meta">May 15, 2013</span>
@@ -475,36 +557,6 @@ and I will compute in the House of the Mac forever.  </p>
     </li>
   </ol>
 </div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 18, 2013</span>
-      
-      <h2><a class="post-link" href="/The-best-indie-developer">The best indie developer</a></h2>
-      
-      <div class="content"><p>Yesterday, a customer on the Keyboard Maestro forums wrote a thank you to Peter, the owner/developer of KM:</p>
-
-<blockquote>
-  <p>Peter, I don’t know how you do it–all the work you do on KM, and still answering many questions in the forum. Just a note from one very appreciative customer.</p>
-</blockquote>
-
-<p>This was quickly followed by “+1”s. </p>
-
-<p>I have to agree that this echoes my sentiments too. I love KM as excellent software, but the extra work on answering (sometimes silly or rude questions) is really wonderful. </p>
-
-<p>Even better was Peter’s deferential reply:</p>
-
-<blockquote>
-  <p>Thanks Mike (and others!), your thoughts are greatly appreciated!</p>
-
-  <p>It’s easy to say how I do it - I’m supported by all of you. I get to do what I love, work from home so I can walk my kids to school, make something that is useful to lots of people, and all because you folks all support me, both financially and by helping expand Keyboard Maestro to others.</p>
-
-  <p>So by far it is me who needs to thank you all, not the other way around!</p>
-
-  <p>Thanks,
-Peter.</p>
-</blockquote>
 </div>
     </li>
   

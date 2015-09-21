@@ -6,9 +6,81 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Jul 2015 14:07:14 -0400</pubDate>
-    <lastBuildDate>Mon, 13 Jul 2015 14:07:14 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Sep 2015 10:08:33 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Sep 2015 10:08:33 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Tide information as a watch complication</title>
+        <description>&lt;!-- Apple will never do a watch face that shows the tide level at my local beach. And I *really* want that before I head out on a dog walk. - https://twitter.com/chockenberry/status/579347014443384832 --&gt;
+
+&lt;p&gt;Six months ago, Craig Hockenberry tweeted&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Apple will never do a watch face that shows the tide level at my local beach. And I *really* want that before I head out on a dog walk.&lt;/p&gt;&amp;mdash; Craig Hockenberry (@chockenberry) &lt;a href=&quot;https://twitter.com/chockenberry/status/579347014443384832&quot;&gt;March 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This was over a month before the Apple Watch was released, but I also wanted the same. At the time, my sailboat was at a marina with very little depth at low tide. I needed to plan my departures and arrivals based on the tide. Being able get the tidal information at a glance would be beneficial and much more important to me than things like temperature, sunset time, or moon phase.&lt;sup id=&quot;fnref:150921100200&quot;&gt;&lt;a href=&quot;#fn:150921100200&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;/p&gt;
+
+&lt;p&gt;Although watchOS 2 has been &lt;a href=&quot;http://techcrunch.com/2015/09/16/apple-delays-release-of-watchos-2-due-to-bug/&quot;&gt;delayed&lt;/a&gt;, the GM is out and at least one app with a complication has been published to the App Store. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; has been updated with a watch complication to show the time of the next low or high tide, and depending on the complication, it’s name and height. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-1.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;I was already using &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; as my tidal app of choice so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.&lt;/p&gt;
+
+&lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code&gt;-&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-2.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;I switched back and forth to the app on both the phone and the watch, restarting, uninstalling and reinstalling, all to no avail. There was no prompt, instructions, or other hints that I found. I assumed that something must be broken since I’m technically on “beta” software and went on my way.&lt;/p&gt;
+
+&lt;p&gt;Then a few days ago, I happend to create a new modular face, but instead of putting the tides in one of the small complication slots, I put it in the large central slots. Initially it was just as useless&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-3.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;but the next time I raised my wrist, instructions telling me to force press my local tide in the app to set the complication appeared. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-4.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;I did so and it worked! &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-5.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;I consider this to be very poor design. I even thought I must have missed something, so I deleted the app completely and restarted from scratch. My second experience was identical. The first two times I tried to use the complication failed (first on a face that didn’t support it and second on a slot that didn’t give me any instructions). That is not a great experience and I wonder if the developers are going to get a lot of email about this. &lt;/p&gt;
+
+&lt;p&gt;In the last episode of &lt;a href=&quot;https://recursionpodcast.net/5&quot;&gt;Recursion&lt;/a&gt; and on &lt;a href=&quot;https://twitter.com/waynehartman/status/643417254277726208&quot;&gt;Twitter&lt;/a&gt;, Wayne expressed concerns about &lt;del&gt;force touch&lt;/del&gt;&lt;ins&gt;3D touch&lt;/ins&gt; on the iPhone 6S and 6S+. He is worried developers will use this new interaction method poorly, hiding important functionality behind undiscoverable gestures rather than as a value add to already discoverable and well designed UI. I argued against him. Silly me.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:150921100200&quot;&gt;
+      &lt;p&gt;Wife: When are you going sailing tomorrow? &lt;/p&gt;
+
+      &lt;p&gt;Me (looking at watch): Around 9am.&lt;/p&gt;
+
+      &lt;p&gt;Wife: When will you be back?&lt;/p&gt;
+
+      &lt;p&gt;Me: NEVER!!!! (╯_╰”)…um, around 5. &lt;a href=&quot;#fnref:150921100200&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 21 Sep 2015 10:40:57 -0400</pubDate>
+        <link>http://soitscometothis.net/Tide-information-as-a-watch-complication</link>
+        <guid isPermaLink="true">http://soitscometothis.net/Tide-information-as-a-watch-complication</guid>
+        
+        <category>sailing</category>
+        
+        <category>complications</category>
+        
+        <category>Apple Watch</category>
+        
+        <category>development</category>
+        
+        <category>UI design</category>
+        
+        
+      </item>
     
       <item>
         <title>Apple Watch face complication radar</title>
@@ -371,47 +443,6 @@
         <category>Apple</category>
         
         <category>predictions</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Using labels for alarms with Siri</title>
-        <description>&lt;p&gt;When you create an alarm in iOS&lt;sup id=&quot;fnref:20150308234102&quot;&gt;&lt;a href=&quot;#fn:20150308234102&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, it is given the default label &lt;code&gt;Alarm&lt;/code&gt;. I find it useful to change this for two reasons. First, it reminds me why I set the alarm in the first place. This may not be confusing if the alarm is waking me up in the morning, but I might also set multiple alarms during the day for different tasks. These levels remind me what I need to do next:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;push wash into dryer&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;check on sump pump progress&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;verify boy cleaned his room&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is easily done with Siri: &lt;code&gt;Set an alarm for 54 minutes labeled &#39;put wash in the dryer&#39;.&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;.&lt;img src=&quot;/images/Siri-alarm-labels-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The other benefit of labeling alarms is that you can edit them by their label using Siri: &lt;code&gt;Change the alarm labeled &#39;wake up call&#39; to 530am&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Siri-alarm-labels.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20150308234102&quot;&gt;
-      &lt;p&gt;iOS 8 as if this post.  &lt;a href=&quot;#fnref:20150308234102&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 09 Mar 2015 00:28:22 -0400</pubDate>
-        <link>http://soitscometothis.net/using-labels-for-alarms-with-Siri</link>
-        <guid isPermaLink="true">http://soitscometothis.net/using-labels-for-alarms-with-Siri</guid>
-        
-        <category>iOS</category>
-        
-        <category>Siri</category>
-        
-        <category>technology</category>
-        
-        <category>alarm</category>
         
         
       </item>
