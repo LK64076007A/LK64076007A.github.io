@@ -6,8 +6,8 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Sep 2015 10:19:47 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Sep 2015 10:19:47 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Sep 2015 10:24:01 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Sep 2015 10:24:01 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;p&gt;&lt;a href=&quot;/images/tide_watch_complication-1.jpg&quot;&gt;&lt;img src=&quot;/images/tide_watch_complication-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
 
-&lt;p&gt;I was already using &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; as my tidal app of choice so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.&lt;/p&gt;
+&lt;p&gt;I was already using &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; as my tidal app of choice&lt;sup id=&quot;fnref:150921102250&quot;&gt;&lt;a href=&quot;#fn:150921102250&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.&lt;/p&gt;
 
 &lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code&gt;-&lt;/code&gt;. &lt;/p&gt;
 
@@ -61,6 +61,9 @@
       &lt;p&gt;Wife: When will you be back?&lt;/p&gt;
 
       &lt;p&gt;Me: NEVER!!!! (╯_╰”)…um, around 5. &lt;a href=&quot;#fnref:150921100200&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:150921102250&quot;&gt;
+      &lt;p&gt;And I’ve tried them all: all the apps that just report the tides, and all the apps in which tide data is included, such as expensive navigation apps. &lt;a href=&quot;#fnref:150921102250&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
