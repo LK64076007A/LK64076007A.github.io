@@ -697,6 +697,7 @@ del:after {
   margin-left: -0.65em;
   width: 1.3em;
   height: 1.3em;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   background: #fafafa;
   border: 1px solid #c3c3c3;
