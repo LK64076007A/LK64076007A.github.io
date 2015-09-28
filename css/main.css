@@ -534,7 +534,7 @@ del:after {
   line-height: 0;
   vertical-align: middle;
   text-decoration: none;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   transition-property: background-color;
   transition-duration: 0.25s; }
   .bigfoot-footnote__button:hover, .bigfoot-footnote__button:focus {
@@ -681,7 +681,7 @@ del:after {
   -webkit-overflow-scrolling: touch;
   background: #fafafa;
   border-radius: 0.5em;
-  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   line-height: normal; }
   .bigfoot-footnote__content img {
     max-width: 100%; }
