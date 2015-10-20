@@ -6,8 +6,8 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 Oct 2015 22:22:12 -0400</pubDate>
-    <lastBuildDate>Mon, 19 Oct 2015 22:22:12 -0400</lastBuildDate>
+    <pubDate>Mon, 19 Oct 2015 22:24:49 -0400</pubDate>
+    <lastBuildDate>Mon, 19 Oct 2015 22:24:49 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -191,7 +191,7 @@
   &lt;li&gt;Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately. &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;script src=&quot;https://gist.github.com/nuclearzenfire/30ed6c4c52e36978540b.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js&quot;&gt;&lt;/script&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
