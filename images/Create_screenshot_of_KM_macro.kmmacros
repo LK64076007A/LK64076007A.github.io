@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Copy as</string>
+							<string>Copy as Image</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.stairways.keyboardmaestro.editor</string>
+							<key>Name</key>
+							<string>Keyboard Maestro</string>
+							<key>NewFile</key>
+							<string>/Applications/Keyboard Maestro.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>What do you want to call the file?</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>File Name</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>File Name</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Append</key>
+						<false/>
+						<key>Destination</key>
+						<string>~/Desktop/%Variable%File Name%.jpg</string>
+						<key>Encoding</key>
+						<string>UTF8</string>
+						<key>Format</key>
+						<string>JPEG</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>WriteFile</string>
+						<key>Name</key>
+						<string>7560CEE4-EDBC-4D1C-B6A2-4E7608B5B2FC</string>
+						<key>RedundandDisplayName</key>
+						<string>Default Clipboard</string>
+						<key>Source</key>
+						<string>Clipboard</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>428362985.81059802</real>
+				<key>Name</key>
+				<string>Create screenshot of KM macro</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>46</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6912</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0CFC877C-B6B2-4059-8F1E-137D2B0B02EC</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>My Macros</string>
+		<key>UID</key>
+		<string>7143F0F3-6B05-448C-AA75-1E7DE3AB3520</string>
+	</dict>
+</array>
+</plist>

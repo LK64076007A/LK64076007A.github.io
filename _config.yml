@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: so, it's come to this...
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'll hear a technique or technology mentioned, it stirs around in my brain, and then I fall down that rabbit hole. If I make it back with my sanity intact, I'll usually write about it here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://soitscometothis.net" # the base hostname & protocol for your site
+twitter_username: LK64076007A
+github_username:  LK64076007A
+
+# Outputting
+permalink: /:title/
+
+# Build settings
+markdown: kramdown
+timezone: America/New_York

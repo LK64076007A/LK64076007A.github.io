@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading"></h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% if post.link %}
+      <h2><a class="post-link" href="{{ post.link }}">{{ post.title }}</a> <a class="permalink" title="Permanent link to ‘{{ post.title }}’" href="{{ post.url }}">Ω</a></h2>
+      {% else %}
+      <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+      {% endif %}
+      <div class="content">{{ post.content }}</div>
+    </li>
+  {% endfor %}
+  </ul>
+
+</div>
