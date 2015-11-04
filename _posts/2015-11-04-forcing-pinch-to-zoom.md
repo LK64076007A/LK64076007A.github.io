@@ -21,6 +21,8 @@ Thankfully, I have a series of javascript bookmarklets that deal with such probl
 
 <code>javascript:document.querySelector('meta%5Bname=viewport%5D').setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=10.0,user-scalable=1');</code>
 
+I wish there was a way to do this with content blockers. 
+
 [^151104173647]: I highlighted the `user-scalable=no`, but the `maxium-scale=1.0` would do the same thing.
 
 [^151104172527]: Such as disabling copy and paste. 
