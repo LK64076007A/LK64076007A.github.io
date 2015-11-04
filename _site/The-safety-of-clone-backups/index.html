@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Clone Backups - Why and How</title>
+  <meta name="description" content="Introduction">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://soitscometothis.net/The-safety-of-clone-backups/">
+  <link rel="alternate" type="application/rss+xml" title="so, it's come to this..." href="http://soitscometothis.net/feed.xml">
+<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/js/bigfoot.js"></script>
+<script type="text/javascript">
+	var bigfoot = $.bigfoot(
+		{
+		actionOriginalFN: "hide",
+		positionContent: "true"
+		}
+	);
+</script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">so, it's come to this...</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <a class="page-link" href="/about/">About</a>
+        <a class="page-link" href="/archive/">Archive</a>
+        <a class="page-link" href="/tags/">Tags</a>
+        <a class="page-link" href="/tags/textexpander/">TextExpander</a>
+        <a class="page-link" href="/tags/keyboard_maestro/">Keyboard Maestro</a>
+        <a class="page-link" href="/feed.xml">              <span class="icon  icon--twitter"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 width="19px" height="19px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill= "#828282">
+
+<path id="rss-icon" d="M161.757,406.249c0,30.791-24.96,55.751-55.75,55.751c-30.79,0-55.751-24.96-55.751-55.751
+
+	s24.961-55.75,55.751-55.75C136.796,350.499,161.757,375.458,161.757,406.249z M50.256,190.424v82.593
+
+	C153.994,274.083,238.172,358.261,239.238,462h82.593C320.764,312.48,199.774,191.491,50.256,190.424z M50.256,132.602
+
+	c87.695,0.381,170.084,34.695,232.135,96.747c62.175,62.173,96.506,144.764,96.754,232.651h82.6
+
+	C461.228,234.858,277.333,50.794,50.256,50V132.602z"/>
+
+</svg></span>
+
+</a>
+        <a class="page-link" href="https://twitter.com/LK64076007A">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+            </a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Clone Backups - Why and How</h1>
+    <p class="post-meta"><time datetime="2013-03-15T07:51:00-04:00" itemprop="datePublished">Mar 15, 2013</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="introduction">Introduction</h3>
+
+<p>If you have valuable data on your computer you need to have a back up and more than one. Your data is likely priceless, irreplaceable and/or expensive to recover. If you’re anything like me, your data may consist of some of the following:</p>
+
+<ul>
+  <li>Photos
+    <ul>
+      <li>Military</li>
+      <li>Med school graduation</li>
+      <li>Wedding</li>
+      <li>Children</li>
+      <li>Clinical photos</li>
+    </ul>
+  </li>
+  <li>Music - entire collection of CDs long burned to digital and thrown away</li>
+  <li>Movies
+    <ul>
+      <li>Home movies</li>
+      <li>Hollywood movie rips from old DVDs long thrown away </li>
+      <li>Training videos</li>
+      <li>Conference talks</li>
+    </ul>
+  </li>
+  <li>Documents
+    <ul>
+      <li>Tax returns</li>
+      <li>Business receipts</li>
+      <li>Lease agreements </li>
+      <li>Scans of all diplomas, licenses, etc. </li>
+      <li>All utility bills</li>
+      <li>Research papers</li>
+    </ul>
+  </li>
+  <li>Etc. </li>
+</ul>
+
+<p>You should back up the data frequently and redundantly. Hard drives do fail. Natural disasters, both weather and children, do happen. <a href="http://m.nydailynews.com/1.247700#bmb=1">Thieves do take things</a>. <a href="http://www.wired.com/gadgetlab/2012/08/apple-amazon-mat-honan-hacking/all/">Hackers can wipe out everything</a>.</p>
+
+<p>I can’t emphasize enough how important it is to make multiple continuous backups with at least some of them stored off site. There are many easy and relatively inexpensive ways to do this, but today I just want to talk about one specific type of back up that I think is the most valuable. (<em>You still should do more than one kind.</em>) </p>
+
+<h3 id="clone-backups">Clone Backups</h3>
+
+<p>A clone backup is an identical copy of your hard drive including the operating system and not just the user data. This is a <em>bootable</em> copy of your computer meaning that if your hard drive wears out, gets stolen, is shot, whatever, you can plug your clone in and run it identically to the machine that just died. To be clear, if my drive dies in the middle of clinic, I pull the clone back up out of my bag, plug it in, reboot, and I’m back in business.</p>
+
+<p>Most other forms of back up just back up user data, or are primarily designed to recover small amount of data at a time. While this is nice to have in the situation of catastrophic failure, it doesn’t do me much good if my hard drive dies in the middle of rounds or at conference before I have to give a presentation. </p>
+
+<p>In those situations, I need <em>my</em> machine. I need a clone. </p>
+
+<h3 id="software">Software</h3>
+
+<p><em>This is for Macs only. I’m sure Windows and Linux have their own software for doing this but I don’t use those products so I can’t make recommendations.</em></p>
+
+<p>There are two excellent and easy to use programs that will make clone back ups for you: <a href="http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper!</a> and <a href="http://www.bombich.com">Carbon Copy Cloner</a>. They are both excellent and are staples of Mac nerds. I happen to use SuperDuper! but not for any particular reason. They are not available in the Mac App Store because they need very low level access to your computer to make the clone, which is not allowed for MAS apps. I’m always happily surprised when I go to upgrade my OS and their software is already upgraded for the new version. </p>
+
+<h3 id="hardware">Hardware</h3>
+
+<p><em>The hardware is platform agnostic so you can use these on Mac, Windows, or Linux.</em></p>
+
+<p>The other thing you’ll need to make a clone back up is a hard drive. At the bare minimum it needs to be big enough to hold your entire primary hard drive. In addition, I recommend that it be small so that you can carry it with you all the time, and have the fastest port possible for your machine so that the back ups are quick to make. The longer it takes to run, the less likely you are to do it. (<em>Think compliance with QID dosing versus QD dosing.</em>)</p>
+
+<ul>
+  <li>Larger than the drive it is cloning</li>
+  <li>Small so it is portable</li>
+  <li>Fast connection so backups are easier</li>
+</ul>
+
+<p>When it comes to speed there are two types of drives and two major types of connections: SSD vs HDD, and Thunderbolt vs USB 3.0.</p>
+
+<p>SSDs (solid state drives) are newer, faster, and have no moving parts. They are the Ferrari of drives. They also cost as much. HDDs (hard disk drive) are the classic spinning disk drives. They are larger, store more, and are cheaper, but are also slower. </p>
+
+<p>The Thunderbolt connection is an Intel product but so far has really only shown up in Mac computers. It is the fastest consumer external connection, but it is also very expensive. Often drives are sold without the cords, which themselves cost an extra $50. USB 3.0 is very fast compared to the previous generation USB 3.0 and is much cheaper. This is pretty ubiquitous now on new computers from Apple and Windows. </p>
+
+<h4 id="ssd-fast-and-furious-with-a-price-to-match">SSD: fast and furious with a price to match</h4>
+
+<p>If money is no object, I recommend an SSD with either Thunderbolt or USB 3.0 connection, depending on the fastest connection your computer has. The one caveat is that SSDs are typical smaller than HDD and are very expensive a larger sizes. If you have an 500GB+ HDD, then you’ll need to stick with an HDD. However, if like me, you have something like a Macbook Air with a 128 or 256 GB SSD, then this is a great option. For a top-of-the-line, blazingly fast, SSD/Thunderbolt drive, you can get the Elgato 240GB for $480. A really beautiful option, and only a bit slower but much cheaper, is the 240 GB OWC SSD/USB 3.0 <a href="http://eshop.macsales.com/item/Other%20World%20Computing/ENVPROU3S240/">Envoy Pro EX</a> for $320. (This is probably what I would get if I had the money. It’s not as fast, but way better looking.)</p>
+
+<p>A few cheaper options include the <a href="http://www.amazon.com/Shadow-trade-240GB-External-Portable/dp/B004G7KK30/?tag=soitscometothis-20">U32 Shadow 240GB USB 2.0 SSD</a> for $250 and the <a href="http://www.amazon.com/Verbatim-Store-External-Solid-47622/dp/B008OE0S56/?tag=soitscometothis-20">Verbatim Store ‘n’ Go 128 GB USB 3.0 SSD</a> for $150.</p>
+
+<h4 id="hdd-steady-and-solid">HDD: steady and solid</h4>
+
+<p>A mid-range choice, and what I use, is a HDD with Thunderbolt connection. HDDs are significantly slower than SSDs but without the prohibitively high price. I can make two clone back ups on separate devices (one for home and one for work, i.e. off site back up) for the price of an SSD and the drives are still large enough for lots of extra storage space in addition. I have/use two <a href="http://www.amazon.com/BUFFALO-MiniStation-Thunderbolt-Portable-Drive/dp/B008D4X9UI/?tag=soitscometothis-20">Buffalo MiniStation 1 TB Thunderbolt / USB 3.0 Portable Hard Drive with Thunderbolt Cable</a>. This has both the USB 3.0 and the Thunderbolt connections and comes with both cables. The 1TB model is only $208 on Amazon right now and the <a href="http://www.amazon.com/BUFFALO-MiniStation-Thunderbolt-Portable-Drive/dp/B008D4X9UI/?tag=soitscometothis-20">500GB is $143</a>.</p>
+
+<p>If you drop the Thunderbolt connection for USB 3.0 you can significantly cut the price. A Buffalo drive with only USB 3.0 runs <a href="http://www.amazon.com/BUFFALO-MiniStation-Plus-Portable-Drive/dp/B005EJLFVK/?tag=soitscometothis-20">$70 for 500GB</a>, <a href="http://www.amazon.com/BUFFALO-MiniStation-Plus-Portable-Drive/dp/B005EJLFVK/?tag=soitscometothis-20">$84 for 1TB</a>, and <a href="http://www.amazon.com/BUFFALO-MiniStation-Plus-Portable-Drive/dp/B005EJLFVK/?tag=soitscometothis-20">$200 for 2 TB</a>.</p>
+
+<p>If you are on a shoe-string budget or only have a USB 2.0 connection then the specific model doesn’t matter as much. You can get a <a href="http://www.amazon.com/Passport-External-Hard-Drive-WDBL1D5000ABK-NESN/dp/B005DKZW5A/?tag=soitscometothis-20">WD My Passport 500GB USB 2.0</a> but considering you can get a much better drive for $20 more and the speed will be agonizingly slow, I really don’t recommend going this route. The only way I’d do this is if you have hardly any money at all and already own an old USB 2.0 drive.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>The first time you run the cloning software, it will take awhile. Depending on your connection it could be an hour to all night. After that it will much faster as it will only incrementally update changes. My updates typically take around 6 minutes. </p>
+
+<p>Enjoy your new power and piece of mind. You just earned +10 nerd CME. </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">so, it's come to this...</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></li>
+        </ul>
+        <ul class="social-media-list">
+          
+          <li>
+          <a href="https://twitter.com/LK64076007A"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">LK64076007A</span></a>
+
+          </li>
+          
+          
+          <li>
+          <a href="https://github.com/LK64076007A"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">LK64076007A</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>I'll hear a technique or technology mentioned, it stirs around in my brain, and then I fall down that rabbit hole. If I make it back with my sanity intact, I'll usually write about it here.
+</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>
