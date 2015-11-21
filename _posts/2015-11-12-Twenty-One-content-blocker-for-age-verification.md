@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twenty One\: content blocker for age verification 
+title: Twenty One - content blocker for age verification 
 date: 2015-11-20 21:08:54 -0500
 tags: 
 - iOS app
