@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Battery versus gasoline energy density
+title: Battery Versus Gasoline Energy Density
 date: 2015-12-12 19:09:34 -0500
 tags: 
 - sailing
