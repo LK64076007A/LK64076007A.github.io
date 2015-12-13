@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Conversations with my boy</title>
-  <meta name="description" content="Me: Do you need a haircut?">
+  <title>TextExpander Snippet for Title Case</title>
+  <meta name="description" content="One of the benefits of TextExpander now being able to use Javascript is that you can make much more powerful scripts that run both on the Mac and iOS. One be...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://soitscometothis.net/conversations-with-my-boy/">
+  <link rel="canonical" href="http://soitscometothis.net/TextExpander-snippet-for-title-case/">
   <link rel="alternate" type="application/rss+xml" title="so, it's come to this..." href="http://soitscometothis.net/feed.xml">
 <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="/js/bigfoot.js"></script>
@@ -85,26 +85,31 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Conversations with my boy</h1>
-    <p class="post-meta"><time datetime="2014-05-08T07:41:00-04:00" itemprop="datePublished">May 8, 2014</time></p>
+    <h1 class="post-title" itemprop="name headline">TextExpander Snippet for Title Case</h1>
+    <p class="post-meta"><time datetime="2015-12-13T11:34:25-05:00" itemprop="datePublished">Dec 13, 2015</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Me: Do you need a haircut?</p>
+    <p>One of the benefits of TextExpander <a href="https://smilesoftware.com/textexpander/entry/textexpander-adds-javascript-support">now</a> being able to use Javascript is that you can make much more powerful scripts that run both on the Mac and iOS. One benefit of <a href="https://itunes.apple.com/us/app/1writer-note-taking-writing/id680469088?mt=8&amp;at=11l4RT">1Writer</a> using Javascript and being popular with the technocrats is you can easily adopt their scripts for TextExpander and use them in other apps.</p>
 
-<p>Boy: No! You need a haircut!</p>
+<p><a href="https://twitter.com/jonesbp">Brian Jones</a> recently published a <a href="https://github.com/jonesbp/1writer-title-case">1Writer script for changing selected text to the title case format</a> of <a href="http://daringfireball.net/2008/05/title_case">John Gruber</a>.</p>
 
-<p>Me: You’re right. I have one scheduled for this Saturday. What should I do?</p>
+<p>By removing the last three lines</p>
 
-<p>Boy: You have emo hair. You look like Justin Bieber.</p>
+<pre><code>var selectedText = editor.getSelectedText();
+var formattedText = toTitleCase(selectedText);
+editor.replaceSelection(formattedText);
+</code></pre>
 
-<p>Me: Should I go bald? Should I cut it short?</p>
+<p>and replacing them with</p>
 
-<p>Boy: No!</p>
+<pre><code>toTitleCase(TextExpander.pasteboardText);
+</code></pre>
 
-<p>Me: How about some lines or maybe lightning bolts?</p>
+<p>it can now be used with TextExpander on <a href="https://itunes.apple.com/us/app/textexpander-3-+-custom-keyboard/id917416298?mt=8&amp;at=11l4RT">iOS</a> or <a href="https://smilesoftware.com/textexpander">Mac</a>.</p>
 
-<p>Boy: No. Don’t do anything weird. Just be normal.</p>
+<p><a href="https://github.com/LK64076007A/textexpander-title-case">The code on Github</a>.</p>
+
 
   </div>
 

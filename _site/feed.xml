@@ -6,12 +6,48 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Dec 2015 19:26:12 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Dec 2015 19:26:12 -0500</lastBuildDate>
+    <pubDate>Sun, 13 Dec 2015 11:44:59 -0500</pubDate>
+    <lastBuildDate>Sun, 13 Dec 2015 11:44:59 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Battery versus gasoline energy density</title>
+        <title>TextExpander Snippet for Title Case</title>
+        <description>&lt;p&gt;One of the benefits of TextExpander &lt;a href=&quot;https://smilesoftware.com/textexpander/entry/textexpander-adds-javascript-support&quot;&gt;now&lt;/a&gt; being able to use Javascript is that you can make much more powerful scripts that run both on the Mac and iOS. One benefit of &lt;a href=&quot;https://itunes.apple.com/us/app/1writer-note-taking-writing/id680469088?mt=8&amp;amp;at=11l4RT&quot;&gt;1Writer&lt;/a&gt; using Javascript and being popular with the technocrats is you can easily adopt their scripts for TextExpander and use them in other apps.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/jonesbp&quot;&gt;Brian Jones&lt;/a&gt; recently published a &lt;a href=&quot;https://github.com/jonesbp/1writer-title-case&quot;&gt;1Writer script for changing selected text to the title case format&lt;/a&gt; of &lt;a href=&quot;http://daringfireball.net/2008/05/title_case&quot;&gt;John Gruber&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;By removing the last three lines&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var selectedText = editor.getSelectedText();
+var formattedText = toTitleCase(selectedText);
+editor.replaceSelection(formattedText);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and replacing them with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;toTitleCase(TextExpander.pasteboardText);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;it can now be used with TextExpander on &lt;a href=&quot;https://itunes.apple.com/us/app/textexpander-3-+-custom-keyboard/id917416298?mt=8&amp;amp;at=11l4RT&quot;&gt;iOS&lt;/a&gt; or &lt;a href=&quot;https://smilesoftware.com/textexpander&quot;&gt;Mac&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/LK64076007A/textexpander-title-case&quot;&gt;The code on Github&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 13 Dec 2015 11:34:25 -0500</pubDate>
+        <link>http://soitscometothis.net/TextExpander-snippet-for-title-case/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/TextExpander-snippet-for-title-case/</guid>
+        
+        <category>TextExpander</category>
+        
+        <category>1Writer</category>
+        
+        <category>Javascript</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Battery Versus Gasoline Energy Density</title>
         <description>&lt;p&gt;Since before I bought my first sailboat several years ago, I’ve wanted a &lt;a href=&quot;http://www.torqeedo.com/en/products/outboards/travel&quot;&gt;Torqeedo&lt;/a&gt;–an elegant, efficient, electric motor.&lt;/p&gt;
 
 &lt;p&gt;The benefits of electric engines on a sailboat are numerous. To begin with, there are already many options for generating electricity on sailboats using wind and solar energy, thus providing a consistently renewable source of energy. Electric engines are much quieter, almost silent compared to a combustion engine. There are none of the pungent orders of gasoline and oil.&lt;/p&gt;
@@ -250,8 +286,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 21 Sep 2015 10:40:57 -0400</pubDate>
-        <link>http://soitscometothis.net/Tide-information-as-a-watch-complication/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Tide-information-as-a-watch-complication/</guid>
+        <link>http://soitscometothis.net/tide-information-as-a-watch-complication/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/tide-information-as-a-watch-complication/</guid>
         
         <category>sailing</category>
         
@@ -382,129 +418,6 @@
         <category>TextExpander</category>
         
         <category>Amazon affiliate link</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>My Apple Watch try-on experience</title>
-        <description>&lt;p&gt;I had my appointment to &lt;a href=&quot;http://concierge.apple.com/stores/us?channel=1&amp;amp;locale=en_US&amp;amp;type=tryOn&quot;&gt;try on the Apple Watch yesterday&lt;/a&gt;, and was accompanied by the developer of &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/gfiumara/&quot;&gt;Greg Fiumara&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We were let in just as the store opened. The Apple employees were their usual friendly selves.&lt;/p&gt;
-
-&lt;p&gt;After checking-in at the door, I was sent to a show table where all the watches were displayed under glass. My initial thoughts were that the sport model is too toy-like in appearance for my tastes. This does not mean others wouldn’t or shouldn’t like it, but as someone who wears a &lt;a href=&quot;http://www.amazon.com/Citizen-CB0010-53L-Eco-Drive-World-Perpetual/dp/B0045TI4HI/ref=cm_cr_pr_product_top?ie=UTF8&amp;amp;at=11l4RT&quot;&gt;stainless steel, sapphire face, link-band watch&lt;/a&gt; every day, it was not going to work for me.&lt;/p&gt;
-
-&lt;p&gt;I was only there for a few seconds before I was taken to the second table where the actual try on experience occurred. The employee had the watches I had favorited in the Apple Store app on his screen and he pulled out the first two.&lt;/p&gt;
-
-&lt;p&gt;The first one I tried was the 42mm Space Gray Aluminum Case with Black Sport band. It was incredibly light. I couldn’t feel it at all. I also couldn’t feel the haptic feedback. I thought maybe it was because the band was too loose, so I tightened it all the way. Still couldn’t feel it. I didn’t spend much time with it as I’d already decided that it wasn’t for me.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, I tried on the 42mm Stainless Steel with Milanese Loop. This is the watch that I had pre-ordered. It also felt light, but a bit more weighty than the sport. The band is comfortable and holds it’s connection well. The employee emphasized that it has a tiny magnet holding it together, but it certainly felt strong enough. Strong enough that he initially had trouble separating it from the band. I was able to feel the haptic tap with this model, but it is incredibly light. Way lighter than a vibrating phone in my pocket. It certainly will not be obvious to anyone else when you get a notification. I’m almost worried I won’t be able to feel it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, I tried the 42mm Stainless Steel Case Case with Link Bracelet. This was the weightiest of all, and the closest in style to what I currently wear. It is also my favorite of all the ones I tried on, but the second favorite in the store. The Space Black version of the same watch is the best looking, but they didn’t have it available in the store to try on. If money was no object and it didn’t have a ship date in July, I would likely change my order.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;My appointment was over quite quickly as I didn’t really have any questions, I knew exactly what I wanted to see, and the watches you try on do not have functioning software. We then spent some time playing with the demo watches that are bolted to the tables that do have the software running. Initially, it is a little weird trying to figure out which buttons you push and when, but I think this will disappear after a few hours of regular use. I was unable to pair my phone with the watch to test out some third party apps because a lot of the features were disabled.&lt;/p&gt;
-
-&lt;h1 id=&quot;observations&quot;&gt;Observations&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;I had read that the employees were having a hard time finding the right place to put their phone to unlock the hidden drawer. My guy had the same issue.&lt;/li&gt;
-  &lt;li&gt;I heard multiple employees stumbling over the verbage, e.g. “scroll wheel” instead of “digital crown”, and correct themselves.&lt;/li&gt;
-  &lt;li&gt;The employees seemed incredibly excited about the watch for themselves. I honestly couldn’t tell if they were serious or just being a salesman.&lt;/li&gt;
-  &lt;li&gt;The colors in person are much lighter than on the website. I was leaning towards the regular aluminum but in real life it is too light. The space gray aluminum which looked too black on the website is much better in person.&lt;/li&gt;
-  &lt;li&gt;Even the heaviest Apple Watch is lighter than my current watch.&lt;/li&gt;
-  &lt;li&gt;Although all the appointments for the day were taken, walk-ins were able to be seen either due to noshows or people like myself who didn’t need all 15 minutes.&lt;/li&gt;
-  &lt;li&gt;The employee would initially put each watch on my wrist for me, then say I could adjust it as I wanted. That was weird. I don’t know if this is to prevent accidental droppages, to avoid people having trouble getting them on, or to make you feel like you’re being taken care of like at a high end store, but I don’t remember ever shopping for watches at a high end store and having the clerk put them on. Usually, they just hand them to you with what almost seems deliberate nonchalance.&lt;/li&gt;
-  &lt;li&gt;If you already wear an “adult businessman’s watch”, I don’t think you’ll be able to tolerate the Sport model.&lt;/li&gt;
-  &lt;li&gt;The “edition” verbage led to at least two encounters of an employee showing a customer an Edition model when they wanted a Sport.&lt;/li&gt;
-  &lt;li&gt;The functional watches have certain lock-outs, so I wasn’t able to pair my phone and try out some of the third party apps.&lt;/li&gt;
-  &lt;li&gt;The sport model is “Space Grey” while the regular model is “Space Black”.&lt;/li&gt;
-  &lt;li&gt;The developer with me and the Apple employee, along with myself, were all wearing regular, link-band chronograph watches.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;metrics&quot;&gt;Metrics&lt;/h1&gt;
-
-&lt;p&gt;Finally, I know that as Apple people we are not supposed to be able the numbers, but here is how my current watch compares to what I ordered:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Citizen&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Apple&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Shape&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;round&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;square&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Height&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;43mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;42mm&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Width&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;43mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;36mm&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Depth&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;11mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.5 mm&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Mass&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;141 grams&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;83 grams&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Volume&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;16 ml&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;16 ml&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Case&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;stainless steel&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;stainless steel&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Crystal&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;sapphire&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;sapphire&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;WR depth&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;660 feet&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3 feet&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h1&gt;
-
-&lt;p&gt;Before seeing them, I thought the Sport model would be a reasonable purchase for someone more on the nerdy side, who might get some benefit out of it and has the money to waste, but after seeing it in person, the relatively negative reviews, and no clear compelling use-case for normals, I don’t think I will be recommending this to anyone if they ask.&lt;/p&gt;
-
-&lt;p&gt;At the same time, as an hardcore nerd, who already has a killer use case planned, wears a watch daily, and has more money than sense, I’m looking forward to getting it.&lt;/p&gt;
-
-&lt;p&gt;I’m also looking forward to trying &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt; on my watch at my local dive bar.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 12 Apr 2015 09:45:00 -0400</pubDate>
-        <link>http://soitscometothis.net/my-apple-watch-try-on-experience/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/my-apple-watch-try-on-experience/</guid>
-        
-        <category>Apple Watch</category>
-        
-        <category>Apple</category>
-        
-        <category>technology</category>
         
         
       </item>
