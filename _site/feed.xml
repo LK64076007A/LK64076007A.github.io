@@ -6,9 +6,141 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Nov 2015 17:39:07 -0500</pubDate>
-    <lastBuildDate>Wed, 04 Nov 2015 17:39:07 -0500</lastBuildDate>
+    <pubDate>Sat, 12 Dec 2015 19:20:20 -0500</pubDate>
+    <lastBuildDate>Sat, 12 Dec 2015 19:20:20 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Battery versus gasoline energy density</title>
+        <description>&lt;p&gt;Since before I bought my first sailboat several years ago, I’ve wanted a &lt;a href=&quot;http://www.torqeedo.com/en/products/outboards/travel&quot;&gt;Torqeedo&lt;/a&gt;–an elegant, efficient, electric motor.&lt;/p&gt;
+
+&lt;p&gt;The benefits of electric engines on a sailboat are numerous. To begin with, there are already many options for generating electricity on sailboats using wind and solar energy, thus providing a consistently renewable source of energy. Electric engines are much quieter, almost silent compared to a combustion engine. There are none of the pungent orders of gasoline and oil.&lt;/p&gt;
+
+&lt;p&gt;There is however one major drawback that is astounding and is mentioned in the product video for the engine I bought (starts 41 seconds in):&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/k2psNmnACpY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;10 pound lithium battery = 35 grams of gasoline&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ouch.&lt;/p&gt;
+
+&lt;p&gt;Still, I think the advantages outweigh the drawback, and I ordered one today, finally.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Dec 2015 19:09:34 -0500</pubDate>
+        <link>http://soitscometothis.net/battery-versus-gasoline-energy-density/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/battery-versus-gasoline-energy-density/</guid>
+        
+        <category>sailing</category>
+        
+        <category>Torqeedo</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Twenty One - content blocker for age verification</title>
+        <description>&lt;p&gt;When content blocking apps were first released for iOS 9, they were of the type that most would expect: all-in-one apps that in theory would block all the bad and none of the good.&lt;sup id=&quot;fnref:151115061519&quot;&gt;&lt;a href=&quot;#fn:151115061519&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; As I expected, developers are now starting to release apps with narrower functionality aimed at a specific task that can be used in addition to a main blocker. &lt;a href=&quot;https://itunes.apple.com/us/app/image-blocker-browse-web-faster/id1031388281?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Image Blocker&lt;/a&gt; blocks images only, thereby speeding up browsing of text only and saving on limited data cap plans.&lt;/p&gt;
+
+&lt;p&gt;My new favorite is &lt;a href=&quot;https://itunes.apple.com/us/app/twenty-one-block-age-gates/id1059178930?ls=1&amp;amp;mt=8&amp;amp;at=10l73r&quot;&gt;Twenty One&lt;/a&gt; by Greg Fiumara, the developer of Tappd That, a beer tracking app. &lt;a href=&quot;https://itunes.apple.com/us/app/twenty-one-block-age-gates/id1059178930?ls=1&amp;amp;mt=8&amp;amp;at=10l73r&quot;&gt;Twenty One&lt;/a&gt; is designed to disable the age verification screens some brewery websites use. It gets its block list from the developers server from an &lt;a href=&quot;https://github.com/gfiumara/TwentyOne&quot;&gt;open source list hosted on GitHub&lt;/a&gt;. I’ve already updated it with a few rules for some of my local breweries: &lt;a href=&quot;http://dbbrewingcompany.com/&quot;&gt;Devil’s Backbone&lt;/a&gt; and &lt;a href=&quot;http://www.stgbeer.com&quot;&gt;St. George&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:151115061519&quot;&gt;
+      &lt;p&gt;With variable amounts of minor customization. &lt;a href=&quot;#fnref:151115061519&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 21:08:54 -0500</pubDate>
+        <link>http://soitscometothis.net/Twenty-One-content-blocker-for-age-verification/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/Twenty-One-content-blocker-for-age-verification/</guid>
+        
+        <category>iOS app</category>
+        
+        <category>Content blocker</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Posting to a Github hosted Jekyll site from iOS</title>
+        <description>&lt;p&gt;Using a Github-hosted, Jekyll blog, I normally write my posts on my laptop, committing and pushing the final product in terminal. While this works well enough most of the time, I do actually like to use my iPhone as my primary computing device and want to be able to do everything as well on it as on my laptop. Frequently I don’t want to carry my laptop with me. Sometimes an idea for a post will come to me while I’m out camping, on a walk, or sailing.&lt;/p&gt;
+
+&lt;p&gt;So, how can you post to Github from iOS?&lt;/p&gt;
+
+&lt;h1 id=&quot;directly-on-the-website&quot;&gt;Directly on the website&lt;/h1&gt;
+
+&lt;p&gt;As far as I can tell, there is no way to create or edit a text file on the Github.com mobile site.&lt;/p&gt;
+
+&lt;h1 id=&quot;directly-on-the-website-forcing-desktop-version&quot;&gt;Directly on the website forcing desktop version&lt;/h1&gt;
+
+&lt;p&gt;You can create and edit text files on the desktop version of the website. The drawbacks are that if you are writing into the field form on the website and lose your connection, you will most likely lose your data. You cannot work offline. You cannot use shortcut optimizations such as TextExpander.&lt;sup id=&quot;fnref:151105095448&quot;&gt;&lt;a href=&quot;#fn:151105095448&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Basically, the experience is non-native. You could write in a text editor and then copy and paste into the form field, but including the logging in and navigation, it is a clunky experience.&lt;/p&gt;
+
+&lt;h1 id=&quot;using-a-code-editor&quot;&gt;Using a code editor&lt;/h1&gt;
+
+&lt;p&gt;I thought that something as powerful as &lt;a href=&quot;https://itunes.apple.com/us/app/coda-for-ios/id500906297?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Coda for iOS&lt;/a&gt; might be my answer. They support SSH and FTP. Their screenshots show them managing their own website with it. After downloading it and failing to get it to work, I shot off an email to support asking for help.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Unfortunately Coda for iOS does not currently have support for git. This is something that we are considering for a future update but in all honesty I can’t say for certain when it will be added.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I couldn’t get &lt;a href=&quot;https://itunes.apple.com/us/app/textastic-code-editor-for/id550156166?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Textastic&lt;/a&gt; to work either.&lt;/p&gt;
+
+&lt;h1 id=&quot;using-a-github-client-ios-app&quot;&gt;Using a Github client iOS app&lt;/h1&gt;
+
+&lt;p&gt;I’ve looked for Github apps before and never found anything that worked well, was being actively maintained, or looked halfway decent. That is why I didn’t start by looking at that solution, but I should have because that ended up solving my problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;working-copy&quot;&gt;Working Copy&lt;/h2&gt;
+
+&lt;p&gt;The first app I came across was &lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt;. This app is free to use up until the point you need to push commits, and then it is either $2 for 21 days or $10 for permanent unlock. This allows you to make sure you like the app and it works for you before committing to the purchase.&lt;sup id=&quot;fnref:151105200728&quot;&gt;&lt;a href=&quot;#fn:151105200728&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt; easily logs into Github using your username and password, and allows you to clone your repositories. You can then browse and manage your files as needed. I won’t go into all the specifics of how it works as I’m not a Git power user, but for my purposes of creating and submitting text files, it works well. &lt;del&gt;You cannot edit files directly in Working Copy&amp;lt;\del&amp;gt; (&lt;strong&gt;Update:&lt;/strong&gt;) I was wrong. The developer reached out and showed me that there is an edit button in the share sheet), but it has been designed to work well with exporting to Textastic, Byword, or Editorial, and then bringing the files back into the app. All of the aforementioned apps are superior text and code editors, which I also already happen to own, so it makes a lot of sense to use them rather than having the &lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt; developers wasting valuable time solving already solved problems.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt; has been around since 11/2014, gets updates every 1-2 months, and has an impressive ★★★★★ review total for lifetime and current version.&lt;/p&gt;
+
+&lt;h2 id=&quot;git2go&quot;&gt;Git2Go&lt;/h2&gt;
+&lt;p&gt;I subsequently came across &lt;a href=&quot;https://itunes.apple.com/us/app/git2go-git-client-you-always/id963577401?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Git2Go&lt;/a&gt; by &lt;a href=&quot;http://nerdishbynature.com/feed.xml&quot;&gt;Nerdishbynature&lt;/a&gt;. This app was just released a few weeks ago and is on version 1.0&lt;sup id=&quot;fnref:151105221354&quot;&gt;&lt;a href=&quot;#fn:151105221354&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; with a ★★★★ and 1/2 review total. Only two reviews weren’t 5 stars, and the 1 star review basically said the app only showed repos and nothing else, which I can attest is wrong.&lt;/p&gt;
+
+&lt;p&gt;Logging in to Github is easy and uses Oauth with Safari View Controller. It literally took me 3 clicks on my iPad and 1 click on my iPhone. You can edit files in the app and syntax highlighting for Objective-C, Swift, and Ruby is currently supported with the &lt;a href=&quot;https://twitter.com/Git2Go/status/659224986763202564&quot;&gt;developers noting their plans to add others later&lt;/a&gt;.  Oddly enough, they only charge for cloning private repositories. This is a bit of a “problem” for me since I don’t have any private repositories and therefore cannot give them any money unless I create one. I’ve requested they add a tip jar, but I also think they might want to figure out a different monetization strategy.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;I’m not sure if I’m going to stick with &lt;a href=&quot;https://itunes.apple.com/us/app/git2go-git-client-you-always/id963577401?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Git2Go&lt;/a&gt; or &lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt;. I like them both and will likely continue to monitor their development. Byword is my favorite text editor after BBEdit, and the ability to seamlessly move between devices using iCloud sync is nice. If you prefer a code editor, Textastic is great too. On the other hand, being able to make a quick change to some code, or a spelling mistake on a blog post, right from an app is going to be much easier and quicker with Git2Go as you won’t have to make a round trip to another app and back.&lt;/p&gt;
+
+&lt;p&gt;Either way, it is now possible for me to publish and edit posts easily, quickly, and enjoyably on my Github-hosted Jekyll blog.&lt;/p&gt;
+
+&lt;p&gt;This post was written in Byword on an iPhone 6.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:151105095448&quot;&gt;
+      &lt;p&gt;When I tried to use the TextExpander keyboard on iOS 9.0, Safari would crash. &lt;a href=&quot;#fnref:151105095448&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:151105200728&quot;&gt;
+      &lt;p&gt;Unlike Coda for iOS that required I file for a refund. &lt;a href=&quot;#fnref:151105200728&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:151105221354&quot;&gt;
+      &lt;p&gt;Literally while I was writing this they released 1.1. &lt;a href=&quot;#fnref:151105221354&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 04 Nov 2015 21:20:00 -0500</pubDate>
+        <link>http://soitscometothis.net/posting-to-a-Github-hosted-Jekyll-site-from-iOS/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/posting-to-a-Github-hosted-Jekyll-site-from-iOS/</guid>
+        
+        <category>Github</category>
+        
+        <category>Jekyll</category>
+        
+        <category>Git2Go</category>
+        
+        <category>Working Copy</category>
+        
+        <category>Byword</category>
+        
+        
+      </item>
     
       <item>
         <title>Forcing Pinch to Zoom</title>
@@ -20,9 +152,11 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/bad_tumblr_code.png&quot; width=&quot;375&quot; height=&quot;667&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Thankfully, I have a series of javascript bookmarklets that deal with such problems.&lt;sup id=&quot;fnref:151104172527&quot;&gt;&lt;a href=&quot;#fn:151104172527&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; The following code over-rides any poor decisions on the part of the developer. &lt;/p&gt;
+&lt;p&gt;Thankfully, I have a series of javascript bookmarklets that deal with such problems.&lt;sup id=&quot;fnref:151104172527&quot;&gt;&lt;a href=&quot;#fn:151104172527&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; The following code over-rides any poor decisions on the part of the developer.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;javascript:document.querySelector(&#39;meta%5Bname=viewport%5D&#39;).setAttribute(&#39;content&#39;,&#39;width=device-width,initial-scale=1.0,maximum-scale=10.0,user-scalable=1&#39;);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I wish there was a way to do this with content blockers.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -30,7 +164,7 @@
       &lt;p&gt;I highlighted the &lt;code&gt;user-scalable=no&lt;/code&gt;, but the &lt;code&gt;maxium-scale=1.0&lt;/code&gt; would do the same thing. &lt;a href=&quot;#fnref:151104173647&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:151104172527&quot;&gt;
-      &lt;p&gt;Such as disabling copy and paste.  &lt;a href=&quot;#fnref:151104172527&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Such as disabling copy and paste. &lt;a href=&quot;#fnref:151104172527&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -59,17 +193,17 @@
 &lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Apple will never do a watch face that shows the tide level at my local beach. And I *really* want that before I head out on a dog walk.&lt;/p&gt;&amp;mdash; Craig Hockenberry (@chockenberry) &lt;a href=&quot;https://twitter.com/chockenberry/status/579347014443384832&quot;&gt;March 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;This was over a month before the Apple Watch was released, but I also wanted the same. At the time, my sailboat was at a marina with very little depth at low tide. I needed to plan my departures and arrivals based on the tide. Being able get the tidal information at a glance would be beneficial and much more important to me than things like temperature, sunset time, or moon phase.&lt;sup id=&quot;fnref:150921100200&quot;&gt;&lt;a href=&quot;#fn:150921100200&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;/p&gt;
+&lt;p&gt;This was over a month before the Apple Watch was released, but I also wanted the same. At the time, my sailboat was at a marina with very little depth at low tide. I needed to plan my departures and arrivals based on the tide. Being able get the tidal information at a glance would be beneficial and much more important to me than things like temperature, sunset time, or moon phase.&lt;sup id=&quot;fnref:150921100200&quot;&gt;&lt;a href=&quot;#fn:150921100200&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;Although watchOS 2 has been &lt;a href=&quot;http://techcrunch.com/2015/09/16/apple-delays-release-of-watchos-2-due-to-bug/&quot;&gt;delayed&lt;/a&gt;, the GM is out and at least one app with a complication has been published to the App Store.&lt;sup id=&quot;fnref:150921134514&quot;&gt;&lt;a href=&quot;#fn:150921134514&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;/p&gt;
+&lt;p&gt;Although watchOS 2 has been &lt;a href=&quot;http://techcrunch.com/2015/09/16/apple-delays-release-of-watchos-2-due-to-bug/&quot;&gt;delayed&lt;/a&gt;, the GM is out and at least one app with a complication has been published to the App Store.&lt;sup id=&quot;fnref:150921134514&quot;&gt;&lt;a href=&quot;#fn:150921134514&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; has been updated with a watch complication to show the time of the next low or high tide, and depending on the complication, it’s name and height. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; has been updated with a watch complication to show the time of the next low or high tide, and depending on the complication, it’s name and height.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-1.jpg&quot; width=&quot;314&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was already using &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; as my tidal app of choice&lt;sup id=&quot;fnref:150921102250&quot;&gt;&lt;a href=&quot;#fn:150921102250&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.&lt;/p&gt;
 
-&lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code&gt;-&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-2.jpg&quot; width=&quot;156&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
@@ -79,32 +213,32 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-3.jpg&quot; width=&quot;156&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;but the next time I raised my wrist, instructions telling me to force press my local tide in the app to set the complication appeared. &lt;/p&gt;
+&lt;p&gt;but the next time I raised my wrist, instructions telling me to force press my local tide in the app to set the complication appeared.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-4.jpg&quot; width=&quot;156&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I did so and it worked! &lt;/p&gt;
+&lt;p&gt;I did so and it worked!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-5.jpg&quot; width=&quot;156&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I thought I must have missed something originally, so I deleted the app completely and restarted from scratch. My second experience was identical. The first two times I tried to use the complication failed (first on a face that didn’t support it and second on a slot that didn’t give me any instructions). That is not a great experience and I wonder if the developer is going to get a lot of email about this from people wondering why it is “broken” or one star reviews in the App Store from asshats with a god complex. I did tag him on my Twitter announcement for this post, and if he writes to me to say I’m an idiot for missing something, I’ll post an update.&lt;/p&gt;
 
-&lt;p&gt;In the last episode of &lt;a href=&quot;https://recursionpodcast.net/5&quot;&gt;Recursion&lt;/a&gt; and on &lt;a href=&quot;https://twitter.com/waynehartman/status/643417254277726208&quot;&gt;Twitter&lt;/a&gt;, Wayne expressed concerns about &lt;del&gt;force touch&lt;/del&gt;&lt;ins&gt;3D touch&lt;/ins&gt; on the iPhone 6S and 6S+. He is worried developers will use this new interaction method poorly, hiding important functionality behind undiscoverable gestures rather than as a value add to already discoverable and well designed UI. I don’t think this was a case of that, but rather a limitation in options given platform constraints, but it does illustrate the issue of discoverable UI. &lt;/p&gt;
+&lt;p&gt;In the last episode of &lt;a href=&quot;https://recursionpodcast.net/5&quot;&gt;Recursion&lt;/a&gt; and on &lt;a href=&quot;https://twitter.com/waynehartman/status/643417254277726208&quot;&gt;Twitter&lt;/a&gt;, Wayne expressed concerns about &lt;del&gt;force touch&lt;/del&gt;&lt;ins&gt;3D touch&lt;/ins&gt; on the iPhone 6S and 6S+. He is worried developers will use this new interaction method poorly, hiding important functionality behind undiscoverable gestures rather than as a value add to already discoverable and well designed UI. I don’t think this was a case of that, but rather a limitation in options given platform constraints, but it does illustrate the issue of discoverable UI.&lt;/p&gt;
 
 &lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
 
-&lt;p&gt;I discussed with Justin, the developer, and he has decided to add a pop up the first time you launch the app on the watch and instructions in the release notes. I think that is about all he can do given the limitations of the platform he is dealing with. It really is a great app and if tide data is important to you, I highly suggest this app. &lt;/p&gt;
+&lt;p&gt;I discussed with Justin, the developer, and he has decided to add a pop up the first time you launch the app on the watch and instructions in the release notes. I think that is about all he can do given the limitations of the platform he is dealing with. It really is a great app and if tide data is important to you, I highly suggest this app.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:150921100200&quot;&gt;
-      &lt;p&gt;Wife: When are you going sailing tomorrow? &lt;/p&gt;
+      &lt;p&gt;Wife: When are you going sailing tomorrow?&lt;/p&gt;
 
       &lt;p&gt;Me (looking at watch): Around 9am.&lt;/p&gt;
 
       &lt;p&gt;Wife: When will you be back?&lt;/p&gt;
 
-      &lt;p&gt;Me: NEVER!!!! (╯_╰”)…um, around 5.	 &lt;a href=&quot;#fnref:150921100200&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Me: NEVER!!!! (╯_╰”)…um, around 5. &lt;a href=&quot;#fnref:150921100200&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:150921134514&quot;&gt;
       &lt;p&gt;Three hours after I published this post, Apple released watchOS 2.0. &lt;a href=&quot;#fnref:150921134514&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -158,11 +292,11 @@
     
       <item>
         <title>Shower phone</title>
-        <description>&lt;p&gt;Most of my best ideas and tasks I want/need to accomplish come to my mind when I’m driving or in the shower.&lt;sup id=&quot;fnref:150713121443&quot;&gt;&lt;a href=&quot;#fn:150713121443&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; When Siri came along, it made capturing these &lt;a href=&quot;http://www.imore.com/how-create-and-update-notes-using-siri&quot;&gt;notes&lt;/a&gt; or &lt;a href=&quot;http://www.imore.com/how-set-reminders-and-update-task-and-do-lists-siri&quot;&gt;to do items&lt;/a&gt; easy while driving. I still didn’t have a way to update &lt;a href=&quot;https://itunes.apple.com/us/app/omnifocus-2-for-ipad/id904071710?mt=8&quot;&gt;Omnifocus&lt;/a&gt; while in the shower, until I remembered I had an old iPhone 5s and &lt;a href=&quot;http://www.amazon.com/dp/B00H3T48A4?tag=soitscometothis-20&quot;&gt;Lifeproof Nuud waterproof case&lt;/a&gt;. &lt;/p&gt;
+        <description>&lt;p&gt;Most of my best ideas and tasks I want/need to accomplish come to my mind when I’m driving or in the shower.&lt;sup id=&quot;fnref:150713121443&quot;&gt;&lt;a href=&quot;#fn:150713121443&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; When Siri came along, it made capturing these &lt;a href=&quot;http://www.imore.com/how-create-and-update-notes-using-siri&quot;&gt;notes&lt;/a&gt; or &lt;a href=&quot;http://www.imore.com/how-set-reminders-and-update-task-and-do-lists-siri&quot;&gt;to do items&lt;/a&gt; easy while driving. I still didn’t have a way to update &lt;a href=&quot;https://itunes.apple.com/us/app/omnifocus-2-for-ipad/id904071710?mt=8&quot;&gt;Omnifocus&lt;/a&gt; while in the shower, until I remembered I had an old iPhone 5s and &lt;a href=&quot;http://www.amazon.com/dp/B00H3T48A4?tag=soitscometothis-20&quot;&gt;Lifeproof Nuud waterproof case&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve moved beyond a &lt;a href=&quot;http://www.thewire.com/technology/2013/03/dave-morin-path-interview/63613/&quot;&gt;day and night phone&lt;/a&gt;. It is all about the shower phone now.&lt;/p&gt;
 
-&lt;p&gt;I’ve turned off notifications and cellular radio. When iOS 9 comes out, I’ll permanantly put it in &lt;a href=&quot;https://www.apple.com/ios/ios9-preview/&quot;&gt;Low Power Mode&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;I’ve turned off notifications and cellular radio. When iOS 9 comes out, I’ll permanantly put it in &lt;a href=&quot;https://www.apple.com/ios/ios9-preview/&quot;&gt;Low Power Mode&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I guess you could just &lt;a href=&quot;http://osxdaily.com/2010/02/08/waterproof-your-iphone/&quot;&gt;use a plastic bag&lt;/a&gt;.&lt;/p&gt;
 
@@ -189,13 +323,13 @@
         <title>Virginia car inspection versus fog lights</title>
         <description>&lt;p&gt;Virginia requires yearly inspections for all cars.&lt;sup id=&quot;fnref:150707192257&quot;&gt;&lt;a href=&quot;#fn:150707192257&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Every year this puts stress on my family as we try to take off the minimal time from work to get it handled. We use to routinely fail due to the fog lamps on our cars.&lt;/p&gt;
 
-&lt;p&gt;The fog lamps on Honda Fits are very low to the ground and the glass frequently breaks due to rocks being kicked up off the road. This is a fail for the Virginia inspection, even though we never use the fog lights and I cannot understand how this is mission critical. &lt;/p&gt;
+&lt;p&gt;The fog lamps on Honda Fits are very low to the ground and the glass frequently breaks due to rocks being kicked up off the road. This is a fail for the Virginia inspection, even though we never use the fog lights and I cannot understand how this is mission critical.&lt;/p&gt;
 
-&lt;p&gt;The first time this happened Goodyear failed me for it. I asked them to fix it (because if I don’t pass I can’t drive, and if I can’t drive I can’t work). They said they’d call me but never did, so I took it to another shop. They said “That would fail, but since you could just take them off and they you’d pass, we’ll pass you.” &lt;/p&gt;
+&lt;p&gt;The first time this happened Goodyear failed me for it. I asked them to fix it (because if I don’t pass I can’t drive, and if I can’t drive I can’t work). They said they’d call me but never did, so I took it to another shop. They said “That would fail, but since you could just take them off and they you’d pass, we’ll pass you.”&lt;/p&gt;
 
-&lt;p&gt;Next time my wife took her Honda Fit in there was the same problem, except this time they told her to go home, take them off, and come back. Given the time missing from work, it was actually cheaper to pay them to do it for her, for $150. &lt;/p&gt;
+&lt;p&gt;Next time my wife took her Honda Fit in there was the same problem, except this time they told her to go home, take them off, and come back. Given the time missing from work, it was actually cheaper to pay them to do it for her, for $150.&lt;/p&gt;
 
-&lt;p&gt;Tomorrow is my inspection. I took them off myself tonight. 1 screw each. I don’t plan on ever putting them back on. &lt;/p&gt;
+&lt;p&gt;Tomorrow is my inspection. I took them off myself tonight. 1 screw each. I don’t plan on ever putting them back on.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -216,19 +350,19 @@
     
       <item>
         <title>Amazon affiliate link for TextExpander</title>
-        <description>&lt;p&gt;My affiliate linking scripts were starting to get out of hand with different versions in &lt;a href=&quot;http://www.keyboardmaestro.com/main/&quot;&gt;Keyboard Maestro&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Pythonista&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Editorial&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Workflow&lt;/a&gt;, and &lt;a href=&quot;http://smile.7eer.net/i/157164/161942/2936&quot;&gt;TextExpander on the Mac&lt;/a&gt;. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one. &lt;/p&gt;
+        <description>&lt;p&gt;My affiliate linking scripts were starting to get out of hand with different versions in &lt;a href=&quot;http://www.keyboardmaestro.com/main/&quot;&gt;Keyboard Maestro&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Pythonista&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Editorial&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Workflow&lt;/a&gt;, and &lt;a href=&quot;http://smile.7eer.net/i/157164/161942/2936&quot;&gt;TextExpander on the Mac&lt;/a&gt;. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one.&lt;/p&gt;
 
 &lt;p&gt;The &lt;em&gt;one&lt;/em&gt; would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.&lt;sup id=&quot;fnref:20150704101546&quot;&gt;&lt;a href=&quot;#fn:20150704101546&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code-explanation&quot;&gt;Code explanation&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Line 3: Stores the affiliate code to a variable.  &lt;/li&gt;
-  &lt;li&gt;Line 4: Stores the clipboard to a variable.  &lt;/li&gt;
-  &lt;li&gt;Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).  &lt;/li&gt;
-  &lt;li&gt;Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.  &lt;/li&gt;
-  &lt;li&gt;Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.  &lt;/li&gt;
-  &lt;li&gt;Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately. &lt;/li&gt;
+  &lt;li&gt;Line 3: Stores the affiliate code to a variable.&lt;/li&gt;
+  &lt;li&gt;Line 4: Stores the clipboard to a variable.&lt;/li&gt;
+  &lt;li&gt;Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).&lt;/li&gt;
+  &lt;li&gt;Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.&lt;/li&gt;
+  &lt;li&gt;Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.&lt;/li&gt;
+  &lt;li&gt;Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script src=&quot;https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js&quot;&gt;&lt;/script&gt;
@@ -254,25 +388,25 @@
     
       <item>
         <title>My Apple Watch try-on experience</title>
-        <description>&lt;p&gt;I had my appointment to &lt;a href=&quot;http://concierge.apple.com/stores/us?channel=1&amp;amp;locale=en_US&amp;amp;type=tryOn&quot;&gt;try on the Apple Watch yesterday&lt;/a&gt;, and was accompanied by the developer of &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/gfiumara/&quot;&gt;Greg Fiumara&lt;/a&gt;. &lt;/p&gt;
+        <description>&lt;p&gt;I had my appointment to &lt;a href=&quot;http://concierge.apple.com/stores/us?channel=1&amp;amp;locale=en_US&amp;amp;type=tryOn&quot;&gt;try on the Apple Watch yesterday&lt;/a&gt;, and was accompanied by the developer of &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/gfiumara/&quot;&gt;Greg Fiumara&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;We were let in just as the store opened. The Apple employees were their usual friendly selves. &lt;/p&gt;
+&lt;p&gt;We were let in just as the store opened. The Apple employees were their usual friendly selves.&lt;/p&gt;
 
 &lt;p&gt;After checking-in at the door, I was sent to a show table where all the watches were displayed under glass. My initial thoughts were that the sport model is too toy-like in appearance for my tastes. This does not mean others wouldn’t or shouldn’t like it, but as someone who wears a &lt;a href=&quot;http://www.amazon.com/Citizen-CB0010-53L-Eco-Drive-World-Perpetual/dp/B0045TI4HI/ref=cm_cr_pr_product_top?ie=UTF8&amp;amp;at=11l4RT&quot;&gt;stainless steel, sapphire face, link-band watch&lt;/a&gt; every day, it was not going to work for me.&lt;/p&gt;
 
-&lt;p&gt;I was only there for a few seconds before I was taken to the second table where the actual try on experience occurred. The employee had the watches I had favorited in the Apple Store app on his screen and he pulled out the first two. &lt;/p&gt;
+&lt;p&gt;I was only there for a few seconds before I was taken to the second table where the actual try on experience occurred. The employee had the watches I had favorited in the Apple Store app on his screen and he pulled out the first two.&lt;/p&gt;
 
-&lt;p&gt;The first one I tried was the 42mm Space Gray Aluminum Case with Black Sport band. It was incredibly light. I couldn’t feel it at all. I also couldn’t feel the haptic feedback. I thought maybe it was because the band was too loose, so I tightened it all the way. Still couldn’t feel it. I didn’t spend much time with it as I’d already decided that it wasn’t for me. &lt;/p&gt;
+&lt;p&gt;The first one I tried was the 42mm Space Gray Aluminum Case with Black Sport band. It was incredibly light. I couldn’t feel it at all. I also couldn’t feel the haptic feedback. I thought maybe it was because the band was too loose, so I tightened it all the way. Still couldn’t feel it. I didn’t spend much time with it as I’d already decided that it wasn’t for me.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-1.jpg&quot; alt=&quot;&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Next, I tried on the 42mm Stainless Steel with Milanese Loop. This is the watch that I had pre-ordered. It also felt light, but a bit more weighty than the sport. The band is comfortable and holds it’s connection well. The employee emphasized that it has a tiny magnet holding it together, but it certainly felt strong enough. Strong enough that he initially had trouble separating it from the band. I was able to feel the haptic tap with this model, but it is incredibly light. Way lighter than a vibrating phone in my pocket. It certainly will not be obvious to anyone else when you get a notification. I’m almost worried I won’t be able to feel it. &lt;/p&gt;
+&lt;p&gt;Next, I tried on the 42mm Stainless Steel with Milanese Loop. This is the watch that I had pre-ordered. It also felt light, but a bit more weighty than the sport. The band is comfortable and holds it’s connection well. The employee emphasized that it has a tiny magnet holding it together, but it certainly felt strong enough. Strong enough that he initially had trouble separating it from the band. I was able to feel the haptic tap with this model, but it is incredibly light. Way lighter than a vibrating phone in my pocket. It certainly will not be obvious to anyone else when you get a notification. I’m almost worried I won’t be able to feel it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-2.jpg&quot; alt=&quot;&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Finally, I tried the 42mm Stainless Steel Case Case with Link Bracelet. This was the weightiest of all, and the closest in style to what I currently wear. It is also my favorite of all the ones I tried on, but the second favorite in the store. The Space Black version of the same watch is the best looking, but they didn’t have it available in the store to try on. If money was no object and it didn’t have a ship date in July, I would likely change my order. &lt;/p&gt;
+&lt;p&gt;Finally, I tried the 42mm Stainless Steel Case Case with Link Bracelet. This was the weightiest of all, and the closest in style to what I currently wear. It is also my favorite of all the ones I tried on, but the second favorite in the store. The Space Black version of the same watch is the best looking, but they didn’t have it available in the store to try on. If money was no object and it didn’t have a ship date in July, I would likely change my order.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-3.jpg&quot; alt=&quot;&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Apple_Watch_try-on-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;My appointment was over quite quickly as I didn’t really have any questions, I knew exactly what I wanted to see, and the watches you try on do not have functioning software. We then spent some time playing with the demo watches that are bolted to the tables that do have the software running. Initially, it is a little weird trying to figure out which buttons you push and when, but I think this will disappear after a few hours of regular use. I was unable to pair my phone with the watch to test out some third party apps because a lot of the features were disabled.&lt;/p&gt;
 
@@ -280,15 +414,15 @@
 &lt;ul&gt;
   &lt;li&gt;I had read that the employees were having a hard time finding the right place to put their phone to unlock the hidden drawer. My guy had the same issue.&lt;/li&gt;
   &lt;li&gt;I heard multiple employees stumbling over the verbage, e.g. “scroll wheel” instead of “digital crown”, and correct themselves.&lt;/li&gt;
-  &lt;li&gt;The employees seemed incredibly excited about the watch for themselves. I honestly couldn’t tell if they were serious or just being a salesman.  &lt;/li&gt;
-  &lt;li&gt;The colors in person are much lighter than on the website. I was leaning towards the regular aluminum but in real life it is too light. The space gray aluminum which looked too black on the website is much better in person. &lt;/li&gt;
-  &lt;li&gt;Even the heaviest Apple Watch is lighter than my current watch. &lt;/li&gt;
+  &lt;li&gt;The employees seemed incredibly excited about the watch for themselves. I honestly couldn’t tell if they were serious or just being a salesman.&lt;/li&gt;
+  &lt;li&gt;The colors in person are much lighter than on the website. I was leaning towards the regular aluminum but in real life it is too light. The space gray aluminum which looked too black on the website is much better in person.&lt;/li&gt;
+  &lt;li&gt;Even the heaviest Apple Watch is lighter than my current watch.&lt;/li&gt;
   &lt;li&gt;Although all the appointments for the day were taken, walk-ins were able to be seen either due to noshows or people like myself who didn’t need all 15 minutes.&lt;/li&gt;
-  &lt;li&gt;The employee would initially put each watch on my wrist for me, then say I could adjust it as I wanted. That was weird. I don’t know if this is to prevent accidental droppages, to avoid people having trouble getting them on, or to make you feel like you’re being taken care of like at a high end store, but I don’t remember ever shopping for watches at a high end store and having the clerk put them on. Usually, they just hand them to you with what almost seems deliberate nonchalance. &lt;/li&gt;
-  &lt;li&gt;If you already wear an “adult businessman’s watch”, I don’t think you’ll be able to tolerate the Sport model. &lt;/li&gt;
-  &lt;li&gt;The “edition” verbage led to at least two encounters of an employee showing a customer an Edition model when they wanted a Sport. &lt;/li&gt;
-  &lt;li&gt;The functional watches have certain lock-outs, so I wasn’t able to pair my phone and try out some of the third party apps. &lt;/li&gt;
-  &lt;li&gt;The sport model is “Space Grey” while the regular model is “Space Black”. &lt;/li&gt;
+  &lt;li&gt;The employee would initially put each watch on my wrist for me, then say I could adjust it as I wanted. That was weird. I don’t know if this is to prevent accidental droppages, to avoid people having trouble getting them on, or to make you feel like you’re being taken care of like at a high end store, but I don’t remember ever shopping for watches at a high end store and having the clerk put them on. Usually, they just hand them to you with what almost seems deliberate nonchalance.&lt;/li&gt;
+  &lt;li&gt;If you already wear an “adult businessman’s watch”, I don’t think you’ll be able to tolerate the Sport model.&lt;/li&gt;
+  &lt;li&gt;The “edition” verbage led to at least two encounters of an employee showing a customer an Edition model when they wanted a Sport.&lt;/li&gt;
+  &lt;li&gt;The functional watches have certain lock-outs, so I wasn’t able to pair my phone and try out some of the third party apps.&lt;/li&gt;
+  &lt;li&gt;The sport model is “Space Grey” while the regular model is “Space Black”.&lt;/li&gt;
   &lt;li&gt;The developer with me and the Apple employee, along with myself, were all wearing regular, link-band chronograph watches.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -357,9 +491,9 @@
 
 &lt;p&gt;Before seeing them, I thought the Sport model would be a reasonable purchase for someone more on the nerdy side, who might get some benefit out of it and has the money to waste, but after seeing it in person, the relatively negative reviews, and no clear compelling use-case for normals, I don’t think I will be recommending this to anyone if they ask.&lt;/p&gt;
 
-&lt;p&gt;At the same time, as an hardcore nerd, who already has a killer use case planned, wears a watch daily, and has more money than sense, I’m looking forward to getting it. &lt;/p&gt;
+&lt;p&gt;At the same time, as an hardcore nerd, who already has a killer use case planned, wears a watch daily, and has more money than sense, I’m looking forward to getting it.&lt;/p&gt;
 
-&lt;p&gt;I’m also looking forward to trying &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt; on my watch at my local dive bar. &lt;/p&gt;
+&lt;p&gt;I’m also looking forward to trying &lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt; on my watch at my local dive bar.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 12 Apr 2015 09:45:00 -0400</pubDate>
@@ -371,100 +505,6 @@
         <category>Apple</category>
         
         <category>technology</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Prepping for the Apple Watch</title>
-        <description>&lt;blockquote class=&quot;twitter-tweet&quot; data-cards=&quot;hidden&quot; lang=&quot;en&quot;&gt;&lt;p&gt;The first beer checked into &lt;a href=&quot;https://twitter.com/untappd&quot;&gt;@Untappd&lt;/a&gt; on an WATCH (simulator)? (via &lt;a href=&quot;https://twitter.com/TappdThat&quot;&gt;@TappdThat&lt;/a&gt;). - Drinking an Aprihop - &lt;a href=&quot;http://t.co/0KUM35ti9Z&quot;&gt;http://t.co/0KUM35ti9Z&lt;/a&gt;&lt;/p&gt;&amp;mdash; Greg Fiumara (@gfiumara) &lt;a href=&quot;https://twitter.com/gfiumara/status/579076493768163328&quot;&gt;March 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;My friend Greg is working hard to get his Untappd client, &lt;strong&gt;&lt;a href=&quot;http://tappdthat.com/&quot;&gt;Tappd That&lt;/a&gt;&lt;/strong&gt;, ready for the Apple Watch launch. I’m looking forward to using it and seeing if I get yelled at less for logging my beers that way than when I take out my phone to do it at the bar.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 20 Mar 2015 22:44:12 -0400</pubDate>
-        <link>http://soitscometothis.net/prepping-for-the-apple-watch/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/prepping-for-the-apple-watch/</guid>
-        
-        <category>Apple Watch</category>
-        
-        <category>Tappd That</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Dictating on Mac from iPhone</title>
-        <description>&lt;p&gt;I think that dictating on the iPhone is amazing. For example, this was dictated in a crowded bar at 9 PM on Friday evening&lt;sup id=&quot;fnref:150317144346&quot;&gt;&lt;a href=&quot;#fn:150317144346&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It was really loud in here with the band and all:&lt;/p&gt;
-
-&lt;audio controls=&quot;controls&quot;&gt;
-  &lt;source src=&quot;/images/dictating_in_a_loud_bar.m4a&quot; type=&quot;audio/mpeg&quot; /&gt;
-  Your browser does not support the audio tag.
-&lt;/audio&gt;
-
-&lt;p&gt;For some reason, dictating to the Mac in a quiet office room doesn’t work well at all. So if I ever have something I do want to dictate, I will do so on the iPhone and then transfer it.&lt;/p&gt;
-
-&lt;p&gt;At the request of others, here is a video of how I do so using the apps &lt;a href=&quot;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt; and  &lt;a href=&quot;https://itunes.apple.com/us/app/command-c-clipboard-sharing/id692783673?mt=8&amp;amp;at=11l4RT&quot;&gt;Command–C&lt;/a&gt;. &lt;/p&gt;
-
-&lt;video width=&quot;640&quot; height=&quot;480&quot; controls=&quot;controls&quot;&gt;
-  &lt;source src=&quot;/images/dictation_drafts_commandC.m4v&quot; type=&quot;video/mp4&quot; /&gt;
-  Your browser does not support the video tag.
-&lt;/video&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:150317144346&quot;&gt;
-      &lt;p&gt;Yes. I’m a nerd. I go to a bar to write blog posts. &lt;a href=&quot;#fnref:150317144346&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 13 Mar 2015 21:50:47 -0400</pubDate>
-        <link>http://soitscometothis.net/dictating-on-mac-from-iphone/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/dictating-on-mac-from-iphone/</guid>
-        
-        <category>technology</category>
-        
-        <category>Command-C</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>My Apple Watch questions</title>
-        <description>&lt;p&gt;The second Apple Watch event is today. I’m personally excited about the watch because I am a fanboy, I am a stock holder, and I enjoyed the wrist notifications when using the Pebble, but hated everything else about it. I will be getting one, but I have a few outstanding questions. &lt;/p&gt;
-
-&lt;h1 id=&quot;how-waterproofresistant-is-it&quot;&gt;How waterproof/resistant is it?&lt;/h1&gt;
-
-&lt;p&gt;One of the promises of so-called smart watches if their ability to track activity, including exercise. Most of my sports are done on the water: sailing and stand up paddleboarding. I don’t plan on swimming or diving with it, but I’m not going wear a watch that will die the first time I fall overboard. &lt;/p&gt;
-
-&lt;h1 id=&quot;what-is-the-battery-life&quot;&gt;What is the battery life?&lt;/h1&gt;
-
-&lt;p&gt;This is one of the big questions everyone has. Seems to be “a day” use will be gotten from each charge with 5 hours of active use. That is a bit annoying, but current science and physics likely limits any more than that. I think a better question is…&lt;/p&gt;
-
-&lt;h1 id=&quot;how-fast-does-it-recharge&quot;&gt;How fast does it recharge?&lt;/h1&gt;
-
-&lt;p&gt;Since the battery is small due to size constraints, perhaps it will be able to charge rapidly, i.e. the reverse of how slow the iPad charges? This would allow one to wear the watch 24 hours a day except for a short time (20 minutes?) when showering. The last rumors I heard say 2 hours. That’ll be disappointing if so, because any sleep monitoring functions or alarm functions will be useless. &lt;/p&gt;
-
-&lt;h1 id=&quot;can-you-use-any-watch-band-on-any-watch&quot;&gt;Can you use any watch band on any watch?&lt;/h1&gt;
-
-&lt;p&gt;It was implied from the unveiling that the bands were quickly and easily interchangable, leading many to assume you could buy a low end watch and a higher end band, but on Apple’s site, only certain watches appear to be available for certain levels of watches. &lt;a href=&quot;http://daringfireball.net/linked/2015/03/08/spitball-apple-watch-steel&quot;&gt;Some have speculated&lt;/a&gt; that only certain bands will be available for certain watches and that you will not be able to buy the higher level bands separately. Does this mean one band cannot work on a different level watch? That seems ridiculous as you would have to have different mechanisms, increasing complexity. I’d expect this behaviour from any other company, but not Apple. Will you just not be able to buy certain bands with certain watches right from the start, but you can always buy an additional band at any level? This seems the most likely to me. Someone suggested that maybe you’d have to show your watch that you were buying the band for, in order to prove you are able to buy that level of watch. This seems ridiculous to me. Way too much manual effort and elitism involved. &lt;/p&gt;
-
-&lt;h1 id=&quot;price&quot;&gt;Price&lt;/h1&gt;
-
-&lt;p&gt;This is going to be a first generation device and I assume a better one that I will want more will come out every year, so it is unlikely that I will spend much more than the minimum entry price. At this time, this means that although I will hate giving up on a sapphire face, I will get the Sport with the blue band. If money was no object, I would choose the steel with Milanese band, and then get a blue sport band for sailing (if it is more waterproof than reported). I do not think it is realistic that a Steel band with Milanese loop and extra blue sport band will be available for less than $700, so I will be out of luck. &lt;/p&gt;
-
-&lt;p&gt;I might be willing to go double the price of the entry level to get my primary choice, so ultimately the price question will have a lot to do with my choice. I would be willing to pay $150 more for a sapphire face, so if the Steel is $500, I might go for that. I’d be willing to pay $200 more for the Milanese loop, so if that is all it costs &lt;strong&gt;and&lt;/strong&gt; you can buy it separately, I would get the Sport and blue the Milanese loop additionally for a total of $550.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update: &lt;a href=&quot;http://store.apple.com/us/buy-watch/apple-watch-sport?product=MJ3Q2LL/A&amp;amp;step=detail&quot;&gt;Sport with blue band&lt;/a&gt; plus &lt;a href=&quot;http://store.apple.com/us/product/MJ5F2ZM/A/42mm-milanese-loop&quot;&gt;Milanese loop bought as an accessory&lt;/a&gt;: $550. =)&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 09 Mar 2015 10:38:59 -0400</pubDate>
-        <link>http://soitscometothis.net/my-apple-watch-questions/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/my-apple-watch-questions/</guid>
-        
-        <category>Apple</category>
-        
-        <category>Apple watch</category>
         
         
       </item>

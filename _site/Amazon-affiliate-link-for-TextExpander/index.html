@@ -90,19 +90,19 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>My affiliate linking scripts were starting to get out of hand with different versions in <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, <a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;uo=4&amp;at=11l4RT">Pythonista</a>, <a href="https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;uo=4&amp;at=11l4RT">Editorial</a>, <a href="https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;uo=4&amp;at=11l4RT">Drafts</a>, <a href="https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;uo=4&amp;at=11l4RT">Workflow</a>, and <a href="http://smile.7eer.net/i/157164/161942/2936">TextExpander on the Mac</a>. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one. </p>
+    <p>My affiliate linking scripts were starting to get out of hand with different versions in <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, <a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;uo=4&amp;at=11l4RT">Pythonista</a>, <a href="https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;uo=4&amp;at=11l4RT">Editorial</a>, <a href="https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;uo=4&amp;at=11l4RT">Drafts</a>, <a href="https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;uo=4&amp;at=11l4RT">Workflow</a>, and <a href="http://smile.7eer.net/i/157164/161942/2936">TextExpander on the Mac</a>. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one.</p>
 
 <p>The <em>one</em> would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.<sup id="fnref:20150704101546"><a href="#fn:20150704101546" class="footnote">1</a></sup></p>
 
 <h2 id="code-explanation">Code explanation</h2>
 
 <ul>
-  <li>Line 3: Stores the affiliate code to a variable.  </li>
-  <li>Line 4: Stores the clipboard to a variable.  </li>
-  <li>Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).  </li>
-  <li>Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.  </li>
-  <li>Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.  </li>
-  <li>Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately. </li>
+  <li>Line 3: Stores the affiliate code to a variable.</li>
+  <li>Line 4: Stores the clipboard to a variable.</li>
+  <li>Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).</li>
+  <li>Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.</li>
+  <li>Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.</li>
+  <li>Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately.</li>
 </ul>
 
 <script src="https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js"></script>

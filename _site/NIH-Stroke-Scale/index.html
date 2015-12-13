@@ -92,15 +92,15 @@
   <div class="post-content" itemprop="articleBody">
     <p>A colleague of mine wanted a way to easily document the NIH stroke scale score with the added benefits of not having to type the whole thing each time, prompts to remember what to evaluate and what the scores mean, and also have the final score calculated for him. Requirements included that the input had to be in TextExpander due to a preference for that applications input style, and the output would have to be in the middle of a Pages document that was using a single font and no bold or italics.</p>
 
-<p>He had already created the TextExpander snippet and basically needed me to figure out a way to use KM to calculate the score and put it into the note. Oh, one more thing: He wanted to do this with only one command. </p>
+<p>He had already created the TextExpander snippet and basically needed me to figure out a way to use KM to calculate the score and put it into the note. Oh, one more thing: He wanted to do this with only one command.</p>
 
 <h2 id="challenge-accepted">Challenge accepted!</h2>
 
-<p>The KM macro first types out the shortcut for the TE macro, which calls the TE snippet pop up window, and then pauses until the TE snippet window disappears. </p>
+<p>The KM macro first types out the shortcut for the TE macro, which calls the TE snippet pop up window, and then pauses until the TE snippet window disappears.</p>
 
 <p>The TE window has all the steps of the NIH Stroke Scale including prompts to remind the user how to do it correctly.</p>
 
-<p><a href="/images/NIH_stroke_TE_menu.png"><img src="/images/NIH_stroke_TE_menu.png" alt="NIH Stroke Scale TE Menu" /></a> </p>
+<p><a href="/images/NIH_stroke_TE_menu.png"><img src="/images/NIH_stroke_TE_menu.png" alt="NIH Stroke Scale TE Menu" /></a></p>
 
 <p>Once the TE part is complete, the KM macro continues. All it really does it use regular expressions to find the individual numbers in the scale and add them together for the final score. Since the final score is really just simple addition of 15 single digit numbers, the whole exercise is a bit of a Rube Goldberg, but it was fun anyway and any less brain power and time needed at 2 in the morning during a stroke is probably a good thing.</p>
 
@@ -111,7 +111,7 @@
   Your browser does not support the video tag.
 </video>
 
-<p><a href="/images/NIH_stroke_scale.jpg"><img src="/images/NIH_stroke_scale.jpg" alt="" /></a> </p>
+<p><a href="/images/NIH_stroke_scale.jpg"><img src="/images/NIH_stroke_scale.jpg" alt="" /></a></p>
 
 <p>The resulting KM macro file <a href="/images/Calc_NIH_stroke_score_from_TE_macro_combo.kmmacros">is here</a>.</p>
 
