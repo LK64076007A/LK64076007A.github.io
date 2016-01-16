@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Editorial workflow - switching list types</title>
-  <meta name="description" content="I’ve had Editorial for less than an hour and I’ve made my first workflow. ">
+  <meta name="description" content="I’ve had Editorial for less than an hour and I’ve made my first workflow.">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://soitscometothis.net/Editorial-workflow-switching-list-types/">
@@ -90,15 +90,15 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>I’ve had Editorial for less than an hour and I’ve made my first workflow. </p>
+    <p>I’ve had Editorial for less than an hour and I’ve made my first workflow.</p>
 
-<p>I create my hacks as I need them and shortly after I starting writing I needed to change an unordered list to an ordered list. </p>
+<p>I create my hacks as I need them and shortly after I starting writing I needed to change an unordered list to an ordered list.</p>
 
 <p>First, I picked the action that outputs the selected text from the document. I then did a regex search for <code>^(\s*)[-*] </code><sup id="fnref:130818233455"><a href="#fn:130818233455" class="footnote">1</a></sup> to find the beginning of each line starting with the preface for an unordered list and replace it with <code>$11. </code>. The input is then used to replace the selected text in the document.</p>
 
-<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code>if</code> action so that it only fires if it finds that there is a line starting with <code>-</code>. I added a <code>stop</code> action inside the <code>if</code> action to end the workflow once the if statement runs. I then added another <code>if</code> action that is basically the same except looks for lines starting with <code>1. </code> and replaces them with <code>- </code>. </p>
+<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code>if</code> action so that it only fires if it finds that there is a line starting with <code>-</code>. I added a <code>stop</code> action inside the <code>if</code> action to end the workflow once the if statement runs. I then added another <code>if</code> action that is basically the same except looks for lines starting with <code>1. </code> and replaces them with <code>- </code>.</p>
 
-<p>Finally, I added an action at the beginning of the workflow that extends the selected text to the beginning and end of the lines to make selecting text a bit easier. </p>
+<p>Finally, I added an action at the beginning of the workflow that extends the selected text to the beginning and end of the lines to make selecting text a bit easier.</p>
 
 <p>You can download this workflow <a href="http://editorial-app.appspot.com/workflow/5530680926666752/dS2_NO1n8U8">here</a>.</p>
 

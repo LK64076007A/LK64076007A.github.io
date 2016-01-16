@@ -21,3 +21,7 @@ permalink: /:title/
 # Build settings
 markdown: kramdown
 timezone: America/New_York
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
