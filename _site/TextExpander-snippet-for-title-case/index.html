@@ -96,15 +96,17 @@
 
 <p>By removing the last three lines</p>
 
-<pre><code>var selectedText = editor.getSelectedText();
+<div class="highlighter-rouge"><pre class="highlight"><code>var selectedText = editor.getSelectedText();
 var formattedText = toTitleCase(selectedText);
 editor.replaceSelection(formattedText);
 </code></pre>
+</div>
 
 <p>and replacing them with</p>
 
-<pre><code>toTitleCase(TextExpander.pasteboardText);
+<div class="highlighter-rouge"><pre class="highlight"><code>toTitleCase(TextExpander.pasteboardText);
 </code></pre>
+</div>
 
 <p>it can now be used with TextExpander on <a href="https://itunes.apple.com/us/app/textexpander-3-+-custom-keyboard/id917416298?mt=8&amp;at=11l4RT">iOS</a> or <a href="https://smilesoftware.com/textexpander">Mac</a>.</p>
 

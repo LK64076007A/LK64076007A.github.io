@@ -90,6 +90,38 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Jul 4, 2015</span>
+      
+      <h2><a class="post-link" href="/Amazon-affiliate-link-for-TextExpander/">Amazon affiliate link for TextExpander</a></h2>
+      
+      <div class="content"><p>My affiliate linking scripts were starting to get out of hand with different versions in <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, <a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;uo=4&amp;at=11l4RT">Pythonista</a>, <a href="https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;uo=4&amp;at=11l4RT">Editorial</a>, <a href="https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;uo=4&amp;at=11l4RT">Drafts</a>, <a href="https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;uo=4&amp;at=11l4RT">Workflow</a>, and <a href="http://smile.7eer.net/i/157164/161942/2936">TextExpander on the Mac</a>. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one.</p>
+
+<p>The <em>one</em> would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.<sup id="fnref:20150704101546"><a href="#fn:20150704101546" class="footnote">1</a></sup></p>
+
+<h2 id="code-explanation">Code explanation</h2>
+
+<ul>
+  <li>Line 3: Stores the affiliate code to a variable.</li>
+  <li>Line 4: Stores the clipboard to a variable.</li>
+  <li>Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).</li>
+  <li>Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.</li>
+  <li>Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.</li>
+  <li>Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately.</li>
+</ul>
+
+<script src="https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js"></script>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20150704101546">
+      <p>Dr. Drang had <a href="http://leancrew.com/all-this/2015/06/clean-amazon-links-with-textexpander/">written about converting his script over to JavaScript for TextExpander</a>, and at first I thought I could just steal his, but this was a dead end. Since he used JavaScript for Automation in his snippet it would not work in iOS and his regex didn’t work with the URLs I was getting. <a href="#fnref:20150704101546" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Apr 12, 2015</span>
       
       <h2><a class="post-link" href="/my-apple-watch-try-on-experience/">My Apple Watch try-on experience</a></h2>
@@ -277,32 +309,6 @@
 <p>I might be willing to go double the price of the entry level to get my primary choice, so ultimately the price question will have a lot to do with my choice. I would be willing to pay $150 more for a sapphire face, so if the Steel is $500, I might go for that. I’d be willing to pay $200 more for the Milanese loop, so if that is all it costs <strong>and</strong> you can buy it separately, I would get the Sport and blue the Milanese loop additionally for a total of $550.</p>
 
 <p><strong>Update: <a href="http://store.apple.com/us/buy-watch/apple-watch-sport?product=MJ3Q2LL/A&amp;step=detail">Sport with blue band</a> plus <a href="http://store.apple.com/us/product/MJ5F2ZM/A/42mm-milanese-loop">Milanese loop bought as an accessory</a>: $550. =)</strong></p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 9, 2015</span>
-      
-      <h2><a class="post-link" href="/3.19.2015-event-predictions/">3.9.2015 event predictions</a></h2>
-      
-      <div class="content"><ul>
-  <li>Wrong: <del>Will be only about the Apple Watch</del><ins>HBO Now</ins><ins>Research Kit</ins></li>
-  <li>Will spend a lot of time with devs showing their apps<sup id="fnref:150309061627"><a href="#fn:150309061627" class="footnote">1</a></sup></li>
-  <li>Wrong: <del>Will not announce any other major or minor hardware products</del><ins>Apple TV</ins><ins>New Macbook/Air</ins></li>
-  <li>Correct: Will give firm launch dates in the US</li>
-  <li>Correct: Will give firm pricing information on all models</li>
-  <li>Correct: Will not give firm waterproof information</li>
-  <li>Wrong: <del>Will not give firm battery data information</del><ins><a href="https://www.apple.com/watch/battery.html">Here</a></ins></li>
-  <li>Wrong: <del>Will not give firm information about band/watch combination options or if able to separately buy different level bands</del><ins><a href="http://store.apple.com/us/watch/watch-accessories">Here</a>.</ins></li>
-</ul>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:150309061627">
-      <p>I’ll define “a lot” as three or more developers on stage. <a href="#fnref:150309061627" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

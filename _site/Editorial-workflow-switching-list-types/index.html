@@ -94,9 +94,9 @@
 
 <p>I create my hacks as I need them and shortly after I starting writing I needed to change an unordered list to an ordered list.</p>
 
-<p>First, I picked the action that outputs the selected text from the document. I then did a regex search for <code>^(\s*)[-*] </code><sup id="fnref:130818233455"><a href="#fn:130818233455" class="footnote">1</a></sup> to find the beginning of each line starting with the preface for an unordered list and replace it with <code>$11. </code>. The input is then used to replace the selected text in the document.</p>
+<p>First, I picked the action that outputs the selected text from the document. I then did a regex search for <code class="highlighter-rouge">^(\s*)[-*] </code><sup id="fnref:130818233455"><a href="#fn:130818233455" class="footnote">1</a></sup> to find the beginning of each line starting with the preface for an unordered list and replace it with <code class="highlighter-rouge">$11. </code>. The input is then used to replace the selected text in the document.</p>
 
-<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code>if</code> action so that it only fires if it finds that there is a line starting with <code>-</code>. I added a <code>stop</code> action inside the <code>if</code> action to end the workflow once the if statement runs. I then added another <code>if</code> action that is basically the same except looks for lines starting with <code>1. </code> and replaces them with <code>- </code>.</p>
+<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code class="highlighter-rouge">if</code> action so that it only fires if it finds that there is a line starting with <code class="highlighter-rouge">-</code>. I added a <code class="highlighter-rouge">stop</code> action inside the <code class="highlighter-rouge">if</code> action to end the workflow once the if statement runs. I then added another <code class="highlighter-rouge">if</code> action that is basically the same except looks for lines starting with <code class="highlighter-rouge">1. </code> and replaces them with <code class="highlighter-rouge">- </code>.</p>
 
 <p>Finally, I added an action at the beginning of the workflow that extends the selected text to the beginning and end of the lines to make selecting text a bit easier.</p>
 
@@ -105,7 +105,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:130818233455">
-      <p>The <code>\s</code> accounts for any preceding whitespace (tabs or spaces) and the <code>[-*]</code> looks for either possible syntax for bulleted lists. <a href="#fnref:130818233455" class="reversefootnote">&#8617;</a></p>
+      <p>The <code class="highlighter-rouge">\s</code> accounts for any preceding whitespace (tabs or spaces) and the <code class="highlighter-rouge">[-*]</code> looks for either possible syntax for bulleted lists. <a href="#fnref:130818233455" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

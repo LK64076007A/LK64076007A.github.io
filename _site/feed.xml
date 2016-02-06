@@ -6,9 +6,110 @@
 </description>
     <link>http://soitscometothis.net/</link>
     <atom:link href="http://soitscometothis.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Dec 2015 17:30:31 -0500</pubDate>
-    <lastBuildDate>Sun, 27 Dec 2015 17:30:31 -0500</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Sat, 06 Feb 2016 12:24:01 -0500</pubDate>
+    <lastBuildDate>Sat, 06 Feb 2016 12:24:01 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>Driftwood: quickly start podcasting from your iPhone</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/LK64076007A/driftwood&quot;&gt;Driftwood&lt;/a&gt; is a tool I created to rapidly deploy the necessary tools for publishing a podcast: a website, a podcast formatted RSS feed, and hosting for the files. A secondary goal was to be able to do all this from an iPhone. I was inspired in part by Manton’s &lt;a href=&quot;http://www.manton.org/2016/01/new-podcast-timetable.html&quot;&gt;microcast&lt;/a&gt; &lt;a href=&quot;http://timetable.manton.org&quot;&gt;Timetable&lt;/a&gt;, and from my own use of Jekyll and Github pages to host &lt;a href=&quot;http://soitscometothis.net&quot;&gt;my blog&lt;/a&gt;. My final goal was to be able to “self”-host podcasts that I’m currently paying $100+ a year to a commercial company, especially on one that is mostly retired but not dead.&lt;/p&gt;
+
+&lt;h1 id=&quot;examples&quot;&gt;Examples&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The demo page can be seen &lt;a href=&quot;http://soitscometothis.net/driftwood&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;My own page using this template is &lt;a href=&quot;http://soitscometothis.net/microcast&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Github repository is &lt;a href=&quot;https://github.com/LK64076007A/driftwood&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;design&quot;&gt;Design&lt;/h1&gt;
+
+&lt;p&gt;The concept and execution is simple: Github is used to both host the source files, build the website and RSS feed from those source files using Jekyll, and host the audio files.&lt;/p&gt;
+
+&lt;p&gt;The template design for the webpage is clean and elegant, thanks to &lt;a href=&quot;http://github.com/gfjaru/Kiko&quot;&gt;Kiko&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/gfjaru&quot;&gt;@gfjaru&lt;/a&gt;. I made a few tweaks but nothing significant. Since podasts are all about the audio and not the webpage&lt;sup id=&quot;fnref:160206103026&quot;&gt;&lt;a href=&quot;#fn:160206103026&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I think a simple page is best, and the user can add additional features as needed.&lt;/p&gt;
+
+&lt;p&gt;Getting started is simple:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone or fork &lt;a href=&quot;https://github.com/LK64076007A/driftwood&quot;&gt;Driftwood&lt;/a&gt; to your own repository.&lt;/li&gt;
+  &lt;li&gt;Rename it.&lt;/li&gt;
+  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; with your information.&lt;/li&gt;
+  &lt;li&gt;Edit  &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt; with your information.&lt;sup id=&quot;fnref:160206105149&quot;&gt;&lt;a href=&quot;#fn:160206105149&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;images/itunes.png&lt;/code&gt; with your own logo (1400x1400)&lt;/li&gt;
+  &lt;li&gt;Replace &lt;code class=&quot;highlighter-rouge&quot;&gt;audio/ep1.m4a&lt;/code&gt; with your own file&lt;/li&gt;
+  &lt;li&gt;Edit the file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; with your information, date, shownotes, etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And your first episode is up!&lt;/p&gt;
+
+&lt;p&gt;Add future episodes by adding a new audio file to &lt;code class=&quot;highlighter-rouge&quot;&gt;/audio/&lt;/code&gt; and a new markdown file to &lt;code class=&quot;highlighter-rouge&quot;&gt;/_posts/&lt;/code&gt; making sure to follow the template of the original file.&lt;/p&gt;
+
+&lt;p&gt;If you need further information on formatting post pages for &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, you’ll find a lot of information at the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll website&lt;/a&gt; or on Google, since the first thing one does after using Jekyll to publish their blog is to write a post on using Jekyll to publish their blog.&lt;/p&gt;
+
+&lt;h1 id=&quot;doing-it-iphone-only&quot;&gt;Doing it iPhone only&lt;/h1&gt;
+
+&lt;p&gt;You can edit the files directly on Github in the browser, but I find it much more pleasent to use one of the awesome iOS apps for Github: &lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Working Copy&lt;/a&gt; or &lt;a href=&quot;https://itunes.apple.com/us/app/git2go-git-client-you-always/id963577401?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Git2Go&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You’ll need one of those apps anyway to upload the audio files and logo because there is &lt;a href=&quot;http://stackoverflow.com/questions/29053961/upload-a-binary-file-using-browser-to-github&quot;&gt;no way to upload a binary directly to Github from the browser&lt;/a&gt; even on a desktop OS.&lt;/p&gt;
+
+&lt;p&gt;If you don’t have a logo, you can make one very easily using &lt;a href=&quot;https://itunes.apple.com/us/app/pixelmator/id924695435?mt=8&amp;amp;ign-mpt=uo%3D4&amp;amp;at=11l4RT&quot;&gt;Pixelmator for iOS&lt;/a&gt;, which is a steal at $5.&lt;sup id=&quot;fnref:160206113949&quot;&gt;&lt;a href=&quot;#fn:160206113949&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Record your own episode. You can use the built-in Voice Memos app, which is free with very limited editing functionality, or use &lt;a href=&quot;https://itunes.apple.com/us/app/ferrite-recording-studio/id1018780185?mt=8&amp;amp;at=11l4RT&quot;&gt;Ferrite&lt;/a&gt;, which is more expensive but very powerful with multi-track editing and other professional features. Again, use one of the above apps to upload it.&lt;/p&gt;
+
+&lt;h1 id=&quot;concerns&quot;&gt;Concerns&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Is Github the best place to host audio files?&lt;/p&gt;
+
+    &lt;p&gt;Probably not. It’s certainly not designed for that and if one makes changes to the files then the version tracking aspect of Git will cause those changes to be saved using up a lot of storage space. File size is limited to 100mb and anything over 50 will likely get a warning. Also, a repository size is soft-limited to 1 gig. In general, these will not likely be an issue, especially for small project podcasts. The purpose of Driftwood is a tool for rapid deployment. If you want to host the files somewhere else, it is a trivial problem. Merely put the full URL for the audio file in the YAML front matter for the episode page and change the podcast.rss file from &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;enclosure url=&quot;http://soitscometothis.net&quot; length=&quot;&quot; type=&quot;audio/x-m4a&quot;/&amp;gt;&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;enclosure url=&quot;&quot; length=&quot;&quot; type=&quot;audio/x-m4a&quot;/&amp;gt;&lt;/code&gt;. You can Dropbox, S3, Internet Archive, or any other place where you can directly link to the url of your file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What about using Github Large File Storage for the audio files?&lt;/p&gt;
+
+    &lt;p&gt;I tried that and it didn’t work. Either I missed something or you can’t really link directly to the file url so it breaks. If you find a way to get it to work, please let me know.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I want to use mp3 files not m4a files.&lt;/p&gt;
+
+    &lt;p&gt;No problem. Just change the audio type in &lt;code class=&quot;highlighter-rouge&quot;&gt;podcast.rss&lt;/code&gt; to mp3.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:160206103026&quot;&gt;
+      &lt;p&gt;I don’t think I’ve ever been to the webpage of 95% of the podcasts I listen to. I even considered making this tool “headless”–without a website, just the RSS feed. &lt;a href=&quot;#fnref:160206103026&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:160206105149&quot;&gt;
+      &lt;p&gt;Please leave the attributions. &lt;a href=&quot;#fnref:160206105149&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:160206113949&quot;&gt;
+      &lt;p&gt;The “repair” tool alone is worth that in its ability to save any photo. &lt;a href=&quot;#fnref:160206113949&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 06 Feb 2016 12:15:14 -0500</pubDate>
+        <link>http://soitscometothis.net/Driftwood-quickly-start-podcasting-from-your-iPhone/</link>
+        <guid isPermaLink="true">http://soitscometothis.net/Driftwood-quickly-start-podcasting-from-your-iPhone/</guid>
+        
+        <category>Driftwood</category>
+        
+        <category>technology</category>
+        
+        <category>iOS</category>
+        
+        <category>Github</category>
+        
+        
+      </item>
     
       <item>
         <title>TextExpander Snippet for Title Case</title>
@@ -18,15 +119,17 @@
 
 &lt;p&gt;By removing the last three lines&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var selectedText = editor.getSelectedText();
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var selectedText = editor.getSelectedText();
 var formattedText = toTitleCase(selectedText);
 editor.replaceSelection(formattedText);
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;and replacing them with&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;toTitleCase(TextExpander.pasteboardText);
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;toTitleCase(TextExpander.pasteboardText);
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;it can now be used with TextExpander on &lt;a href=&quot;https://itunes.apple.com/us/app/textexpander-3-+-custom-keyboard/id917416298?mt=8&amp;amp;at=11l4RT&quot;&gt;iOS&lt;/a&gt; or &lt;a href=&quot;https://smilesoftware.com/textexpander&quot;&gt;Mac&lt;/a&gt;.&lt;/p&gt;
 
@@ -180,7 +283,7 @@ editor.replaceSelection(formattedText);
     
       <item>
         <title>Forcing Pinch to Zoom</title>
-        <description>&lt;p&gt;I am tired of developers who disable pinch to zoom on their websites by either setting the meta tag &lt;code&gt;user-scalable&lt;/code&gt; to no or &lt;code&gt;maximum-scale&lt;/code&gt; to 1.0. I run across this the most when following Instagram links from Twitter, but it is rampant, such as when I followed a link and landed on this page today:&lt;/p&gt;
+        <description>&lt;p&gt;I am tired of developers who disable pinch to zoom on their websites by either setting the meta tag &lt;code class=&quot;highlighter-rouge&quot;&gt;user-scalable&lt;/code&gt; to no or &lt;code class=&quot;highlighter-rouge&quot;&gt;maximum-scale&lt;/code&gt; to 1.0. I run across this the most when following Instagram links from Twitter, but it is rampant, such as when I followed a link and landed on this page today:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/bad_tumblr.png&quot; width=&quot;375&quot; height=&quot;667&quot; /&gt;&lt;/p&gt;
 
@@ -197,7 +300,7 @@ editor.replaceSelection(formattedText);
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:151104173647&quot;&gt;
-      &lt;p&gt;I highlighted the &lt;code&gt;user-scalable=no&lt;/code&gt;, but the &lt;code&gt;maxium-scale=1.0&lt;/code&gt; would do the same thing. &lt;a href=&quot;#fnref:151104173647&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I highlighted the &lt;code class=&quot;highlighter-rouge&quot;&gt;user-scalable=no&lt;/code&gt;, but the &lt;code class=&quot;highlighter-rouge&quot;&gt;maxium-scale=1.0&lt;/code&gt; would do the same thing. &lt;a href=&quot;#fnref:151104173647&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:151104172527&quot;&gt;
       &lt;p&gt;Such as disabling copy and paste. &lt;a href=&quot;#fnref:151104172527&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -239,7 +342,7 @@ editor.replaceSelection(formattedText);
 
 &lt;p&gt;I was already using &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; as my tidal app of choice&lt;sup id=&quot;fnref:150921102250&quot;&gt;&lt;a href=&quot;#fn:150921102250&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.&lt;/p&gt;
 
-&lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the &lt;a href=&quot;https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;My Tide Times Pro&lt;/a&gt; does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/tide_watch_complication-2.jpg&quot; width=&quot;156&quot; height=&quot;195&quot; /&gt;&lt;/p&gt;
 
@@ -380,44 +483,6 @@ editor.replaceSelection(formattedText);
         <guid isPermaLink="true">http://soitscometothis.net/virginia-car-inspection-versus-fog-lights/</guid>
         
         <category>bureaucracy</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Amazon affiliate link for TextExpander</title>
-        <description>&lt;p&gt;My affiliate linking scripts were starting to get out of hand with different versions in &lt;a href=&quot;http://www.keyboardmaestro.com/main/&quot;&gt;Keyboard Maestro&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Pythonista&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Editorial&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Drafts&lt;/a&gt;, &lt;a href=&quot;https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;amp;uo=4&amp;amp;at=11l4RT&quot;&gt;Workflow&lt;/a&gt;, and &lt;a href=&quot;http://smile.7eer.net/i/157164/161942/2936&quot;&gt;TextExpander on the Mac&lt;/a&gt;. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one.&lt;/p&gt;
-
-&lt;p&gt;The &lt;em&gt;one&lt;/em&gt; would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.&lt;sup id=&quot;fnref:20150704101546&quot;&gt;&lt;a href=&quot;#fn:20150704101546&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;code-explanation&quot;&gt;Code explanation&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Line 3: Stores the affiliate code to a variable.&lt;/li&gt;
-  &lt;li&gt;Line 4: Stores the clipboard to a variable.&lt;/li&gt;
-  &lt;li&gt;Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).&lt;/li&gt;
-  &lt;li&gt;Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.&lt;/li&gt;
-  &lt;li&gt;Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.&lt;/li&gt;
-  &lt;li&gt;Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script src=&quot;https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:20150704101546&quot;&gt;
-      &lt;p&gt;Dr. Drang had &lt;a href=&quot;http://leancrew.com/all-this/2015/06/clean-amazon-links-with-textexpander/&quot;&gt;written about converting his script over to JavaScript for TextExpander&lt;/a&gt;, and at first I thought I could just steal his, but this was a dead end. Since he used JavaScript for Automation in his snippet it would not work in iOS and his regex didn’t work with the URLs I was getting. &lt;a href=&quot;#fnref:20150704101546&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 04 Jul 2015 05:43:33 -0400</pubDate>
-        <link>http://soitscometothis.net/Amazon-affiliate-link-for-TextExpander/</link>
-        <guid isPermaLink="true">http://soitscometothis.net/Amazon-affiliate-link-for-TextExpander/</guid>
-        
-        <category>TextExpander</category>
-        
-        <category>Amazon affiliate link</category>
         
         
       </item>

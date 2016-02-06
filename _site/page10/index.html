@@ -92,6 +92,56 @@
     <li>
       <span class="post-meta">Aug 24, 2013</span>
       
+      <h2><a class="post-link" href="/Time-Capsule-back-up-vs.-Siracusa/">Time Capsule back up vs. Siracusa</a></h2>
+      
+      <div class="content"><p>On the last<sup id="fnref:130824090332"><a href="#fn:130824090332" class="footnote">1</a></sup> episode of ATP<sup id="fnref:130824090353"><a href="#fn:130824090353" class="footnote">2</a></sup>, Siracusa said that the Time Capsule had “a terrible reputation for reliability, and I still think Time Machine over the network is not great”.</p>
+
+<p>I love my Time Capsule and see myself continuing to buy them.</p>
+
+<p>The Time Capsule I have is a 1st generation that I bought when they first came out. Living in an area without an Apple store at the time<sup id="fnref:130824090739"><a href="#fn:130824090739" class="footnote">3</a></sup>, I ended up driving 3 hours to get one. It’s been with me ever since through many years and 3 interstate moves.</p>
+
+<p>I, like Siracusa, have many redundant backups of my data. I have multiple local clone copies<sup id="fnref:130824091132"><a href="#fn:130824091132" class="footnote">4</a></sup> and I also offload the raw data by itself on to external drives.</p>
+
+<p>Several weeks/months ago my internal SSD suddenly died completely. I hadn’t made a clone back up or manually offloaded the data since the morning. I’d been working all day and had many, irretrievable projects that were lost, except for the Time Capsule back up from 30 minutes before.</p>
+
+<p>I sent in the SSD on warranty, and when I got it back a week later, I booted up the new drive with it connected to the Time Capsule. It asked if I wanted to restore from the Time Capsule. I said yes and went to bed.</p>
+
+<p>When I woke up in the morning, my baby was back.<sup id="fnref:130824091835"><a href="#fn:130824091835" class="footnote">5</a></sup></p>
+
+<p>The beauty of the Time Capsule is it’s <em>fire and forget</em> usability.</p>
+
+<p>That earns some loyalty.<sup id="fnref:wifebackup"><a href="#fn:wifebackup" class="footnote">6</a></sup></p>
+
+<p>And Casey was right.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:130824090332">
+      <p><a href="http://atp.fm/episodes/27-overflow-gallery-in-the-bathroom">27</a> <a href="#fnref:130824090332" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824090353">
+      <p>The Accidental Tech Podcast. <a href="#fnref:130824090353" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824090739">
+      <p>And mistaking Cedar Falls for Cedar Rapids. <a href="#fnref:130824090739" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091132">
+      <p>SuperDuper! FTW!!! <a href="#fnref:130824091132" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130824091835">
+      <p>I’ve also used it to save large amounts of data that I’ve accidentally deleted, such as when I deleted my entire music library before the days of iTunes Match. <a href="#fnref:130824091835" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:wifebackup">
+      <p>And it’s also priceless for easily backing up other family member’s computers, who may not be as diligent as you are. <a href="#fnref:wifebackup" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">Aug 24, 2013</span>
+      
       <h2><a class="post-link" href="/Google-search-fail/">Google search fail</a></h2>
       
       <div class="content"><p>Dear Google,</p>
@@ -135,9 +185,9 @@
 
 <p>I create my hacks as I need them and shortly after I starting writing I needed to change an unordered list to an ordered list.</p>
 
-<p>First, I picked the action that outputs the selected text from the document. I then did a regex search for <code>^(\s*)[-*] </code><sup id="fnref:130818233455"><a href="#fn:130818233455" class="footnote">1</a></sup> to find the beginning of each line starting with the preface for an unordered list and replace it with <code>$11. </code>. The input is then used to replace the selected text in the document.</p>
+<p>First, I picked the action that outputs the selected text from the document. I then did a regex search for <code class="highlighter-rouge">^(\s*)[-*] </code><sup id="fnref:130818233455"><a href="#fn:130818233455" class="footnote">1</a></sup> to find the beginning of each line starting with the preface for an unordered list and replace it with <code class="highlighter-rouge">$11. </code>. The input is then used to replace the selected text in the document.</p>
 
-<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code>if</code> action so that it only fires if it finds that there is a line starting with <code>-</code>. I added a <code>stop</code> action inside the <code>if</code> action to end the workflow once the if statement runs. I then added another <code>if</code> action that is basically the same except looks for lines starting with <code>1. </code> and replaces them with <code>- </code>.</p>
+<p>This was a good start but I wanted to be able to easily switch back and forth. I put those three actions inside an <code class="highlighter-rouge">if</code> action so that it only fires if it finds that there is a line starting with <code class="highlighter-rouge">-</code>. I added a <code class="highlighter-rouge">stop</code> action inside the <code class="highlighter-rouge">if</code> action to end the workflow once the if statement runs. I then added another <code class="highlighter-rouge">if</code> action that is basically the same except looks for lines starting with <code class="highlighter-rouge">1. </code> and replaces them with <code class="highlighter-rouge">- </code>.</p>
 
 <p>Finally, I added an action at the beginning of the workflow that extends the selected text to the beginning and end of the lines to make selecting text a bit easier.</p>
 
@@ -146,7 +196,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:130818233455">
-      <p>The <code>\s</code> accounts for any preceding whitespace (tabs or spaces) and the <code>[-*]</code> looks for either possible syntax for bulleted lists. <a href="#fnref:130818233455" class="reversefootnote">&#8617;</a></p>
+      <p>The <code class="highlighter-rouge">\s</code> accounts for any preceding whitespace (tabs or spaces) and the <code class="highlighter-rouge">[-*]</code> looks for either possible syntax for bulleted lists. <a href="#fnref:130818233455" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -179,64 +229,6 @@
 Boy(age 8): That’s never going to happen.<br />
 Wife: Why not?<br />
 Boy: Because he’s married to a woman who has no heart.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 30, 2013</span>
-      
-      <h2><a class="post-link" href="/modified-Keyboard-Maestro-macro-for-MultiMarkdown-Footnotes/">A modified Keyboard Maestro macro for MultiMarkdown Footnotes</a></h2>
-      
-      <div class="content"><p><strong>Update: This post is long out of date. Zettt and I worked together to come up with a better, faster way to do the same thing with Keyboard Maestro. Find his latest version of his Keyboard Maestro Markdown Library to see it in action.</strong></p>
-
-<h1 id="introduction">Introduction</h1>
-
-<p>If you write in (Multi)Markdown and have Keyboard Maestro, I recommend you check out Andreas’s (@<a href="https://twitter.com/Zettt">Zettt</a>) <a href="http://www.macosxscreencasts.com/general/keyboard-maestro-markdown-library/">Keyboard Maestro Markdown library</a>, which makes it easy to write in Markdown through various schemes such as easily wrapping selected text with various special characters<sup id="fnref:20130530190615"><a href="#fn:20130530190615" class="footnote">1</a></sup>; creating inline links, reference links, and image tags with fill-in templates; making ordered and unordered lists from selected lines of text; and several others. His videos clearly explain how to use them. He also chose a brilliant hotkey schema that makes it easy to remember all the options once you learn one or two.</p>
-
-<p>He’s currently working on some updates with the release of KM6, but that got me thinking about a modification I wanted to make.</p>
-
-<h1 id="problem">Problem</h1>
-
-<p>As it stands now, after placing the footnote, the cursor is left at the bottom of the document, rather than back in the text where the writing will continue.<sup id="fnref:20130530193065"><a href="#fn:20130530193065" class="footnote">2</a></sup></p>
-
-<p>This slight break in workflow is an unfortunate drawback of creating footnotes<sup id="fnref:20130530191980"><a href="#fn:20130530191980" class="footnote">3</a></sup>. Some text editors do have the ability to remember cursor position so that it can be returned it to the original position, but one of the reasons I use Keyboard Maestro for these tasks is so they will be editor agnostic since I’m constantly changing my editor.</p>
-
-<h1 id="solution">Solution</h1>
-
-<p>Keyboard Maestro 6 added a cursor position token: <code>%|%</code>. Since the original macro involved two paste actions separated by moving the cursor, I was going to need to combine them into one paste action. Instead of using ⌘-↓ to move the cursor to the bottom of the text, I use ⇧-⌘-↓ to select all the text from the cursor position to the bottom of the document. I then cut (⌘-X) this to the clipboard. Finally, I paste a concatenation of the footnote tag, the cursor position token, the clipboard, and the footnote:</p>
-
-<pre>[^%Variable%MMDFootnoteTag%]%|%%CurrentClipboard%
-
-[^%Variable%MMDFootnoteTag%]: %Variable%MMDFootnoteText%</pre>
-
-<p>The extra carriage return is because, in my experience, you need to have a blank line between footnotes, unlike reference links, to get them to display correctly. Fletcher Penney <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">recommends this format</a> with regards to bibliography support in Multimarkdown.</p>
-
-<p>The final macro looks like this:</p>
-
-<p><a href="/images/modified_KM_macro_footnote.jpg"><img src="/images/modified_KM_macro_footnote.jpg" alt="" /></a></p>
-
-<p>If you’re paying close attention, you might notice that I also added a default value for the footnote tag, which is just the date and time in <a href="http://userguide.icu-project.org/formatparse/datetime">ICU yyyyMMddHHSS format</a>.</p>
-
-<p>I think this makes it much easier and natural to write Multimarkdown footnotes, which may turn out to be a bad thing since I’m suddenly adding them all over the place.<sup id="fnref:20130530201400"><a href="#fn:20130530201400" class="footnote">4</a></sup></p>
-
-<p>You can download the macro <a href="/images/Multimarkdown_Footnote.kmmacros">here</a>.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130530190615">
-      <p>Asterisk, double asterisk, quotation marks, parentheses, brackets, and backtick quotes. <a href="#fnref:20130530190615" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530193065">
-      <p>The macro is written to insert the footnote tag at the current cursor position, ⌘-↓ to move to the bottom of the document, and then paste the footnote. <a href="#fnref:20130530193065" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530191980">
-      <p>Unless you make inline footnotes and convert them using <a href="http://brettterpstra.com/2012/01/24/a-service-for-writing-multimarkdown-footnotes-inline/">Brett Terpstra’s system service</a>. I tried it, but too often it wouldn’t work because I was trying to nest a footnote inside a link inside something else. <a href="#fnref:20130530191980" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130530201400">
-      <p>Like this one, for no good reason other than I could. <a href="#fnref:20130530201400" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

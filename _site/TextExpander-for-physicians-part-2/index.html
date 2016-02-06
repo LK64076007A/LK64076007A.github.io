@@ -100,35 +100,39 @@
 
 <h3 id="time-and-date">Time and Date</h3>
 
-<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code>ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
+<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code class="highlighter-rouge">ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
 
-<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code>time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
+<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code class="highlighter-rouge">time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
 
 <p>I’ve also used this lately to keep track of how long it takes to make phone calls to patients. I’ve been surprised how long the typical call lasts and by having this data, I can more accurately plan my schedule, bill and allocate resources.</p>
 
 <p>TextExpander also comes with some codes for date and time math. Most of my follow ups and planning takes place at regular intervals: every 4 weeks, 6 weeks, 8 weeks and 12 weeks, 12 months or 24 months. This may apply to the next follow up appointment, lab check, infusion time, TB test or DXA scan. While it is easy to say “follow up for labs in 8 weeks”, this abstractness appears to be poorly mentally processed. Being more concrete fixes this problem.</p>
 
-<pre><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
+<div class="highlighter-rouge"><pre class="highlight"><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
 </code></pre>
+</div>
 
 <p>More complicated structures wouldn’t be that difficult to create.</p>
 
-<pre><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
+<div class="highlighter-rouge"><pre class="highlight"><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
 </code></pre>
+</div>
 
 <p>All the dates and the day of the week in that last macro are automatically calculated.</p>
 
 <p>Are you a hospitalist with a patient needs neurochecks every 4 hours?</p>
 
-<pre><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
+<div class="highlighter-rouge"><pre class="highlight"><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
 </code></pre>
+</div>
 
 <h3 id="fill-ins">Fill ins</h3>
 
-<p>Another special code is the fill in. <code>%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
+<p>Another special code is the fill in. <code class="highlighter-rouge">%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
 
-<pre><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
+<div class="highlighter-rouge"><pre class="highlight"><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
 </code></pre>
+</div>
 
 <p>This creates the following prompt:</p>
 
@@ -142,20 +146,21 @@
 
 <p><a href="/images/textexpander_fut_3.png"><img src="/images/textexpander_fut_3.png" alt="Macro completes" /></a></p>
 
-<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code>%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
+<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code class="highlighter-rouge">%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
 
 <p><a href="/images/consultnote_macro.png"><img src="/images/consultnote_macro.png" alt="consult note macro" /></a></p>
 
 <h3 id="copy-clipboard">Copy clipboard</h3>
 
-<p>Another special code is the “clipboard”, <code>%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code>%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
+<p>Another special code is the “clipboard”, <code class="highlighter-rouge">%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code class="highlighter-rouge">%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
 
-<pre><code>.nd = James Bond 2.1.2012.pages
+<div class="highlighter-rouge"><pre class="highlight"><code>.nd = James Bond 2.1.2012.pages
 </code></pre>
+</div>
 
 <h3 id="cursor-placement">Cursor placement</h3>
 
-<p>The final special code I’ll mention is the cursor placement. <code>%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
+<p>The final special code I’ll mention is the cursor placement. <code class="highlighter-rouge">%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
 
 <p><a href="/images/James_Bond_note.png"><img src="/images/James_Bond_note.png" alt="James Bonds note" /></a></p>
 

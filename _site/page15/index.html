@@ -90,6 +90,65 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Mar 12, 2013</span>
+      
+      <h2><a class="post-link" href="/App-craze-hits-hospitals-as-doctors-go-mobile/">Hospitals and regulations stifle physician adoption of mobile technology</a></h2>
+      
+      <div class="content"><p>I repeatedly see articles blaming physicians for the poor adoption of technology in medicine. As a tech nerd and a physician who is frustrated with the lack of good medical software (mostly EMRs), it was nice to see an article putting the blame where it mostly belongs: regulation and hospitals.<sup id="fnref:1363099346-fn1"><a href="#fn:1363099346-fn1" class="footnote">1</a></sup></p>
+
+<p><a href="https://twitter.com/NSHBIZboyer">E.J. Boyer</a> for the <a href="http://www.bizjournals.com/nashville/print-edition/2013/03/08/app-craze-hits-hospitals-as-doctors-go.html">Nashville Business Journal</a> (subscription only):</p>
+
+<blockquote>
+  <p>[A] growing number of physicians are taking a cue from their personal lives and using mobile devices to make their jobs more efficient.</p>
+</blockquote>
+
+<p>Just like “normal people”, physicians want their life to be easier and when they see how technology improves one aspect of their life, they want to see similar improvements in other aspects.</p>
+
+<blockquote>
+  <p>But industry experts predict the road to adoption won’t be easy, as data security, IT integration and looming federal regulations come into play.</p>
+</blockquote>
+
+<p>A constant problem in all areas of medicine, regulations continue to choke the life out of medical practice.</p>
+
+<blockquote>
+  <p>But even as physicians continue to see the benefits of mobile apps in practicing medicine, experts warn the road to full adoption will be long. For starters, health apps and mobile devices present a new privacy and security challenge for hospitals, which operate under tight regulations and strict federal patient privacy laws.</p>
+</blockquote>
+
+<blockquote>
+  <p>Physicians are driving the need for it. They want to be able to see the data on the phones and iPads, but the hospitals are not jumping on it as quickly.</p>
+</blockquote>
+
+<p>When I got the first iPad, I was told by hospital IT that it “couldn’t connect” to the system. When I figured out how to get it connected, I was told it was “not allowed”. They refused to explain how accessing the system from my laptop at home (fully supported) was different than accessing the system from my iPad as we rounded on patients. Eventually, as more higher level attendings bought the devices for themselves, seeing how useful they were to the residents, the policy changed to “not supported”. I wonder if that’s changed any since I left?<sup id="fnref:1363099346-fn2"><a href="#fn:1363099346-fn2" class="footnote">2</a></sup></p>
+
+<blockquote>
+  <p>Another road block to mobile adoption is integration of apps into a hospitals IT system.</p>
+</blockquote>
+
+<p>This is because the EMRs that hospitals use are closed, proprietary systems. They are built on old architectural standards. The database systems are closed and or proprietary. There are no APIs. The EMR companies want to keep the system closed to stifle competition. They want to be the only one that can make an app for their system and they charge astronomical prices for mobile apps for their EMRs, often a large percentage of the original cost all over again.</p>
+
+<p>I still remain optimistic that one day cooperate medicine will have and use decent technology, although I’m realistic enough to know this may never happen in my lifetime. Until then, I will continue to develop my own private systems for my every day practice.</p>
+
+<p>As for the truly luddite physicians out there: eventually they’ll die<sup id="fnref:1363099346-fn3"><a href="#fn:1363099346-fn3" class="footnote">3</a></sup>, and if the technology is good enough to provide substantial benefits to those physicians using it, the luddites won’t be able to compete.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1363099346-fn1">
+      <p>Poor quality software is another driving factor. <a href="#fnref:1363099346-fn1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1363099346-fn2">
+      <p>I was also told that Macs were not able to be used as the technology wouldn’t work. Within 2 months my fellowship program had switched to Macs, but I had had to do most of the work. At one point I tried to talk to the Mac guy in IT had was repeatedly told “There isn’t one.” It ended up that he was on vacation, and when he got back he responded to the long email chain saying “Hey, I do exist. I’m right here!”</p>
+
+      <p>I think a lot of the resistance is aversion to more work, interestingly, coming from the technology people, not the physicians/users. <a href="#fnref:1363099346-fn2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1363099346-fn3">
+      <p>“I mean, when I started in this business one of the biggest challenges was that people couldn’t type. And one day we realized that death would eventually take care of this. - <a href="http://www.edibleapple.com/2011/09/01/steve-jobs-explains-why-apple-wasnt-keen-on-tablet-computing-back-in-2003/">Steve Jobs</a> <a href="#fnref:1363099346-fn3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Mar 5, 2013</span>
       
       <h2><a class="post-link" href="/Create-side-by-side-screen-shots-on-iOS-with-Pythonista/">Create side-by-side screen shots on iOS with Pythonista</a></h2>
@@ -106,7 +165,7 @@
 
 <p>You can get the script from Gist <a href="https://gist.github.com/LK64076007A/5090763">here</a>.</p>
 
-<pre><code>"""
+<div class="highlighter-rouge"><pre class="highlight"><code>"""
 This code takes two screenshots from the camera roll combines them into one image and saves the new image to the camera roll.
 
 This is adapted from Federico Viticci's blog post at:
@@ -136,6 +195,7 @@ photos.save_image(background)
 console.hide_activity()
 print "Image saved to camera roll."
 </code></pre>
+</div>
 
 <p>Here’s an image I created with it for an upcoming comparison of the text-parsing of Pocket vs. Instapaper:</p>
 
@@ -168,26 +228,26 @@ print "Image saved to camera roll."
 <ul>
   <li>If Safari is at the front
     <ul>
-      <li>Execute the Applescript <code>tell application "Safari" to get the URL of the front document</code> and save results to variable <code>currentURL</code></li>
+      <li>Execute the Applescript <code class="highlighter-rouge">tell application "Safari" to get the URL of the front document</code> and save results to variable <code class="highlighter-rouge">currentURL</code></li>
       <li>Activate Google Chrome</li>
       <li>Pause until Google Chrome is at the front and the front window exists</li>
       <li>Type the keystroke ⌘T</li>
       <li>Type the keystroke ⌘L</li>
-      <li>Insert the text by pasting: <code>current URL</code></li>
-      <li>Type the keystroke <code>return</code></li>
+      <li>Insert the text by pasting: <code class="highlighter-rouge">current URL</code></li>
+      <li>Type the keystroke <code class="highlighter-rouge">return</code></li>
     </ul>
   </li>
   <li>otherwise execute the following
     <ul>
       <li>If Google Chrome is at the front
         <ul>
-          <li>Execute Applescript <code>tell application "Google Chrome" to get the URL of active tab of first window</code> and save results to variable <code>currentURL</code></li>
+          <li>Execute Applescript <code class="highlighter-rouge">tell application "Google Chrome" to get the URL of active tab of first window</code> and save results to variable <code class="highlighter-rouge">currentURL</code></li>
           <li>Activate Safari</li>
           <li>Pause until Safari is at the front and the front window exists</li>
           <li>Type the keystroke ⌘T</li>
           <li>Type the keystroke ⌘L</li>
-          <li>Insert the text by pasting: <code>current URL</code></li>
-          <li>Type the keystroke <code>return</code></li>
+          <li>Insert the text by pasting: <code class="highlighter-rouge">current URL</code></li>
+          <li>Type the keystroke <code class="highlighter-rouge">return</code></li>
         </ul>
       </li>
     </ul>
@@ -240,25 +300,25 @@ print "Image saved to camera roll."
 
 <h2 id="text-to-speech-on-ios">Text-to-speech on iOS</h2>
 
-<p>Text-to-speech on iOS is already built into the OS. To turn it on go to <code>Settings &gt; General &gt; Accessibility &gt; Speak Selection</code> and turn it on. You can also switch the dialect if you want.<sup id="fnref:1302260948"><a href="#fn:1302260948" class="footnote">2</a></sup> From now on, when you highlight any text, one of the options on the pop up menu will be “speak”. Hit this and the text will be read to you. There is a major limitation with this: <strong>if you lock the device or switch to a different application, the reading stops.</strong></p>
+<p>Text-to-speech on iOS is already built into the OS. To turn it on go to <code class="highlighter-rouge">Settings &gt; General &gt; Accessibility &gt; Speak Selection</code> and turn it on. You can also switch the dialect if you want.<sup id="fnref:1302260948"><a href="#fn:1302260948" class="footnote">2</a></sup> From now on, when you highlight any text, one of the options on the pop up menu will be “speak”. Hit this and the text will be read to you. There is a major limitation with this: <strong>if you lock the device or switch to a different application, the reading stops.</strong></p>
 
 <p>Another option is a dedicated app. <a href="https://twitter.com/SiMBa37">A colleague</a> recommends <a href="https://itunes.apple.com/us/app/voice-dream-reader-text-to/id496177674?mt=8&amp;partnerId=30&amp;siteID=l8AT4zEd6Ao">Voice Dream Reader</a> for 10 USD in the App Store. I have not used it so I can’t comment on it.</p>
 
 <h2 id="text-to-speech-on-os-x">Text-to-speech on OS X</h2>
 
-<p>OS X also has built-in text-to-speech software. As far as I can tell, it is always on, but that may be a left over preference on my machine from years back so to check, go to  <code>System Preferences &gt; Dictation &amp; Speech</code>. I also turn on the keyboard shortcut for this. Otherwise, all you need to do is highlight some text, right click, and select <code>Speech &gt; Start Speaking</code>.</p>
+<p>OS X also has built-in text-to-speech software. As far as I can tell, it is always on, but that may be a left over preference on my machine from years back so to check, go to  <code class="highlighter-rouge">System Preferences &gt; Dictation &amp; Speech</code>. I also turn on the keyboard shortcut for this. Otherwise, all you need to do is highlight some text, right click, and select <code class="highlighter-rouge">Speech &gt; Start Speaking</code>.</p>
 
 <p>I use this frequently when reading an article and I get tired, or I need to be doing something else like cooking at the same time. I’ve also found that just turning this on when reading something important like a medical journal article lets others know I’m doing something work related rather than just surfing the internet for memes, i.e. don’t interrupt. It is also a great way to proof read your writing. What your eyes often miss, your ears will clearly hear.</p>
 
 <h2 id="text-to-speech-os-x-to-ios">Text-to-speech OS X to iOS</h2>
 
-<p>Sometimes there is a very large article I want to read but don’t want to sit at my machine for an extended period to time. Thankfully, OS X has some built in functions that allow you to turn the text into an audio file using the text-to-speech functions. OS X comes with this ability pre-programmed in the services section. To turn it on, go to <code>System Preferences &gt; Keyboard &gt; Keyboard Shortcuts &gt; Services &gt; Text</code> and make sure <code>Add to iTunes as a Spoken…</code> is checked. From then on, when you have text highlighted, you can right click, go to Services, and click on <code>Add to iTunes as a Spoken…</code>. This will convert the text-to-speech, first as a lossless AIFF (a very large file). It will then re-encode using AAC (to make it a smaller file) and then import into iTunes under a special playlist.</p>
+<p>Sometimes there is a very large article I want to read but don’t want to sit at my machine for an extended period to time. Thankfully, OS X has some built in functions that allow you to turn the text into an audio file using the text-to-speech functions. OS X comes with this ability pre-programmed in the services section. To turn it on, go to <code class="highlighter-rouge">System Preferences &gt; Keyboard &gt; Keyboard Shortcuts &gt; Services &gt; Text</code> and make sure <code class="highlighter-rouge">Add to iTunes as a Spoken…</code> is checked. From then on, when you have text highlighted, you can right click, go to Services, and click on <code class="highlighter-rouge">Add to iTunes as a Spoken…</code>. This will convert the text-to-speech, first as a lossless AIFF (a very large file). It will then re-encode using AAC (to make it a smaller file) and then import into iTunes under a special playlist.</p>
 
 <p>This works fine in general, but I don’t usually sync my iPhone with iTunes as I keep most things in the cloud. Thankfully, Automator<sup id="fnref:1302261013"><a href="#fn:1302261013" class="footnote">3</a></sup> makes it very easy to create your own.<sup id="fnref:201302261023"><a href="#fn:201302261023" class="footnote">4</a></sup></p>
 
 <p><a href="/images/AutomatorTTS.png"><img src="/images/AutomatorTTS.png" alt="" /></a></p>
 
-<p>This creates a service for when text is selected. You run it the same as the prior service: right click, go to Services, and click on <code>The Name of the Service</code>. It changes the text to audio format, saving to the location of your choice, and using the voice of your choice. It then re-encodes the file to a format most compatible with spoken word, thus greatly decreasing the file size, and deletes the original file. I have it save to a folder inside Dropbox so that I can play it later (or sooner) on any device I have.</p>
+<p>This creates a service for when text is selected. You run it the same as the prior service: right click, go to Services, and click on <code class="highlighter-rouge">The Name of the Service</code>. It changes the text to audio format, saving to the location of your choice, and using the voice of your choice. It then re-encodes the file to a format most compatible with spoken word, thus greatly decreasing the file size, and deletes the original file. I have it save to a folder inside Dropbox so that I can play it later (or sooner) on any device I have.</p>
 
 <div class="footnotes">
   <ol>
@@ -273,63 +333,6 @@ print "Image saved to camera roll."
     </li>
     <li id="fn:201302261023">
       <p>Or just take mine. <a href="#fnref:201302261023" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Feb 18, 2013</span>
-      
-      <h2><a class="post-link" href="/Batch-converting-Pages-documents-to-PDF/">Batch converting Pages documents to PDF with Keyboard Maestro</a></h2>
-      
-      <div class="content"><p>I had 3000 Pages documents that I wanted to convert PDF. I had previously searched the internet for a way to do this easily but was unsuccessful. I suppose I should have tried searching again, because I would have found <a href="http://www.yourmacteacher.com/batch-convert-pages-documents-to-pdf/">Pages2PDF</a>, which works much better than what I did.</p>
-
-<p>Still, relying on someone to create the exact program you need is not as fun or as useful as being able to fix the problem yourself. So I created a Keyboard Maestro macro.</p>
-
-<p>Basically, this automates the steps I would have had to do manually:</p>
-
-<ol>
-  <li>Open the file in Pages.</li>
-  <li>Select Export to PDF from the menu.</li>
-  <li>Fix the file name.<sup id="fnref:130218165655"><a href="#fn:130218165655" class="footnote">1</a></sup></li>
-  <li>Move the original file to a new location.</li>
-</ol>
-
-<p>In Keyboard Maestro parlance the steps were:</p>
-
-<ul>
-  <li>For Each Item in a the Finder’s selection
-    <ol>
-      <li>Set the file name to a variable fileName</li>
-      <li>Set the file path to a variable filePath</li>
-      <li>Open the file at filePath/fileName<sup id="fnref:130218170000"><a href="#fn:130218170000" class="footnote">2</a></sup> in Pages.</li>
-      <li>Pause for 1.5 seconds.<sup id="fnref:130218170107"><a href="#fn:130218170107" class="footnote">3</a></sup></li>
-      <li>Select the menu item PDF… in the submenu Export in the Menu Title File.</li>
-      <li>Press the Button labeled “Next…”</li>
-      <li>Insert the text from variable %WindowName%1% by pasting. (Basically, this names the file being exported the same as the original file name, except for the extension.)</li>
-      <li>Press the button labeled “Export”.</li>
-      <li>Type the keystroke ?-W (to close the open file)</li>
-      <li>Move the file %Variable%filePath%/%Variable%fileName% to whateverLocationYouWant/%Variable%fileName%</li>
-    </ol>
-  </li>
-</ul>
-
-<p>It worked perfectly if somewhat slow. It took several hours to process all the files.</p>
-
-<p><a href="/images/PagestoPDF.png"><img src="/images/PagestoPDF.png" alt="" /></a></p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:130218165655">
-      <p>For some reason, Pages kept truncating my filenames. <a href="#fnref:130218165655" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130218170000">
-      <p>I don’t know why I had to specifically use the path and name. Sometimes KM works fine without that and sometimes it doesn’t. I haven’t figured out why and when. <a href="#fnref:130218170000" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:130218170107">
-      <p>I didn’t test this step any. I just assumed KM would need time for the document to fully open in Pages. <a href="#fnref:130218170107" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

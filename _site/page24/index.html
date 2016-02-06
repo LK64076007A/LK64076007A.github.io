@@ -90,6 +90,31 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Feb 6, 2012</span>
+      
+      <h2><a class="post-link" href="http://kottke.org/12/02/how-to-parent-like-the-french">Raising Cain</a> <a class="permalink" title="Permanent link to ‘Raising Cain’" href="/raising-cain/">Ω</a></h2>
+      
+      <div class="content"><p>Is there a name for the psychological phenomena in which people in one culture seem to think that ideas attributed to another culture are magically special, even if those same ideas already exist and are not recognized in the first culture?</p>
+
+<p>For example, how exactly is this a “French” way of raising kids?</p>
+
+<p><a href="http://kottke.org/12/02/how-to-parent-like-the-french">Jason Kottke</a>:</p>
+
+<blockquote>
+  <blockquote>
+    <p>One of the keys to this education is the simple act of learning how to wait. It is why the French babies I meet mostly sleep through the night from two or three months old. Their parents don’t pick them up the second they start crying, allowing the babies to learn how to fall back asleep. It is also why French toddlers will sit happily at a restaurant. Rather than snacking all day like American children, they mostly have to wait until mealtime to eat. (French kids consistently have three meals a day and one snack around 4 p.m.)</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>We have a French pediatrician who advised us to do almost exactly what is in this article and we’ve had pretty good success with it. It’s not all roses (kids are kids after all) and a lot of work, especially for the first couple of years, because you have to be consistent and steady and firm (but also flexible) and I know I haven’t always done a great job, but the dividends have been totally worth it so far.</p>
+</blockquote>
+
+<p>That’s exactly how I raise my kid. And I never read any stupid book or talked to a pediatrician about it. Seems like a pretty standard old-fashioned way of doing things.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Feb 1, 2012</span>
       
       <h2><a class="post-link" href="/TextExpander-for-physicians-part-2/">TextExpander for physicians, Part 2</a></h2>
@@ -104,35 +129,39 @@
 
 <h3 id="time-and-date">Time and Date</h3>
 
-<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code>ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
+<p>Special codes are text you can put into a macro that tells TextExpander to do something other than just type out the characters. The simplest example is their Time/Date codes. Inside the macro that creates my consult note template is some characters that automatically inserts that day’s date into the note. Instead of having to type, and remember, the date every time I start a new note, the macro does it for me. <code class="highlighter-rouge">ddate = %B %e, %Y = February 1, 2012</code> There are numerous permutations of this code so you can create the date however you want.</p>
 
-<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code>time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
+<p>Time codes are also helpful at times. There are many codes to document the time exactly as you might need it but the built in macro that comes pre-created is <code class="highlighter-rouge">time = %1I:%M %p = 9:04 PM</code>. I have discovered two useful cases for this. The first is documenting how much time I spend on a patient and how much of that time is in counseling and coordination. Keeping track of time is only going to happen if it’s easy. This macro makes it very easy. As I walk into a room, I tap the code “ttime”. When I finish the history and exam, while the patient is getting their clothes back on and I’m finishing up my note, I hit it again, “ttime”. And when I’m done with my counseling I hit it a final time. Now I know how long my visit was and if over 50% of that time was in counseling. This allows me to track my time spent per patient so I can better plan my schedule. If I’m taking 20 minutes per patient, but only scheduling 15 minutes, obviously I need to change my schedule. Also, if over 50% of my time is in counseling, then I can bill by time rather than by the traditional coding levels.</p>
 
 <p>I’ve also used this lately to keep track of how long it takes to make phone calls to patients. I’ve been surprised how long the typical call lasts and by having this data, I can more accurately plan my schedule, bill and allocate resources.</p>
 
 <p>TextExpander also comes with some codes for date and time math. Most of my follow ups and planning takes place at regular intervals: every 4 weeks, 6 weeks, 8 weeks and 12 weeks, 12 months or 24 months. This may apply to the next follow up appointment, lab check, infusion time, TB test or DXA scan. While it is easy to say “follow up for labs in 8 weeks”, this abstractness appears to be poorly mentally processed. Being more concrete fixes this problem.</p>
 
-<pre><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
+<div class="highlighter-rouge"><pre class="highlight"><code>.8wfu = Follow up in 8 weeks (around March 28, 2012). 
 </code></pre>
+</div>
 
 <p>More complicated structures wouldn’t be that difficult to create.</p>
 
-<pre><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
+<div class="highlighter-rouge"><pre class="highlight"><code>.inrchecks = Check INR on 2/4/12, 2/7/12, 2/10/12, and 2/13/12 (Monday).
 </code></pre>
+</div>
 
 <p>All the dates and the day of the week in that last macro are automatically calculated.</p>
 
 <p>Are you a hospitalist with a patient needs neurochecks every 4 hours?</p>
 
-<pre><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
+<div class="highlighter-rouge"><pre class="highlight"><code>.q4nchecks = Neuro checks q4 hours (01:33, 05:33, 09:33, 13:33, 17:33, 21:33). 
 </code></pre>
+</div>
 
 <h3 id="fill-ins">Fill ins</h3>
 
-<p>Another special code is the fill in. <code>%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
+<p>Another special code is the fill in. <code class="highlighter-rouge">%fill:name%</code>. This has the macro prompt you to enter text that will be inserted into the text when the macro is created. For example, you might have a macro that prompts for a follow up time.</p>
 
-<pre><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
+<div class="highlighter-rouge"><pre class="highlight"><code>.fut = Return to clinic in %fill:numberofweeks% weeks.
 </code></pre>
+</div>
 
 <p>This creates the following prompt:</p>
 
@@ -146,20 +175,21 @@
 
 <p><a href="/images/textexpander_fut_3.png"><img src="/images/textexpander_fut_3.png" alt="Macro completes" /></a></p>
 
-<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code>%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
+<p>I use this all the time for form letters and consult note templates. For each different fill in, you need to change “name” in <code class="highlighter-rouge">%fill:name%</code> to a unique identifier. Or, if you leave it the same, whatever you put in one place, will appear in all the others with the same phrase. For example, in my consult note, I don’t have to retype the patient’s name, consulting physician or reason for consult/chief complaint:</p>
 
 <p><a href="/images/consultnote_macro.png"><img src="/images/consultnote_macro.png" alt="consult note macro" /></a></p>
 
 <h3 id="copy-clipboard">Copy clipboard</h3>
 
-<p>Another special code is the “clipboard”, <code>%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code>%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
+<p>Another special code is the “clipboard”, <code class="highlighter-rouge">%clipboard</code>. This inserts whatever is copied to your clipboard. I use this more for non-medical uses, like writing code or html but the one place I use it regularly in medicine is when saving my notes to file. I use a file name structure that is “Patient Name” and “date of visit.” Using the code <code class="highlighter-rouge">%clipboard %1m.%e.%Y</code> and making sure to copy (Command-C) the name from my note to the clipboard before keying the macro, I save a lot of time saving files.</p>
 
-<pre><code>.nd = James Bond 2.1.2012.pages
+<div class="highlighter-rouge"><pre class="highlight"><code>.nd = James Bond 2.1.2012.pages
 </code></pre>
+</div>
 
 <h3 id="cursor-placement">Cursor placement</h3>
 
-<p>The final special code I’ll mention is the cursor placement. <code>%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
+<p>The final special code I’ll mention is the cursor placement. <code class="highlighter-rouge">%|</code> (That’s percent pipe.) puts your cursor wherever you want with in the text that the macro creates. For short macros, this isn’t needed, but when I use my consult note template, I don’t need the cursor at the end of the document, requiring me to scroll back up to the first page to start typing. Instead, I place it in the History of present illness, so I can start typing what the patient is telling me immediately:</p>
 
 <p><a href="/images/James_Bond_note.png"><img src="/images/James_Bond_note.png" alt="James Bonds note" /></a></p>
 
@@ -217,7 +247,7 @@
 
 <p>The first macros I created were for the drugs and diseases I see all the time.</p>
 
-<pre><code>.ra = rheumatoid arthritis
+<div class="highlighter-rouge"><pre class="highlight"><code>.ra = rheumatoid arthritis
 .psa = psoriatic arthritis
 .sle = systemic lupus erythematosus 
 .ssc systemic sclerosis
@@ -231,60 +261,69 @@
 .enb = etanercept (Enbrel)
 .rit = rituximab (Rituxan) 
 </code></pre>
+</div>
 
 <p>Notice how for some of the drugs I’ve included the brand name. This aides in clarity for the patient or non-rheumatologists who may not be as familiar with the generic names of the drugs. e.g. Rheumatologists typically use hydroxychloroquine but most patients know it as Plaquenil. When a patient leaves the office with my note, I don’t want them calling later to leave a message that they aren’t on that medication with the long name like my note says.</p>
 
 <p>I can also use it to help me remember how to spell the drugs names or even remember some of the generics myself.</p>
 
-<pre><code>.ken = triamcinolone acetonide (Kenalog)
+<div class="highlighter-rouge"><pre class="highlight"><code>.ken = triamcinolone acetonide (Kenalog)
 </code></pre>
+</div>
 
 <p>Even some non-drug words are just impossible to remember to spell correctly.</p>
 
-<pre><code>.eyemd = ophthalmology
+<div class="highlighter-rouge"><pre class="highlight"><code>.eyemd = ophthalmology
 </code></pre>
+</div>
 
 <p>Occasionally, there are some weird labs whose abbreviations are non-standard but whose names are too weird to spell out every time.</p>
 
-<pre><code>.la = lupus anticoagulant 
+<div class="highlighter-rouge"><pre class="highlight"><code>.la = lupus anticoagulant 
 .acl = anticardiolipin antibody
 .b2g = beta 2 glycoprotein antibody
 </code></pre>
+</div>
 
 <p>I also don’t like typing out my physical exam findings, but this can be important for other doctors and audits.</p>
 
-<pre><code>.rom = range of motion
+<div class="highlighter-rouge"><pre class="highlight"><code>.rom = range of motion
 .nrom = normal range of motion
 .prom = passive range of motion
 .arom = active range of motion
 .rhsj = red, hot and/or swollen joints 
 </code></pre>
+</div>
 
 <p>Now we start to pick up the pace a bit. I am frequently recommending that patients exercise, but they are far more likely to follow my instructions if I give concrete examples instead of vague platitudes.</p>
 
-<pre><code>.exercise = Exercise by walking 30 minutes every day after dinner. 
+<div class="highlighter-rouge"><pre class="highlight"><code>.exercise = Exercise by walking 30 minutes every day after dinner. 
     			http://youtu.be/aUaInS6HIGo
 </code></pre>
+</div>
 
 <p>Coders love when I include the diagnostic codes with my assessment, especially for the weird (redundant?) rheumatology stuff.</p>
 
-<pre><code>.dxra = Rheumatoid arthritis (714.00)
+<div class="highlighter-rouge"><pre class="highlight"><code>.dxra = Rheumatoid arthritis (714.00)
 .dxia = Inflammatory polyarthropathy, unspecified (714.9)
 .dxhrd = High Risk Drug (v58.69)
 .dxea = Enteropathic arthritis (713.1)
 </code></pre>
+</div>
 
 <p>Not infrequently, I want to impart a bit of knowledge to both the patient and the referring doctor. For example, in the case of a patient referred for a positive ANA or positive rheumatoid factor, it’s one thing to say they don’t have lupus or rheumatoid arthritis but it’s even better to explain what that damn tests means.</p>
 
-<pre><code>.posana
+<div class="highlighter-rouge"><pre class="highlight"><code>.posana
 </code></pre>
+</div>
 
 <blockquote>
   <p>A positive ANA does not diagnose an autoimmune disease nor does a negative result exclude it; however, ANA is positive in 99% of patients with Systemic Lupus Erythematosus therefore a negative result strongly argues against such a diagnosis.  ANA can be positive by definition in 5% of the healthy population, typically in titers less than 1:320.  Up to 20% of healthy relatives of patients with rheumatic disease and up to 75% of healthy individuals older than 70 will have a positive ANA (typically less than 1:80 with a speckled or homogenous pattern).  Other conditions associated with a positive ANA are thyroid disease, chronic infections including TB/viral hepatitis, subacute bacterial endocarditis, malignancies, any of the auto-immune or connective tissue disease, multiple sclerosis and patients with silicone breast implants.  In the absence of physical or biochemical evidence of pathology, a positive ANA is not clinically useful.</p>
 </blockquote>
 
-<pre><code>.posrf
+<div class="highlighter-rouge"><pre class="highlight"><code>.posrf
 </code></pre>
+</div>
 
 <blockquote>
   <p>Many conditions can lead to a positive Rheumatoid Factor including chronic hepatic and pulmonary diseases, rheumatoid arthritis, Systemic Lupus Erythematosus, systemic sclerosis, mixed connective tissue disease, Sjögren’s, polymyositis, sarcoid, malignancies (especially after therapy), AIDS, mononucleosis, parasitic infections, chronic viral infections, tuberculosis, subacute bacterial endocarditis, cryoglobulinemia, etc.  Frequency of positivity of rheumatoid factor in normal individuals also occurs and varies by age from 5% in those younger than 70 to 10-25% in those older than 70.  Changes in RF level do not reflect disease activity; however, a high titer does predict increased severity of disease including extra-articular manifestations.</p>
@@ -292,18 +331,20 @@
 
 <p>I can even use this to remind me of recommendations on certain items. For example, I can never remember the exact recommendations from the BMJ on the duration of steroids for PMR.</p>
 
-<pre><code>.bmjpmrsteroids
+<div class="highlighter-rouge"><pre class="highlight"><code>.bmjpmrsteroids
 
 Daily prednisone 15 mg for 3 weeks
 Then 12.5mg for 3 weeks
 Then 10mg for 4–6 weeks
 Then reduction by 1 mg every 4–8 weeks
 </code></pre>
+</div>
 
 <p>Can’t remember the criteria for the diagnosis of Takayasu’s arteritis?</p>
 
-<pre><code>.dxcTA
+<div class="highlighter-rouge"><pre class="highlight"><code>.dxcTA
 </code></pre>
+</div>
 
 <blockquote>
   <ol>
@@ -328,8 +369,9 @@ Then reduction by 1 mg every 4–8 weeks
 
 <p>Of course, you can’t forget your note templates.</p>
 
-<pre><code>.arthronote
+<div class="highlighter-rouge"><pre class="highlight"><code>.arthronote
 </code></pre>
+</div>
 
 <blockquote>
   <p>Rheumatology Procedure Note</p>
@@ -443,38 +485,6 @@ Time Out: Yes.</p>
 </blockquote>
 
 <p>The problems in medicine are because powerful bureaucracies continue to create mountains of red-tape and mandates purporting to fix problems while only making them worse.</p>
-
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Jan 27, 2012</span>
-      
-      <h2><a class="post-link" href="/email-to-my-friends/">Email to my friends</a></h2>
-      
-      <div class="content"><p>I want you to learn two things from this email. The first (the fish) is how to combine multiple open Safari windows into one window with multiple tabs. The second (how to fish) is about becoming self-sufficient and making your life better.</p>
-
-<h3 id="the-fish">The Fish</h3>
-
-<p>Safari has an option to “Merge All Windows”. On the menu bar go to Window &gt; Merge All Windows. Simple.</p>
-
-<p>Even better, you can create a shortcut for this.</p>
-
-<p>Open System Preferences (command-spacebar, type “System”), click on Keyboard, choose Keyboard Shortcuts, choose Application Shortcuts, click the “+” button. Under Application: choose Safari. Under Menu title: Type “Merge All Windows”. Under Keyboard Shortcut: press shift + option + command + m. Click add.</p>
-
-<p>Now, whenever you have a bunch of Safari windows open, just hit shift + option + command + m. (It’s a lot easier than it sounds.)</p>
-
-<h3 id="how-to-fish">How to fish</h3>
-
-<p>I always end up with a million browser windows open, each with several open tabs in them. Frequently, they have the same mail, calendar, Google reader and log in to my EMR websites pulled up on them. Typically this happens when I click on a link in the first window and it opens the link in a new browser window, then later, with that window on top, I want my email and open a new tab to go to it, even though the same site is open in a different window that’s hidden.</p>
-
-<p>I thought two things: windows should always open in a new tab and there should be a way to easily merge all these windows together. <em>I wish I could say that I immediately Google’d it and figured it out.</em> Unfortunately, I’ve been thinking about this for months and never bothered to do anything about it. This has happened to me more times than is healthy. I need to just learn that when I have a problem, there’s probably a solution already created.</p>
-
-<p>For the first step, go to the menu bar: Safari &gt; Preferences &gt; Tabs. Under “Open pages in tabs instead of windows:” choose automatically. For the second step, I explained the second part above.</p>
-
-<p><strong>Moral</strong>: There is almost always an easy way to do something on a Mac. If you want to do something, Google for how to do it.</p>
-
-<p>Speaking of which, if you’re not using <a href="http://www.smilesoftware.com/TextExpander/index.html">TextExpander</a> for text macros, you deserve to check it out.</p>
 
 </div>
     </li>

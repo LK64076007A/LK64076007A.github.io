@@ -92,6 +92,64 @@
     <li>
       <span class="post-meta">May 30, 2013</span>
       
+      <h2><a class="post-link" href="/modified-Keyboard-Maestro-macro-for-MultiMarkdown-Footnotes/">A modified Keyboard Maestro macro for MultiMarkdown Footnotes</a></h2>
+      
+      <div class="content"><p><strong>Update: This post is long out of date. Zettt and I worked together to come up with a better, faster way to do the same thing with Keyboard Maestro. Find his latest version of his Keyboard Maestro Markdown Library to see it in action.</strong></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>If you write in (Multi)Markdown and have Keyboard Maestro, I recommend you check out Andreas’s (@<a href="https://twitter.com/Zettt">Zettt</a>) <a href="http://www.macosxscreencasts.com/general/keyboard-maestro-markdown-library/">Keyboard Maestro Markdown library</a>, which makes it easy to write in Markdown through various schemes such as easily wrapping selected text with various special characters<sup id="fnref:20130530190615"><a href="#fn:20130530190615" class="footnote">1</a></sup>; creating inline links, reference links, and image tags with fill-in templates; making ordered and unordered lists from selected lines of text; and several others. His videos clearly explain how to use them. He also chose a brilliant hotkey schema that makes it easy to remember all the options once you learn one or two.</p>
+
+<p>He’s currently working on some updates with the release of KM6, but that got me thinking about a modification I wanted to make.</p>
+
+<h1 id="problem">Problem</h1>
+
+<p>As it stands now, after placing the footnote, the cursor is left at the bottom of the document, rather than back in the text where the writing will continue.<sup id="fnref:20130530193065"><a href="#fn:20130530193065" class="footnote">2</a></sup></p>
+
+<p>This slight break in workflow is an unfortunate drawback of creating footnotes<sup id="fnref:20130530191980"><a href="#fn:20130530191980" class="footnote">3</a></sup>. Some text editors do have the ability to remember cursor position so that it can be returned it to the original position, but one of the reasons I use Keyboard Maestro for these tasks is so they will be editor agnostic since I’m constantly changing my editor.</p>
+
+<h1 id="solution">Solution</h1>
+
+<p>Keyboard Maestro 6 added a cursor position token: <code class="highlighter-rouge">%|%</code>. Since the original macro involved two paste actions separated by moving the cursor, I was going to need to combine them into one paste action. Instead of using ⌘-↓ to move the cursor to the bottom of the text, I use ⇧-⌘-↓ to select all the text from the cursor position to the bottom of the document. I then cut (⌘-X) this to the clipboard. Finally, I paste a concatenation of the footnote tag, the cursor position token, the clipboard, and the footnote:</p>
+
+<pre>[^%Variable%MMDFootnoteTag%]%|%%CurrentClipboard%
+
+[^%Variable%MMDFootnoteTag%]: %Variable%MMDFootnoteText%</pre>
+
+<p>The extra carriage return is because, in my experience, you need to have a blank line between footnotes, unlike reference links, to get them to display correctly. Fletcher Penney <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">recommends this format</a> with regards to bibliography support in Multimarkdown.</p>
+
+<p>The final macro looks like this:</p>
+
+<p><a href="/images/modified_KM_macro_footnote.jpg"><img src="/images/modified_KM_macro_footnote.jpg" alt="" /></a></p>
+
+<p>If you’re paying close attention, you might notice that I also added a default value for the footnote tag, which is just the date and time in <a href="http://userguide.icu-project.org/formatparse/datetime">ICU yyyyMMddHHSS format</a>.</p>
+
+<p>I think this makes it much easier and natural to write Multimarkdown footnotes, which may turn out to be a bad thing since I’m suddenly adding them all over the place.<sup id="fnref:20130530201400"><a href="#fn:20130530201400" class="footnote">4</a></sup></p>
+
+<p>You can download the macro <a href="/images/Multimarkdown_Footnote.kmmacros">here</a>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:20130530190615">
+      <p>Asterisk, double asterisk, quotation marks, parentheses, brackets, and backtick quotes. <a href="#fnref:20130530190615" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530193065">
+      <p>The macro is written to insert the footnote tag at the current cursor position, ⌘-↓ to move to the bottom of the document, and then paste the footnote. <a href="#fnref:20130530193065" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530191980">
+      <p>Unless you make inline footnotes and convert them using <a href="http://brettterpstra.com/2012/01/24/a-service-for-writing-multimarkdown-footnotes-inline/">Brett Terpstra’s system service</a>. I tried it, but too often it wouldn’t work because I was trying to nest a footnote inside a link inside something else. <a href="#fnref:20130530191980" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20130530201400">
+      <p>Like this one, for no good reason other than I could. <a href="#fnref:20130530201400" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
+      <span class="post-meta">May 30, 2013</span>
+      
       <h2><a class="post-link" href="/making-Passbook-useful/">Making Passbook useful</a></h2>
       
       <div class="content"><p>I shop for groceries at Harris Teeter<sup id="fnref:20130530160464"><a href="#fn:20130530160464" class="footnote">1</a></sup>. If you use their loyalty card, the prices are much cheaper.<sup id="fnref:20130530160545"><a href="#fn:20130530160545" class="footnote">2</a></sup> I don’t like to carry a loyalty card on me, either in my wallet or on my keychain.<sup id="fnref:20130530160716"><a href="#fn:20130530160716" class="footnote">3</a></sup> I used to leave the loyalty card in my car, but then I’d forget to bring it into the store with me.<sup id="fnref:20130530160833"><a href="#fn:20130530160833" class="footnote">4</a></sup> They have an <a href=". https://itunes.apple.com/us/app/ht-mobile/id422306980?mt=8&amp;at=11l4RT">iPhone app</a><sup id="fnref:20130530160955"><a href="#fn:20130530160955" class="footnote">5</a></sup> that includes a scannable loyalty card, but it’s slow and poorly designed. I would have to remember to open it up while I was on the last aisle in order to give it enough time to load and, it seemed, download the card from a server somewhere. This was unacceptably slow. So my work around was to take a screen shot of the loyalty card and just display that. It worked better, but was still not elegant.</p>
@@ -234,74 +292,11 @@
 
 <h2 id="easy-creation-of-markdown-links-from-current-webpage">Easy creation of Markdown links from current webpage</h2>
 
-<p>Seeing how easy it was to change the above macro, I decided to make a quick macro to make a Markdown link using the current Safari URL as the link URL and the current Safari window title as the link text. I also used the new text token <code>%|%</code> to place the cursor in position to quickly change the link text in case the window title isn’t appropriate.</p>
+<p>Seeing how easy it was to change the above macro, I decided to make a quick macro to make a Markdown link using the current Safari URL as the link URL and the current Safari window title as the link text. I also used the new text token <code class="highlighter-rouge">%|%</code> to place the cursor in position to quickly change the link text in case the window title isn’t appropriate.</p>
 
 <p><a href="/images/MD_link_from_Safari_title_url.jpg"><img src="/images/MD_link_from_Safari_title_url.jpg" alt="" /></a></p>
 
 <p>I’m looking forward to upgrading my old macros and kicking the tires a bit more. I can’t wait for my next project so I have a chance to create something new.</p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">May 21, 2013</span>
-      
-      <h2><a class="post-link" href="/google-glass-as-a-tool/">Google Glass as a tool</a></h2>
-      
-      <div class="content"><p><a href="/images/google_glass_person.jpg"><img src="/images/google_glass_person.jpg" alt="" /></a></p>
-
-<p><a href="http://www.google.com/glass/start/">Google Glass</a> is a new<sup id="fnref:20130521080110"><a href="#fn:20130521080110" class="footnote">1</a></sup>, wearable technology that incorporates a screen, microphone, and camera into a glasses-like form factor. Most<sup id="fnref:20130521080295"><a href="#fn:20130521080295" class="footnote">2</a></sup> of what I’ve read about it so far as been fairly negative with comments ranging from how bad you’ll look wearing them to how much of an invasion of privacy it is when people can take your picture at any time without them noticing. In his typically outrageous manner, Ben Brooks has even <a href="http://brooksreview.net/2013/05/glassholes/">suggested outlawing them</a>.</p>
-
-<p>Unfortunately, these complaints, while at least partially valid, are also myopic.<sup id="fnref:20130521080585"><a href="#fn:20130521080585" class="footnote">3</a></sup> Fashion is fickle and their design can change; cellphones, spy cameras, and digital SLRs with telephoto lenses got rid of privacy long ago; and, Ben, taking photos of people without their permission in public is perfectly legal. Yeah, even if it’s of your kid.<sup id="fnref:20130521080869"><a href="#fn:20130521080869" class="footnote">4</a></sup> They also seem to overlook or have no image about how useful they could be.</p>
-
-<p>What interests me about Google Glass is not how it might be used in social situations<sup id="fnref:20130521081069"><a href="#fn:20130521081069" class="footnote">5</a></sup>, and the accompanying norms it may violate, but how this could be used as a tool, an extension of one’s self.</p>
-
-<ul>
-  <li>I imagine a rescue worker being able to view and tag dangerous situations in some wreckage, while leaving their hands free or perhaps easily and quickly taking images of an injured survivor that could be uploaded and reviewed at the central medical center so that preparations could be made before the patient even arrives.</li>
-  <li>I imagine a doctor doing a procedure being able to monitor an ultrasound image or telemetry while not taking his eyes off the patient.</li>
-  <li>I imagine being about to keep a menu or manual right in my field of vision while cooking or fixing the car, without awkwardly perching it somewhere not quite easy to see and not quite out of the danger zone.</li>
-  <li>I imagine that every time I looked at a document containing the words of some diagnosis, Glass would automatically search for the ICD-10 code and if I happened to need it, I could quickly glance up at the screen.</li>
-  <li>I imagine seeing a patient and when I start talking about the treatment, Glass connects to my electronic chart to look up their insurance coverage and list in my field of vision which medication is covered so I can continue explaining the treatment uninterrupted.</li>
-</ul>
-
-<p>My first thought when hearing about Glass was how useful this would be for parents of infants. One mother already wrote about how useful it is<sup id="fnref:20130521093210"><a href="#fn:20130521093210" class="footnote">6</a></sup>.</p>
-
-<p>Sure, I can’t imaging people wearing these all the time in every social situation<sup id="fnref:20130521082208"><a href="#fn:20130521082208" class="footnote">7</a></sup>, but who said you had to?<sup id="fnref:20130521082632"><a href="#fn:20130521082632" class="footnote">8</a></sup> I may never wear it while at a restaurant or a party, but who cares if I look dorky while walking around my own house? I don’t wear my pajamas outside either. While most agree that bluetooth headsets are dorky, it’s not the same when wearer is the receptionist sitting at the desk of your local law office or clinic answering phones all day. In that same situation, I can imagine the practice management software being able to identify the person checking in, pull up her chart, take a picture of the patient’s new insurance card and upload it to the billing software, while leaving the receptionist’s hands free for other things.</p>
-
-<p>Social norms may have to adapt or may have to be more strongly reiterated to put those who would abuse this, or any, technology<sup id="fnref:20130521084058"><a href="#fn:20130521084058" class="footnote">9</a></sup>, but if we can get past the idea of this being a social device and start to look at it more as a tool, suddenly, this technology seems a lot more interesting.</p>
-
-<p>I have no prediction as to the business success of Glass and the functionality will greatly depend on how good the software is. Google has already let me down enough times that I’m cautious. But I am curious.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20130521080110">
-      <p>Not even publicly purchasable. <a href="#fnref:20130521080110" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521080295">
-      <p>Scoble doesn’t count. <a href="#fnref:20130521080295" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521080585">
-      <p>No pun intended. <a href="#fnref:20130521080585" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521080869">
-      <p>Not to mention, if someone really wants to get inappropriate photos of people, it’s a lot easier and cheaper to just Google it. <a href="#fnref:20130521080869" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521081069">
-      <p>From the technocrati’s reaction to GG, it seems all anyone does in Silicon Valley is go to parties and the bathroom. <a href="#fnref:20130521081069" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521093210">
-      <p>Apologies, but I can’t find the link now. <a href="#fnref:20130521093210" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521082208">
-      <p>Except for a few, strange outliers, but isn’t this always the case? <a href="#fnref:20130521082208" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521082632">
-      <p>At least for now. Who knows how social norms will change in the future. Maybe like bluetooth headsets it will always be gauche, or maybe it will come to be the norm. <a href="#fnref:20130521082632" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:20130521084058">
-      <p>Scoble is never invited to my house. <a href="#fnref:20130521084058" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

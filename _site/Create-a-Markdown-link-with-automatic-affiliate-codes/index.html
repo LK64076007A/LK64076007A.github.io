@@ -92,7 +92,7 @@
   <div class="post-content" itemprop="articleBody">
     <p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
 
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
+<p>The macro can be triggered by the string <code class="highlighter-rouge">mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
 
 <p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
 
@@ -112,77 +112,79 @@ The clipboard text contains ‘itunes.apple.com’<br />
 Execute the Following Actions:<br />
 Execute Shell Script</p>
 
-<pre><code>#!/usr/bin/python
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
 
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+<span class="c"># Via Dr. Drang</span>
+<span class="c"># http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/</span>
 
-from subprocess import check_output
-from sys import stdout
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">stdout</span>
 
-# My affiliate ID.
-myID = '11l4RT'
+<span class="c"># My affiliate ID.</span>
+<span class="n">myID</span> <span class="o">=</span> <span class="s">'11l4RT'</span>
 
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
+<span class="c"># Get the URL from the clipboard.</span>
+<span class="n">clipURL</span> <span class="o">=</span> <span class="n">check_output</span><span class="p">(</span><span class="s">'pbpaste'</span><span class="p">)</span>
 
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
+<span class="c"># Add my ID and the partnerId parameter to the URL. If there are already</span>
+<span class="c"># queries, add them as additional ones; if not, add them as the only ones.</span>
+<span class="k">if</span> <span class="s">'?'</span> <span class="ow">in</span> <span class="n">clipURL</span><span class="p">:</span>
+<span class="n">itemURL</span> <span class="o">=</span> <span class="s">'</span><span class="si">%</span><span class="s">s&amp;at=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clipURL</span><span class="p">,</span> <span class="n">myID</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="n">itemURL</span> <span class="o">=</span> <span class="s">'</span><span class="si">%</span><span class="s">s?at=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clipURL</span><span class="p">,</span> <span class="n">myID</span><span class="p">)</span>
 
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
+<span class="c"># Write it out</span>
+<span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">itemURL</span><span class="p">)</span> <span class="n">Save</span> <span class="n">trimmed</span> <span class="n">to</span> <span class="n">Clipboard</span><span class="o">.</span>  
 </code></pre>
+</div>
 
 <p>If All Conditions Met<br />
 The clipboard text contains ‘amazon.com’<br />
 Execute the Following Actions:<br />
 Execute Shell Script</p>
 
-<pre><code>#!/usr/bin/env python
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
 
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
+<span class="c"># (c) 2012 Brett Kelly.</span>
+<span class="c"># Licensed under the MIT license</span>
+<span class="c"># http://www.opensource.org/licenses/mit-license.php</span>
+<span class="c"># http://nerdgap.com/amazon-affiliate-links-with-textexpander/</span>
+<span class="c"># Some edits from the original to get to to work in KM - ML</span>
 
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">urlparse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>
 
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'soitscometothis-20'
+<span class="c">## PUT YOUR AFFILIATE CODE HERE</span>
+<span class="n">affcode</span> <span class="o">=</span> <span class="s">'soitscometothis-20'</span>
 
-rawurl = check_output('pbpaste')
+<span class="n">rawurl</span> <span class="o">=</span> <span class="n">check_output</span><span class="p">(</span><span class="s">'pbpaste'</span><span class="p">)</span>
 
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
+<span class="c">## Get the base url without all of the query string malarky</span>
+<span class="n">baseurl</span> <span class="o">=</span> <span class="n">rawurl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'?'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
 
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
+<span class="k">try</span><span class="p">:</span>
+<span class="n">parts</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">baseurl</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawurl</span><span class="p">)</span>
+<span class="k">raise</span> <span class="nb">SystemExit</span>
 
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
+<span class="c">## Make sure it's actually an Amazon URL</span>
+<span class="n">amazonre</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'[www</span><span class="err">\</span><span class="s">.]{0,1}amazon</span><span class="err">\</span><span class="s">.'</span><span class="p">)</span>
 
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
+<span class="k">if</span> <span class="ow">not</span> <span class="n">amazonre</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">parts</span><span class="o">.</span><span class="n">netloc</span><span class="p">):</span>
+<span class="c"># Not an amazon URL, return whatever was passed initially</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawurl</span><span class="p">)</span>
+<span class="k">raise</span> <span class="nb">SystemExit</span>
 
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
+<span class="c"># Format the simpler URL and append the affiliate code</span>
+<span class="n">goodurl</span> <span class="o">=</span> <span class="s">"</span><span class="si">%</span><span class="s">s://</span><span class="si">%</span><span class="s">s</span><span class="si">%</span><span class="s">s?tag=</span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="p">(</span><span class="n">parts</span><span class="o">.</span><span class="n">scheme</span><span class="p">,</span><span class="n">parts</span><span class="o">.</span><span class="n">netloc</span><span class="p">,</span><span class="n">parts</span><span class="o">.</span><span class="n">path</span><span class="p">,</span><span class="n">affcode</span><span class="p">)</span>
 
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
+<span class="c"># Write formatted URL to STDOUT</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">goodurl</span><span class="p">)</span>
 </code></pre>
+</div>
 
 <p>Save trimmed to Clipboard.<br />
 Insert Text by Pasting<br />

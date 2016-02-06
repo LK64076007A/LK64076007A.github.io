@@ -106,7 +106,7 @@
 
 <h1 id="solution">Solution</h1>
 
-<p>Keyboard Maestro 6 added a cursor position token: <code>%|%</code>. Since the original macro involved two paste actions separated by moving the cursor, I was going to need to combine them into one paste action. Instead of using ⌘-↓ to move the cursor to the bottom of the text, I use ⇧-⌘-↓ to select all the text from the cursor position to the bottom of the document. I then cut (⌘-X) this to the clipboard. Finally, I paste a concatenation of the footnote tag, the cursor position token, the clipboard, and the footnote:</p>
+<p>Keyboard Maestro 6 added a cursor position token: <code class="highlighter-rouge">%|%</code>. Since the original macro involved two paste actions separated by moving the cursor, I was going to need to combine them into one paste action. Instead of using ⌘-↓ to move the cursor to the bottom of the text, I use ⇧-⌘-↓ to select all the text from the cursor position to the bottom of the document. I then cut (⌘-X) this to the clipboard. Finally, I paste a concatenation of the footnote tag, the cursor position token, the clipboard, and the footnote:</p>
 
 <pre>[^%Variable%MMDFootnoteTag%]%|%%CurrentClipboard%
 

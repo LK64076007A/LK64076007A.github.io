@@ -100,19 +100,21 @@
 
 <p>His technique gave me this:</p>
 
-<pre><code>[1]: website url
+<div class="highlighter-rouge"><pre class="highlight"><code>[1]: website url
 [2]: website url
 [3]: website url
 [4]: website url
 </code></pre>
+</div>
 
 <p>When what I wanted was this:</p>
 
-<pre><code>[Website Title](website url)
+<div class="highlighter-rouge"><pre class="highlight"><code>[Website Title](website url)
 [Website Title](website url)
 [Website Title](website url)
 [Website Title](website url)
 </code></pre>
+</div>
 
 <p>I like reference links too, but I needed the title of the paper for my purposes and I already have another macro that I use to turn inline links into reference links later.</p>
 
@@ -120,7 +122,7 @@
 
 <p>I changed Dr. Drang’s original code:</p>
 
-<pre><code>tell application "Safari"
+<div class="highlighter-rouge"><pre class="highlight"><code>tell application "Safari"
   set i to 1
   set links to ""
   repeat with t in every tab in front window
@@ -130,10 +132,11 @@
   return links
 end tell
 </code></pre>
+</div>
 
 <p>to this:</p>
 
-<pre><code>tell application "Safari"
+<div class="highlighter-rouge"><pre class="highlight"><code>tell application "Safari"
   set i to 1
   set links to ""
   repeat with t in every tab in front window
@@ -143,6 +146,7 @@ end tell
   return links
 end tell
 </code></pre>
+</div>
 
 <p>You can then throw that into a TextExpander snippet or a Keyboard Maestro Macro and you’re prestige.</p>
 

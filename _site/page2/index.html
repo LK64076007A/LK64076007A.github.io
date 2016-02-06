@@ -90,6 +90,38 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Nov 4, 2015</span>
+      
+      <h2><a class="post-link" href="/forcing-pinch-to-zoom/">Forcing Pinch to Zoom</a></h2>
+      
+      <div class="content"><p>I am tired of developers who disable pinch to zoom on their websites by either setting the meta tag <code class="highlighter-rouge">user-scalable</code> to no or <code class="highlighter-rouge">maximum-scale</code> to 1.0. I run across this the most when following Instagram links from Twitter, but it is rampant, such as when I followed a link and landed on this page today:</p>
+
+<p><img src="/images/bad_tumblr.png" width="375" height="667" /></p>
+
+<p>Maybe it is just my old eyes, but I couldn’t read the text. So I pinched-to-zoom and nothing happened. Because of the poor design decisions of whomever made this page, I was unable to appreciate the content. A view of the source confirmed the problem:<sup id="fnref:151104173647"><a href="#fn:151104173647" class="footnote">1</a></sup></p>
+
+<p><img src="/images/bad_tumblr_code.png" width="375" height="667" /></p>
+
+<p>Thankfully, I have a series of javascript bookmarklets that deal with such problems.<sup id="fnref:151104172527"><a href="#fn:151104172527" class="footnote">2</a></sup> The following code over-rides any poor decisions on the part of the developer.</p>
+
+<p><code>javascript:document.querySelector('meta%5Bname=viewport%5D').setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=10.0,user-scalable=1');</code></p>
+
+<p>I wish there was a way to do this with content blockers.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:151104173647">
+      <p>I highlighted the <code class="highlighter-rouge">user-scalable=no</code>, but the <code class="highlighter-rouge">maxium-scale=1.0</code> would do the same thing. <a href="#fnref:151104173647" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:151104172527">
+      <p>Such as disabling copy and paste. <a href="#fnref:151104172527" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Sep 21, 2015</span>
       
       <h2><a class="post-link" href="/tide-information-as-a-watch-complication/">Tide information as a watch complication</a></h2>
@@ -111,7 +143,7 @@
 
 <p>I was already using <a href="https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;uo=4&amp;at=11l4RT">My Tide Times Pro</a> as my tidal app of choice<sup id="fnref:150921102250"><a href="#fn:150921102250" class="footnote">3</a></sup> so this is a very welcome addition; however, there was one major, but fixable issue. Actually getting the complication to work was completely unintuitive.</p>
 
-<p>I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the <a href="https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;uo=4&amp;at=11l4RT">My Tide Times Pro</a> does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except <code>-</code>.</p>
+<p>I was ecstatic when I first saw the app update in the store and immediately downloaded it. I then made sure the complication was active in the Watch App, and went to enable it on my watch face. I switch between multiple watch faces depending on my activity, but I use Chronograph frequently. Unfortunately, the <a href="https://itunes.apple.com/us/app/my-tide-times-pro-tide-tables/id804031883?mt=8&amp;uo=4&amp;at=11l4RT">My Tide Times Pro</a> does not show up as an option for those complications. I then switched to the modular face where it did show up as an option, but when I selected it nothing appeared except <code class="highlighter-rouge">-</code>.</p>
 
 <p><img src="/images/tide_watch_complication-2.jpg" width="156" height="195" /></p>
 
@@ -225,38 +257,6 @@
 </div>
     </li>
   
-    <li>
-      <span class="post-meta">Jul 4, 2015</span>
-      
-      <h2><a class="post-link" href="/Amazon-affiliate-link-for-TextExpander/">Amazon affiliate link for TextExpander</a></h2>
-      
-      <div class="content"><p>My affiliate linking scripts were starting to get out of hand with different versions in <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, <a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&amp;uo=4&amp;at=11l4RT">Pythonista</a>, <a href="https://itunes.apple.com/us/app/editorial/id673907758?mt=8&amp;uo=4&amp;at=11l4RT">Editorial</a>, <a href="https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&amp;uo=4&amp;at=11l4RT">Drafts</a>, <a href="https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&amp;uo=4&amp;at=11l4RT">Workflow</a>, and <a href="http://smile.7eer.net/i/157164/161942/2936">TextExpander on the Mac</a>. It was difficult to know what scripts worked where and if they were up to date. I decided to expunge them all but one.</p>
-
-<p>The <em>one</em> would have to work equally well on iOS and OS X as I use them equally and interchangeably. Until now this was not possible as none of those apps was on both devices, but with TextExpander getting JavaScript support, I thought it might now be possible.<sup id="fnref:20150704101546"><a href="#fn:20150704101546" class="footnote">1</a></sup></p>
-
-<h2 id="code-explanation">Code explanation</h2>
-
-<ul>
-  <li>Line 3: Stores the affiliate code to a variable.</li>
-  <li>Line 4: Stores the clipboard to a variable.</li>
-  <li>Line 5: Defines the regular expression and stores it to a variable. My choice of regex looks for the first string of all capital letters or numbers following a slash, which seems to always be the Amazon (ASIN).</li>
-  <li>Line 6: Runs the match for the regular expression, returning null if it isn’t found and an array of it is.</li>
-  <li>Line 8-13: Evaluates the result of the regex search. If it failed, it returns the original text. If it succeeds, it stores ASIN to a variable and creates the new link.</li>
-  <li>Line 15: Writes the new URL to the clipboard. This isn’t necessary for the expansion of the affiliate link by TextExpander as the result of the script is what is expanded, not the clipboard, but I like having the link in the clipboard in case I need to paste it somewhere else immediately.</li>
-</ul>
-
-<script src="https://gist.github.com/LK64076007A/30ed6c4c52e36978540b.js"></script>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:20150704101546">
-      <p>Dr. Drang had <a href="http://leancrew.com/all-this/2015/06/clean-amazon-links-with-textexpander/">written about converting his script over to JavaScript for TextExpander</a>, and at first I thought I could just steal his, but this was a dead end. Since he used JavaScript for Automation in his snippet it would not work in iOS and his regex didn’t work with the URLs I was getting. <a href="#fnref:20150704101546" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</div>
-    </li>
-  
   </ul>
 
 </div>
@@ -264,7 +264,7 @@
 
 <div class="pagination">
   
-    <a href="/index.html">&laquo; Newer</a>
+    <a href="/">&laquo; Newer</a>
   
 
   

@@ -90,9 +90,22 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Nov 18, 2014</span>
+      
+      <h2><a class="post-link" href="/Does-Dr.-Google-take-my-insurance/">Does Dr. Google take my insurance?</a></h2>
+      
+      <div class="content"><p>A secretary walks up to my nurse and starts complaining about a minor symptom. My nurse gives her excellent advice. The secretary expresses doubt and starts to argue. I interject that the advice is excellent and should be tried. The secretary counters that she had done a Google search.</p>
+
+<p>Having become accustomed to this response from patients and family alike, the board certified physician and license nurse both shrug and go back to work.</p>
+
+<p><a href="http://thefederalist.com/2014/01/17/the-death-of-expertise/">Expertise is dead</a>.</p>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">Nov 13, 2014</span>
       
-      <h2><a class="post-link" href="/The-Tile--Dead-on-Arrival/">The Tile - Dead on Arrival</a></h2>
+      <h2><a class="post-link" href="/The-Tile-Dead-on-Arrival/">The Tile - Dead on Arrival</a></h2>
       
       <div class="content"><p>I ordered the <a href="https://www.thetileapp.com/">Tile</a>, a BTLE internet-enabled device designed to help you find lost items, to attach to my keys so I can avoid the occasional panic on Monday morning when I can’t find them.</p>
 
@@ -105,7 +118,7 @@
     <li>
       <span class="post-meta">Oct 28, 2014</span>
       
-      <h2><a class="post-link" href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">FTC sues AT&T over throttling "Unlimited" data plans</a> <a class="permalink" title="Permanent link to ‘FTC sues AT&T over throttling "Unlimited" data plans’" href="/FTC-sues-AT&T%20over-throttling-%22Unlimited%22-data-plans/">Ω</a></h2>
+      <h2><a class="post-link" href="http://www.macrumors.com/2014/10/28/ftc-sues-att-unlimited-data-throttling/">FTC sues AT&T over throttling "Unlimited" data plans</a> <a class="permalink" title="Permanent link to ‘FTC sues AT&T over throttling "Unlimited" data plans’" href="/FTC-sues-AT&T-over-throttling-Unlimited-data-plans/">Ω</a></h2>
       
       <div class="content"><p>I am not a big fan of class action lawsuits in general because it appears that the only ones who really benefit at the lawyers. Maybe I’m wrong because I’m pretty happy about this:</p>
 
@@ -157,7 +170,7 @@
       
       <div class="content"><p>I do a podcast with a couple other guys. As we’re recording the show, I like to create the show notes live so that they’re most accurate and save myself time later. We frequently mention products on Amazon, apps on iTunes, and regular old-fashioned links. I created the following macro for myself so that after I’ve navigated to the webpage of the link in Safari, I can automatically create a Markdown-style link in my text editor, including optional Amazon and iTunes affiliate links if appropriate. The affiliate links are added using python scrips from <a href="http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/">Dr. Drang</a> and <a href="http://nerdgap.com/amazon-affiliate-links-with-textexpander/">Brett Kelly</a>.</p>
 
-<p>The macro can be triggered by the string <code>mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
+<p>The macro can be triggered by the string <code class="highlighter-rouge">mdlink</code> of the hotkey ⇧⌃⌥⌘p.</p>
 
 <p>Since I write all my show notes in nvALT and my workflow is to find the webpage in Safari, the first part of the macro activates nvALT. The topmost Safari URL is then saved to the clipboard. The clipboard is then parsed by two If statements looking to see if it is an Amazon or iTunes link, and if it is add the affiliate code. Finally, the text for the Markdown link in inserted using the Safari title as the text for the link.</p>
 
@@ -177,77 +190,79 @@ The clipboard text contains ‘itunes.apple.com’<br />
 Execute the Following Actions:<br />
 Execute Shell Script</p>
 
-<pre><code>#!/usr/bin/python
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
 
-# Via Dr. Drang
-# http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/
+<span class="c"># Via Dr. Drang</span>
+<span class="c"># http://www.leancrew.com/all-this/2013/08/new-apple-affiliate-link-scripts/</span>
 
-from subprocess import check_output
-from sys import stdout
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">stdout</span>
 
-# My affiliate ID.
-myID = '11l4RT'
+<span class="c"># My affiliate ID.</span>
+<span class="n">myID</span> <span class="o">=</span> <span class="s">'11l4RT'</span>
 
-# Get the URL from the clipboard.
-clipURL = check_output('pbpaste')
+<span class="c"># Get the URL from the clipboard.</span>
+<span class="n">clipURL</span> <span class="o">=</span> <span class="n">check_output</span><span class="p">(</span><span class="s">'pbpaste'</span><span class="p">)</span>
 
-# Add my ID and the partnerId parameter to the URL. If there are already
-# queries, add them as additional ones; if not, add them as the only ones.
-if '?' in clipURL:
-itemURL = '%s&amp;at=%s' % (clipURL, myID)
-else:
-itemURL = '%s?at=%s' % (clipURL, myID)
+<span class="c"># Add my ID and the partnerId parameter to the URL. If there are already</span>
+<span class="c"># queries, add them as additional ones; if not, add them as the only ones.</span>
+<span class="k">if</span> <span class="s">'?'</span> <span class="ow">in</span> <span class="n">clipURL</span><span class="p">:</span>
+<span class="n">itemURL</span> <span class="o">=</span> <span class="s">'</span><span class="si">%</span><span class="s">s&amp;at=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clipURL</span><span class="p">,</span> <span class="n">myID</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="n">itemURL</span> <span class="o">=</span> <span class="s">'</span><span class="si">%</span><span class="s">s?at=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">clipURL</span><span class="p">,</span> <span class="n">myID</span><span class="p">)</span>
 
-# Write it out
-stdout.write(itemURL) Save trimmed to Clipboard.  
+<span class="c"># Write it out</span>
+<span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">itemURL</span><span class="p">)</span> <span class="n">Save</span> <span class="n">trimmed</span> <span class="n">to</span> <span class="n">Clipboard</span><span class="o">.</span>  
 </code></pre>
+</div>
 
 <p>If All Conditions Met<br />
 The clipboard text contains ‘amazon.com’<br />
 Execute the Following Actions:<br />
 Execute Shell Script</p>
 
-<pre><code>#!/usr/bin/env python
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
 
-# (c) 2012 Brett Kelly.
-# Licensed under the MIT license
-# http://www.opensource.org/licenses/mit-license.php
-# http://nerdgap.com/amazon-affiliate-links-with-textexpander/
-# Some edits from the original to get to to work in KM - ML
+<span class="c"># (c) 2012 Brett Kelly.</span>
+<span class="c"># Licensed under the MIT license</span>
+<span class="c"># http://www.opensource.org/licenses/mit-license.php</span>
+<span class="c"># http://nerdgap.com/amazon-affiliate-links-with-textexpander/</span>
+<span class="c"># Some edits from the original to get to to work in KM - ML</span>
 
-import re
-import sys
-from urlparse import urlparse
-from subprocess import check_output
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">urlparse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>
 
-## PUT YOUR AFFILIATE CODE HERE
-affcode = 'soitscometothis-20'
+<span class="c">## PUT YOUR AFFILIATE CODE HERE</span>
+<span class="n">affcode</span> <span class="o">=</span> <span class="s">'soitscometothis-20'</span>
 
-rawurl = check_output('pbpaste')
+<span class="n">rawurl</span> <span class="o">=</span> <span class="n">check_output</span><span class="p">(</span><span class="s">'pbpaste'</span><span class="p">)</span>
 
-## Get the base url without all of the query string malarky
-baseurl = rawurl.split('?')[0] 
+<span class="c">## Get the base url without all of the query string malarky</span>
+<span class="n">baseurl</span> <span class="o">=</span> <span class="n">rawurl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'?'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
 
-try:
-parts = urlparse(baseurl)
-except Exception:
-sys.stdout.write(rawurl)
-raise SystemExit
+<span class="k">try</span><span class="p">:</span>
+<span class="n">parts</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">baseurl</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawurl</span><span class="p">)</span>
+<span class="k">raise</span> <span class="nb">SystemExit</span>
 
-## Make sure it's actually an Amazon URL
-amazonre = re.compile('[www\.]{0,1}amazon\.')
+<span class="c">## Make sure it's actually an Amazon URL</span>
+<span class="n">amazonre</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'[www</span><span class="err">\</span><span class="s">.]{0,1}amazon</span><span class="err">\</span><span class="s">.'</span><span class="p">)</span>
 
-if not amazonre.search(parts.netloc):
-# Not an amazon URL, return whatever was passed initially
-sys.stdout.write(rawurl)
-raise SystemExit
+<span class="k">if</span> <span class="ow">not</span> <span class="n">amazonre</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">parts</span><span class="o">.</span><span class="n">netloc</span><span class="p">):</span>
+<span class="c"># Not an amazon URL, return whatever was passed initially</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawurl</span><span class="p">)</span>
+<span class="k">raise</span> <span class="nb">SystemExit</span>
 
-# Format the simpler URL and append the affiliate code
-goodurl = "%s://%s%s?tag=%s" % (parts.scheme,parts.netloc,parts.path,affcode)
+<span class="c"># Format the simpler URL and append the affiliate code</span>
+<span class="n">goodurl</span> <span class="o">=</span> <span class="s">"</span><span class="si">%</span><span class="s">s://</span><span class="si">%</span><span class="s">s</span><span class="si">%</span><span class="s">s?tag=</span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="p">(</span><span class="n">parts</span><span class="o">.</span><span class="n">scheme</span><span class="p">,</span><span class="n">parts</span><span class="o">.</span><span class="n">netloc</span><span class="p">,</span><span class="n">parts</span><span class="o">.</span><span class="n">path</span><span class="p">,</span><span class="n">affcode</span><span class="p">)</span>
 
-# Write formatted URL to STDOUT
-sys.stdout.write(goodurl)
+<span class="c"># Write formatted URL to STDOUT</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">goodurl</span><span class="p">)</span>
 </code></pre>
+</div>
 
 <p>Save trimmed to Clipboard.<br />
 Insert Text by Pasting<br />
@@ -259,77 +274,6 @@ Insert Text by Pasting<br />
 
 <p><a href="/images/Create%20Markdown%20link%20with%20affiliate%20codes.kmmacros">Download the macro</a>.</p>
 
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Jul 29, 2014</span>
-      
-      <h2><a class="post-link" href="/Keyboard-Maestro-macro-screenshots/">Keyboard Maestro macro screenshots</a></h2>
-      
-      <div class="content"><p>I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums<sup id="fnref:140729172855"><a href="#fn:140729172855" class="footnote">1</a></sup>. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.</p>
-
-<p>I believe it was in <a href="http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html">6.0</a> that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.</p>
-
-<p>The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in<sup id="fnref:140729173600"><a href="#fn:140729173600" class="footnote">2</a></sup>.</p>
-
-<p>So I created a macro.</p>
-
-<h2 id="macro-description">Macro description</h2>
-
-<p>You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.</p>
-
-<p>Using a hotkey, trigger the <em>Create Screenshot Macro</em>.</p>
-
-<ol>
-  <li>Select the <code>copy as image</code> from the menu</li>
-  <li>Prompt the user for the file name</li>
-  <li>Save the file to the desktop</li>
-</ol>
-
-<p>There’s also a <code>copy as text</code> if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.</p>
-
-<h2 id="macro-text">Macro text</h2>
-
-<p>Create screenshot of KM macro<br />
-Triggered by any of the following:<br />
-The Hot Key ⌃⌥⇧⌘M is pressed<br />
-Will execute the following actions:<br />
-Select Menu Item in Keyboard Maestro<br />
-Select: Edit ⇢ Copy as ⇢ Copy as Image<br />
-Stop macro if menu cannot be selected.<br />
-Prompt for User Input ‘File Name’<br />
-What do you want to call the file?<br />
-Input the following variables:<br />
-File Name<br />
-Finish with the following buttons:<br />
-OK<br />
-Cancel (cancel macro)<br />
-Store button pressed in variable ‘Result Button’.<br />
-Write Clipboard<br />
-To file: ~/Desktop/%Variable%File Name%.jpg<br />
-With format JPEG).</p>
-
-<h2 id="macro-image">Macro image</h2>
-
-<p><a href="/images/Create_KM_screenshot_image.jpg"><img src="/images/Create_KM_screenshot_image.jpg" alt="" /></a></p>
-
-<p><a href="/images/Create%20screenshot%20of%20KM%20macro.kmmacros">Download the macro</a>.</p>
-
-<h2 id="room-for-improvement">Room for improvement</h2>
-
-<p>I would like the ability to automatically name the jpg with the name of the macro.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:140729172855">
-      <p>If you use KM and aren’t in the forums, you are really missing out. <a href="#fnref:140729172855" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:140729173600">
-      <p>Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? <a href="#fnref:140729173600" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 </div>
     </li>
   

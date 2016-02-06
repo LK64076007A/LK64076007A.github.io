@@ -90,6 +90,77 @@
   <ul class="post-list">
     
     <li>
+      <span class="post-meta">Jul 29, 2014</span>
+      
+      <h2><a class="post-link" href="/Keyboard-Maestro-macro-screenshots/">Keyboard Maestro macro screenshots</a></h2>
+      
+      <div class="content"><p>I create a lot of macros with KM and I like to share them both on this blog as well as in the KM forums<sup id="fnref:140729172855"><a href="#fn:140729172855" class="footnote">1</a></sup>. Taking screenshots of the macro is an important part of this sharing and has been very useful to me as I have learned to use KM from my betters in the community. Previously, I would use the standard screen shot functions of OS X, but with very long macros that did not all fit on one screen there was no elegant solution.</p>
+
+<p>I believe it was in <a href="http://www.keyboardmaestro.com/documentation/6/keyboardmaestro.html">6.0</a> that Peter added the ability to copy a macro as an image. I failed to pay much attention to this at the time in light of all the other great functionality, but recently put it to use.</p>
+
+<p>The copy as an image puts the highlighted portion of your macro into the clipboard. By itself, this isn’t very useful because I need an actual image to upload to the blog, and as far as I can tell that functionality is not built in<sup id="fnref:140729173600"><a href="#fn:140729173600" class="footnote">2</a></sup>.</p>
+
+<p>So I created a macro.</p>
+
+<h2 id="macro-description">Macro description</h2>
+
+<p>You can either select individual parts of the macro you want to share, or select nothing and the whole macro will be used.</p>
+
+<p>Using a hotkey, trigger the <em>Create Screenshot Macro</em>.</p>
+
+<ol>
+  <li>Select the <code class="highlighter-rouge">copy as image</code> from the menu</li>
+  <li>Prompt the user for the file name</li>
+  <li>Save the file to the desktop</li>
+</ol>
+
+<p>There’s also a <code class="highlighter-rouge">copy as text</code> if you want to just share the text of the macro. I prefer to write my own descriptions because I think it’s more useful, but including the text is nice too. See below.</p>
+
+<h2 id="macro-text">Macro text</h2>
+
+<p>Create screenshot of KM macro<br />
+Triggered by any of the following:<br />
+The Hot Key ⌃⌥⇧⌘M is pressed<br />
+Will execute the following actions:<br />
+Select Menu Item in Keyboard Maestro<br />
+Select: Edit ⇢ Copy as ⇢ Copy as Image<br />
+Stop macro if menu cannot be selected.<br />
+Prompt for User Input ‘File Name’<br />
+What do you want to call the file?<br />
+Input the following variables:<br />
+File Name<br />
+Finish with the following buttons:<br />
+OK<br />
+Cancel (cancel macro)<br />
+Store button pressed in variable ‘Result Button’.<br />
+Write Clipboard<br />
+To file: ~/Desktop/%Variable%File Name%.jpg<br />
+With format JPEG).</p>
+
+<h2 id="macro-image">Macro image</h2>
+
+<p><a href="/images/Create_KM_screenshot_image.jpg"><img src="/images/Create_KM_screenshot_image.jpg" alt="" /></a></p>
+
+<p><a href="/images/Create%20screenshot%20of%20KM%20macro.kmmacros">Download the macro</a>.</p>
+
+<h2 id="room-for-improvement">Room for improvement</h2>
+
+<p>I would like the ability to automatically name the jpg with the name of the macro.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:140729172855">
+      <p>If you use KM and aren’t in the forums, you are really missing out. <a href="#fnref:140729172855" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:140729173600">
+      <p>Is this an oversight, am I missing it, or is this deliberate on Peter’s part because he wants the user to create the macro by themselves? <a href="#fnref:140729173600" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+    </li>
+  
+    <li>
       <span class="post-meta">May 8, 2014</span>
       
       <h2><a class="post-link" href="/conversations-with-my-boy/">Conversations with my boy</a></h2>
@@ -161,37 +232,6 @@ Them: That’s not what your wife says.</p>
 <p>…</p>
 
 <p><em>Why are you still here?</em></p>
-</div>
-    </li>
-  
-    <li>
-      <span class="post-meta">Mar 4, 2014</span>
-      
-      <h2><a class="post-link" href="/On-not-purchasing-Dragon-Dictate-Medical/">On not purchasing Dragon Dictate Medical</a></h2>
-      
-      <div class="content"><p>I happened to learn that Dragon Dictate is being upgraded. I own MacSpeech Dictate Medical, which was bought out by Nuance, so I decide to check it out and possibly upgrade.</p>
-
-<p><a href="/images/Dragon-01.png"><img src="/images/Dragon-01.png" alt="" /></a></p>
-
-<p>Wow. $1000. That’s a lot for something I don’t use that much.</p>
-
-<p>But look, I can upgrade for only $500. I’ll check that out.</p>
-
-<p><a href="/images/Dragon-02.png"><img src="/images/Dragon-02.png" alt="" /></a></p>
-
-<p>Just need to log into my account.</p>
-
-<p><a href="/images/Dragon-03.png"><img src="/images/Dragon-03.png" alt="" /></a></p>
-
-<p>Look, it’s only $300. I’ll totally buy that.</p>
-
-<p><a href="/images/Dragon-04.png"><img src="/images/Dragon-04.png" alt="" /></a></p>
-
-<p>WTF? That says $600, and it’s for MacSpeech Medical not Dragon Dictate Medical.</p>
-
-<p>To be perfectly clear. Each screen shot was take in a single series of links, one to the other. The price kept changing. The product kept changing. What is going on here?</p>
-
-<p>I have no idea what the problem is, but I’m not comfortable with moving forward with this purchase.</p>
 </div>
     </li>
   
