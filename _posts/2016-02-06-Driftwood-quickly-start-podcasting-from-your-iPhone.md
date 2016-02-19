@@ -44,7 +44,7 @@ If you need further information on formatting post pages for [Jekyll](http://jek
 
 You can edit the files directly on Github in the browser, but I find it much more pleasent to use one of the awesome iOS apps for Github: [Working Copy](https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&uo=4&at=11l4RT) or [Git2Go](https://itunes.apple.com/us/app/git2go-git-client-you-always/id963577401?mt=8&uo=4&at=11l4RT). 
 
-You'll need one of those apps anyway to upload the audio files and logo because there is [no way to upload a binary directly to Github from the browser](http://stackoverflow.com/questions/29053961/upload-a-binary-file-using-browser-to-github) even on a desktop OS. 
+You'll need one of those apps anyway to upload the audio files and logo because there is [no way to upload a binary directly to Github from the browser](http://stackoverflow.com/questions/29053961/upload-a-binary-file-using-browser-to-github) even on a desktop OS. **Edit:** Ten days after I wrote this Github [announced](https://github.com/blog/2105-upload-files-to-your-repositories) they're adding the ability to upload binaries from the browser..
 
 If you don't have a logo, you can make one very easily using [Pixelmator for iOS](https://itunes.apple.com/us/app/pixelmator/id924695435?mt=8&ign-mpt=uo%3D4&at=11l4RT), which is a steal at $5.[^160206113949]
 
