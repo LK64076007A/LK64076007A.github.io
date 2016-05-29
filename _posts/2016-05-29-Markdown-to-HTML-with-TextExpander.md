@@ -25,7 +25,9 @@ and the second takes whatever is in the clipboard, runs it through the marked li
 
 `marked(TextExpander.pasteboardText).replace(/(\n)+/g, '');`
 
-It doesn't get much simpler than that. 
+It doesn't get much simpler than that.
+
+<script src="https://gist.github.com/LK64076007A/c9cf46c48edb9c51630af146f6dfd480.js"></script> 
 
 [^160529161358]: I haven't "upgraded" yet either.
 
