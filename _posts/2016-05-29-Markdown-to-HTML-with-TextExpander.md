@@ -13,7 +13,7 @@ I haven't given up on TextExpander, yet[^160529161358], and so far it is the onl
 
 The problem ended up being fairly simple[^160529162217].
 
-First I needed to find a javascript library to do the conversion. Googling returned [just such a library, [Marked](https://github.com/chjj/marked) by [Chris Jeffrey](https://twitter.com/_chjj).
+First I needed to find a javascript library to do the conversion. Googling returned just such a library, [Marked](https://github.com/chjj/marked) by [Chris Jeffrey](https://twitter.com/_chjj).
 
 I took the minified version and created a TextExpander snippet of just that code.
 
