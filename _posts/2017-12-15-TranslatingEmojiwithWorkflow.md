@@ -11,7 +11,7 @@ tags:
 
 Being old[^20170115160457], I often have no idea what the emojis mean that my children, wife, and younger friends send me. A simple Workflow workflow[^20170115160636] translates these for me. It's simple because Workflow already has an action that translates the emojis. This workflow just takes the clipboard text, strips any non-emoji text[^20170115161100], and displays the text translation of anything remaining. Having the workflow in the widget screen means translation is always 1-2 swipes and a tap away. 
 
-[![](/images/TranslatingEmojiwithWorkflow1.png))](/images/TranslatingEmojiwithWorkflow1.png))
+[![](/images/TranslatingEmojiwithWorkflow.png)](/images/TranslatingEmojiwithWorkflow.png)
 
 [^20170115160457]: Older than 26.
 
