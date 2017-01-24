@@ -11,10 +11,10 @@ layout: default
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       {% if post.link %}
-      <h2><a class="post-link" href="{{ post.link }}">{{ post.title }}</a> 
+      <h2><a class="post-link" href="{{ post.link }}">{{ post.title }}</a></h2> 
 <div class="content">{{ post.content }}</div>
     </li>
-      <a class="permalink" title="Permanent link to ‘{{ post.title }}’" href="{{ post.url }}">Ω</a></h2>
+      <a class="permalink" title="Permanent link to ‘{{ post.title }}’" href="{{ post.url }}">Ω</a>
       {% else %}
       <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
       <div class="content">{{ post.content }}</div>
