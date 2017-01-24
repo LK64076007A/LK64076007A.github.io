@@ -7,7 +7,7 @@ Tags:
 - Politics
 ---
 
-Chris Coyier, Calling Bullshit, on 1-23-2017:
+Chris Coyier, [Calling Bullshit](http://chriscoyier.net/2017/01/24/calling-bullshit/), on 1-23-2017:
 
 > Sounds like if there should be _one_ required course in college, this should be it.
 
