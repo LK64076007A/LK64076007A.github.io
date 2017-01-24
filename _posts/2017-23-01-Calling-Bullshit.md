@@ -2,7 +2,7 @@
 layout: post
 title: '> Calling Bullshit' # quotes allow forbidden characters
 date: 2017-01-24 11:57:28
-Link: http://chriscoyier.net/2017/01/24/calling-bullshit/
+link: http://chriscoyier.net/2017/01/24/calling-bullshit/
 Tags:
 - Politics
 ---
