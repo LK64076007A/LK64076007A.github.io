@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'When They Say They're Going to Cure Cancer Be Skeptical [Link]' # quotes allow forbidden characters
-date: 2017-02-13 07:40:34 -0500
+date: 2017-02-13 07:40:34
 link: http://www.macdrifter.com/2017/02/when-they-say-theyre-going-to-cure-cancer-be-skeptical-link.html
 tags:
 - cancer
