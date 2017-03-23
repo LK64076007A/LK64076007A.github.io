@@ -52,7 +52,7 @@ border-top-width: 1px;
     @include media-query($on-palm) {
         position: absolute;
         top: -15px;
-        right: 8px;
+        right: 6px;
         background-color: $grey-color-light;
         border: 0px solid $grey-color-light;
         border-radius: 5px;
