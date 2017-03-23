@@ -45,7 +45,7 @@ border-top-width: 1px;
 
     @include media-query($on-palm) {
         position: absolute;
-        top: -9px;
+        top: -15px;
         right: 0px;
         background-color: $grey-color-light;
         border: 0px solid $grey-color-light;
