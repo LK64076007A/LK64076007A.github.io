@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Show hidden files and folders on Mac OS' # quotes allow forbidden characters
-date: 2017-06-03 09:41:46 -0500
+date: 2017-06-03 09:41:46 -500
 tags:
 - MacOS
 -technology
