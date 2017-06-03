@@ -4,9 +4,9 @@ title: 'Show hidden files and folders on Mac OS' # quotes allow forbidden charac
 date: 2017-06-03 09:41:46 -500
 tags:
 - MacOS
--technology
--Drafts
--Workflow
+- technology
+- Drafts
+- Workflow
 ---
 
 The old, hard way of showing hidden files and folders on Mac OS: 
