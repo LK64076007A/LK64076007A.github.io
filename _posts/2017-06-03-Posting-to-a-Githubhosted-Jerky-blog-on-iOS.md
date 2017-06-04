@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Blog posting to Github-hosted Jerky blog on iOS' # quotes allow forbidden characters
+title: 'Posting to a Github-hosted Jerky blog on iOS' # quotes allow forbidden characters
 date: 2017-06-03 20:31:29 -0500
 tags:
 - Drafts 
