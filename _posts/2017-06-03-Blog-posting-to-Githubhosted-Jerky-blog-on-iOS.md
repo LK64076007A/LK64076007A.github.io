@@ -28,7 +28,7 @@ The [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-
 
 [![](/images/BlogpostingtoGithubhostedJerkyblogoniOS4.png)](/images/BlogpostingtoGithubhostedJerkyblogoniOS4.png)
 
-A [long, complicated workflow](https://workflow.is/workflows/aebfc823d7ab472bbadb16304b792a51) then
+A [long, complicated workflow](https://workflow.is/workflows/b98e90b47d334600b6665188c4ef7c43) then
 
 * requests a title 
 * requests tags 
@@ -36,7 +36,7 @@ A [long, complicated workflow](https://workflow.is/workflows/aebfc823d7ab472bbad
 * creates a correctly named text file for the Jekyll blogging platform 
 * saves the file to the correct path and GitHub account using [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8&uo=4&at=11l4RT)
 
-The workflow can even add images, but that's a bit rough around the edges...and the middle. 
+The workflow can even add images. IMAGE1, IMAGE2 etc. are used as text placeholders when writing, then [Workflow](https://itunes.apple.com/us/app/workflow-powerful-automation-made-simple/id915249334?mt=8&uo=4&at=11l4RT) converts those to properly formatted links and requests  the files to be uploaded be chosen from the system photo picker. 
 
 Finally, I just need to enter a commit comment and push to Github where their servers will process the text file using Jekyll and publish. 
 
