@@ -14,7 +14,7 @@ tags:
 
 [![](/images/BlogpostingtoGithubhostedJerkyblogoniOS1.png)](/images/BlogpostingtoGithubhostedJerkyblogoniOS1.png)
 
-The text all gets written first in [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-anywhere/id905337691?mt=8&uo=4&at=11l4RT). When writing the test should always come first. Titles, tags, and images are a distraction; they can and should be addressed later. Also, [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-anywhere/id905337691?mt=8&uo=4&at=11l4RT) is a universally great place to put any text, and those fragments can later turn into posts, making it the perfect place to start.
+The text all gets written first in [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-anywhere/id905337691?mt=8&uo=4&at=11l4RT). When writing the text should always come first. Titles, tags, and images are a distraction; they can and should be addressed later. Also, [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-anywhere/id905337691?mt=8&uo=4&at=11l4RT) is a universally great place to put any text, and those fragments can later turn into posts, making it the perfect place to start.
 
 From [Drafts](https://itunes.apple.com/us/app/drafts-quickly-capture-notes-share-anywhere/id905337691?mt=8&uo=4&at=11l4RT), the text is sent to [Workflow](https://itunes.apple.com/us/app/workflow-powerful-automation-made-simple/id915249334?mt=8&uo=4&at=11l4RT). 
 
