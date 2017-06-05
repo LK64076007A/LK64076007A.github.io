@@ -8,8 +8,6 @@ tags:
 - iOS 
 ---
 
-iOS wish list
-
 Less bugs (don't expect that to be announced in stage)
 
 Swipe-style keyboard (never going to happen)
