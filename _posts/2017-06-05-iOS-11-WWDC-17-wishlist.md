@@ -10,24 +10,24 @@ tags:
 
 **Updated after announcements**
 
-Less bugs (don't expect that to be announced in stage)
+<del>Less bugs (don't expect that to be announced in stage)</del>
 
-Swipe-style keyboard (never going to happen)
+<del>Swipe-style keyboard (never going to happen)</del>
 
-Create a new note from the search field in Notes (unlikely)
+<del>Create a new note from the search field in Notes (unlikely)</del>
 
-Location/wifi based system settings (unlikely)
+<del>Location/wifi based system settings (unlikely)
 - volume on or off
 - VPN on or off
 
-Workflow-esque automation (possible someday) 
+Workflow-esque automation (possible someday)</del>
 
-Siri for third party notes, to-do, and maps apps (unlikely, possible, never)
+Siri for third party notes, to-do, <del>and maps apps</del> (unlikely, possible, never)
 
 **Notes and todos now have Siri-kit support.**
 
 Springboard management options (unlikely)
 - offer to delete unused apps **added**
-- sort by last used, most used, last updated 
+- <del>sort by last used, most used, last updated</del>
 
 [![](/images/ios11wishlist.jpg)](/images/ioswishlist.jpg)
