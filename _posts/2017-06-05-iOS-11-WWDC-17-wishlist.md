@@ -8,6 +8,8 @@ tags:
 - iOS 
 ---
 
+**Updated after announcements**
+
 Less bugs (don't expect that to be announced in stage)
 
 Swipe-style keyboard (never going to happen)
@@ -22,7 +24,10 @@ Workflow-esque automation (possible someday)
 
 Siri for third party notes, to-do, and maps apps (unlikely, possible, never)
 
+**Notes and todos now have Siri-kit support.**
+
 Springboard management options (unlikely)
-- offer to delete unused apps
+- offer to delete unused apps **added**
 - sort by last used, most used, last updated 
 
+[![](/images/ios11wishlist.jpg)](/images/ioswishlist.jpg)
