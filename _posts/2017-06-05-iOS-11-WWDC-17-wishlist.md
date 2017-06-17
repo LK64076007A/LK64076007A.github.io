@@ -16,11 +16,11 @@ tags:
 
 <del>Create a new note from the search field in Notes (unlikely)</del>
 
-<del>Location/wifi based system settings (unlikely)
-- volume on or off
-- VPN on or off
+<del>Location/wifi based system settings (unlikely)</del>
+- <del>volume on or off</del>
+- <del>VPN on or off</del>
 
-Workflow-esque automation (possible someday)</del>
+<del>Workflow-esque automation (possible someday)</del>
 
 Siri for third party notes, to-do, <del>and maps apps</del> (unlikely, possible, never)
 
