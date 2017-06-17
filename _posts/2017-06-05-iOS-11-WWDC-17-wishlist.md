@@ -10,9 +10,9 @@ tags:
 
 **Updated after announcements**
 
-<del>Less bugs (don't expect that to be announced in stage)</del>
+<s>Less bugs (don't expect that to be announced in stage)</s>
 
-<del>Swipe-style keyboard (never going to happen)</del>
+<s>Swipe-style keyboard (never going to happen)</s>
 
 <del>Create a new note from the search field in Notes (unlikely)</del>
 
