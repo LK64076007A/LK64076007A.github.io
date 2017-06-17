@@ -14,8 +14,8 @@ tags:
 - <s>Swipe-style keyboard (never going to happen)</s>  
 - <s>Create a new note from the search field in Notes (unlikely)</s>  
 - <s>Location/wifi based system settings (unlikely)</s>
-    - <del>volume on or off</del>
-    - <del>VPN on or off</del>
+    - <s>volume on or off</s>
+    - <s>VPN on or off</s>
 - <s>Workflow-esque automation (possible someday)</s>  
 - Siri for third party notes, to-do, <s>and maps apps</s> (unlikely, possible, never)
 
