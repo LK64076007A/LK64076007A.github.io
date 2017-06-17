@@ -239,7 +239,7 @@ ins {
 }
 
 // This creates the caret indicating the place to insert text.
-del:after {
+ins:before {
     -webkit-transform: translate(0px, 1em) rotate(0deg);
     transform: translate(0px, 1em) rotate(0deg);
     content:"^";
