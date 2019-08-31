@@ -19,7 +19,7 @@ font-size: 64px;
     
         @include media-query($on-palm) {
         font-size: 24px;
-        font-family: "AvenirNext", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+        font-family: "AvenirNext", "HelveticaNeue", "Helvetica Neue", Helvetica, Avenir, Arial, sans-serif;
         line-height: 30px;
         }
 }
