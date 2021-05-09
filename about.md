@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-1. Nerd
-2. Sailor
+1. Hunter
+2. Healer
 3. Introvert
 4. Coffee addict
-
-I wish I was a developer. Instead, I have a day job and have to wait to put on my hoodie until my family has gone to bed. 
 
 I don't have comments because [_comments_][3], but you will find me on [Twitter][1].
 
