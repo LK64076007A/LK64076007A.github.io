@@ -9,10 +9,9 @@ permalink: /about/
 3. Introvert
 4. Coffee addict
 
-I don't have comments because [_comments_][3], but you will find me on [Twitter][1].
+I don't have comments because [_comments_][3].
 
 The title of this blog is directly stolen from [xkcd][2]. He'll have a right to all the monies when the cash starts piling up. 
 
-[1]: https://twitter.com/LK64076007A
 [2]: http://xkcd.com/1022/
 [3]: http://daringfireball.net/2010/06/whats_fair
