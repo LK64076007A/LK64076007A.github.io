@@ -25,4 +25,4 @@ tags:
     - offer to delete unused apps **added**
     - <s>sort by last used, most used, last updated</s>
 
-[![](/images/ios11wishlist.jpg)](/images/ioswishlist.jpg)
+[![](/images/ios11wishlist.jpg)](/images/ios11wishlist.jpg)
