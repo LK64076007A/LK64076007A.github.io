@@ -1,7 +1,7 @@
-—
+---
 layout: post
 title:  “A simple rifle sling”
-—
+---
 
 # Supplies
 - [8 feet of 1 inch nylon strap](https://a.co/gQf2RXt), $12[^202210081127]
