@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “A simple rifle sling”
+title:  A simple rifle sling
 ---
 
 # Supplies
