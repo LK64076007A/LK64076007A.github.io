@@ -1,11 +1,3 @@
----
-layout: post
-title: 'A Simple rifle sling' # quotes allow forbidden characters
-date: 2022-08-10 21:41:00 -0500
-tags:
-- hunting
----
-
 # Supplies
 - [8 feet of 1 inch nylon strap](https://a.co/gQf2RXt), $12[^202210081127]
 - [4 Triglides](https://www.amazon.com/dp/B08TB8LFBM?ref=ppx_pop_mob_ap_share), $7
