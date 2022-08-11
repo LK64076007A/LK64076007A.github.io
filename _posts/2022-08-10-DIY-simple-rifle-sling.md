@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ‘Making a simple, cheap, adjustable rifle sling ‘ # quotes allow forbidden characters
+title: ‘Making a simple, cheap, adjustable rifle sling‘ # quotes allow forbidden characters
 date: 2022-08-10 21:41:00 -0500
 tags:
 - DIY
