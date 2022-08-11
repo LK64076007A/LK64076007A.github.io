@@ -1,4 +1,4 @@
-——-
+---
 layout: post
 title: ‘Making a simple, cheap, adjustable rifle sling ‘ # quotes allow forbidden characters
 date: 2022-08-10 21:41:00 -0500
@@ -7,7 +7,7 @@ tags:
 - hunting
 - sewing
 - shooting 
-——-
+---
 
 # Supplies
 - [8 feet of 1 inch nylon strap](https://a.co/gQf2RXt), $12[^202210081127]
