@@ -1,6 +1,7 @@
+—
 layout: post
-title: 'A Simple rifle sling' # quotes allow forbidden characters
-date: 2022-08-10 21:41:00 -0500
+title:  “A simple rifle sling”
+—
 
 # Supplies
 - [8 feet of 1 inch nylon strap](https://a.co/gQf2RXt), $12[^202210081127]
