@@ -60,7 +60,7 @@ title:  “A simple rifle sling”
 2. Attach pull tab to hole with one of the following options. 
 
 Option 1:
-1. Cut a xxx length of paracord. 
+1. Cut a small length of paracord. 
 2. Slightly melt the cut edges of the paracord to prevent unraveling. 
 3. Thread the paracord through the hole in tongue of the strap adjuster until the middle of the cord is at the hole. 
 4. Tie the ends of the paracord together using an [overhand knot](https://youtu.be/_fOKk1HPjbI). 
