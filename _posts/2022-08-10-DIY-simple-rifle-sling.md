@@ -10,6 +10,8 @@ title:  'A simple rifle sling'
 - Optional for stretchable keeper: [1 inch Elastic strap](https://a.co/eyuHZKS), $5
 - Optional for quick adjust pull tab: drill bit and drill, and either 3+ feet of paracord or a commercial pull tab like [this](https://www.edgarshermandesign.com/product/esd-pull-tab/), $8
 
+I made three slings using the above materials without the stretchable keeper (and already in hand paracord) for $26 total. That is half what a sling I purchased cost and I had a lot of scrap material left over. 
+
 # Instructions
 1. Cut two pieces of the nylon strap. One 51 inches. The other 38 inches.
 2. Slightly melt the cut edges of the strap with a lighter or other heat source to prevent fraying. 
